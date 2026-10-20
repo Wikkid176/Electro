@@ -27,7 +27,7 @@ export function restoreStudy(raw: string | null): StudyData | null {
   try {
     if (raw.length > 2_000_000) return null;
     const value = JSON.parse(raw) as StudyData;
-    if (!value || value.version !== 1 || ![release.label, '0.2.0-beta.1'].includes(value.build) || !value.participant || !validTesterCode(value.participant.code) || !cohorts.includes(value.participant.cohort) || typeof value.recording !== 'boolean' || !timestamp(value.startedAt) || !finiteSeconds(value.trainingSeconds)) return null;
+    if (!value || value.version !== 1 || ![release.label, '0.3.0-beta.2', '0.2.0-beta.1'].includes(value.build) || !value.participant || !validTesterCode(value.participant.code) || !cohorts.includes(value.participant.cohort) || typeof value.recording !== 'boolean' || !timestamp(value.startedAt) || !finiteSeconds(value.trainingSeconds)) return null;
     if (!value.baselineScores || typeof value.baselineScores !== 'object' || Array.isArray(value.baselineScores)) return null;
     for (const [id, score] of Object.entries(value.baselineScores)) if (!lessons.some(lesson => lesson.id === id && Number.isInteger(score) && score >= 0 && score <= lesson.questions.length)) return null;
     if (!Array.isArray(value.attempts) || value.attempts.length > 150 || new Set(value.attempts.map(attempt => attempt.id)).size !== value.attempts.length) return null;

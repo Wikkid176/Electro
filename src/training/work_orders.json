@@ -1,0 +1,414 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "WO-101",
+      "title": "Starter drops out when START is released",
+      "tier": "apprentice",
+      "symptom": "The conveyor contactor operates only while START is held.",
+      "observations": [
+        "Supply indicator nominal in simulation",
+        "Coil ACTIVE while START held",
+        "Coil INACTIVE on START release"
+      ],
+      "candidateCauses": [
+        "Failed seal-in auxiliary/contact path",
+        "Incorrect control diagram revision",
+        "Momentary STOP contact fault"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Visualize hypothetical aux state when coil is commanded",
+        "Trace parallel holding branch in revised virtual drawing",
+        "Read recorded change log"
+      ],
+      "debrief": "The holding path is likely involved, but the specific component remains undetermined until its virtual contact and wiring states are compared with drawings.",
+      "safetyBoundary": "Never jumper a real stop or seal-in circuit to make it run.",
+      "relatedLessons": [
+        "deep-mot-01",
+        "deep-dwg-01"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-102",
+      "title": "Overload alarm on packaging motor",
+      "tier": "journeyman",
+      "symptom": "Overload trips after about twenty minutes under load.",
+      "observations": [
+        "Repeated high load periods before event",
+        "No evidence of complete phase loss in log",
+        "Ambient temperature rose 12 C"
+      ],
+      "candidateCauses": [
+        "Increasing mechanical drag",
+        "Thermal setting mismatch",
+        "Supply imbalance under certain loads"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Overlay load current trend and operating profile",
+        "Review fictional motor and protection device ratings",
+        "Compare an approved historical baseline"
+      ],
+      "debrief": "Multiple fault hypotheses remain credible. An overload is an indication, not an instruction to increase a setting or repeatedly reset.",
+      "safetyBoundary": "Do not offer protection changes, live testing or repeated resets as gameplay actions.",
+      "relatedLessons": [
+        "deep-mot-02",
+        "deep-trb-02"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-103",
+      "title": "Dark pilot lamp but running motor",
+      "tier": "apprentice",
+      "symptom": "The motor runs while the green RUN lamp is dark.",
+      "observations": [
+        "Contactor feedback ACTIVE",
+        "Shaft encoder reports running",
+        "Lamp indicator OFF"
+      ],
+      "candidateCauses": [
+        "Lamp element failed",
+        "Lamp branch open",
+        "HMI-to-lamp indication mismatch"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Check virtual branch schematic and commanded lamp state",
+        "Compare separate coil and lamp paths",
+        "Read maintenance record for lamp replacement"
+      ],
+      "debrief": "Lamp state does not establish power state or machine safety. Ask which branch and command condition was documented.",
+      "safetyBoundary": "A real indicator is never acceptable as the sole absence-of-energy verification.",
+      "relatedLessons": [
+        "deep-dwg-01",
+        "deep-met-01"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-104",
+      "title": "Missing PLC count from proximity sensor",
+      "tier": "journeyman",
+      "symptom": "A sensor LED responds to targets, but the PLC input remains false.",
+      "observations": [
+        "Sensor LED toggles",
+        "Input module bit remains false",
+        "Replacement sensor matches diameter but not catalog suffix"
+      ],
+      "candidateCauses": [
+        "Wrong PNP/NPN variant",
+        "Input-common misconfiguration",
+        "Signal cable conductor open"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Inspect virtual catalog output type and input module config",
+        "Compare sensor and PLC virtual states",
+        "Check modeled terminal-reference mismatch"
+      ],
+      "debrief": "A sensor indicator is not end-to-end path proof. An incompatible interface is plausible; exact evidence must differentiate it from cable and input faults.",
+      "safetyBoundary": "No bypass or bridge of real input contacts or safeguards.",
+      "relatedLessons": [
+        "deep-sen-01",
+        "deep-trb-01"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-105",
+      "title": "Pressure display sticks at zero",
+      "tier": "journeyman",
+      "symptom": "Pressure HMI displays 0 while a separate process value is nonzero.",
+      "observations": [
+        "Virtual raw channel reports 0.0 mA",
+        "Sensor configured 4-20 mA",
+        "PLC scaling still expects 4-20 mA"
+      ],
+      "candidateCauses": [
+        "Open signal loop",
+        "No transmitter supply",
+        "Faulted analog input",
+        "Process genuinely zero"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Review input channel status and validity flag",
+        "Review separate simulated sensor supply state",
+        "Compare a historical recording of loop value"
+      ],
+      "debrief": "0 mA is not the expected live zero of a correctly operating standard 4-20 mA loop; it is not enough to claim pressure zero or select one broken component.",
+      "safetyBoundary": "No physical mA meter wiring instructions or breaking an energized loop.",
+      "relatedLessons": [
+        "deep-sen-02",
+        "deep-trb-01"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-106",
+      "title": "Motor speed below synchronous speed",
+      "tier": "apprentice",
+      "symptom": "A simulated 4-pole 60 Hz motor rotates at 1740 RPM.",
+      "observations": [
+        "4 poles",
+        "60 Hz nominal field",
+        "1740 RPM shaft reading"
+      ],
+      "candidateCauses": [
+        "Normal induction-motor slip",
+        "High torque load",
+        "Incorrect tachometer setup"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Calculate synchronous speed",
+        "Calculate slip",
+        "Review load and nameplate context"
+      ],
+      "debrief": "3.33% slip is expected as a calculation; it is not enough evidence to determine a defect.",
+      "safetyBoundary": "Do not recommend real motor tests or connection changes.",
+      "relatedLessons": [
+        "deep-mot-04",
+        "deep-fun-02"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-107",
+      "title": "Unexpected reverse command rejection",
+      "tier": "journeyman",
+      "symptom": "Operator selects REVERSE, controller says INTERLOCK ACTIVE.",
+      "observations": [
+        "Forward feedback remains asserted",
+        "Reverse output remains OFF",
+        "Controller logged no protective trip"
+      ],
+      "candidateCauses": [
+        "Designed interlock working",
+        "Stuck FWD feedback contact",
+        "Faulty state-machine logic"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Review functional sequence chart",
+        "Compare modeled contactor feedback to command",
+        "Read event timeline and logic state"
+      ],
+      "debrief": "An interlock may be correctly blocking an incompatible command; discriminate expected sequencing from false feedback without bypassing it.",
+      "safetyBoundary": "No real interlock overrides or forced PLC outputs.",
+      "relatedLessons": [
+        "deep-mot-03",
+        "deep-safe-03"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-108",
+      "title": "VFD stopped but work order says electrically safe",
+      "tier": "advanced",
+      "symptom": "The work request states that a stopped inverter is electrically isolated.",
+      "observations": [
+        "RUN command OFF",
+        "DC-link energy status UNKNOWN",
+        "External brake and raised load present"
+      ],
+      "candidateCauses": [
+        "Unsafe work-order assumption",
+        "Unidentified stored energy",
+        "Undocumented mechanical hazard"
+      ],
+      "discriminatingVirtualEvidence": [
+        "List model power and energy-state channels independently",
+        "Inspect fictional equipment energy-source map",
+        "Review associated safety authorizations"
+      ],
+      "debrief": "The safe response is to hold work: a stop command or STO status does not verify isolation or restrain a raised load.",
+      "safetyBoundary": "No live VFD measurements, discharge shortcuts, or field STO bypass.",
+      "relatedLessons": [
+        "deep-mot-05",
+        "deep-saf-01"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-109",
+      "title": "Panel short-circuit rating mismatch",
+      "tier": "advanced",
+      "symptom": "Panel data states 5 kA SCCR but site available-fault-current study states 18 kA.",
+      "observations": [
+        "Documented 5 kA assembly marking",
+        "Site 18 kA available fault current",
+        "One component marketing sheet advertises 65 kA"
+      ],
+      "candidateCauses": [
+        "Assembly may be unsuitable for site",
+        "Site study could refer to wrong equipment",
+        "Marking or construction record outdated"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Check revision and location of available-fault-current record",
+        "Compare panel marking to approved build docs",
+        "List missing assembly determination evidence"
+      ],
+      "debrief": "Hold approval pending responsible engineering evaluation; a 65 kA device alone cannot establish the complete panel SCCR.",
+      "safetyBoundary": "No ad hoc breaker substitution, setting increase, or claimed certification.",
+      "relatedLessons": [
+        "deep-pan-03",
+        "deep-ref-01"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-110",
+      "title": "Transformer feeds not accounted for",
+      "tier": "advanced",
+      "symptom": "Primary feeder disconnected in scenario, yet an indicator remains on.",
+      "observations": [
+        "One transformer primary shown OFF",
+        "Another 24 Vdc supply shown ON",
+        "Unknown panel auxiliary circuit revisions"
+      ],
+      "candidateCauses": [
+        "Independent alternate supply",
+        "Failed/open status indicator",
+        "Document mismatch"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Map all fictional source paths",
+        "Compare primary/secondary power model",
+        "Review current drawing revision"
+      ],
+      "debrief": "Source mapping matters more than assuming one disconnect controls the entire cabinet.",
+      "safetyBoundary": "No claim that indicator status verifies absence of energy.",
+      "relatedLessons": [
+        "deep-pan-02",
+        "deep-saf-01"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-111",
+      "title": "Once-per-shift encoder fault",
+      "tier": "advanced",
+      "symptom": "An encoder error occurs during warm shifts on a rotating assembly.",
+      "observations": [
+        "Fault events cluster after long run time",
+        "Cable routing near drive output",
+        "Vibration event records correlate imperfectly"
+      ],
+      "candidateCauses": [
+        "Thermal connection degradation",
+        "Noise coupling",
+        "Mechanical encoder fit/position issue"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Align logs by timestamps and loading",
+        "Review documentation for routing changes",
+        "Separate cable electrical behavior and motion feedback evidence"
+      ],
+      "debrief": "Retain several hypotheses. Correlation warrants focused investigation but is not a verified cause; record validation window.",
+      "safetyBoundary": "No energized waveform probing or bypass of feedback protection.",
+      "relatedLessons": [
+        "deep-trb-02",
+        "deep-met-01"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    },
+    {
+      "id": "WO-112",
+      "title": "Incomplete cabinet bonding record",
+      "tier": "journeyman",
+      "symptom": "A fictional panel passes a visual review but bonding documentation is missing.",
+      "observations": [
+        "Cabinet door hinge painted",
+        "Green conductor present without termination record",
+        "Inspection form marked complete"
+      ],
+      "candidateCauses": [
+        "Protective path not documented",
+        "Inspection process failure",
+        "Unverified door bond"
+      ],
+      "discriminatingVirtualEvidence": [
+        "Compare schematic and assembly inspection packet",
+        "Identify uncertain mechanical interfaces",
+        "Request appropriate acceptance record"
+      ],
+      "debrief": "An unverified critical protective path must remain unresolved; appearance and paperwork checks alone cannot prove integrity.",
+      "safetyBoundary": "No live grounding checks or field bonding sizes supplied.",
+      "relatedLessons": [
+        "deep-pan-01",
+        "deep-pan-03"
+      ],
+      "grading": {
+        "safetyRecognition": 30,
+        "qualityOfHypotheses": 20,
+        "discriminatingEvidence": 30,
+        "reasonedDebrief": 20
+      },
+      "mode": "fictional_offline_simulation"
+    }
+  ]
+}

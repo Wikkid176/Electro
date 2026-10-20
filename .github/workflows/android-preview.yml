@@ -1,0 +1,142 @@
+name: Build Advanced Training preview APK
+
+on:
+  push:
+    branches: ['feature/deep-training-031']
+    paths:
+      - '.github/workflows/android-preview.yml'
+      - 'App.tsx'
+      - 'index.ts'
+      - 'src/**'
+      - 'assets/**'
+      - 'plugins/**'
+      - 'scripts/**'
+      - 'app.json'
+      - 'package*.json'
+      - 'metro.config.cjs'
+      - 'tsconfig.json'
+      - 'docs/android-toolchain.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ell-preview-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  preview:
+    name: Standalone separately installable preview
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      CI: '1'
+      EXPO_NO_TELEMETRY: '1'
+      EXPO_OFFLINE: '1'
+      ANDROID_HOME: /usr/local/lib/android/sdk
+      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+
+      - name: Set up Node 24
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install Java 17 toolchain
+        uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Select Java 21 for Gradle
+        uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Register both Java toolchains
+        shell: bash
+        run: |
+          mkdir -p "$HOME/.gradle"
+          printf 'org.gradle.java.installations.paths=%s,%s\norg.gradle.java.installations.auto-download=false\n' \
+            "$JAVA_HOME_17_X64" "$JAVA_HOME" >> "$HOME/.gradle/gradle.properties"
+
+      - name: Set up Android SDK without removed legacy tools package
+        uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407
+        with:
+          packages: 'platform-tools'
+
+      - name: Install pinned Android components
+        run: sdkmanager 'platform-tools' 'platforms;android-37.0' 'build-tools;37.0.0' 'build-tools;36.0.0' 'ndk;27.1.12297006' 'cmake;3.22.1'
+
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Check TypeScript and unit tests
+        run: |
+          npm run typecheck
+          npm test
+
+      - name: Build self-contained preview APK with separate identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const file = "app.json";
+            const data = JSON.parse(fs.readFileSync(file, "utf8"));
+            data.expo.name = "ElectroLessonLab Preview";
+            data.expo.android.package = "com.wikkid176.electrolessonlab.preview";
+            data.expo.android.versionCode = 1;
+            fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
+          '
+          npm exec -- expo prebuild --platform android --no-install
+          node scripts/pin-gradle-checksum.mjs
+          key="$RUNNER_TEMP/ell-preview.p12"
+          props="$RUNNER_TEMP/ell-preview.properties"
+          password="$(openssl rand -hex 32)"
+          keytool -genkeypair -storetype PKCS12 -keystore "$key" \
+            -storepass "$password" -keypass "$password" -alias ell-preview \
+            -keyalg RSA -keysize 3072 -validity 90 -dname "CN=ElectroLessonLab Preview"
+          printf 'storeFile=%s\nstorePassword=%s\nkeyAlias=ell-preview\nkeyPassword=%s\n' \
+            "$key" "$password" "$password" > "$props"
+          chmod 600 "$key" "$props"
+          cd android
+          ELECTRO_BETA_SIGNING_PROPERTIES="$props" ./gradlew :app:assembleRelease \
+            --max-workers=2 --no-daemon -PreactNativeArchitectures=arm64-v8a,armeabi-v7a
+          mkdir -p ../releases/android/preview
+          cp app/build/outputs/apk/release/app-release.apk \
+            ../releases/android/preview/ELL-0.3.1-preview.apk
+          rm -f "$key" "$props"
+          unset password
+
+      - name: Verify preview package and installer signature
+        shell: bash
+        run: |
+          set -euo pipefail
+          apk="releases/android/preview/ELL-0.3.1-preview.apk"
+          "$ANDROID_HOME/build-tools/37.0.0/apksigner" verify --verbose --print-certs "$apk" > releases/android/preview/APK-SIGNATURE.txt
+          "$ANDROID_HOME/build-tools/37.0.0/zipalign" -c -P 16 -v 4 "$apk" > releases/android/preview/APK-ALIGNMENT.txt
+          "$ANDROID_HOME/build-tools/37.0.0/aapt" dump badging "$apk" > releases/android/preview/APK-METADATA.txt
+          grep -F "name='com.wikkid176.electrolessonlab.preview'" releases/android/preview/APK-METADATA.txt
+          grep -F "versionName='0.3.1'" releases/android/preview/APK-METADATA.txt
+          sha256sum "$apk" > releases/android/preview/APK-SHA256.txt
+          printf 'Preview build: different package ID and temporary signing key. Installs alongside existing beta. Cannot upgrade original beta. For testing, not Play Store release.\n' > releases/android/preview/README.txt
+
+      - name: Export downloadable preview installer
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ELL-0.3.1-Preview-APK
+          path: releases/android/preview/
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Remove preview signing files
+        if: always()
+        run: rm -f "$RUNNER_TEMP/ell-preview.p12" "$RUNNER_TEMP/ell-preview.properties"

@@ -1,0 +1,1579 @@
+{
+  "packId": "ell-deep-training-beta3",
+  "version": "0.3.0-training-pack.1",
+  "targetApp": "ElectroLessonLab 0.3.0-beta.2",
+  "createdOn": "2026-10-19",
+  "referenceRegistry": {
+    "OSHA-1910-147": {
+      "name": "OSHA 29 CFR 1910.147 — hazardous energy control",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147",
+      "type": "US-regulation"
+    },
+    "OSHA-1910-332": {
+      "name": "OSHA 29 CFR 1910.332 — electrical safety training",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.332",
+      "type": "US-regulation"
+    },
+    "OSHA-1910-333": {
+      "name": "OSHA 29 CFR 1910.333 — safety-related work practices",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333",
+      "type": "US-regulation"
+    },
+    "OSHA-1910-334": {
+      "name": "OSHA 29 CFR 1910.334 — equipment and test instruments",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.334",
+      "type": "US-regulation"
+    },
+    "OSHA-1910-335": {
+      "name": "OSHA 29 CFR 1910.335 — personnel protection",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.335",
+      "type": "US-regulation"
+    },
+    "OSHA-1910-303": {
+      "name": "OSHA 29 CFR 1910.303 — electrical equipment",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.303",
+      "type": "US-regulation"
+    },
+    "OSHA-1910-304": {
+      "name": "OSHA 29 CFR 1910.304 — wiring design and protection",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.304",
+      "type": "US-regulation"
+    },
+    "NFPA-70": {
+      "name": "NFPA 70 (National Electrical Code), current publisher edition 2026",
+      "url": "https://www.nfpa.org/codes-and-standards/nfpa-70-development/70",
+      "type": "consensus-standard",
+      "edition": "2026"
+    },
+    "NFPA-70E": {
+      "name": "NFPA 70E (Electrical Safety in the Workplace), current publisher edition 2027",
+      "url": "https://www.nfpa.org/education-and-research/electrical/learn-more-about-nfpa-70e",
+      "type": "consensus-standard",
+      "edition": "2027"
+    },
+    "NFPA-70B": {
+      "name": "NFPA 70B (Electrical Equipment Maintenance), current publisher edition 2026",
+      "url": "https://www.nfpa.org/codes-and-standards/nfpa-70b-standard-for-recommended-practice-for-electrical-equipment-maintenance/70b",
+      "type": "consensus-standard",
+      "edition": "2026"
+    },
+    "NFPA-79": {
+      "name": "NFPA 79 (Electrical Standard for Industrial Machinery), 2024 edition",
+      "url": "https://www.nfpa.org/es/product/id/p0079code",
+      "type": "consensus-standard",
+      "edition": "2024"
+    },
+    "UL-508A": {
+      "name": "UL 508A (Industrial Control Panels)",
+      "url": "https://www.ul.com/services/ul-508a-training-industrial-control-panels",
+      "type": "product-standard"
+    },
+    "IEC-60204-1": {
+      "name": "IEC 60204-1:2016+A1:2021 machinery electrical equipment",
+      "url": "https://webstore.iec.ch/en/publication/71256",
+      "type": "international-standard",
+      "edition": "2016+A1:2021"
+    },
+    "ISO-13849-1": {
+      "name": "ISO 13849-1:2023 safety-related parts of controls",
+      "url": "https://www.iso.org/standard/73481.html",
+      "type": "international-standard",
+      "edition": "2023"
+    }
+  },
+  "lessons": [
+    {
+      "id": "deep-saf-01",
+      "title": "Hazardous Energy: Beyond the Stop Button",
+      "track": "SAFETY",
+      "level": "foundation",
+      "estimatedMinutes": 18,
+      "objectives": [
+        "Differentiate control stopping, isolation, and verification",
+        "Identify multiple forms and paths of hazardous energy",
+        "Explain authorized and affected employee roles"
+      ],
+      "sections": [
+        {
+          "heading": "Operating state is not energy state",
+          "body": "A motor that is stopped, an HMI that says OFF, or an open pushbutton contact describes command or operating state. None demonstrates that the electrical supply is isolated. Multiple feeds, batteries, stored mechanical motion, pneumatic pressure, springs and gravity can persist. Teach learners to draw an energy-source map before they reason about work eligibility."
+        },
+        {
+          "heading": "Energy-control programs",
+          "body": "OSHA 1910.147 addresses servicing where unexpected start-up or release of stored energy can injure workers. A workplace energy-control program includes procedures, training and periodic inspection. The authorized employee applies controls; an affected employee operates or works near equipment and needs relevant instruction. A computer lesson cannot replace employer qualification."
+        },
+        {
+          "heading": "Verification is independent evidence",
+          "body": "Energy control is a system of actions and checks, not a button press. For electrical exposure, OSHA 1910.333 also addresses deenergizing, lock/tag protection, backfeed and verification by qualified persons using suitable test equipment. The safe-work procedure must account for all relevant energy sources, including those outside the electrical drawing."
+        },
+        {
+          "heading": "Reaccumulation and restoration",
+          "body": "A pressure reservoir, raised axis, capacitor bank, or external feed may regain hazardous energy. A classroom simulation must teach that initial isolation is not always a one-time conclusion. Restoration involves the employer-approved procedure, checks, communication, and protection of affected personnel, not just removing a graphical lock."
+        }
+      ],
+      "workedExample": {
+        "problem": "In a virtual conveyor scene, the HMI says STOPPED but a separate 24 V supply and air reservoir remain active. Is the conveyor now established safe for maintenance?",
+        "solution": "No. Stopped is a command state; the model still contains independent energy sources. The correct training response is to flag the unidentified sources and request an authorized isolation and verification process.",
+        "interpretation": "Do not equate a simulated lock or HMI status with permission to service real equipment."
+      },
+      "commonMisconception": {
+        "claim": "\"The emergency stop makes the cabinet dead.\"",
+        "correction": "An emergency stop performs a designed stop function, not universal electrical isolation. Machine safety and hazardous-energy control must be considered separately."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "What does a STOP command prove?",
+          "choices": [
+            "That motion was commanded to stop",
+            "That all power is isolated",
+            "That stored energy is released"
+          ],
+          "correctIndex": 0,
+          "explanation": "Command state is not verified absence of energy."
+        },
+        {
+          "question": "Which fact changes the energy-control plan?",
+          "choices": [
+            "An alternate supply is present",
+            "The HMI theme is dark",
+            "The motor is small"
+          ],
+          "correctIndex": 0,
+          "explanation": "Alternate supplies are independent exposure paths that must be addressed."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Select all simulated energy sources before releasing a maintenance work order.",
+        "expectedReasoning": "Flag electrical and non-electrical sources including feeds, gravity, air and capacitors; do not approve before the fictional safety officer verifies the model.",
+        "safetyGate": "Gate work-order completion behind modeled hazard recognition, not a simulated energized-work procedure."
+      },
+      "referenceIds": [
+        "OSHA-1910-147",
+        "OSHA-1910-333"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-saf-02",
+      "title": "Qualified Work, Hazards, and Protective Measures",
+      "track": "SAFETY",
+      "level": "foundation",
+      "estimatedMinutes": 18,
+      "objectives": [
+        "Explain the distinction between qualification and an app achievement",
+        "Distinguish electric shock from arc-flash exposure",
+        "Recognize when the correct answer is to stop and escalate"
+      ],
+      "sections": [
+        {
+          "heading": "Hazard versus risk",
+          "body": "Voltage, prospective fault current, exposure conditions, equipment condition and work tasks influence electrical risk. Shock and arc-flash injuries arise through different mechanisms. A device or glove addressing one hazard does not automatically address all hazards. PPE is a residual-risk control, not a replacement for an appropriate safety program."
+        },
+        {
+          "heading": "What qualified means",
+          "body": "OSHA 1910.332 specifies training associated with work assignments and additional competencies for qualified persons. Playing through this module, passing its exam or knowing a wiring symbol cannot establish training on a specific employer system, authorization, or safe-work competence."
+        },
+        {
+          "heading": "Risk and human behavior",
+          "body": "Good industrial training includes pre-job planning, work scope, distractions, unexpected changes, poor documentation and error traps. A competent learner should be praised for declining a task with missing data or an unsafe condition rather than being penalized for not improvising."
+        },
+        {
+          "heading": "Edition- and jurisdiction-aware references",
+          "body": "NFPA 70E is a framework for workplace electrical safety practices; OSHA regulations are enforceable legal requirements in applicable jurisdictions. NEC/NFPA 70 concerns installation and NFPA 79 industrial machinery equipment; neither is interchangeable with 70E. Adopted editions can differ from latest publications."
+        }
+      ],
+      "workedExample": {
+        "problem": "A fictional tech has dielectric gloves but no risk assessment and is asked to open a cabinet. Does having gloves establish the entire job is safe?",
+        "solution": "No. Gloves address specific exposure only when appropriate, inspected, rated and correctly used. The task requires a properly evaluated work plan and authorized qualified personnel.",
+        "interpretation": "Never offer automatic PPE selection for real energized tasks from a fictional score or nominal voltage alone."
+      },
+      "commonMisconception": {
+        "claim": "\"Passing an electrical app makes me qualified.\"",
+        "correction": "Competence and authorization depend on actual training, tasks, workplaces and employer procedures. The app issues educational badges only."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "What should happen when the work scope is unknown?",
+          "choices": [
+            "Pause and clarify with the responsible person",
+            "Pick a common PPE level",
+            "Proceed if wearing gloves"
+          ],
+          "correctIndex": 0,
+          "explanation": "Incomplete scope is a stop-and-clarify condition."
+        },
+        {
+          "question": "Does electrical training in an app provide workplace authorization?",
+          "choices": [
+            "No",
+            "Yes, after 90% score",
+            "Yes, if repeated twice"
+          ],
+          "correctIndex": 0,
+          "explanation": "Educational progress is not employer-authorized qualification."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "In a virtual job briefing, identify which missing facts block proceeding.",
+        "expectedReasoning": "Identify role/qualification, approved scope, sources, applicable procedure and changing site conditions.",
+        "safetyGate": "Do not simulate field energized-work approval."
+      },
+      "referenceIds": [
+        "OSHA-1910-332",
+        "OSHA-1910-335",
+        "NFPA-70E"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-met-01",
+      "title": "Multimeters: Function, Reference, and Interpretation",
+      "track": "METER USE",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Explain what a meter actually compares",
+        "Interpret open-circuit, floating and misleading readings",
+        "Recognize instrument-rating and condition boundaries"
+      ],
+      "sections": [
+        {
+          "heading": "A voltmeter reports a difference",
+          "body": "A voltmeter senses electrical potential difference between two probe points, not an intrinsic voltage of a single terminal. Without a meaningful reference, a reading may mislead. Different measurement modes apply different internal circuits; a resistance or continuity display is not interchangeable with a voltage measurement."
+        },
+        {
+          "heading": "Loading changes the measured system",
+          "body": "Most digital multimeters have high input impedance, which minimizes loading but can show capacitively coupled or floating voltages in some situations. Low-impedance functions may help qualified persons investigate such phenomena when appropriate, but a disappearing display never independently proves absence of hazardous energy."
+        },
+        {
+          "heading": "Function and limits matter",
+          "body": "Instrument input jacks, leads, fusing, measurement category, environment, and waveform capability matter. A meter suited for low-voltage bench electronics is not automatically suitable for an industrial distribution cabinet. True-RMS labeling does not imply every frequency, PWM waveform or transient is covered."
+        },
+        {
+          "heading": "Interpret findings cautiously",
+          "body": "A simulated OL display in resistance mode can represent an open condition or a value beyond the selected range. Continuity beeps depend on device-specific thresholds. A dark pilot lamp, missing HMI value, or unexpected reading is a clue to test against the actual circuit model, not an instruction to replace the most visible part."
+        }
+      ],
+      "workedExample": {
+        "problem": "A fictional 24 Vdc circuit shows 24.1 V between supply and return; 0.1 V between return and a second return point. What do the numbers establish?",
+        "solution": "Only those point-to-point differences under the model conditions. Neither value validates grounding, energization status of unrelated conductors, or electrical safety for field work.",
+        "interpretation": "A correct numerical reading must always be interpreted within a declared reference and measurement function."
+      },
+      "commonMisconception": {
+        "claim": "\"A meter beep means the whole component is good.\"",
+        "correction": "A continuity tone detects a condition under that meter setting; it does not verify component performance under rated load, correct polarity or safety."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "What does a voltage reading describe?",
+          "choices": [
+            "Potential difference between selected nodes",
+            "A permanent voltage stored at one node",
+            "Absence of arc-flash risk"
+          ],
+          "correctIndex": 0,
+          "explanation": "Voltage always depends on two reference points."
+        },
+        {
+          "question": "What does a dark lamp prove?",
+          "choices": [
+            "Only that the lamp is not visibly lit",
+            "All supplies are disconnected",
+            "All load contacts are open"
+          ],
+          "correctIndex": 0,
+          "explanation": "Indicators are not absence-of-energy verification devices."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Choose measurement function, two nodes and the expected virtual reading before revealing the instrument.",
+        "expectedReasoning": "Explain path, reference, ideal device loading and uncertainties; block incompatible function states.",
+        "safetyGate": "Virtual meter only; no instructions to probe exposed live industrial conductors."
+      },
+      "referenceIds": [
+        "OSHA-1910-334",
+        "OSHA-1910-333"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-fun-01",
+      "title": "Series, Parallel, Ohm Law and Power",
+      "track": "FUNDAMENTALS",
+      "level": "foundation",
+      "estimatedMinutes": 18,
+      "objectives": [
+        "Apply Ohm law under clear assumptions",
+        "Distinguish series current from parallel voltage",
+        "Relate voltage drop to dissipation and failure mechanisms"
+      ],
+      "sections": [
+        {
+          "heading": "The complete current path",
+          "body": "A circuit requires a source, a return path and a load model. In series, ideal components carry equal current and their resistance adds. In parallel, ideal branches share the same voltage and their individual currents add at the junction. An open anywhere in a series path can stop current through that path."
+        },
+        {
+          "heading": "Ohm law is not a universal equipment model",
+          "body": "V = I × R is appropriate for ohmic elements under assumed conditions. Contactors, diodes, motors, capacitors and inductors have behavior that cannot be summarized by one constant resistance. State whether figures are DC, steady-state AC, effective values or transient quantities."
+        },
+        {
+          "heading": "Heat is connected to current",
+          "body": "Resistive heating is P = I²R = VI = V²/R for an ohmic element. Small unexpected contact resistance may dissipate meaningful energy at elevated current. That does not mean a student should measure a suspected damaged live termination."
+        },
+        {
+          "heading": "Voltage drop can tell several stories",
+          "body": "Drop is not automatically a defect: loads require voltage and wires and contacts have some impedance. Unexpected distribution of drop across the virtual circuit motivates asking whether the actual wiring matches the schematic, whether the connection is degraded, or whether the load condition has changed."
+        }
+      ],
+      "workedExample": {
+        "problem": "An ideal 24 Vdc source powers series resistors of 4 Ω and 8 Ω. Find current and each resistor drop.",
+        "solution": "Rtotal = 12 Ω; I = 24/12 = 2 A; V4 = 2×4 = 8 V; V8 = 2×8 = 16 V; 8+16 = 24 V. Total load power is 48 W.",
+        "interpretation": "All values are mathematical examples, not recommended wiring or component ratings."
+      },
+      "commonMisconception": {
+        "claim": "\"All current flows through the component with the lowest resistance in parallel.\"",
+        "correction": "Each parallel branch receives current according to its impedance; none necessarily carries all the current."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Two resistors in series have 3 Ω and 7 Ω. Their total is:",
+          "choices": [
+            "10 Ω",
+            "4 Ω",
+            "21 Ω"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ideal series resistances add."
+        },
+        {
+          "question": "At fixed R, doubling current changes I²R heating to:",
+          "choices": [
+            "Four times",
+            "Twice",
+            "Half"
+          ],
+          "correctIndex": 0,
+          "explanation": "Power depends on the square of current."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Vary a virtual series resistance and predict branch voltage and power.",
+        "expectedReasoning": "Calculate before revealing simulation and explain limitations of an ideal linear element.",
+        "safetyGate": "Do not translate the numerical example into equipment modification advice."
+      },
+      "referenceIds": [],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-fun-02",
+      "title": "AC Fundamentals and Three-Phase Power",
+      "track": "FUNDAMENTALS",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Explain RMS and AC phase relationships",
+        "Distinguish line-to-line and line-to-neutral quantities",
+        "Calculate ideal balanced three-phase power"
+      ],
+      "sections": [
+        {
+          "heading": "AC waveform and RMS",
+          "body": "Alternating voltage and current vary with time. For a pure sine wave, RMS magnitude is peak divided by √2. RMS is used to compare heating impact with DC for a resistive load, but peak and transient behavior still matter for insulation, devices and measurement."
+        },
+        {
+          "heading": "Three-phase relationships",
+          "body": "Balanced three-phase supplies have three sinusoids displaced by 120 electrical degrees. In a balanced wye-connected system, magnitude of line-to-line voltage is √3 times the line-to-neutral magnitude. Delta has a different relationship for phase and line currents. Do not treat every system labeled 480 V as having an accessible neutral."
+        },
+        {
+          "heading": "Real, reactive and apparent power",
+          "body": "For balanced sinusoidal three-phase conditions, apparent power S = √3 × VLL × IL, real power P = √3 × VLL × IL × power factor, and reactive power relates to the sine of the angle. Power factor and efficiency differ: a motor can consume more real input power than the mechanical output it provides."
+        },
+        {
+          "heading": "Faults and imbalance",
+          "body": "Phase loss, unbalanced voltages, unequal current, loose terminations and mechanical overload may produce overlapping symptoms. Current or voltage imbalance alone is not a diagnosis; compare operating conditions and manufacturer guidance. Electrical phase identification must be checked against controlled drawings, not assumed by wire color alone."
+        }
+      ],
+      "workedExample": {
+        "problem": "An ideal balanced 480 V line-to-line system carries 10 A per line at PF 0.8. Find real input power.",
+        "solution": "P = √3 × 480 × 10 × 0.8 ≈ 6,651 W (6.65 kW). Apparent power ≈ 8.31 kVA; the difference is not motor efficiency.",
+        "interpretation": "This equation assumes balanced sinusoidal three-phase operation and does not determine conductor or protection sizing."
+      },
+      "commonMisconception": {
+        "claim": "\"480 V three-phase means every wire-to-neutral reading is 277 V.\"",
+        "correction": "That is true only for the appropriate balanced 480Y/277 arrangement with the relevant neutral/reference; other systems differ."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Three-phase real power for balanced sinusoidal conditions also needs:",
+          "choices": [
+            "Power factor",
+            "Wire color",
+            "Motor brand"
+          ],
+          "correctIndex": 0,
+          "explanation": "Power factor determines the real fraction of apparent power."
+        },
+        {
+          "question": "Is power factor the same as motor efficiency?",
+          "choices": [
+            "No",
+            "Yes",
+            "Only at 60 Hz"
+          ],
+          "correctIndex": 0,
+          "explanation": "PF relates real/apparent electrical power; efficiency compares useful output to input."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Change virtual phase voltage, load current and PF; predict kW and kVA.",
+        "expectedReasoning": "Keep assumptions explicit and reject calculations with missing phase/reference definitions.",
+        "safetyGate": "No wiring decisions or live phase checks from educational calculations."
+      },
+      "referenceIds": [],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-dwg-01",
+      "title": "Reading Ladder and Cross-Reference Drawings",
+      "track": "PRINT READING",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Trace a circuit through documented paths",
+        "Distinguish symbol normal state from actual physical state",
+        "Follow coils, contacts, terminals and cross-references across sheets"
+      ],
+      "sections": [
+        {
+          "heading": "Read the drawing conventions first",
+          "body": "Industrial drawings can use NEMA and IEC conventions and company-specific symbols. The title block, drawing revision, notes and sheet index form part of the information. Rung coordinates and cross-references link functional relationships; a physical wiring diagram and a logic schematic answer different questions."
+        },
+        {
+          "heading": "A contact is not a wire",
+          "body": "Normally open and normally closed contact symbols usually depict their designated normal state, not the live state at this instant. A coil and its auxiliary contacts are functionally linked through a device, not electrically connected conductor-to-conductor merely because they share a designation."
+        },
+        {
+          "heading": "Conductors and terminals",
+          "body": "Trace from the source through protection, commands, permissives and load to return, using wire or terminal identifiers. Junction dots versus crossings without connection matter. Terminal blocks can be on separate drawings; assume nothing about wiring just because two lines nearly touch."
+        },
+        {
+          "heading": "Revision control is diagnostic evidence",
+          "body": "A wiring mismatch might be a field change, drawing error, wrong build revision, alternate BOM or undocumented repair. A responsible technician does not redraw a controlled schematic from imagination; the discrepancy must be recorded and resolved within the responsible engineering change process."
+        }
+      ],
+      "workedExample": {
+        "problem": "A cross-reference shows relay K2 contact on sheet 4/rung 6 controlled by coil K2 on sheet 1/rung 9. Does the drawing mean those two symbols share a conductor?",
+        "solution": "No. It identifies a device association. The contact changes state based on the relay condition, but its terminals belong to their own traced branch.",
+        "interpretation": "This distinction prevents fictitious shorts and misread fault trees."
+      },
+      "commonMisconception": {
+        "claim": "\"Normally closed on paper proves the actual contact is closed now.\"",
+        "correction": "Symbols normally reflect reference/design states; the actual device state depends on operation and condition."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Matching K2 labels on contact and coil indicate:",
+          "choices": [
+            "A shared device relationship",
+            "A mandatory copper jumper",
+            "A proven energized circuit"
+          ],
+          "correctIndex": 0,
+          "explanation": "Device tags cross-reference related components, not necessarily conductors."
+        },
+        {
+          "question": "An undocumented field change should be:",
+          "choices": [
+            "Recorded and reviewed against controlled revisions",
+            "Assumed acceptable if it works",
+            "Permanently ignored"
+          ],
+          "correctIndex": 0,
+          "explanation": "An unresolved mismatch is an engineering/document-control issue."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Trace a fictional motor starter across two sheets with a terminal strip and a missing wire tag.",
+        "expectedReasoning": "Cite exact connection IDs and mark where evidence is missing instead of inventing an answer.",
+        "safetyGate": "Printed drawing is not proof equipment is isolated."
+      },
+      "referenceIds": [
+        "NFPA-79",
+        "IEC-60204-1"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-mot-01",
+      "title": "Contactors and Three-Wire Holding Circuits",
+      "track": "MOTION",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Explain coil, power contacts and auxiliary contacts",
+        "Predict operation of a standard three-wire control scheme",
+        "Diagnose failure-to-seal versus failed load behavior"
+      ],
+      "sections": [
+        {
+          "heading": "Control and power are distinct circuits",
+          "body": "An electromechanical contactor uses a coil and mechanically linked contacts to control a load. Main contacts may switch motor power; auxiliary contacts can provide status or a holding path. Coil rated voltage, current characteristics and device ratings are not interchangeable with the load contact ratings."
+        },
+        {
+          "heading": "How holding works",
+          "body": "A typical conceptual three-wire arrangement has a normally closed STOP and overload permissive in series with the coil command path; momentary START and a normally open auxiliary holding contact provide alternate paths around START. When a healthy coil operates, the auxiliary closes and maintains the command when START is released."
+        },
+        {
+          "heading": "Normal no-voltage restart behavior",
+          "body": "If the model loses control supply, the coil and holding contact release. When power returns, a healthy conventional design remains off until a new START command. This illustrates why a maintained run command and a three-wire starter differ; machine restart design still needs a complete risk assessment."
+        },
+        {
+          "heading": "Symptom analysis",
+          "body": "No start may reflect absent supply, open stop/permissive, open coil, failed wiring, mechanical binding or a bad command. A contactor that pulls in only while START is held suggests a holding-path issue, but the student should prove that explanation against modeled measurements and contact states before naming a component."
+        }
+      ],
+      "workedExample": {
+        "problem": "The fictional coil energizes while START is held but drops out when START is released. Which part of the conceptual control logic is most suspect?",
+        "solution": "The self-holding/auxiliary path is a strong hypothesis, but the exercise requires verifying the modeled seal-in contact behavior and continuity of the parallel holding branch, rather than immediately replacing the contactor.",
+        "interpretation": "The quiz stays in a deenergized fictional model; it provides no real-machine jumper or bypass instructions."
+      },
+      "commonMisconception": {
+        "claim": "\"The contactor click proves the motor received full voltage.\"",
+        "correction": "A coil may operate without confirming each main pole, power feed or downstream motor condition."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "What keeps a conventional three-wire starter energized after START is released?",
+          "choices": [
+            "The contactor auxiliary seal-in path",
+            "The START button itself",
+            "A permanent PLC safety override"
+          ],
+          "correctIndex": 0,
+          "explanation": "The auxiliary contact parallels the momentary START path."
+        },
+        {
+          "question": "What happens after loss and restoration of control power in this model?",
+          "choices": [
+            "New START required",
+            "Automatic restart required",
+            "Coil remains mechanically latched"
+          ],
+          "correctIndex": 0,
+          "explanation": "The modeled holding contact releases on supply loss, preventing spontaneous self-restart."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Observe the virtual coil, auxiliary and main contacts under START, STOP and control-supply loss.",
+        "expectedReasoning": "Predict each transition before pressing simulation controls, including a faulted auxiliary.",
+        "safetyGate": "Prohibit field bypass of overload, stop or safety device."
+      },
+      "referenceIds": [
+        "NFPA-79",
+        "IEC-60204-1"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-mot-02",
+      "title": "Motor Overloads, Fault Protection and Coordination",
+      "track": "MOTION",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Differentiate thermal overload from short-circuit protection",
+        "Explain trip state versus root cause",
+        "Recognize why device selection requires system data"
+      ],
+      "sections": [
+        {
+          "heading": "Protection has multiple jobs",
+          "body": "Motor overload protection addresses overheating associated with sustained excessive current or other motor operating conditions. Short-circuit and ground-fault protection address different hazards and duty. A motor starter may use distinct devices in a coordinated arrangement, not one magic protective element."
+        },
+        {
+          "heading": "Trips are observations",
+          "body": "An opened overload auxiliary may prevent a starter coil from energizing. A trip flag is not proof the overload itself is defective. Mechanical binding, phase problems, wiring defects, ambient conditions, device mismatch or a different historical trip can produce related symptoms."
+        },
+        {
+          "heading": "Sizing is conditional",
+          "body": "Motor ratings, supply characteristics, duty, service factor, device characteristics and applicable standards and manufacturer instructions affect the protection scheme. Do not teach a universal percent for every overload adjustment or a formula that automatically selects fuses, cable or breakers."
+        },
+        {
+          "heading": "Diagnosis includes cause elimination",
+          "body": "Resetting repeatedly can erase clues and cause additional stress. The learning task should track time, condition, thermal history and associated event records, and should reward escalation when evidence or required approvals are missing. Students should also compare protection events against mechanical and electrical trends rather than drawing a conclusion from one isolated status."
+        }
+      ],
+      "workedExample": {
+        "problem": "A virtual starter flags overload and will not start. Does that identify a failed overload device?",
+        "solution": "No. The overload flag explains the control permissive state in this model; the underlying cause needs separate evidence. The proper teaching response is to investigate recorded load and fault conditions, not indiscriminately reset.",
+        "interpretation": "No live overload setting instructions or recommendations to repeatedly reset a tripped physical device."
+      },
+      "commonMisconception": {
+        "claim": "\"Overload relay and branch breaker do the same job.\"",
+        "correction": "They typically address distinct protective functions; actual combinations and permitted applications require verified documentation."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "An overload trip by itself proves:",
+          "choices": [
+            "The trip state, not necessarily the root cause",
+            "The motor is defective",
+            "The overload must be replaced"
+          ],
+          "correctIndex": 0,
+          "explanation": "A trip signal is an observation to be explained."
+        },
+        {
+          "question": "Should an app pick one universal overload percentage?",
+          "choices": [
+            "No; exact selection depends on conditions",
+            "Yes; 100% in all cases",
+            "Yes; 150% in all cases"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sizing and settings depend on equipment and applicable instructions."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Compare a virtual trip log, nameplate and mechanical-load narrative.",
+        "expectedReasoning": "Distinguish evidence for phase imbalance, load stress, misconfiguration and nuisance-trip hypotheses.",
+        "safetyGate": "No suggestion to defeat or increase protection settings."
+      },
+      "referenceIds": [
+        "OSHA-1910-303",
+        "NFPA-70",
+        "NFPA-79"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-mot-03",
+      "title": "Reversing Starters, Interlocks, and Permissives",
+      "track": "MOTION",
+      "level": "advanced",
+      "estimatedMinutes": 30,
+      "objectives": [
+        "Model direction control in three-phase motors",
+        "Explain electrical versus mechanical interlock concepts",
+        "Differentiate a permissive from a safety function"
+      ],
+      "sections": [
+        {
+          "heading": "Direction reversal is a system behavior",
+          "body": "In a conceptual three-phase induction motor, exchanging two phase relationships changes the rotating field direction. A reversing starter uses forward and reverse switching arrangements, but actual mechanical loads, stopping time and interlock requirements affect whether direction changes are permitted."
+        },
+        {
+          "heading": "Why interlock?",
+          "body": "Two opposing contactor states must not be applied in combinations that produce incompatible power connections. Electrical interlocks use auxiliary contact feedback in command logic; mechanical interlocks physically constrain two mechanisms. Neither should be assumed perfect without defined failure modes and the complete design."
+        },
+        {
+          "heading": "Control permissives versus safety",
+          "body": "Limit switches, timers and control relays may restrict direction change for normal operations. A machine safety function requires its own risk assessment, architecture, diagnostics and validation. A software boolean labeled safe is not equivalent to a validated safety-related control subsystem."
+        },
+        {
+          "heading": "Troubleshooting the state chain",
+          "body": "If the reverse command is rejected, investigate the model state: stop confirmed? opposite-direction contactor feedback? limit position? missing command? An operator interface message should be correlated with component state before claiming a contact has welded or a sensor failed."
+        }
+      ],
+      "workedExample": {
+        "problem": "A virtual reversing system rejects REVERSE while the FWD auxiliary feedback is active. Is this necessarily a failed reverse contactor?",
+        "solution": "No. The model may be correctly enforcing an interlock. Students should separate an intended logic block from actual component malfunction.",
+        "interpretation": "Never instruct bypassing real interlocks to make a motor run."
+      },
+      "commonMisconception": {
+        "claim": "\"If the PLC command is OFF, both reversing poles are guaranteed open.\"",
+        "correction": "Controller outputs do not independently prove the physical states of power contacts."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Why is opposing-direction overlap undesirable?",
+          "choices": [
+            "It can create incompatible switching and fault conditions",
+            "It always improves braking",
+            "It removes overload risk"
+          ],
+          "correctIndex": 0,
+          "explanation": "Opposing contactor combinations can create severe power-circuit faults."
+        },
+        {
+          "question": "A rejected reverse command always means:",
+          "choices": [
+            "It might be intentional interlocking",
+            "A bad motor",
+            "A failed reverse coil"
+          ],
+          "correctIndex": 0,
+          "explanation": "First distinguish designed permissives from faults."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Use only virtual buttons to follow FWD, stop, and REV state transitions.",
+        "expectedReasoning": "Explain why the simulated interlock blocked a contradictory command.",
+        "safetyGate": "Do not create bypass tasks on physical equipment."
+      },
+      "referenceIds": [
+        "NFPA-79",
+        "IEC-60204-1",
+        "ISO-13849-1"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-pan-01",
+      "title": "Bonding, Grounding, and Current Return",
+      "track": "PANEL BUILD",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Differentiate grounded conductors from equipment grounding paths",
+        "Identify bonding purpose and fault-current path concept",
+        "Interpret why labels and colors do not guarantee a path"
+      ],
+      "sections": [
+        {
+          "heading": "What these terms mean",
+          "body": "A grounded circuit conductor such as a neutral may intentionally carry normal load current. An equipment grounding conductor and bonded metal enclosures are generally part of a fault-current return path intended to help protective devices operate. These functions are not interchangeable in typical industrial applications."
+        },
+        {
+          "heading": "Bonding reduces dangerous differences",
+          "body": "Properly installed bonding joins exposed conductive parts into the intended protective system. Paint, corrosion, flexible hinges, removable doors, contact surfaces and missing components can affect continuity. A visible green wire alone is not proof the completed protective path is effective."
+        },
+        {
+          "heading": "Fault current and protection",
+          "body": "Protective bonding is part of the electrical installation and must be considered together with source characteristics and protective devices. The earth is not a reliable substitute for a deliberately designed equipment grounding path. Ground faults can exist even while equipment appears to function normally."
+        },
+        {
+          "heading": "Real systems have rules and exceptions",
+          "body": "Neutral and grounding conductor separation, permitted bonds, separately derived sources and specialized systems depend on location and system design. Do not teach simple color-only decisions or instruct students to connect neutral and chassis for the sake of an example."
+        }
+      ],
+      "workedExample": {
+        "problem": "A fictional control cabinet has a painted removable door and its bonding record is missing. Can inspection release it on the basis of green insulation color?",
+        "solution": "No. Color and appearance are not sufficient to establish an approved grounding/bonding installation. The inspector should record an unresolved protective-path issue.",
+        "interpretation": "Do not provide live grounding continuity procedures or universal bonding-jumper sizing."
+      },
+      "commonMisconception": {
+        "claim": "\"Neutral and protective ground are the same wire.\"",
+        "correction": "Their functions are distinct, and permitted connections depend on the specified system and installation rules."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Is a green wire alone proof of acceptable protective bonding?",
+          "choices": [
+            "No",
+            "Yes",
+            "Only for 24 V systems"
+          ],
+          "correctIndex": 0,
+          "explanation": "Actual protective-path integrity requires appropriate design and verification."
+        },
+        {
+          "question": "Why is earth not treated as a universal fault return?",
+          "choices": [
+            "Because a designed effective path is needed",
+            "Because current cannot flow through soil",
+            "Because motors use AC"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reliable protective operation needs the prescribed circuit path."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Spot incomplete bonding documentation in a fictional panel inspection.",
+        "expectedReasoning": "Identify absent plans, incompatible markings, damaged paths and evidence gaps.",
+        "safetyGate": "Inspection training only; no approval to energize real panel."
+      },
+      "referenceIds": [
+        "OSHA-1910-304",
+        "NFPA-70",
+        "NFPA-79"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-pan-02",
+      "title": "Control Transformers and Separate Sources",
+      "track": "PANEL BUILD",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Explain transformer turns ratio and efficiency",
+        "Identify separate primary and secondary protective questions",
+        "Recognize dangerous assumptions about isolated secondaries"
+      ],
+      "sections": [
+        {
+          "heading": "Magnetic induction",
+          "body": "A transformer transfers alternating-current energy between windings through varying magnetic flux. For an ideal transformer, Vp/Vs = Np/Ns and input power approximately equals output power. Real transformers have core and copper loss, impedance, thermal limits and different ratings."
+        },
+        {
+          "heading": "Secondary is still a source",
+          "body": "A control transformer changes circuit voltage but does not make all downstream conductors automatically harmless. Depending on system grounding, secondary configurations, multiple transformers and supplemental supplies, a cabinet can contain energized parts even when one upstream feeder is opened."
+        },
+        {
+          "heading": "Protection is a design question",
+          "body": "Primary and secondary protective arrangements depend on the specific transformer, conductors, system, available fault current and applicable standards. A diagram showing only an ideal ratio omits these engineering constraints. Teach the learner to consult device documentation rather than assign arbitrary protection sizes."
+        },
+        {
+          "heading": "Loss and defect signatures",
+          "body": "A missing virtual secondary voltage could result from absent primary supply, an open protective device, a failed transformer or downstream conditions. One dark indicator does not identify which section is at fault; the instructional model should show independent evidence for each branch."
+        }
+      ],
+      "workedExample": {
+        "problem": "An ideal control transformer changes 480 Vac to 120 Vac and supplies 120 VA. What secondary current corresponds to full rated apparent load?",
+        "solution": "I = 120 VA / 120 V = 1 A ideal secondary; input current near 120 VA/480 V = 0.25 A ignoring losses. VA is apparent power, not necessarily real output watts.",
+        "interpretation": "This does not select actual transformer or protective devices."
+      },
+      "commonMisconception": {
+        "claim": "\"The 120 V control secondary is always isolated from every other reference.\"",
+        "correction": "Transformer construction and grounding configuration are equipment-specific; do not infer safe states from the ideal symbol."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "An ideal transformer primarily changes:",
+          "choices": [
+            "Voltage/current relationship via turns ratio",
+            "AC into DC",
+            "Frequency in the ordinary power transformer"
+          ],
+          "correctIndex": 0,
+          "explanation": "The turns ratio governs ideal voltage ratio."
+        },
+        {
+          "question": "A dark control lamp identifies which failed part?",
+          "choices": [
+            "Not enough evidence",
+            "The transformer",
+            "The primary breaker"
+          ],
+          "correctIndex": 0,
+          "explanation": "A failed indication is compatible with several path faults."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Trace a fictional 480-to-120-V control-power block diagram.",
+        "expectedReasoning": "List primary and secondary states independently; locate alternate supplies.",
+        "safetyGate": "No live transformer terminal test instructions."
+      },
+      "referenceIds": [
+        "OSHA-1910-303",
+        "NFPA-70",
+        "NFPA-79"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-pan-03",
+      "title": "Industrial Control Panels, SCCR, and Documentation",
+      "track": "PANEL BUILD",
+      "level": "advanced",
+      "estimatedMinutes": 30,
+      "objectives": [
+        "Understand panel SCCR versus interruption ratings",
+        "Check basic equipment identification and documentation completeness",
+        "Explain why a complete panel must be evaluated as a system"
+      ],
+      "sections": [
+        {
+          "heading": "Panel ratings are not decorative",
+          "body": "An industrial control panel includes enclosure, devices, conductors, interfaces and protective arrangements. Marked voltage, current, environmental ratings, available-fault-current considerations and short-circuit current rating (SCCR) are separate pieces of information. A component with a high isolated rating does not automatically establish the assembly rating."
+        },
+        {
+          "heading": "SCCR versus interrupting rating",
+          "body": "Interrupting ratings apply to protective devices that must interrupt faults; SCCR represents the withstand suitability of an assembly under defined short-circuit conditions. These are related but not interchangeable. UL 508A and NEC Article 409 are relevant to industrial control panels; manufacturer instructions and the specific edition matter."
+        },
+        {
+          "heading": "Fitting and assembly",
+          "body": "Wire size and insulation, terminal compatibility, protective covers, segregation, label legibility, grounding, torque documentation, equipment spacing and enclosure conditions can be reviewed as evidence. A teaching photo alone cannot establish unseen terminations or compliance. Supporting records and system information are necessary before any acceptance decision."
+        },
+        {
+          "heading": "Acceptance is a controlled decision",
+          "body": "Build records should distinguish observed pass conditions, unresolved defects and scope boundaries. The application should let the learner request missing vendor data and say \"not enough evidence\" rather than force every record to a pass/fail based on guesswork."
+        }
+      ],
+      "workedExample": {
+        "problem": "A fictitious panel has an SCCR marking of 5 kA and the site document lists 18 kA available fault current. Is appearance-based release appropriate?",
+        "solution": "No. The numerical mismatch is an unresolved system protection issue requiring competent engineering review, not permission to increase a device setting or substitute an arbitrary breaker.",
+        "interpretation": "No design sizing or field modifications are prescribed."
+      },
+      "commonMisconception": {
+        "claim": "\"A 65 kA circuit breaker makes the entire panel 65 kA SCCR.\"",
+        "correction": "Assembly ratings have defined determination rules and component conditions; the breaker rating alone is insufficient."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "What does SCCR concern?",
+          "choices": [
+            "Assembly suitability under specified short-circuit conditions",
+            "How fast a PLC scans",
+            "Motor efficiency"
+          ],
+          "correctIndex": 0,
+          "explanation": "SCCR concerns fault withstand suitability under specified conditions."
+        },
+        {
+          "question": "What is the correct result for missing documentation?",
+          "choices": [
+            "Hold and request evidence",
+            "Assume vendor approval",
+            "Guess based on color"
+          ],
+          "correctIndex": 0,
+          "explanation": "Absence of critical evidence is an unresolved acceptance state."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Inspect a fictional build packet for nameplate, SCCR, component ratings, revisions and missing vendor information.",
+        "expectedReasoning": "Produce a punch list: verified, unverified, nonconforming, and escalation required.",
+        "safetyGate": "No automatic certified-compliance claim."
+      },
+      "referenceIds": [
+        "UL-508A",
+        "NFPA-70",
+        "NFPA-79",
+        "OSHA-1910-303"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-sen-01",
+      "title": "24 Vdc Sensors: PNP, NPN, Inputs and Commons",
+      "track": "SENSORS",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Understand sourcing and sinking interfaces",
+        "Identify why input-common configuration matters",
+        "Distinguish a sensor LED from receiving-device evidence"
+      ],
+      "sections": [
+        {
+          "heading": "Output logic versus device behavior",
+          "body": "A DC proximity sensor may detect metal without contact, but its electrical output depends on model, supply, target distance and wiring. PNP and NPN describe common sourcing/sinking output approaches; the receiving input architecture must be compatible. An LED on a sensor tells a limited story."
+        },
+        {
+          "heading": "The reference is essential",
+          "body": "A digital input detects a voltage/current relationship relative to its configured common. An incorrectly referenced input can look dead even when the sensor indicator lights. Teach connection compatibility conceptually through virtual devices with exposed input/output parameters."
+        },
+        {
+          "heading": "Two-wire and three-wire differences",
+          "body": "Some sensors use two-wire connections in series with a load and can have off-state leakage or minimum-current limits. Three-wire electronic sensors typically use distinct supply/return/output conductors. They are not interchangeable because the connectors look similar."
+        },
+        {
+          "heading": "Noise and reliability",
+          "body": "Cable routing, voltage drop, shielding, environment, target characteristics and intermittent connector faults matter. Rapid flicker or momentary detection should be interpreted in context rather than patched with an arbitrary debounce delay or a bypassed guard."
+        }
+      ],
+      "workedExample": {
+        "problem": "A simulated PNP sensor indicator turns on, but the PLC input remains false. Does that conclusively prove a failed PLC input?",
+        "solution": "No. Output type, input common, supply reference, configuration and path continuity remain possible issues in the hypothetical model. The learner should look at virtual circuit states and documentation.",
+        "interpretation": "Do not advise bridging sensor or safety-input conductors on real machinery."
+      },
+      "commonMisconception": {
+        "claim": "\"A glowing sensor indicator proves the PLC received the signal.\"",
+        "correction": "Local indication is not end-to-end signal validation."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "What is important for sensor-to-input compatibility?",
+          "choices": [
+            "Output architecture and input common",
+            "The LED color only",
+            "The label font"
+          ],
+          "correctIndex": 0,
+          "explanation": "Input polarity/reference and sensing device architecture must match."
+        },
+        {
+          "question": "What does an input bit OFF demonstrate?",
+          "choices": [
+            "A logical observed state, not a unique root cause",
+            "A failed sensor",
+            "A bad PLC in every case"
+          ],
+          "correctIndex": 0,
+          "explanation": "One bit can be false for several different physical and configuration reasons."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Match fictional sensor output types to compatible virtual input cards.",
+        "expectedReasoning": "Predict the input state under detection and open-wire fault conditions.",        "safetyGate": "Ordinary automation practice only; no defeating machine safety inputs."
+      },
+      "referenceIds": [
+        "IEC-60204-1",
+        "ISO-13849-1"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-sen-02",
+      "title": "4–20 mA: Scaling, Open Wires and Misleading Values",
+      "track": "SENSORS",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Map a 4–20 mA signal to an engineering range",
+        "Explain live zero and common loop failure modes",
+        "Separate signal values from proof of process state"
+      ],
+      "sections": [
+        {
+          "heading": "The signal carries information",
+          "body": "A transmitter may represent process variables such as pressure, temperature or position using a 4–20 mA current loop. Four milliamps commonly corresponds to the configured lower range and 20 mA to the upper range. The exact interpretation, fault signaling, power topology and scaling must come from configuration and equipment documentation."
+        },
+        {
+          "heading": "Linear scaling",
+          "body": "For a linearly configured 4–20 mA signal, the normalized fraction is (I−4)/16, with I in mA. A 12 mA modeled signal represents 50% of span. Applied to a 0–100 unit fictional transmitter, that is 50 units. A change of instrument range without updating PLC scaling can create a believable but incorrect displayed value."
+        },
+        {
+          "heading": "Current and voltage views",
+          "body": "A device with a known 250 Ω burden would generate about 1 V at 4 mA and 5 V at 20 mA by Ohm law. That relationship applies only when the circuit truly has that burden and topology; arbitrary terminals or undocumented device input resistances make the shortcut invalid."
+        },
+        {
+          "heading": "Failure states and physical truth",
+          "body": "A loop at 0 mA could be an open circuit, missing supply or other failure rather than a true zero-process reading. Out-of-range currents can serve as configured fault indications; their meaning differs by device. A healthy indicated process value does not replace independent safeguards or a validated safety function."
+        }
+      ],
+      "workedExample": {
+        "problem": "A virtual pressure transmitter spans 0–200 psi and sends 12 mA with ideal linear scaling. What display is expected?",
+        "solution": "(12−4)/16 = 0.5 of span; 0 + 0.5×200 = 100 psi. This is the simulated process value, not proof actual pressure is safe or that a safety device has operated.",
+        "interpretation": "Shows the difference between mathematical indication and hazardous-energy verification."
+      },
+      "commonMisconception": {
+        "claim": "\"4 mA means a dead process or broken loop.\"",
+        "correction": "Four milliamps is commonly the configured live-zero end of span; loss-of-loop may produce another condition."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "For a 0–100 unit linear 4–20 mA range, 12 mA maps to:",
+          "choices": [
+            "50 units",
+            "12 units",
+            "75 units"
+          ],
+          "correctIndex": 0,
+          "explanation": "12 mA is 8 mA over the 4 mA lower span, exactly half the 16 mA range."
+        },
+        {
+          "question": "0 mA from a loop definitely means the process is at zero?",
+          "choices": [
+            "No",
+            "Yes",
+            "Only on weekends"
+          ],
+          "correctIndex": 0,
+          "explanation": "An open wire or supply issue can prevent a meaningful process signal."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Scale 4, 12 and 20 mA in a purely virtual process loop with configurable engineering range and fault flag.",
+        "expectedReasoning": "Show calculations, separate indicated value and validity, and check configuration.",
+        "safetyGate": "Do not suggest instrument connections on energized process equipment."
+      },
+      "referenceIds": [
+        "OSHA-1910-334"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-mot-04",
+      "title": "Induction Motor Nameplates, Slip and Loads",
+      "track": "MOTION",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Explain poles, frequency and synchronous speed",
+        "Calculate slip without diagnosing from RPM alone",
+        "Interpret motor nameplate as a rated condition"
+      ],
+      "sections": [
+        {
+          "heading": "Rotating field and speed",
+          "body": "The magnetic field synchronous speed in RPM is 120×frequency÷pole count. A 4-pole 60 Hz induction motor has a 1,800 RPM field. Its rotor runs slower in normal motoring operation: the relative motion provides induction and torque production."
+        },
+        {
+          "heading": "What slip measures",
+          "body": "Slip is (Ns−Nr)/Ns, expressed as a fraction or percent under the operating assumption. Higher load can change slip, but cooling, thermal limits, efficiency, current and actual characteristics matter. A speed value by itself rarely identifies the root of an industrial machine fault."
+        },
+        {
+          "heading": "Nameplate context",
+          "body": "Rated voltage, phase, current, frequency, speed, power, duty, insulation, service-factor markings and connection diagrams describe specified conditions. Nameplates do not report present load or prove that a motor is free to turn. Motor frame size does not ensure identical electrical characteristics."
+        },
+        {
+          "heading": "Mechanical and electrical interactions",
+          "body": "Bearing friction, misalignment, driven-load torque, gearbox problems and phase issues can have related symptoms. A motor problem should not be treated as purely electrical or purely mechanical based on one warning message; safe diagnostics use all available evidence and relevant maintenance records."
+        }
+      ],
+      "workedExample": {
+        "problem": "A fictional four-pole 60 Hz motor rotates at 1,740 RPM. Find slip.",
+        "solution": "Ns = 120×60/4 = 1,800 RPM; slip = (1,800−1,740)/1,800 = 0.0333 = 3.33%. This alone is not proof of acceptable motor condition.",
+        "interpretation": "Slip depends on the model, supply and operating condition."
+      },
+      "commonMisconception": {
+        "claim": "\"A 1,740 RPM nameplate motor is defective because it is not at 1,800 RPM.\"",
+        "correction": "An induction rotor must have slip in normal motoring operation."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Synchronous RPM for four poles at 60 Hz:",
+          "choices": [
+            "1,800",
+            "3,600",
+            "1,200"
+          ],
+          "correctIndex": 0,
+          "explanation": "120×60/4 = 1,800 RPM."
+        },
+        {
+          "question": "The rotor of a normally motoring induction machine runs:",
+          "choices": [
+            "Below the synchronous rotating-field speed",
+            "At exactly zero slip",
+            "Always at 3,600 RPM"
+          ],
+          "correctIndex": 0,
+          "explanation": "Slip is part of ordinary induction-motor operation."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Adjust virtual pole count, frequency and rotor RPM to calculate slip.",
+        "expectedReasoning": "Explain why the simple equation is not a comprehensive health diagnosis.",
+        "safetyGate": "No live rotation or motor connection procedures."
+      },
+      "referenceIds": [],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-mot-05",
+      "title": "Variable Frequency Drives: Energy Path and STOP vs STO",
+      "track": "MOTION",
+      "level": "advanced",
+      "estimatedMinutes": 30,
+      "objectives": [
+        "Distinguish converter components and control functions",
+        "Explain why STOP and STO are not electrical isolation",
+        "Understand waveform measurement limitations and reset discipline"
+      ],
+      "sections": [
+        {
+          "heading": "How a common drive works",
+          "body": "A typical AC-input VFD rectifies input AC, uses a DC link and inverter stages to synthesize variable-frequency, variable-voltage motor output. Actual drives differ in filters, braking and converter design. Stored energy in the DC link may persist after input interruption; a dark display is not absence-of-energy evidence."
+        },
+        {
+          "heading": "Run command, trip and fault codes",
+          "body": "A false RUN bit, a commanded ramp stop, a safety stop and a protective trip are different machine states. A fault code provides a starting clue, not a conclusion. Context includes load, deceleration, motor settings, source conditions, process changes and fault history."
+        },
+        {
+          "heading": "Safe Torque Off limits",
+          "body": "When correctly implemented as part of a validated system, Safe Torque Off inhibits torque-producing drive power; it is not itself a disconnecting means or proof that electrical energy is absent. Loads can still move under gravity, inertia or external force. Holding brakes and restraints require their own assessments."
+        },
+        {
+          "heading": "Measurement and limits",
+          "body": "A PWM drive output is not simply a 60 Hz sine wave. Instrument bandwidth, waveform type and manufacturer measurement guidance affect interpretation. The app should never recommend generic motor-terminal measurements or DC bus discharge timing for actual equipment."
+        }
+      ],
+      "workedExample": {
+        "problem": "A virtual drive says STOP and zero output frequency. Can the trainee assert the simulated DC link has no stored energy?",
+        "solution": "No. Output state and DC-link energy state are separate. The simulation should represent residual energy as an independent element and reward a risk-aware conclusion.",
+        "interpretation": "No live drive probing, bypassing STO or generic bus-discharge waiting times."
+      },
+      "commonMisconception": {
+        "claim": "\"STO makes every connected conductor safe to touch.\"",
+        "correction": "STO controls torque generation; it is not isolation and does not guarantee stored energy discharge or mechanical restraint."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "What is the common functional energy path through a VFD?",
+          "choices": [
+            "Rectifier, DC link, inverter",
+            "Fuse, contactor, motor only",
+            "Sensor, PLC, lamp"
+          ],
+          "correctIndex": 0,
+          "explanation": "These are the functional converter stages for the common AC-input architecture."
+        },
+        {
+          "question": "Does a stopped drive prove its DC link is discharged?",
+          "choices": [
+            "No",
+            "Yes",
+            "Only on 60 Hz supplies"
+          ],
+          "correctIndex": 0,
+          "explanation": "Drive status does not independently establish an electrically safe condition."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Trace hypothetical input, DC link, inverter, run command and STO states on separate virtual indicators.",
+        "expectedReasoning": "State what each indicator can and cannot demonstrate; use no physical electrical test procedures.",
+        "safetyGate": "All drive tests simulation-only."
+      },
+      "referenceIds": [
+        "NFPA-70E",
+        "IEC-60204-1",
+        "ISO-13849-1"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-safe-03",
+      "title": "Emergency Stops and Safety-Related Controls",
+      "track": "SAFETY",
+      "level": "advanced",
+      "estimatedMinutes": 30,
+      "objectives": [
+        "Distinguish ordinary controls from safety functions",
+        "Explain why feedback, diagnostics and validation matter",
+        "Recognize E-stop limitations"
+      ],
+      "sections": [
+        {
+          "heading": "Safety functions have defined purpose",
+          "body": "An emergency stop is one possible safety function among others, such as protective interlocking, guard monitoring and prevention of unexpected startup. Each function needs its own risk assessment and design requirements. It must not be mistaken for an energy-isolating device or universal protection from every hazard."
+        },
+        {
+          "heading": "System design, not component marketing",
+          "body": "A safety relay, controller or drive function only contributes to safety performance as implemented with suitable sensors, logic, outputs, wiring, diagnostics, and verification. A part marked safety is not proof the complete system meets the required performance level or safety integrity."
+        },
+        {
+          "heading": "Feedback and failure modes",
+          "body": "A commanded output state may differ from actual contact motion. Monitoring may detect specific failures when suitably designed; it is not universal. Reset logic, fault latching, timing, feedback discrepancy and device diagnostics have to be evaluated in the context of the validated architecture."
+        },
+        {
+          "heading": "Stop and energy isolation differ",
+          "body": "E-stop actuation may stop driven motion while energized sections, pneumatics, gravity and drive energy remain. Returning an E-stop to a ready position should not be treated as automatic permission for hazardous restart. Clear the boundary between functional reset, production restart and servicing authorization."
+        }
+      ],
+      "workedExample": {
+        "problem": "A virtual press E-STOP makes the motor motion status zero, but the drive power input is still shown energized. Is this logically inconsistent?",
+        "solution": "Not necessarily. A stop function may suppress motion without providing electrical isolation. The simulation should display the functions separately.",
+        "interpretation": "No real safety circuit bypass, bridging or validation claims."
+      },
+      "commonMisconception": {
+        "claim": "\"Any dual-channel wiring automatically provides maximum safety performance.\"",
+        "correction": "System performance depends on architecture, diagnostics, components, installation, software and validation."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Is an E-stop a substitute for lockout/tagout?",
+          "choices": [
+            "No",
+            "Yes",
+            "Only with a PLC"
+          ],
+          "correctIndex": 0,
+          "explanation": "Emergency stopping and hazardous-energy control are separate duties."
+        },
+        {
+          "question": "A safety-related design is verified by:",
+          "choices": [
+            "System-level design and validation appropriate to the function",
+            "Component color",
+            "A green HMI icon"
+          ],
+          "correctIndex": 0,
+          "explanation": "A safety function is a validated system, not a decorative status."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Interpret a fictional E-stop and guard interlock state chart with discrepant contact feedback.",
+        "expectedReasoning": "Flag uncertain state and follow the fictional validated-system review path.",
+        "safetyGate": "Never teach defeating safeguards to continue production."
+      },
+      "referenceIds": [
+        "ISO-13849-1",
+        "IEC-60204-1",
+        "OSHA-1910-147"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-trb-01",
+      "title": "Troubleshooting: Evidence Before Replacement",
+      "track": "TROUBLESHOOTING",
+      "level": "foundation",
+      "estimatedMinutes": 18,
+      "objectives": [
+        "Distinguish symptoms, observations, and hypotheses",
+        "Form falsifiable predictions",
+        "Build and use a repeatable fault tree"
+      ],
+      "sections": [
+        {
+          "heading": "Symptoms are not failures",
+          "body": "\"Motor will not run\" is a symptom. \"Overload auxiliary contact open\" is an observed state. \"Motor bearings caused overload\" is a proposed root cause. Blurring these leads to unnecessary replacements and repeated failures. Students should label evidence strength for every statement."
+        },
+        {
+          "heading": "Information first",
+          "body": "Use the fictional work order, alarm history, drawing revision, parts records and environmental context. Ask what changed, when it occurs, and which systems are affected. Early effort should narrow the search without creating new hazards or altering multiple variables at once."
+        },
+        {
+          "heading": "Discriminating tests",
+          "body": "A good proposed check produces different expected results for competing hypotheses. For instance, a missing feedback signal may arise from the device, interface, configuration, cabling or a process condition. The learner should describe what each possible observation would mean before revealing a modeled value."
+        },
+        {
+          "heading": "Confirmation and handoff",
+          "body": "Restored operation is not identical to proven root cause. Record the intervention, controlled retest results, what remains uncertain, affected documents and follow-up conditions. Escalate if the proposed action changes protective systems, settings, interlocks or approved machine behavior."
+        }
+      ],
+      "workedExample": {
+        "problem": "A pilot light is dark. Possible hypotheses: failed lamp, absent lamp supply, commanded OFF state. Which first virtual record has the most value?",
+        "solution": "The schematic and commanded-state record locate the indicator path and distinguish a normal OFF command from an unexpected indication; a virtual voltage/path trace can then discriminate other causes.",
+        "interpretation": "Do not propose physical energized measurement until qualified site procedures establish a legitimate plan."
+      },
+      "commonMisconception": {
+        "claim": "\"Replacing the part that looks suspicious is troubleshooting.\"",
+        "correction": "Good diagnosis chooses evidence to separate plausible causes and then verifies the proposed explanation."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Which is a hypothesis?",
+          "choices": [
+            "A sensor cable is intermittently open",
+            "The display reads OFF",
+            "The operator reports delay"
+          ],
+          "correctIndex": 0,
+          "explanation": "A hypothesis proposes a causal explanation, while the others report states."
+        },
+        {
+          "question": "After restarting successfully, root cause is always confirmed?",
+          "choices": [
+            "No",
+            "Yes",
+            "Only after two tries"
+          ],
+          "correctIndex": 0,
+          "explanation": "A temporary recovery does not prove permanent root-cause elimination."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Choose two competing virtual diagnoses, predicted observations and an evidence collection plan.",
+        "expectedReasoning": "Award points for tests that can distinguish hypotheses and for documented uncertainty.",
+        "safetyGate": "No forced fault injection on actual plant equipment."
+      },
+      "referenceIds": [],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-trb-02",
+      "title": "Intermittent Faults, Trending, and Root-Cause Records",
+      "track": "TROUBLESHOOTING",
+      "level": "advanced",
+      "estimatedMinutes": 30,
+      "objectives": [
+        "Recognize intermittent fault signatures",
+        "Use trends and environmental context",
+        "Document containment versus corrective action"
+      ],
+      "sections": [
+        {
+          "heading": "The absence of a fault is not proof of health",
+          "body": "A once-per-shift problem may disappear during an afternoon inspection. Loose connections, vibration, temperature, moisture, electrical noise and timing interactions can produce sporadic observations. A clean single run provides limited evidence, not proof the original event was imaginary."
+        },
+        {
+          "heading": "Correlate records",
+          "body": "Useful fictional signals include timestamp, machine state, operating load, ambient temperature, vibration, supply trend, PLC inputs and alarms. Their logging intervals and time synchronization affect interpretation. A correlation can guide hypotheses while still falling short of causation."
+        },
+        {
+          "heading": "Containment is not corrective action",
+          "body": "A temporary operational workaround may control production impact but does not necessarily address the physical mechanism. Changing timers, increasing protection limits or bypassing sensors may hide the symptom while creating risk. Safety-related adjustments require responsible engineering validation."
+        },
+        {
+          "heading": "Evidence-based closure",
+          "body": "An 8D, QRQC or similar record should describe the symptom, scope, verified causal chain, action, verification window and remaining risk. Repeatability, conditions, and approved documentation revision help determine confidence. The app can grade explanatory quality and record management rather than reward speed alone."
+        }
+      ],
+      "workedExample": {
+        "problem": "In a virtual log, failures occur after an hour at high ambient temperature but not during short cool tests. Is heat proven the root cause?",
+        "solution": "No. The pattern makes thermal effects a good hypothesis to investigate, but another correlated process factor could explain the events. Longer observation and discriminating evidence are needed.",
+        "interpretation": "No advice to energize repeatedly just to reproduce faults."
+      },
+      "commonMisconception": {
+        "claim": "\"We ran three good cycles, so the intermittent fault is permanently solved.\"",
+        "correction": "A verification window should reflect failure frequency, conditions and remaining uncertainties."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "A repeatedly correlated condition is:",
+          "choices": [
+            "Evidence supporting a hypothesis, not proof alone",
+            "Final proof of root cause",
+            "Reason to defeat a protective device"
+          ],
+          "correctIndex": 0,
+          "explanation": "Correlation does not automatically identify mechanism."
+        },
+        {
+          "question": "A changed PLC delay in response to a safety-input fault should be:",
+          "choices": [
+            "Reviewed through required design and validation",
+            "Accepted automatically if it reduces downtime",
+            "Hidden from the record"
+          ],
+          "correctIndex": 0,
+          "explanation": "Changes to protection or safety behavior need formal review and validation."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Review a fictional week-long fault log and choose discriminating measurements and closeout evidence.",
+        "expectedReasoning": "Include uncertainty, verification limits and documentation update needs.",
+        "safetyGate": "No uncontrolled field fault reproduction."
+      },
+      "referenceIds": [
+        "NFPA-70B",
+        "ISO-13849-1"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-ref-01",
+      "title": "Standards, Manufacturer Data and Jurisdiction",
+      "track": "REFERENCE SKILLS",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Separate workplace rules from installation and equipment standards",
+        "Explain edition, adoption, and scope",
+        "Navigate primary sources without inventing requirements"
+      ],
+      "sections": [
+        {
+          "heading": "Not all standards do the same job",
+          "body": "OSHA electrical work-practice and hazardous-energy requirements regulate work in applicable workplaces. NFPA 70/NEC addresses installation; NFPA 70E addresses electrical safe-work practices; NFPA 79 addresses industrial machinery electrical equipment; NFPA 70B covers electrical maintenance. UL 508A relates to industrial panel construction and SCCR."
+        },
+        {
+          "heading": "Scope before citation",
+          "body": "IEC 60204-1 concerns machinery electrical equipment; ISO 13849-1 concerns safety-related parts of control systems. A title match does not establish that the document applies to a task, jurisdiction, equipment vintage or contractual scope. A standards answer should say what was checked and what remains unknown."
+        },
+        {
+          "heading": "Edition control",
+          "body": "As of October 2026, the publishers list NFPA 70 (2026), NFPA 70E (2027) and NFPA 70B (2026). Adopted codes may lag the publication edition, and some requirements apply by other legal or contractual pathways. An app must record a source edition and a verification date rather than silently present the newest publication as universally mandatory."
+        },
+        {
+          "heading": "Primary data and manufacturer authority",
+          "body": "Always distinguish regulation/standard, manufacturer instructions, internal approved procedures, training commentary and internet search results. When requirements conflict or critical details are missing, route for responsible review rather than picking the newest or easiest result. Copyrighted code text should be linked or summarized, not embedded verbatim."
+        }
+      ],
+      "workedExample": {
+        "problem": "A factory is in a jurisdiction that still references an older NEC edition. Does the newest 2026 edition automatically govern every existing installation?",
+        "solution": "No. Determine jurisdiction, adoption, application dates, applicable employer rules and task specifics. New publication and legal adoption are distinct matters.",
+        "interpretation": "App references support study and do not constitute legal compliance determination."
+      },
+      "commonMisconception": {
+        "claim": "\"NFPA 70E, NEC, and OSHA are interchangeable citations.\"",
+        "correction": "Each addresses a different function, and applicability must be independently evaluated."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "Where should a learner start when deciding which reference governs?",
+          "choices": [
+            "The task scope and jurisdiction",
+            "The newest-looking document cover",
+            "A search snippet alone"
+          ],
+          "correctIndex": 0,
+          "explanation": "Applicability comes before specific clause selection."
+        },
+        {
+          "question": "Does latest publication edition always mean locally adopted edition?",
+          "choices": [
+            "No",
+            "Yes",
+            "Only for electric motors"
+          ],
+          "correctIndex": 0,
+          "explanation": "Publishers can update faster than jurisdictions adopt."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Classify a fictional question as work practice, machinery electrical system, panel SCCR, or design standard.",
+        "expectedReasoning": "Explain why the chosen reference family fits and what details remain unknown.",
+        "safetyGate": "No claim of legal, regulatory, or certification approval."
+      },
+      "referenceIds": [
+        "OSHA-1910-147",
+        "OSHA-1910-333",
+        "NFPA-70",
+        "NFPA-70E",
+        "NFPA-70B",
+        "NFPA-79",
+        "UL-508A",
+        "IEC-60204-1",
+        "ISO-13849-1"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    },
+    {
+      "id": "deep-maint-01",
+      "title": "Preventive Electrical Maintenance and Records",
+      "track": "TROUBLESHOOTING",
+      "level": "intermediate",
+      "estimatedMinutes": 24,
+      "objectives": [
+        "Differentiate condition observation from corrective action",
+        "Identify documentation and trending needs",
+        "Explain the role of maintenance and manufacturer requirements"
+      ],
+      "sections": [
+        {
+          "heading": "Maintenance protects reliability and personnel",
+          "body": "Industrial electrical maintenance includes inspection, verification, evaluation and records appropriate to equipment and environmental conditions. NFPA 70B addresses electrical equipment maintenance. A one-size-fits-all calendar interval or a thermal image without context is not a sufficient complete maintenance program."
+        },
+        {
+          "heading": "Condition data requires context",
+          "body": "A temperature rise, odor, discoloration, failed relay, insulation trend or repeated nuisance trip can indicate deterioration. Interpretation depends on baseline, operating load, equipment type, environmental conditions, accuracy, and test method. Trends and inspection histories often contain more information than a single isolated number."
+        },
+        {
+          "heading": "Risk and authorization",
+          "body": "Electrical maintenance tasks may require qualified personnel, equipment-specific procedures and other protective controls. Thermal imaging or inspection exercises in the app should use fictional data sets and never make instrument access or energized exposure seem automatic."
+        },
+        {
+          "heading": "Documentation is a product",
+          "body": "Maintenance quality includes machine identity, build revision, work scope, conditions, observations, corrective action, parts traceability and follow-up. A replacement without root-cause awareness may leave the original system risk untouched. Students should also know when to reject an incomplete record."
+        }
+      ],
+      "workedExample": {
+        "problem": "A fictional connection has a 25°C higher thermographic reading today, but the load is also twice the normal load. Is the condition definitively defective?",
+        "solution": "No. Temperature evidence requires context and a qualified interpretation; altered load and emissivity can affect comparisons. The observation warrants review but alone does not prove the mechanism.",
+        "interpretation": "No real energized inspections instructed."
+      },
+      "commonMisconception": {
+        "claim": "\"One abnormal image is enough to calculate a universal repair priority.\"",
+        "correction": "Actual prioritization depends on risk, load, device, conditions, program criteria and verification."
+      },
+      "knowledgeChecks": [
+        {
+          "question": "What improves interpretation of condition trends?",
+          "choices": [
+            "Recorded operating conditions and comparable baselines",
+            "Panel paint color",
+            "A single screenshot only"
+          ],
+          "correctIndex": 0,
+          "explanation": "Condition readings need context."
+        },
+        {
+          "question": "Does replacement alone guarantee root cause correction?",
+          "choices": [
+            "No",
+            "Yes",
+            "If the part is new"
+          ],
+          "correctIndex": 0,
+          "explanation": "An apparent repair can leave causal mechanisms in place."
+        }
+      ],
+      "virtualExercise": {
+        "prompt": "Inspect a fictional maintenance record for missing readings, conditions, part traceability and follow-up.",
+        "expectedReasoning": "Distinguish concern, proof, recommendation and unresolved condition.",
+        "safetyGate": "No authorization of actual electrical maintenance."
+      },
+      "referenceIds": [
+        "NFPA-70B",
+        "OSHA-1910-332"
+      ],
+      "trainingNotice": "FICTIONAL TRAINING ONLY. Does not qualify or authorize electrical work, energized testing, or machine servicing."
+    }
+  ]
+}
