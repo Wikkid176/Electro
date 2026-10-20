@@ -34,6 +34,8 @@ jobs:
       CI: '1'
       EXPO_NO_TELEMETRY: '1'
       EXPO_OFFLINE: '1'
+      ANDROID_HOME: /usr/local/lib/android/sdk
+      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
     steps:
       - name: Check out source
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
