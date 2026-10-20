@@ -15,13 +15,14 @@ import { BetaProvider, useBeta } from './src/BetaProvider';
 import { BetaHub } from './src/BetaHub';
 import { release } from './src/build';
 import { LessonReader } from './src/LessonReader';
+import { AdvancedTraining } from './src/AdvancedTraining';
 import { estimatedLessonMinutes } from './src/teaching';
 import { completeLesson, initialMotor, initialProgress, motorReducer, restoreProgress, totalXp, XP_PER_ANSWER, type Progress } from './src/engine';
 
 const STORAGE_KEY = 'electro.progress.v1';
 const availableXp = lessons.reduce((sum, lesson) => sum + lesson.questions.length * XP_PER_ANSWER, 0);
 const colors = { bg: '#0B1420', panel: '#142131', line: '#29394B', text: '#F3F6FA', muted: '#A6B4C6', lime: '#D6FA68', orange: '#FFBA73', blue: '#9BC7FF' };
-type Tab = 'Learn' | 'Lab' | 'Progress' | 'Beta';
+type Tab = 'Learn' | 'Lab' | 'Advanced' | 'Progress' | 'Beta';
 
 function Button({ title, onPress, secondary = false, disabled = false }: { title: string; onPress: () => void; secondary?: boolean; disabled?: boolean }) {
   return <Pressable accessibilityRole="button" accessibilityState={{ disabled }} disabled={disabled} onPress={onPress}
@@ -209,6 +210,7 @@ function ElectroApp() {
               </View>
               {wide && <View style={s.heroArt}><CoachPortrait size={270} /><Text style={s.artCaption}>MEET {brand.coach.toUpperCase()}, YOUR COACH.</Text></View>}
             </View>
+            <Pressable accessibilityRole="button" accessibilityLabel="Open advanced training" onPress={() => setTab('Advanced')} style={s.labTeaser}><View style={s.flex}><Label>NEW · 21 DEEP LESSONS + 12 WORK ORDERS</Label><Text style={s.cardTitle}>Advanced electrical training</Text><Text style={s.body}>Go beyond the quiz: industrial theory, worked examples, ungraded knowledge checks, and fictional troubleshooting cases.</Text></View><Text style={s.arrow}>→</Text></Pressable>
             <View style={s.statsRow}><View style={s.stat}><Text style={s.statValue}>{mastered}<Text style={s.statUnit}> / {lessons.length}</Text></Text><Text style={s.small}>MASTERED</Text></View><View style={s.stat}><Text style={s.statValue}>{xp}</Text><Text style={s.small}>TOTAL XP</Text></View><View style={s.stat}><Text style={[s.statValue, { fontSize: 18 }]}>{level}</Text><Text style={s.small}>LEARNING LEVEL</Text></View></View>
             <View style={s.sectionHeading}><Text accessibilityRole="header" style={s.heading}>Your learning path</Text><Text style={s.small}>{lessons.length} MISSIONS</Text></View>
             <Text style={s.body}>Build safety and energy-control awareness, then explore the electrical system.</Text>
@@ -222,7 +224,7 @@ function ElectroApp() {
               </Pressable>;
             })}</View>
             <Pressable accessibilityRole="button" onPress={() => setTab('Lab')} style={s.labTeaser}><View style={s.flex}><Label>THE CONTROL ROOM</Label><Text style={s.cardTitle}>What happens if…?</Text><Text style={s.body}>Explore motor controls, meters, drawing traces, and the component workshop.</Text></View><Text style={s.arrow}>→</Text></Pressable>
-          </> : tab === 'Lab' ? <PracticeLab onNavigate={() => scroll.current?.scrollTo({ y: 0, animated: false })} /> : tab === 'Beta' ? <BetaHub scores={progress.scores} /> : <>
+          </> : tab === 'Lab' ? <PracticeLab onNavigate={() => scroll.current?.scrollTo({ y: 0, animated: false })} /> : tab === 'Advanced' ? <AdvancedTraining onNavigate={() => scroll.current?.scrollTo({ y: 0, animated: false })} onExit={() => setTab('Learn')} /> : tab === 'Beta' ? <BetaHub scores={progress.scores} /> : <>
             <Label>EVERY CONNECTION COUNTS</Label><Text accessibilityRole="header" style={s.title}>Your progress</Text><Text style={s.intro}>A little practice. A stronger foundation.</Text>
             <View style={s.card}><View style={s.split}><Text style={s.cardTitle}>{level}</Text><Text style={s.reward}>{xp} XP</Text></View><Meter value={xp / availableXp} /><Text style={s.body}>{mastered} of {lessons.length} missions mastered · {Object.keys(progress.scores).length} completed</Text><Text style={s.small}>{availableXp} XP AVAILABLE · BEST SCORES COUNT</Text></View>
             <Text style={s.heading}>Mission record</Text>

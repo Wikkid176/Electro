@@ -3,7 +3,7 @@ name: Build Android beta APK
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, 'feature/deep-training-031']
     paths:
       - '.github/workflows/android-beta.yml'
       - 'App.tsx'
@@ -96,14 +96,14 @@ jobs:
       - name: Verify signing, release settings and bundled app
         run: |
           python3 scripts/verify-android-beta.py \
-            --apk releases/android/ELL-0.3.0-beta.2.apk \
+            --apk releases/android/ELL-0.3.1-beta.1.apk \
             --certificate-sha256 "$ELL_EXPECTED_CERT_SHA256" \
             --output-dir "$RUNNER_TEMP/apk-verification"
 
       - name: Prepare tester download
         run: |
           mkdir -p "$RUNNER_TEMP/ell-download"
-          cp releases/android/ELL-0.3.0-beta.2.apk "$RUNNER_TEMP/ell-download/"
+          cp releases/android/ELL-0.3.1-beta.1.apk "$RUNNER_TEMP/ell-download/"
           cp "$RUNNER_TEMP/apk-verification/"* "$RUNNER_TEMP/ell-download/"
           cp releases/android/START-HERE.md LICENSE THIRD_PARTY_NOTICES.txt "$RUNNER_TEMP/ell-download/"
           printf '### ElectroLessonLab Android beta\nDownload **ELL-Android-beta-APK** under this run’s **Artifacts**. Unzip it and install the APK on an Android 7+ ARM phone. Signature and package checks passed; a physical-phone smoke test is still required.\n' >> "$GITHUB_STEP_SUMMARY"
