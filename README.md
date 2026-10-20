@@ -6,6 +6,8 @@ The app is now **ElectroLessonLab**, abbreviated **ELL**. See [the Android human
 
 [Download the signed Android beta APK](releases/android/ELL-0.2.0-beta.1.apk) · 35.4 MiB · Android 7+ on ARM phones. Signature and packaged assets are verified; organizer phone testing is still required before group distribution.
 
+To build and download the APK in GitHub Actions, see [GitHub Android builds](docs/GITHUB_ANDROID_BUILD.md). The APK is a workflow artifact rather than a file committed to Git.
+
 ## Starter experience
 
 - Forty-seven short missions: safety and energy control, electrical fundamentals, meter setup and interpretation, motor controls, schematic reading, standards/reference skills, panel-build practices, troubleshooting methods, motors/drives/servos, sensors/I/O, PLC basics, and troubleshooting.
