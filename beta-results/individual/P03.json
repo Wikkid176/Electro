@@ -1,0 +1,2247 @@
+{
+  "modelVersion": "electro-beta-2026-10-19-v1",
+  "profile": {
+    "id": "P03",
+    "group": "Electrical professionals",
+    "age": 37,
+    "professional": true,
+    "seed": 703,
+    "wpm": 260,
+    "decisionSeconds": 11,
+    "navigationSeconds": 4,
+    "probabilityOffset": 0.02,
+    "hintRate": 0.05,
+    "labMinutes": 20,
+    "width": 390,
+    "height": 844,
+    "keyboard": false,
+    "interrupt": false
+  },
+  "questions": 141,
+  "components": [
+    {
+      "id": "identify-contactor",
+      "answer": "contactor",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.7708055914845318
+    },
+    {
+      "id": "inspect-terminal",
+      "answer": "marker",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.16554645844735205
+    },
+    {
+      "id": "identify-breaker",
+      "answer": "breaker",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.2596966053824872
+    },
+    {
+      "id": "identify-relay",
+      "answer": "relay",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.22692385059781373
+    },
+    {
+      "id": "inspect-motor",
+      "answer": "cable-entry",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.8134212752338499
+    },
+    {
+      "id": "identify-transformer",
+      "answer": "transformer",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.5121416135225445
+    },
+    {
+      "id": "identify-terminal",
+      "answer": "terminal",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.5767685815226287
+    },
+    {
+      "id": "inspect-drive",
+      "answer": "vents",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.43560580839402974
+    },
+    {
+      "id": "identify-drive",
+      "answer": "drive",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.5509155967738479
+    },
+    {
+      "id": "identify-motor",
+      "answer": "motor",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.7936538013163954
+    },
+    {
+      "id": "inspect-breaker",
+      "answer": "housing",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.5295236769597977
+    },
+    {
+      "id": "identify-sensor",
+      "answer": "sensor",
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.9023106109816581
+    }
+  ],
+  "time": {
+    "reading": 54.83076923076923,
+    "decisions": 25.85,
+    "navigation": 3.1333333333333333,
+    "hintReflection": 0.9333333333333333,
+    "labs": 20,
+    "interruptionRecovery": 0
+  },
+  "estimatedMinutes": 104.7474358974359,
+  "actual": [
+    {
+      "lessonId": "safety",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "energy-sources",
+      "score": 2,
+      "answers": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "lessonId": "loto-roles",
+      "score": 3,
+      "answers": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "lessonId": "verification",
+      "score": 3,
+      "answers": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "lessonId": "shared-protection",
+      "score": 2,
+      "answers": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "lessonId": "electrical-hazards",
+      "score": 3,
+      "answers": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "lessonId": "fundamentals",
+      "score": 3,
+      "answers": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "lessonId": "electrical-units",
+      "score": 3,
+      "answers": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "lessonId": "circuit-paths",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "electrical-power",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "meter-setup",
+      "score": 3,
+      "answers": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "lessonId": "meter-readings",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "measurement-evidence",
+      "score": 3,
+      "answers": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lessonId": "motor",
+      "score": 2,
+      "answers": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "schematics",
+      "score": 3,
+      "answers": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lessonId": "drawing-navigation",
+      "score": 3,
+      "answers": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "lessonId": "drawing-language",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "drawing-references",
+      "score": 3,
+      "answers": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "lessonId": "complete-circuit-path",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "drawing-evidence",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "standards-scope",
+      "score": 2,
+      "answers": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "lessonId": "edition-evidence",
+      "score": 1,
+      "answers": [
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "lessonId": "ratings-context",
+      "score": 2,
+      "answers": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "lessonId": "reference-hunt",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "panel-layout",
+      "score": 2,
+      "answers": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "panel-terminations",
+      "score": 3,
+      "answers": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lessonId": "panel-bonding",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "panel-protection",
+      "score": 2,
+      "answers": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "panel-transformers",
+      "score": 3,
+      "answers": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "lessonId": "panel-control-devices",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "panel-inspection",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "diagnostic-plan",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "fault-boundaries",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "intermittent-evidence",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "root-cause-record",
+      "score": 3,
+      "answers": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "lessonId": "motor-nameplate",
+      "score": 2,
+      "answers": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "lessonId": "starter-drive-choice",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "drive-energy-path",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "drive-fault-evidence",
+      "score": 2,
+      "answers": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "lessonId": "servo-feedback-safety",
+      "score": 2,
+      "answers": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "lessonId": "sensor-selection",
+      "score": 2,
+      "answers": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "lessonId": "sensor-output-match",
+      "score": 3,
+      "answers": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lessonId": "io-evidence-chain",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "lessonId": "analog-scaling",
+      "score": 3,
+      "answers": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "lessonId": "feedback-signals",
+      "score": 3,
+      "answers": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lessonId": "plc",
+      "score": 2,
+      "answers": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "lessonId": "diagnosis",
+      "score": 3,
+      "answers": [
+        2,
+        0,
+        1
+      ]
+    }
+  ],
+  "correct": 127,
+  "mastered": 34,
+  "completed": 47,
+  "xp": 3175,
+  "componentCorrect": 12,
+  "componentQuestions": 12,
+  "labTasksPassed": 4,
+  "interruptionsRecovered": 0,
+  "errors": [],
+  "consoleErrors": [],
+  "automationSeconds": 92.722,
+  "finishedAt": "2026-10-19T15:56:08.910Z",
+  "answerPlan": [
+    {
+      "lessonId": "safety",
+      "topic": "Safety",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.5085173291154206,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "safety",
+      "topic": "Safety",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.6903721324633807,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "safety",
+      "topic": "Safety",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.3627596218138933,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "energy-sources",
+      "topic": "Safety",
+      "index": 0,
+      "answer": 2,
+      "correct": false,
+      "probability": 0.9500000000000001,
+      "draw": 0.9680885116104037,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 24
+    },
+    {
+      "lessonId": "energy-sources",
+      "topic": "Safety",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.3472791197709739,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "energy-sources",
+      "topic": "Safety",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.17969338945113122,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "loto-roles",
+      "topic": "Safety",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.28872009459882975,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "loto-roles",
+      "topic": "Safety",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.2103779383469373,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "loto-roles",
+      "topic": "Safety",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.5430153482593596,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "verification",
+      "topic": "Safety",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.8660870480816811,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "verification",
+      "topic": "Safety",
+      "index": 1,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.42854318022727966,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "verification",
+      "topic": "Safety",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.670743370661512,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "shared-protection",
+      "topic": "Safety",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.781064750161022,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "shared-protection",
+      "topic": "Safety",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.5665627957787365,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "shared-protection",
+      "topic": "Safety",
+      "index": 2,
+      "answer": 0,
+      "correct": false,
+      "probability": 0.9500000000000001,
+      "draw": 0.9833471095189452,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 22
+    },
+    {
+      "lessonId": "electrical-hazards",
+      "topic": "Safety",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.5378470991272479,
+      "hint": true,
+      "hintWords": 25,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "electrical-hazards",
+      "topic": "Safety",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.6944474880583584,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "electrical-hazards",
+      "topic": "Safety",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9500000000000001,
+      "draw": 0.6171160682570189,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "fundamentals",
+      "topic": "Fundamentals",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.3366422336548567,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "fundamentals",
+      "topic": "Fundamentals",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.3506054731551558,
+      "hint": true,
+      "hintWords": 19,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "fundamentals",
+      "topic": "Fundamentals",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.004429116379469633,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "electrical-units",
+      "topic": "Fundamentals",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.6605088112410158,
+      "hint": true,
+      "hintWords": 19,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "electrical-units",
+      "topic": "Fundamentals",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.15241452027112246,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "electrical-units",
+      "topic": "Fundamentals",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.7063798189628869,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "circuit-paths",
+      "topic": "Fundamentals",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.009717358741909266,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "circuit-paths",
+      "topic": "Fundamentals",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.88033930468373,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "circuit-paths",
+      "topic": "Fundamentals",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.47027936205267906,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "electrical-power",
+      "topic": "Fundamentals",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.032643920043483377,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "electrical-power",
+      "topic": "Fundamentals",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.033666697796434164,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "electrical-power",
+      "topic": "Fundamentals",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.89,
+      "draw": 0.4782760494854301,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "meter-setup",
+      "topic": "Meters",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.5320806978270411,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "meter-setup",
+      "topic": "Meters",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.8440030601341277,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "meter-setup",
+      "topic": "Meters",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.6888657775707543,
+      "hint": true,
+      "hintWords": 20,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "meter-readings",
+      "topic": "Meters",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.4413307167124003,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "meter-readings",
+      "topic": "Meters",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.3243104461580515,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "meter-readings",
+      "topic": "Meters",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.15643962868489325,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "measurement-evidence",
+      "topic": "Meters",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.06848261831328273,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "measurement-evidence",
+      "topic": "Meters",
+      "index": 1,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.8960451593156904,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "measurement-evidence",
+      "topic": "Meters",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.07072325143963099,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "motor",
+      "topic": "Motors and drives",
+      "index": 0,
+      "answer": 1,
+      "correct": false,
+      "probability": 0.92,
+      "draw": 0.9806602888274938,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 21
+    },
+    {
+      "lessonId": "motor",
+      "topic": "Motors and drives",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.2237426438368857,
+      "hint": true,
+      "hintWords": 22,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "motor",
+      "topic": "Motors and drives",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.5964674863498658,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "schematics",
+      "topic": "Print reading",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.15952154248952866,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "schematics",
+      "topic": "Print reading",
+      "index": 1,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.06641970784403384,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "schematics",
+      "topic": "Print reading",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.5369145213626325,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-navigation",
+      "topic": "Print reading",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.34279219969175756,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-navigation",
+      "topic": "Print reading",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.23948590364307165,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-navigation",
+      "topic": "Print reading",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.3196958501357585,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-language",
+      "topic": "Print reading",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.8491788138635457,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-language",
+      "topic": "Print reading",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.3775393932592124,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-language",
+      "topic": "Print reading",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.46942575834691525,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-references",
+      "topic": "Print reading",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.5645918326918036,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-references",
+      "topic": "Print reading",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.4527544449083507,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-references",
+      "topic": "Print reading",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.056148014729842544,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "complete-circuit-path",
+      "topic": "Print reading",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.15532536525279284,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "complete-circuit-path",
+      "topic": "Print reading",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.5718393430579454,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "complete-circuit-path",
+      "topic": "Print reading",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.3066579760052264,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-evidence",
+      "topic": "Print reading",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.338858189759776,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-evidence",
+      "topic": "Print reading",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.25956012681126595,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drawing-evidence",
+      "topic": "Print reading",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9,
+      "draw": 0.5257786198053509,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "standards-scope",
+      "topic": "Reference skills",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.88,
+      "draw": 0.0854706964455545,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "standards-scope",
+      "topic": "Reference skills",
+      "index": 1,
+      "answer": 2,
+      "correct": false,
+      "probability": 0.88,
+      "draw": 0.9007576087024063,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 24
+    },
+    {
+      "lessonId": "standards-scope",
+      "topic": "Reference skills",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.88,
+      "draw": 0.5165582103654742,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "edition-evidence",
+      "topic": "Reference skills",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.88,
+      "draw": 0.3516899954993278,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "edition-evidence",
+      "topic": "Reference skills",
+      "index": 1,
+      "answer": 1,
+      "correct": false,
+      "probability": 0.88,
+      "draw": 0.92048852564767,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 22
+    },
+    {
+      "lessonId": "edition-evidence",
+      "topic": "Reference skills",
+      "index": 2,
+      "answer": 2,
+      "correct": false,
+      "probability": 0.88,
+      "draw": 0.9068669758271426,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 21
+    },
+    {
+      "lessonId": "ratings-context",
+      "topic": "Reference skills",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.88,
+      "draw": 0.13928248174488544,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "ratings-context",
+      "topic": "Reference skills",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.88,
+      "draw": 0.5753520021680743,
+      "hint": true,
+      "hintWords": 21,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "ratings-context",
+      "topic": "Reference skills",
+      "index": 2,
+      "answer": 2,
+      "correct": false,
+      "probability": 0.88,
+      "draw": 0.9426297280006111,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 26
+    },
+    {
+      "lessonId": "reference-hunt",
+      "topic": "Reference skills",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.88,
+      "draw": 0.7491395210381597,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "reference-hunt",
+      "topic": "Reference skills",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.88,
+      "draw": 0.3509077513590455,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "reference-hunt",
+      "topic": "Reference skills",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.88,
+      "draw": 0.6367010392714292,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-layout",
+      "topic": "Panel build",
+      "index": 0,
+      "answer": 0,
+      "correct": false,
+      "probability": 0.92,
+      "draw": 0.9864754402078688,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 20
+    },
+    {
+      "lessonId": "panel-layout",
+      "topic": "Panel build",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.2922495740931481,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-layout",
+      "topic": "Panel build",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.22606833279132843,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-terminations",
+      "topic": "Panel build",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.8294676041696221,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-terminations",
+      "topic": "Panel build",
+      "index": 1,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.06481801113113761,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-terminations",
+      "topic": "Panel build",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.4250452013220638,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-bonding",
+      "topic": "Panel build",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.5760509138926864,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-bonding",
+      "topic": "Panel build",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.288664085092023,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-bonding",
+      "topic": "Panel build",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.4730921541340649,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-protection",
+      "topic": "Panel build",
+      "index": 0,
+      "answer": 0,
+      "correct": false,
+      "probability": 0.92,
+      "draw": 0.9645399048458785,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 16
+    },
+    {
+      "lessonId": "panel-protection",
+      "topic": "Panel build",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.8623077403753996,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-protection",
+      "topic": "Panel build",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.6977991166058928,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-transformers",
+      "topic": "Panel build",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.6330639119260013,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-transformers",
+      "topic": "Panel build",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.20931838429532945,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-transformers",
+      "topic": "Panel build",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.3726651119068265,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-control-devices",
+      "topic": "Panel build",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.6376934975851327,
+      "hint": true,
+      "hintWords": 18,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-control-devices",
+      "topic": "Panel build",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.03515243390575051,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-control-devices",
+      "topic": "Panel build",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.6892313610296696,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-inspection",
+      "topic": "Panel build",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.1446021907031536,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-inspection",
+      "topic": "Panel build",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.7487726716790348,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "panel-inspection",
+      "topic": "Panel build",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.8887595660053194,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "diagnostic-plan",
+      "topic": "Troubleshooting",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.9082544648554176,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "diagnostic-plan",
+      "topic": "Troubleshooting",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.3699751226231456,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "diagnostic-plan",
+      "topic": "Troubleshooting",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.12871077028103173,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "fault-boundaries",
+      "topic": "Troubleshooting",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.3399822530336678,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "fault-boundaries",
+      "topic": "Troubleshooting",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.12738618324510753,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "fault-boundaries",
+      "topic": "Troubleshooting",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.2655614707618952,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "intermittent-evidence",
+      "topic": "Troubleshooting",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.6373012179974467,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "intermittent-evidence",
+      "topic": "Troubleshooting",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.36608275352045894,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "intermittent-evidence",
+      "topic": "Troubleshooting",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.4844598730560392,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "root-cause-record",
+      "topic": "Troubleshooting",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.6437999615445733,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "root-cause-record",
+      "topic": "Troubleshooting",
+      "index": 1,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.03042890061624348,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "root-cause-record",
+      "topic": "Troubleshooting",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.706091667059809,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "motor-nameplate",
+      "topic": "Motors and drives",
+      "index": 0,
+      "answer": 1,
+      "correct": false,
+      "probability": 0.92,
+      "draw": 0.9977448347490281,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 23
+    },
+    {
+      "lessonId": "motor-nameplate",
+      "topic": "Motors and drives",
+      "index": 1,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.668100543320179,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "motor-nameplate",
+      "topic": "Motors and drives",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.0950188955757767,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "starter-drive-choice",
+      "topic": "Motors and drives",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.43691877415403724,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "starter-drive-choice",
+      "topic": "Motors and drives",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.2502114491071552,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "starter-drive-choice",
+      "topic": "Motors and drives",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.5270997574552894,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drive-energy-path",
+      "topic": "Motors and drives",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.20683676493354142,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drive-energy-path",
+      "topic": "Motors and drives",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.0543466885574162,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drive-energy-path",
+      "topic": "Motors and drives",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.8013353764545172,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drive-fault-evidence",
+      "topic": "Motors and drives",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.012236421927809715,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "drive-fault-evidence",
+      "topic": "Motors and drives",
+      "index": 1,
+      "answer": 2,
+      "correct": false,
+      "probability": 0.92,
+      "draw": 0.9830154108349234,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 20
+    },
+    {
+      "lessonId": "drive-fault-evidence",
+      "topic": "Motors and drives",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.16828232211992145,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "servo-feedback-safety",
+      "topic": "Motors and drives",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.6233158183749765,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "servo-feedback-safety",
+      "topic": "Motors and drives",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.23302262742072344,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "servo-feedback-safety",
+      "topic": "Motors and drives",
+      "index": 2,
+      "answer": 2,
+      "correct": false,
+      "probability": 0.92,
+      "draw": 0.951183493481949,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 16
+    },
+    {
+      "lessonId": "sensor-selection",
+      "topic": "Sensors",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.17164116213098168,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "sensor-selection",
+      "topic": "Sensors",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.10858284193091094,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "sensor-selection",
+      "topic": "Sensors",
+      "index": 2,
+      "answer": 1,
+      "correct": false,
+      "probability": 0.91,
+      "draw": 0.9543850459158421,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 19
+    },
+    {
+      "lessonId": "sensor-output-match",
+      "topic": "Sensors",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.40707041160203516,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "sensor-output-match",
+      "topic": "Sensors",
+      "index": 1,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.49223936116322875,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "sensor-output-match",
+      "topic": "Sensors",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.4454687663819641,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "io-evidence-chain",
+      "topic": "Sensors",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.2904515517875552,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "io-evidence-chain",
+      "topic": "Sensors",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.8824628454167396,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "io-evidence-chain",
+      "topic": "Sensors",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.2870686394162476,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "analog-scaling",
+      "topic": "Sensors",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.4089186124037951,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "analog-scaling",
+      "topic": "Sensors",
+      "index": 1,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.7391581553965807,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "analog-scaling",
+      "topic": "Sensors",
+      "index": 2,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.8953878621105105,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "feedback-signals",
+      "topic": "Sensors",
+      "index": 0,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.6883289995603263,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "feedback-signals",
+      "topic": "Sensors",
+      "index": 1,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.8631146138068289,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "feedback-signals",
+      "topic": "Sensors",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.91,
+      "draw": 0.7920512491837144,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "plc",
+      "topic": "Automation",
+      "index": 0,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.9043975837994367,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "plc",
+      "topic": "Automation",
+      "index": 1,
+      "answer": 1,
+      "correct": false,
+      "probability": 0.92,
+      "draw": 0.9605942540802062,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 22
+    },
+    {
+      "lessonId": "plc",
+      "topic": "Automation",
+      "index": 2,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.92,
+      "draw": 0.5228897917550057,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "diagnosis",
+      "topic": "Troubleshooting",
+      "index": 0,
+      "answer": 2,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.6036601662635803,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "diagnosis",
+      "topic": "Troubleshooting",
+      "index": 1,
+      "answer": 0,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.6388304179999977,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    },
+    {
+      "lessonId": "diagnosis",
+      "topic": "Troubleshooting",
+      "index": 2,
+      "answer": 1,
+      "correct": true,
+      "probability": 0.9400000000000001,
+      "draw": 0.1784853651188314,
+      "hint": false,
+      "hintWords": 0,
+      "rereadWords": 0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "file": "assets/component-art-atlas.png",
+    "sha256": "c791850b15b8fa5668bf186a347ad4caf7a556dd51058e5aed4adb84666a5a28",
+    "method": "Generated from a new text description using image_gen; original output PNG copied without pixel edits.",
+    "reference_images": "None. No uploaded print or existing mascot image supplied.",
+    "purpose": "Eight generic component devices, two states each, four defect variants.",
+    "rights_status": "Illustrative generated output; no exclusive-copyright, non-infringement, or trademark-clearance claim."
+  },
+  {
+    "file": "assets/relay-coach-atlas.png",
+    "sha256": "7d255e395e74caa5a04b21783a9f3cd40443dc1b8bd4bdbbb1e43ed9de79f586",
+    "method": "Generated from a new text description using image_gen; original output PNG copied without pixel edits.",
+    "reference_images": "None. No uploaded print or existing mascot image supplied.",
+    "purpose": "Original anthropomorphic relay coach, four poses; working character label Coach Click.",
+    "rights_status": "Illustrative generated output; no exclusive-copyright, non-infringement, or trademark-clearance claim."
+  }
+]

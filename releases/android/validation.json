@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-19T16:53:37.473700+00:00",
+  "app": "ElectroLessonLab (ELL)",
+  "release": "0.2.0-beta.1",
+  "typecheck": "passed",
+  "unitTests": {
+    "passed": 27,
+    "failed": 0
+  },
+  "browserTests": {
+    "distinctCasesPassed": 50,
+    "initial": {
+      "passed": 49,
+      "failed": 1,
+      "reason": "47-mission phone case exceeded its 120-second test budget during native setup; snapshot showed completed course."
+    },
+    "focusedRerun": {
+      "passed": 1,
+      "failed": 0,
+      "durationSeconds": 93.49344,
+      "timeoutBudgetSeconds": 240
+    },
+    "assertionsRemoved": 0,
+    "evidence": [
+      "browser-validation.json",
+      "browser-phone-course-rerun.json"
+    ]
+  },
+  "nativeBuild": "passed: standalone signed release APK",
+  "physicalAndroidDeviceTested": false,
+  "apkProduced": true,
+  "environmentDraftSaved": true,
+  "lastBuildLog": "native-build-success.log",
+  "note": "Signature, dedicated beta key, release manifest, bundled Hermes/graphics/notices, archive integrity and 16 KiB zip alignment verified. Physical Android installation, launch and sharing are pending.",
+  "javascriptExports": {
+    "android": "passed (Hermes bundle, not an APK)",
+    "web": "passed",
+    "metroWorkers": 2
+  },
+  "buildIntegrity": {
+    "gradleDistributionSha256Verified": true,
+    "jdk17Sha256Verified": true,
+    "jdk21Sha256Verified": true,
+    "platformManagedTlsTrustStore": true,
+    "tlsVerificationDisabled": false
+  },
+  "apkVerification": "APK-VERIFICATION.json",
+  "resolvedDependencyBlocker": "Gradle successfully downloaded the official React Native AAR after repo.reactnative.dev was added to the network settings."
+}

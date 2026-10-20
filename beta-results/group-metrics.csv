@@ -1,0 +1,6 @@
+"group","users","modeled_mean_minutes","modeled_median_minutes","modeled_min_minutes","modeled_max_minutes","correct","questions","accuracy_percent","component_correct","component_questions","component_accuracy_percent","mean_mastered","mean_xp"
+"Adults 30–45 / novice","5","198","189","165.6","240.2","415","705","58.9","42","60","70","10.4","2075"
+"Teens / assumed novice","2","208.8","208.8","184.5","233.2","169","282","59.9","16","24","66.7","11","2112.5"
+"Adults 18–30 / novice","2","178.2","178.2","166.9","189.5","177","282","62.8","16","24","66.7","12","2212.5"
+"Electrical professionals","3","120","118.6","104.7","136.7","385","423","91","33","36","91.7","34.7","3208.3"
+"All profiles","12","177","185","104.7","240.2","1146","1692","67.7","107","144","74.3","16.8","2387.5"

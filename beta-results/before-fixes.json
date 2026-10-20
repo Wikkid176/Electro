@@ -1,0 +1,29 @@
+{
+  "kind": "Observed pre-fix Playwright failures, transcribed from the baseline runner output",
+  "date": "2026-10-19",
+  "command": "ELECTRO_TEST_PORT=8091 npm run test:e2e -- tests/browser/beta-regressions.spec.ts --project=phone",
+  "passed": 0,
+  "failed": 3,
+  "failures": [
+    {
+      "test": "selected answers and navigation expose their state to assistive technology",
+      "expected": "Learn tab aria-selected=true",
+      "actual": "attribute absent",
+      "durationSeconds": 6.7
+    },
+    {
+      "test": "an interrupted quiz can resume without losing checked feedback or gaining early XP",
+      "expected": "electro.session.v1.checked=true after checking the first answer",
+      "actual": "checkpoint absent (undefined)",
+      "durationSeconds": 7.0
+    },
+    {
+      "test": "mastering every mission shows a completed path instead of presenting mission one as new",
+      "expected": "LEARNING PATH MASTERED after seeding 47 mastered scores",
+      "actual": "completion state absent; mission 01 offered again",
+      "durationSeconds": 7.3
+    }
+  ],
+  "initialPostFixPhoneRerun": { "passed": 3, "failed": 0, "runnerSeconds": 14.0 },
+  "note": "The final expanded regression suite includes additional checkpoint and accessibility scenarios; see validation.json and playwright-regression.json."
+}

@@ -1,0 +1,9 @@
+{
+  "reference_texts": 26,
+  "normalized_exact_window_words": 14,
+  "matching_app_files": [],
+  "limitations": [
+    "Text-only heuristic; does not evaluate substantial similarity, figures, branding, trade secrets, patents, or legal permissions.",
+    "No legal clearance is implied."
+  ]
+}

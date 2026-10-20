@@ -1,0 +1,45 @@
+{
+  "verifiedAt": "2026-10-19T16:53:12.501080+00:00",
+  "file": "ELL-0.2.0-beta.1.apk",
+  "bytes": 37087501,
+  "sha256": "87ff46b83f28dc3160cae13fdb2e5b0f9859fa11b128e851e0093a6d51cb55e2",
+  "package": "com.wikkid176.electrolessonlab.beta",
+  "versionName": "0.2.0",
+  "versionCode": 1,
+  "label": "ElectroLessonLab Beta",
+  "architectures": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "signatureVerified": true,
+  "dedicatedBetaKeyMatched": true,
+  "signerCertificateSha256": "d481be23603fd9db8676cc7121e8e6a67786ff2ae57805a2c8642a824b02d8d9",
+  "zipAlignment16KiBVerified": true,
+  "debuggable": false,
+  "allowBackup": false,
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE",
+    "com.wikkid176.electrolessonlab.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "embeddedHermes": true,
+  "bundledGraphics": {
+    "componentartatlas": {
+      "resource": "drawable/assets_componentartatlas",
+      "files": [
+        "res/Bt.png"
+      ],
+      "alphaAndVisiblePixelsMatchSource": true
+    },
+    "relaycoachatlas": {
+      "resource": "drawable/assets_relaycoachatlas",
+      "files": [
+        "res/Yp.png"
+      ],
+      "alphaAndVisiblePixelsMatchSource": true
+    }
+  },
+  "softwareNoticesIncluded": true,
+  "proprietaryDocumentsIncluded": false,
+  "physicalDeviceTested": false
+}

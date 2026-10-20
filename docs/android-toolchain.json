@@ -1,0 +1,29 @@
+{
+  "gradleVersion": "9.4.1",
+  "checksumSource": "https://services.gradle.org/distributions/gradle-9.4.1-bin.zip.sha256",
+  "expectedSha256": "2ab2958f2a1e51120c326cad6f385153bb11ee93b3c216c5fccebfdfbb7ec6cb",
+  "extractedDistributionVerified": true,
+  "androidPlatform": "37.0",
+  "buildTools": [
+    "37.0.0",
+    "36.0.0"
+  ],
+  "minSdk": 24,
+  "targetSdk": 36,
+  "ndk": "27.1.12297006",
+  "cmake": "3.22.1",
+  "javaToolchains": [
+    {
+      "version": "jdk-17.0.20.1+1",
+      "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz",
+      "sha256": "3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e",
+      "jdkPath": "/workspace/jdks/jdk-17.0.20.1+1"
+    },
+    {
+      "version": "jdk-21.0.12.1+1",
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_linux_hotspot_21.0.12.1_1.tar.gz",
+      "sha256": "ce79869e1307ed8ee1e2baa86a412b1eb5b75d10a01006d788a6f968bcfaee94",
+      "jdkPath": "/workspace/jdks/jdk-21.0.12.1+1"
+    }
+  ]
+}
