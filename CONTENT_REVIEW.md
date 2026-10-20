@@ -1,5 +1,12 @@
 # Curriculum review
 
+## Expanded lesson beta: 0.3.0-beta.2
+
+Every existing mission now has independently authored teaching sections, an original interactive conceptual visual, a worked example and ungraded practice before its existing quiz. The eight visual forms are energy maps, complete-path/feedback maps, comparisons, virtual instrument displays, fictional document cards, information chains, scaling bars and timelines. Existing original component artwork is reused with labeled part exploration. No source image, private print topology, manufacturer-specific connections, settings, standards text or historical PPE tables were imported.
+
+New calculations use explicitly defined ideal DC, transformer, induction-speed, timer, valid linear scaling and encoder-count examples. Teaching values can differ from the scored quiz's scenario; each value belongs to its stated model. The analog teaching range is −10 to 50 °C, while the original quiz retains its separate −20 to 60 °C range. Path maps are conceptual relationships, not physical wiring or safety designs. Reading-time allowances are estimates, not measured course outcomes. Qualified subject-matter review and real-phone testing remain outstanding.
+
+
 ## Material reviewed
 
 Text was extracted and reviewed from the individually supplied Module 1 safety/LOTO study guide (revision dated October 2026), electrical safety presentation (2009), and hazardous-energy-control procedure (2016). Source documents and extracted text remain outside this checkout. No source illustrations or proprietary prints were included in app assets.

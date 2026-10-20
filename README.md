@@ -2,15 +2,15 @@
 
 A mobile training game about industrial electrical systems and practices, built with Expo, React Native, and TypeScript.
 
-The app is now **ElectroLessonLab**, abbreviated **ELL**. See [the Android human-beta guide](HUMAN_BETA.md) for installation, tester codes, feedback/results sharing and the supervised study plan. The beta adds an optional local study record; it has no automatic results-upload service. Existing training storage keys retain their earlier `electro` prefix so saved scores survive the display-name change.
+The app is **ElectroLessonLab**, abbreviated **ELL**. Beta 0.3.0-beta.2 expands every mission into Learn → Explore → Practice → Recap → Quiz; reading pages resume and quizzes support lesson review without losing answers. See [the Android human-beta guide](HUMAN_BETA.md) for installation, tester codes, feedback/results sharing and the supervised study plan. The beta adds an optional local study record; it has no automatic results-upload service. Existing training storage keys retain their earlier `electro` prefix so saved scores survive the display-name change.
 
-[Download the signed Android beta APK](releases/android/ELL-0.2.0-beta.1.apk) · 35.4 MiB · Android 7+ on ARM phones. Signature and packaged assets are verified; organizer phone testing is still required before group distribution.
+[Download the signed Android beta APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.3.0-beta.2.apk) · **0.3.0-beta.2** · 35.5 MiB · Android 7+ on ARM phones. Includes all 47 expanded lessons. Install over the earlier beta to retain course scores. Signature and packaged lessons/assets are verified; organizer phone testing is still required before group distribution.
 
 To build and download the APK in GitHub Actions, see [GitHub Android builds](docs/GITHUB_ANDROID_BUILD.md). The APK is a workflow artifact rather than a file committed to Git.
 
 ## Starter experience
 
-- Forty-seven short missions: safety and energy control, electrical fundamentals, meter setup and interpretation, motor controls, schematic reading, standards/reference skills, panel-build practices, troubleshooting methods, motors/drives/servos, sensors/I/O, PLC basics, and troubleshooting.
+- Forty-seven illustrated lessons with explanations, worked examples, guided practice and a separate quiz: safety and energy control, electrical fundamentals, meter setup and interpretation, motor controls, schematic reading, standards/reference skills, panel-build practices, troubleshooting methods, motors/drives/servos, sensors/I/O, PLC basics, and troubleshooting.
 - One hundred forty-one mission questions with immediate explanations, best-score XP, and mission mastery (3,525 XP available).
 - Interactive, simplified three-wire starter logic: start/stop, holding state, emergency-stop permissive, and overload.
 - Virtual meter bench: DC polarity, isolated resistance and continuity, open paths, input mismatches, and blocked powered-resistance tests.
@@ -55,7 +55,7 @@ npm run test:e2e
 npm exec -- expo export --platform all --max-workers 2
 ```
 
-`npm test` runs twenty-seven gameplay/content/checkpoint/study-record tests. `test:e2e` runs fifty browser tests across phone and desktop viewport sizes. Browser tests use their own server on port 8082, separate from development on port 8081; outside CI they may reuse an existing test server. Set `ELECTRO_TEST_PORT` to another free port if needed, for example `ELECTRO_TEST_PORT=8091 npm run test:e2e`. The cloud setup uses 8091. The cloud image provides `/usr/bin/chromium`; elsewhere, run `npx playwright install chromium`, or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to an installed compatible Chromium binary.
+`npm test` runs thirty gameplay/content/teaching/checkpoint/study-record tests. `test:e2e` runs fifty-eight browser tests across phone and desktop viewport sizes. Browser tests use their own server on port 8082, separate from development on port 8081; outside CI they may reuse an existing test server. Set `ELECTRO_TEST_PORT` to another free port if needed, for example `ELECTRO_TEST_PORT=8091 npm run test:e2e`. The cloud setup uses 8091. The cloud image provides `/usr/bin/chromium`; elsewhere, run `npx playwright install chromium`, or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to an installed compatible Chromium binary.
 
 The separate `npm run test:beta` command runs twelve seeded synthetic profiles through all 47 missions and four labs. After a successful run, `npm run report:beta` validates the raw scores and generates individual/group CSVs and [the simulated beta report](beta-results/REPORT.md). Study times and answer probabilities are explicit, uncalibrated model inputs in `tests/beta/model.ts`; these are not human beta results. Do not edit app/model sources during a run.
 

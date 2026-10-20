@@ -1,0 +1,32 @@
+{
+  "verifiedAt": "2026-10-20T01:33:20.139045+00:00",
+  "file": "ELL-0.3.0-beta.2.apk",
+  "bytes": 37210833,
+  "sha256": "03842ecd4ed120c8cdc20b1c0de6e15bee49af97bd88f62b2c32860b6f5833bd",
+  "package": "com.wikkid176.electrolessonlab.beta",
+  "versionName": "0.3.0",
+  "versionCode": 2,
+  "architectures": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "signatureVerified": true,
+  "signerCertificateSha256": "d481be23603fd9db8676cc7121e8e6a67786ff2ae57805a2c8642a824b02d8d9",
+  "zipAlignment16KiBVerified": true,
+  "debuggable": false,
+  "allowBackup": false,
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE",
+    "com.wikkid176.electrolessonlab.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "embeddedHermes": true,
+  "artworkResourcesPresent": true,
+  "expandedLessonInterfaceIncluded": true,
+  "authoredLessonsBundled": 47,
+  "softwareNoticesIncluded": true,
+  "privateReferenceOrSigningFilesIncluded": false,
+  "commit": null,
+  "runId": null,
+  "physicalDeviceTested": false
+}

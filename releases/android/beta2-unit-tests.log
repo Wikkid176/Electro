@@ -1,0 +1,47 @@
+
+> electrolessonlab@0.3.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+✔ human beta records preserve first attempts separately from improved game scores (3.39789ms)
+✔ partial attempts are identified and never presented as complete first-pass results (0.271773ms)
+✔ malformed human beta logs cannot create misleading scores or cohorts (0.549525ms)
+✔ timing excludes the background, caps delayed heartbeats, and tolerates clock rollback (1.777217ms)
+✔ every coach mood has a distinct in-bounds image frame in the bundled PNG (1.909563ms)
+✔ coach hints support reasoning across course topics without selecting an answer or issuing a qualification (0.967846ms)
+✔ workshop devices and inspection targets resolve to distinct illustrated parts (4.11869ms)
+✔ workshop cannot check an empty/invalid selection or advance before feedback (0.200687ms)
+✔ checking and changing a locked workshop answer cannot award duplicate points (0.139107ms)
+✔ a completed workshop stays complete until restart and starts a clean practice session (0.281207ms)
+✔ generated artwork has distinct in-bounds states and a dedicated image for each inspection finding (3.146457ms)
+✔ replaying a lesson improves the best score without farming XP or erasing progress (1.243835ms)
+✔ invalid scores cannot create rewards (0.244482ms)
+✔ saved progress round-trips and rejects malformed or unknown data (0.577997ms)
+✔ emergency stop and overload block start; recovery never restarts the motor (0.147939ms)
+✔ every lesson has complete, answerable questions and unique identifiers (0.835679ms)
+✔ curriculum expansion preserves every original mission score without awarding new mission XP (1.120873ms)
+✔ the source only permits voltage; current input cannot yield a reading in any function (1.313208ms)
+✔ reference reversal changes DC sign without changing isolated resistance (2.221485ms)
+✔ open, finite resistance, and continuity threshold produce distinct results (0.150734ms)
+✔ a virtual zero voltage result does not claim field safety (0.321747ms)
+✔ unfinished missions round-trip checked feedback, hints and the next ungraded selection (3.711295ms)
+✔ malformed, stale and impossible mission checkpoints are rejected (0.74123ms)
+✔ all 47 missions have substantive teaching, explorable visuals, worked examples and separate practice (7.888141ms)
+✔ reading pages resume safely and legacy reading/quiz checkpoints remain compatible (2.825912ms)
+✔ an earlier beta record remains exportable but is paused to keep course versions separate (0.933084ms)
+✔ wrong nodes and wrong sheets cannot advance a trace (4.020864ms)
+✔ a complete trace follows the lamp, contact, associated coil, command, and return (0.353745ms)
+✔ completed and repeated selections cannot create extra trace progress (0.158585ms)
+✔ fictional reference targets resolve as device associations and every challenge target exists (0.295108ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 573.210543
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

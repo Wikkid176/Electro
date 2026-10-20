@@ -1,10 +1,11 @@
+import { startQuiz } from '../helpers/lesson';
 import { test, expect, type Page } from '@playwright/test';
 import { lessons } from '../../src/content';
 
 async function finishLesson(page: Page, lessonIndex: number, missFirst = false) {
   const lesson = lessons[lessonIndex];
   await page.getByRole('button', { name: new RegExp(`^${lesson.title},`) }).click();
-  await page.getByRole('button', { name: 'Start challenge' }).click();
+  await startQuiz(page);
   for (const [i, question] of lesson.questions.entries()) {
     await expect(page.getByRole('button', { name: 'Check answer' })).toBeDisabled();
     const answer = missFirst && i === 0 ? (question.correct + 1) % question.choices.length : question.correct;
@@ -20,7 +21,7 @@ async function finishLesson(page: Page, lessonIndex: number, missFirst = false) 
 test('all missions award XP, best scores survive replay and reload', async ({ page }) => {
   // This case completes 47 missions plus replay/reload, and can share CI with
   // native compilation. Keep every assertion while allowing the full journey.
-  test.setTimeout(240_000);
+  test.setTimeout(360_000);
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('/');
@@ -161,7 +162,7 @@ test('drawing-course progress is preserved when reference skills are added', asy
 test('open-book lookup shows applicable and misleading sources and explains a wrong selection', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: /^Find it and cite it,/ }).click();
-  await page.getByRole('button', { name: 'Start challenge' }).click();
+  await startQuiz(page);
   await expect(page.getByText('FICTIONAL PRACTICE DOCUMENTS', { exact: true })).toBeVisible();
   await expect(page.getByText('CARD-A: TRAIN-CTRL-A / Manual revision C', { exact: true })).toBeVisible();
   await expect(page.getByText('CARD-B: TRAIN-CTRL-B / Manual revision C', { exact: true })).toBeVisible();
@@ -202,7 +203,7 @@ test('reference-course progress leads to the new panel missions without changing
 test('panel inspection compares evidence, explains a missed defect, and preserves the best score', async ({ page }, testInfo) => {
   await page.goto('/');
   await page.getByRole('button', { name: /^Catch the build defects,/ }).click();
-  await page.getByRole('button', { name: 'Start challenge' }).click();
+  await startQuiz(page);
   await expect(page.getByText('BUILD-PLAN: TRAIN-BOX / Approved plan revision D', { exact: true })).toBeVisible();
   await expect(page.getByText('BUILD-LOG: TRAIN-BOX / Observation record', { exact: true })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -242,7 +243,7 @@ test('panel-course progress is preserved and leads to the troubleshooting expans
 test('fault case exposes assumptions and corrects an unsupported component diagnosis', async ({ page }, testInfo) => {
   await page.goto('/');
   await page.getByRole('button', { name: /^Narrow the fault region,/ }).click();
-  await page.getByRole('button', { name: 'Start challenge' }).click();
+  await startQuiz(page);
   await expect(page.getByText('CASE-MODEL: SIM-PATH / Model assumptions', { exact: true })).toBeVisible();
   await expect(page.getByText('CASE-RECORD: SIM-PATH / Supplied evidence', { exact: true })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

@@ -1,12 +1,12 @@
 # ElectroLessonLab (ELL): Android human beta
 
-Version 0.2.0-beta.1 · 47 missions, 141 questions, four practice labs
+Version 0.3.0-beta.2 · 47 illustrated lessons, 47 guided-practice questions, 141 quiz questions, four practice labs
 
-**Build status:** The [signed Android APK](releases/android/ELL-0.2.0-beta.1.apk) is available (35.4 MiB; Android 7 or newer on ARM phones). Its signature, dedicated beta key, app identity/version, release manifest, bundled lessons/graphics/notices and archive alignment passed verification. See `releases/android/APK-VERIFICATION.json`. Install it on the organizer's own phone and check launch, mission completion, resume and results sharing before inviting the full group. No physical-phone test has been performed in this workspace.
+**Build status:** The [signed Android APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.3.0-beta.2.apk) is available (35.5 MiB; Android 7 or newer on ARM phones). Its signature, dedicated beta key, app identity/version, release manifest, bundled lessons/graphics/notices and archive alignment passed verification. See `releases/android/beta2/APK-VERIFICATION.json`. Install it on the organizer's own phone and check launch, mission completion, resume and results sharing before inviting the full group. No physical-phone test has been performed in this workspace.
 
 ## What to send testers
 
-Send the signed APK `ELL-0.2.0-beta.1.apk`, the tester instructions below, their assigned code/group, and your preferred contact for returning results. Keep the APK and study within your invited test group. No Play Store listing or Expo account is needed to install this standalone APK. Testers do not need a computer or development server. They should install only the file you provide.
+Send the signed APK `ELL-0.3.0-beta.2.apk`, the tester instructions below, their assigned code/group, and your preferred contact for returning results. Keep the APK and study within your invited test group. No Play Store listing or Expo account is needed to install this standalone APK. Testers do not need a computer or development server. They should install only the file you provide.
 
 The package is `com.wikkid176.electrolessonlab.beta`. It is separate from any future production package. The private signing key is kept outside this repository; preserve it securely so later beta updates can install over this build without uninstalling or losing data. Never send signing files to testers.
 
@@ -17,7 +17,7 @@ First install the APK on your own Android phone and confirm that it opens, rende
 1. Download the APK your organizer sent to your Android phone. Open the download and select **Install**. If Android asks, temporarily allow this browser or file manager to install this particular app, then turn that permission off afterward. Do not disable Play Protect or device protections. If installation is blocked or the device is managed, ask the organizer for help rather than bypassing it.
 2. Open **ElectroLessonLab Beta**. It contains the app and illustrations; there is no development server to connect to. Use your own device throughout the study. Do not uninstall, clear app storage or switch devices before sharing results.
 3. Open **Beta** at the bottom. Read what recording captures. Enter only the assigned code, choose the assigned group, and opt in if you want a test record. Select **Start beta recording**. Recording is optional; the training still works without it.
-4. Open **Learn** and start the safety mission. Read the notes, choose answers, check them, and read the feedback. Use hints naturally. Do not look up answer keys or replay for a perfect score before your first pass is recorded.
+4. Open **Learn** and start the safety mission. Read the two teaching sections, explore the visual and worked example, check the ungraded practice question, and read the recap. Then start the three-question quiz and read its answer feedback. Use Review lesson if needed; it preserves quiz answers. Use hints naturally. Do not look up answer keys or replay for a perfect score before your first pass is recorded.
 5. Try the tasks below. Take breaks. Background time is excluded from estimated foreground time, but visible idle time and replays are included. Pause recording when appropriate. Reopen the same app to continue; use **Resume mission** for unfinished work.
 6. Return to **Beta** to save notes about confusing explanations, bugs, electrical-content concerns or suggestions. Include the mission/lab name and what you expected. Do not include names, employer information, proprietary drawings, real equipment records or photographs of a workplace.
 7. When finished, pause recording and select **Share beta results**. Choose the agreed messaging/email app, send the record to the organizer, and confirm it arrived. Opening the share sheet alone does not deliver a report. If the chosen app limits message length, use one that supports the full text or ask your organizer for help; do not clear the local record.
@@ -53,9 +53,15 @@ For full-course timing, have each tester attempt all 47 missions once across as 
 
 The teen beginner label is an explicit study assumption; confirm their prior experience. Keep any participant/contact roster separately from exported app data. Use an appropriately supervised, voluntary study. Store received records in your controlled study folder and agree a retention/deletion period with participants.
 
+## Updating from the earlier beta
+
+This update uses the same package and private signing certificate with Android versionCode 2. Install it over beta 0.2.0-beta.1 to retain course scores; do not uninstall or clear storage first. An earlier study record remains readable/exportable and is automatically paused. Export it, then delete only the beta record before starting a fresh study for the expanded course. This prevents mixing old short-briefing timing with the new lessons. Existing course scores are retained as a baseline. Unknown schemas/builds remain preserved without being overwritten.
+
+The displayed mission times are estimated reading/exploration/quiz allowances, not measured completion times. Historical synthetic beta timings describe the earlier course and must not be presented as outcomes for this expanded version.
+
 ## What the app records
 
-Only after opting in: tester code and chosen group, baseline course scores, individual lesson attempts, checked choices/correctness, hints used, first workshop-run answers and later runs, unique lab visits, estimated foreground training seconds, and feedback. Each mission's first attempt remains distinct from replayed best scores. Partial or paused first attempts are retained and do not silently become complete first-pass quiz results. Course XP remains independent.
+Only after opting in: tester code and chosen group, baseline course scores, individual lesson attempts, checked choices/correctness, hints used, first workshop-run answers and later runs, unique lab visits, estimated foreground training seconds, and feedback. Each mission's first attempt remains distinct from replayed best scores. Partial or paused first attempts are retained and do not silently become complete first-pass quiz results. Course XP remains independent. Guided-practice choices do not award XP and are not logged as scored quiz answers; foreground mission time includes reading and practice.
 
 Records stay in local app storage. The app has no account, analytics service or automatic results-upload endpoint. Android app backup is disabled for this beta. Sharing happens through the user's chosen external app, which has its own privacy behavior. Deleting the beta record requires confirmation and preserves course scores. Uninstalling/clearing app data removes both. Beta records from a different schema/build are preserved with a warning rather than silently overwritten.
 

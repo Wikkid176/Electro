@@ -1,3 +1,4 @@
+import { startQuiz } from '../helpers/lesson';
 import { test, expect } from '@playwright/test';
 import { lessons } from '../../src/content';
 
@@ -5,7 +6,7 @@ test('selected answers and navigation expose their state to assistive technology
   await page.goto('/');
   await expect(page.getByRole('tab', { name: 'Learn', exact: true })).toHaveAttribute('aria-selected', 'true');
   await page.getByRole('button', { name: /^Start with safety,/ }).click();
-  await page.getByRole('button', { name: 'Start challenge →', exact: true }).click();
+  await startQuiz(page);
   await page.getByRole('radio').nth(1).click();
   await expect(page.getByRole('radio').nth(1)).toHaveAttribute('aria-checked', 'true');
   await expect(page.getByRole('radio').nth(0)).toHaveAttribute('aria-checked', 'false');
@@ -24,14 +25,14 @@ test('selected answers and navigation expose their state to assistive technology
 test('an interrupted quiz can resume without losing checked feedback or gaining early XP', async ({ page }, testInfo) => {
   await page.goto('/');
   await page.getByRole('button', { name: /^Start with safety,/ }).click();
-  await page.getByRole('button', { name: 'Start challenge →', exact: true }).click();
+  await startQuiz(page);
   await page.getByRole('radio').nth(lessons[0].questions[0].correct).click();
   await page.getByRole('button', { name: 'Check answer', exact: true }).click();
   await expect(page.getByText('1 correct', { exact: true })).toBeVisible();
   await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('electro.session.v1') ?? 'null')?.checked)).toBe(true);
   await page.reload();
   await expect(page.getByRole('button', { name: 'Resume mission', exact: true })).toBeVisible();
-  await page.screenshot({ path: `beta-results/screenshots/${testInfo.project.name}-resume.png` });
+  await page.screenshot({ path: testInfo.outputPath('resume.png') });
   await page.getByRole('button', { name: 'Resume mission', exact: true }).click();
   await expect(page.getByText('1 correct', { exact: true })).toBeVisible();
   await expect(page.getByText(lessons[0].questions[0].explanation, { exact: true })).toBeVisible();
@@ -55,7 +56,7 @@ test('mastering every mission shows a completed path instead of presenting missi
   await expect(page.getByText('LEARNING PATH MASTERED', { exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Review mastered missions', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Start mission 01 →', exact: true })).toHaveCount(0);
-  await page.screenshot({ path: `beta-results/screenshots/${testInfo.project.name}-mastered.png` });
+  await page.screenshot({ path: testInfo.outputPath('mastered.png') });
   await page.getByRole('button', { name: 'Review mastered missions', exact: true }).click();
   await expect(page.getByText('47 of 47 missions mastered · 47 completed', { exact: true })).toBeVisible();
 });
@@ -64,7 +65,7 @@ test('an unchecked choice and hint resume; discarding removes only the checkpoin
   await page.addInitScript(() => localStorage.setItem('electro.progress.v1', JSON.stringify({ version: 1, scores: { motor: 2 } })));
   await page.goto('/');
   await page.getByRole('button', { name: /^Start with safety,/ }).click();
-  await page.getByRole('button', { name: 'Start challenge →', exact: true }).click();
+  await startQuiz(page);
   await page.getByRole('radio').nth(2).click();
   await page.getByRole('button', { name: 'Coach hint', exact: true }).click();
   await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('electro.session.v1') ?? 'null')?.hintVisible)).toBe(true);
@@ -93,7 +94,7 @@ test('a checkpoint read failure does not disable completed-score storage', async
   await page.goto('/');
   await expect(page.getByRole('alert')).toContainText('unfinished mission could not be loaded');
   await page.getByRole('button', { name: /^Start with safety,/ }).click();
-  await page.getByRole('button', { name: 'Start challenge →', exact: true }).click();
+  await startQuiz(page);
   for (const [index, question] of lessons[0].questions.entries()) {
     await page.getByRole('radio').nth(question.correct).click();
     await page.getByRole('button', { name: 'Check answer', exact: true }).click();

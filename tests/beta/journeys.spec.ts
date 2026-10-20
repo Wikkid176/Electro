@@ -3,6 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { lessons } from '../../src/content';
 import { componentChallenges } from '../../src/components';
 import { modelVersion, planProfile, profiles } from './model';
+import { estimatedLessonMinutes } from '../../src/teaching';
 
 for (const profile of profiles) test(`${profile.id}: ${profile.group}`, async ({ page }) => {
   const started = Date.now();
@@ -23,8 +24,13 @@ for (const profile of profiles) test(`${profile.id}: ${profile.group}`, async ({
   await expect(page.getByText('Build skills.')).toBeVisible();
   for (const [lessonIndex, lesson] of lessons.entries()) {
     const decisions = plan.questions.filter(question => question.lessonId === lesson.id);
-    await activate(page.getByRole('button', { name: `${lesson.title}, ${lesson.minutes} minutes`, exact: true }));
-    await button('Start challenge →');
+    await activate(page.getByRole('button', { name: `${lesson.title}, ${estimatedLessonMinutes(lesson)} minutes`, exact: true }));
+    await button('Continue to visual →');
+    await button('Continue to practice →');
+    await activate(page.getByRole('radio').first());
+    await button('Check practice');
+    await button('Continue to recap →');
+    await button('Start quiz →');
     let expectedScore = 0;
     for (const [index, question] of lesson.questions.entries()) {
       const decision = decisions[index];
