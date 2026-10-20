@@ -23,7 +23,7 @@ test('21 deep lessons provide authored instruction, examples, checks and safety 
     }
     assert.ok(lesson.virtualExercise.prompt && lesson.virtualExercise.expectedReasoning && lesson.virtualExercise.safetyGate, lesson.id);
     assert.ok(lesson.trainingNotice.includes('TRAINING ONLY'), lesson.id);
-    assert.ok(lesson.referenceIds.length && lesson.referenceIds.every((id: string) => refs.has(id)), lesson.id);
+    assert.ok(Array.isArray(lesson.referenceIds) && lesson.referenceIds.every((id: string) => refs.has(id)), lesson.id);
   }
 });
 

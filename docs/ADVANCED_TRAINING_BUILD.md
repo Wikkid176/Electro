@@ -21,13 +21,13 @@ This branch introduces an OPTIONAL Advanced Training screen, accessible from the
 
 ## Build/export
 
-GitHub Actions `Build Android beta APK` is enabled to run on this feature branch's source push and builds the signed installer using the ORIGINAL beta signing identity if the requisite GitHub secrets exist. The output artifact is `ELL-Android-beta-APK`, which contains `ELL-0.3.1-beta.1.apk`. The workflow verifies that signature, application identity, bundled Hermes JS, alignment, and notice files pass.
+GitHub Actions `Build Advanced Training preview APK` runs on this feature branch without requiring the existing beta signing secrets. It builds a standalone **separately installable** `ELL-0.3.1-preview.apk` for `com.wikkid176.electrolessonlab.preview`, exported as `ELL-0.3.1-Preview-APK`. Its temporary build signing certificate is NOT the original signing identity, so this preview cannot be installed as an update over the original beta. Existing beta data is not shared across these two package IDs. The signed beta workflow remains available through manual dispatch after restoring the ORIGINAL signing credentials.
 
-If CI can't run because secrets/Android tools are unavailable, **do not** substitute a new signing key for the existing one; diagnose the failure. Do not declare the APK built until the workflow succeeds and the artifact exists.
+The original beta-signed build currently fails in GitHub Actions because original signing secrets are missing. This preview avoids replacing or impersonating that signature by changing to an isolated application package. Do not declare the preview APK built until the new workflow succeeds and the artifact exists.
 
 ## Manual physical-device checks
 
-1. Install over the existing beta and confirm prior XP remains.
+1. Install the preview alongside the existing beta; its progress starts independently. Once the original beta signing key is available, separately test an in-place upgrade to versionCode 3 on the beta app.
 2. Navigate Learn -> Advanced Training -> Deep Lessons; select safety and three-wire starter lessons.
 3. Answer a wrong and right knowledge-check response; explanation should appear.
 4. Open a work order; debrief remains hidden until selected.

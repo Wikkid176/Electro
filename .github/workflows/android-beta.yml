@@ -3,7 +3,7 @@ name: Build Android beta APK
 on:
   workflow_dispatch:
   push:
-    branches: [main, 'feature/deep-training-031']
+    branches: [main]
     paths:
       - '.github/workflows/android-beta.yml'
       - 'App.tsx'
