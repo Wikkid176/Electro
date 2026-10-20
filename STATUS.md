@@ -1,20 +1,24 @@
 # ElectroLessonLab (ELL) status report
 
-Updated October 19, 2026 · Human beta version 0.2.0-beta.1
+Updated October 20, 2026 · Illustrated-lesson beta 0.3.0-beta.2
 
 ## Status
 
 The user selected ElectroLessonLab (ELL) as the app name and Android as the first human-beta target. The beta includes an opt-in local study record, first-attempt scoring separate from replayed best scores, approximate foreground timing, feedback notes and manual results sharing. Legacy course/checkpoint storage keys remain unchanged. See [HUMAN_BETA.md](HUMAN_BETA.md) and release validation in `releases/android/` for the current build status; previous synthetic results below are historical and are not human outcomes.
 
-Current human-beta checks: TypeScript and all 27 model/content/study tests pass. All 50 distinct browser cases passed across the initial run (49 passes and one full-course phone time-budget failure) plus the successful focused phone-course rerun, with all assertions retained. The native release build succeeded and produced [ELL-0.2.0-beta.1.apk](releases/android/ELL-0.2.0-beta.1.apk). Its dedicated-key signature, identity/version, non-debuggable manifest, disabled backups, bundled lessons/graphics/notices and ZIP alignment are verified. The official dependency download blocker is resolved. Physical-device installation, launch, resume and sharing still require an organizer smoke test; no Play Store publication has taken place.
+Current update: all 47 missions have authored four-page teaching before their quizzes: 94 explanatory sections, 47 interactive visual aids, 47 worked examples and 47 ungraded practice questions. Reading checkpoints and in-quiz lesson review preserve progress and checked answers. Existing quiz identities, 141 quiz questions and 3,525 available XP remain unchanged. Android versionName is 0.3.0 and versionCode is 2, using the existing package and signing key. The earlier study record remains exportable but paused to prevent mixing old and expanded-course results. See [the lesson upgrade](docs/LESSON_UPGRADE.md) and `releases/android/beta2-validation.json` for verified release evidence.
 
-The base game is implemented as a working Expo/React Native prototype with a tested browser version. It contains 47 original missions, 141 mission questions, four interactive practice labs, fictional document/evidence exercises, and device-local progress. Android and iOS JavaScript exports succeeded. It has not yet been validated on real phones or packaged and published for app-store distribution.
+Current checks: TypeScript, all 30 unit tests and all 58 phone/desktop browser cases passed. The browser suite completes every expanded lesson and quiz in both layouts, with coverage for all eight interactive visual forms, reading resume, quiz review, practice feedback and earlier-study export.
+
+The signed [0.3.0-beta.2 Android APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.3.0-beta.2.apk) passed verification of its existing beta signing certificate, versionCode 2, release settings, all 47 bundled authored lessons, graphics resources, exact notices, archive integrity and alignment. Physical-phone installation and behavior still need organizer testing. This APK was built in the prepared workspace; a GitHub-hosted Actions run is not claimed.
+
+The base game is implemented as an Expo/React Native app with an Android beta and a tested browser version. It contains 47 original missions, 141 mission questions, four interactive practice labs, fictional document/evidence exercises, and device-local progress. Android and iOS JavaScript exports succeeded. It has not yet been validated on real phones or packaged and published for app-store distribution.
 
 ## What learners do
 
 The app has four tabs and a friendly generated relay coach, Click, whose name remains provisional:
 
-- **Learn:** Choose a mission, read its briefing and learning points, then answer three scenario questions. Select an answer and check it to see immediate feedback and an explanation. Optional coach hints support reasoning without changing XP; thoughtful and encouraging expressions accompany feedback. Some questions include invented reference documents, inspection records, or fault evidence to compare.
+- **Learn:** Choose a mission, read the teaching sections, explore the visual and worked example, check the ungraded practice, and read the recap before answering three quiz questions. Select an answer and check it to see immediate feedback and an explanation. Optional coach hints support reasoning without changing XP; thoughtful and encouraging expressions accompany feedback. Some questions include invented reference documents, inspection records, or fault evidence to compare.
 - **Lab:** Practice simplified motor-control behavior, interpret a virtual meter, follow an original fictional drawing path, or explore illustrated components and identification/defect challenges. These practice sessions do not award course XP and do not represent real equipment or field procedures.
 - **Progress:** See total XP, a learning rank, mastered/completed missions, and each mission's saved best score. Open a mission again to improve it.
 
@@ -22,7 +26,7 @@ The app has four tabs and a friendly generated relay coach, Click, whose name re
 
 Each correct answer is worth 25 XP, with 75 available per mission and 3,525 across the course. Three correct answers mark a mission mastered. Only improvements to the saved best score add XP; replaying cannot farm points or erase a better score. The Learn screen recommends the first mission not yet mastered. Ranks are game milestones, not professional qualifications. Click celebrates game mastery without awarding a work credential.
 
-Progress saves automatically on the same device/browser. A separate checkpoint lets learners resume one unfinished mission, including the selected answer, checked feedback and optional hint. Learn provides Resume/Discard actions; opening another mission replaces the checkpoint. Finishing clears it, and partial answers do not earn XP. When every mission is mastered, Learn offers a review action instead of recommending mission one again. No account, backend, analytics, or cross-device synchronization is included. Clearing app/browser data removes these local records. Earlier course versions' saved scores retain their original lesson identities and earned XP.
+Progress saves automatically on the same device/browser. A separate checkpoint lets learners resume one unfinished mission, including its reading page or quiz selection, checked feedback and optional hint. Quiz review opens the lesson without losing the current answer or score. Learn provides Resume/Discard actions; opening another mission replaces the checkpoint. Finishing clears it, and partial answers do not earn XP. When every mission is mastered, Learn offers a review action instead of recommending mission one again. No account, backend, analytics, or cross-device synchronization is included. Clearing app/browser data removes these local records. Earlier course versions' saved scores retain their original lesson identities and earned XP.
 
 ## Training coverage
 
@@ -50,7 +54,7 @@ Progress saves automatically on the same device/browser. A separate checkpoint l
 
 Twenty-six supplied documents informed topic selection and independent explanations. Source files, images, proprietary print fragments, machine identifiers, and source-provider branding are excluded from the app. All practice records, diagrams, values, and lesson copy are original. Attachment instructions were treated as reference data rather than project commands. CONTENT_REVIEW.md records omitted source claims, model assumptions, and review requirements.
 
-## Verification completed
+## Earlier prototype verification (historical)
 
 - TypeScript checks passed.
 - All 23 gameplay/content/model/checkpoint checks passed, including generated-asset/coach registration, hint boundaries, progress rules, and malformed/stale checkpoint rejection.

@@ -6,10 +6,11 @@ cd "$(dirname "$0")/.."
 test -r "$ELECTRO_BETA_SIGNING_PROPERTIES"
 export EXPO_NO_TELEMETRY=1
 export CMAKE_BUILD_PARALLEL_LEVEL=2
+apk_name="$(node --input-type=module -e "import { release } from './src/build.ts'; process.stdout.write('ELL-' + release.label + '.apk')")"
 npm exec -- expo prebuild --platform android --no-install
 node scripts/pin-gradle-checksum.mjs
 cd android
 ./gradlew :app:assembleRelease --max-workers=2 --no-daemon -PreactNativeArchitectures=arm64-v8a,armeabi-v7a
 mkdir -p ../releases/android
-cp app/build/outputs/apk/release/app-release.apk ../releases/android/ELL-0.2.0-beta.1.apk
-echo 'Standalone signed beta APK: releases/android/ELL-0.2.0-beta.1.apk'
+cp app/build/outputs/apk/release/app-release.apk "../releases/android/$apk_name"
+echo "Standalone signed beta APK: releases/android/$apk_name"

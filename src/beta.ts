@@ -27,7 +27,7 @@ export function restoreStudy(raw: string | null): StudyData | null {
   try {
     if (raw.length > 2_000_000) return null;
     const value = JSON.parse(raw) as StudyData;
-    if (!value || value.version !== 1 || value.build !== release.label || !value.participant || !validTesterCode(value.participant.code) || !cohorts.includes(value.participant.cohort) || typeof value.recording !== 'boolean' || !timestamp(value.startedAt) || !finiteSeconds(value.trainingSeconds)) return null;
+    if (!value || value.version !== 1 || ![release.label, '0.2.0-beta.1'].includes(value.build) || !value.participant || !validTesterCode(value.participant.code) || !cohorts.includes(value.participant.cohort) || typeof value.recording !== 'boolean' || !timestamp(value.startedAt) || !finiteSeconds(value.trainingSeconds)) return null;
     if (!value.baselineScores || typeof value.baselineScores !== 'object' || Array.isArray(value.baselineScores)) return null;
     for (const [id, score] of Object.entries(value.baselineScores)) if (!lessons.some(lesson => lesson.id === id && Number.isInteger(score) && score >= 0 && score <= lesson.questions.length)) return null;
     if (!Array.isArray(value.attempts) || value.attempts.length > 150 || new Set(value.attempts.map(attempt => attempt.id)).size !== value.attempts.length) return null;
@@ -53,7 +53,9 @@ export function restoreStudy(raw: string | null): StudyData | null {
     }
     if (!Array.isArray(value.labsVisited) || value.labsVisited.length > 4 || !value.labsVisited.every(lab => ['motor', 'meter', 'trace', 'components'].includes(lab))) return null;
     if (!Array.isArray(value.feedback) || value.feedback.length > 100 || !value.feedback.every(item => timestamp(item.at) && boundedText(item.category, 40) && boundedText(item.location, 120) && boundedText(item.note, 2000))) return null;
-    return value;
+    // Keep the earlier study exportable, without mixing its timing or answers
+    // with the expanded course. Course scores and reading checkpoints are separate.
+    return value.build === release.label ? value : { ...value, recording: false };
   } catch { return null; }
 }
 

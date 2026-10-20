@@ -1,0 +1,13 @@
+# Illustrated lesson update: 0.3.0-beta.2
+
+All 47 missions now teach before testing. Each has two original explanatory sections, an explorable visual, a three-step worked example, one separate ungraded practice question with feedback, and a recap before the original three-question quiz. The course retains 141 scored questions and a maximum of 3,525 XP; the 47 guided questions award no XP.
+
+The four reading pages are **Learn**, **Explore**, **Practice**, and **Recap**. Learners move forward at their own pace. Checking practice reveals the explanation even after a wrong choice; changing the choice requires checking it again before continuing. Previous-page navigation supports rereading. The quiz starts from the recap. During a quiz, **Review lesson** opens the teaching material while retaining the current question, checked answer, hint, score and study attempt. **Return to quiz** resumes it.
+
+Eight visual forms cover energy sources, complete-path/feedback relationships, comparisons, virtual meter displays, fictional document cards, evidence chains, proportional scales and timelines. Tap a visual node to reveal its interpretation. Where appropriate, original generated component illustrations include tappable labeled parts. The visual aids and their supplied records are conceptual models, not physical construction or energized test instructions. No private print fragments or proprietary source files are included.
+
+The reading checkpoint saves the current page under the existing checkpoint key. Older reading checkpoints start on page one; valid older quiz checkpoints continue their quiz. Visual-node selection and ungraded practice choices are temporary, so returning to a practice page after restarting requires checking practice again. Previously completed course scores and best-score XP remain intact.
+
+The app's Android package and signing key remain the same, with versionName 0.3.0 and versionCode 2. An earlier beta study remains exportable but paused, preserving its original build label. It cannot resume into the new course. Export and delete that beta record before starting a new study; course scores remain as the baseline. New study time includes lesson reading and practice. Guided-practice choices do not become quiz answers in study metrics. On-screen times are approximate allowances, not measured human results, and the earlier synthetic report is not an estimate for this expanded course.
+
+The authored content is in `src/teaching/`, with the four-page interface in `src/LessonReader.tsx`. Existing questions and lesson identities remain in `src/content.ts` and the topic modules. Qualified content review and physical-phone checks are still required before a training release.

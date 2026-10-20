@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-20T01:34:13.351439+00:00",
+  "app": "ElectroLessonLab (ELL)",
+  "release": "0.3.0-beta.2",
+  "typecheck": "passed",
+  "unitTests": {
+    "passed": 30,
+    "failed": 0
+  },
+  "browserTests": {
+    "passed": 58,
+    "failed": 0,
+    "skipped": 0,
+    "durationSeconds": 369.525695,
+    "evidence": "beta2-browser-validation.json"
+  },
+  "authoredLessons": 47,
+  "explanatorySections": 94,
+  "visualForms": 8,
+  "workedExamples": 47,
+  "guidedPracticeQuestions": 47,
+  "scoredQuizQuestions": 141,
+  "maximumXp": 3525,
+  "nativeBuild": "passed",
+  "apkProduced": true,
+  "apk": "ELL-0.3.0-beta.2.apk",
+  "bytes": 37210833,
+  "sha256": "03842ecd4ed120c8cdc20b1c0de6e15bee49af97bd88f62b2c32860b6f5833bd",
+  "apkVerification": "beta2/APK-VERIFICATION.json",
+  "sameBetaSigningCertificate": true,
+  "androidVersionCode": 2,
+  "physicalAndroidDeviceTested": false,
+  "githubHostedBuildVerified": false,
+  "historicalSyntheticBetaRerun": false,
+  "note": "Reading/checkpoint and quiz review preserve course scores. Earlier beta studies stay exportable but paused; guided practice is ungraded and is not counted as study quiz answers. Human content review and physical-phone checks remain outstanding."
+}

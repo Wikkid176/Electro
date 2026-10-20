@@ -63,6 +63,20 @@ with zipfile.ZipFile(args.apk) as archive:
     bundle = archive.read("assets/index.android.bundle")
     require(bundle.startswith(bytes.fromhex("c61fbc03c103191f")), "Missing standalone Hermes bytecode")
     require(b"ElectroLessonLab" in bundle, "Wrong embedded application")
+    for marker in ["COACH-LED LESSON", "WORKED EXAMPLE", "Continue to visual", "Check practice", "Your lesson recap"]:
+        require(marker.encode() in bundle or marker.encode("utf-16-le") in bundle,
+                "Expanded lesson interface missing from embedded app: " + marker)
+    authored = subprocess.check_output([
+        "node", "--input-type=module", "-e",
+        "import { teachingLessons } from './src/teaching/index.ts'; console.log(JSON.stringify(teachingLessons));"
+    ], cwd=root, text=True)
+    teaching = json.loads(authored)
+    require(len(teaching) == 47, "Expected 47 authored lessons")
+    for lesson_id, content in teaching.items():
+        for section in content["sections"]:
+            text = section["body"]
+            require(text.encode() in bundle or text.encode("utf-16-le") in bundle,
+                    "Authored lesson missing from standalone bundle: " + lesson_id)
     for notice in ["LICENSE", "THIRD_PARTY_NOTICES.txt"]:
         require(archive.read("assets/" + notice) == (root / notice).read_bytes(), "Missing or altered software notice: " + notice)
     forbidden = (".pdf", ".doc", ".docx", ".ppt", ".pptx", ".p12", ".jks", ".pfx", ".pem", ".key")
@@ -80,6 +94,8 @@ verification = {
     "signatureVerified": True, "signerCertificateSha256": expected,
     "zipAlignment16KiBVerified": True, "debuggable": False, "allowBackup": False,
     "permissions": permissions, "embeddedHermes": True, "artworkResourcesPresent": True,
+    "expandedLessonInterfaceIncluded": True,
+    "authoredLessonsBundled": len(teaching),
     "softwareNoticesIncluded": True, "privateReferenceOrSigningFilesIncluded": False,
     "commit": os.environ.get("GITHUB_SHA"), "runId": os.environ.get("GITHUB_RUN_ID"),
     "physicalDeviceTested": False,

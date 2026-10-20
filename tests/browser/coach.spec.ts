@@ -1,3 +1,4 @@
+import { startQuiz } from '../helpers/lesson';
 import { test, expect } from '@playwright/test';
 import { lessons } from '../../src/content';
 import { coachHint } from '../../src/coach';
@@ -11,7 +12,7 @@ test('coach welcomes, offers optional hints, responds supportively, celebrates, 
   const lesson = lessons[0];
   async function start() {
     await page.getByRole('button', { name: new RegExp(`^${lesson.title},`) }).click();
-    await page.getByRole('button', { name: 'Start challenge →', exact: true }).click();
+    await startQuiz(page);
   }
   async function answerAll(missFirst: boolean) {
     for (const [i, question] of lesson.questions.entries()) {

@@ -1,3 +1,4 @@
+import { startQuiz } from '../helpers/lesson';
 import { test, expect, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 import { lessons } from '../../src/content';
@@ -15,7 +16,7 @@ async function startRecording(page: Page) {
 async function beginMission(page: Page, replay = false) {
   await page.getByRole('tab', { name: 'Learn', exact: true }).click();
   await page.getByRole('button', { name: new RegExp(`^${lessons[0].title},`) }).click();
-  await page.getByRole('button', { name: 'Start challenge →', exact: true }).click();
+  await startQuiz(page);
   for (const [index, question] of lessons[0].questions.entries()) {
     if (index === 0 && !replay) {
       await page.getByRole('button', { name: 'Coach hint', exact: true }).click();

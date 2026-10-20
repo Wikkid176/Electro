@@ -14,6 +14,8 @@ import { lessonFingerprint, restoreSession, SESSION_KEY, type MissionSession } f
 import { BetaProvider, useBeta } from './src/BetaProvider';
 import { BetaHub } from './src/BetaHub';
 import { release } from './src/build';
+import { LessonReader } from './src/LessonReader';
+import { estimatedLessonMinutes } from './src/teaching';
 import { completeLesson, initialMotor, initialProgress, motorReducer, restoreProgress, totalXp, XP_PER_ANSWER, type Progress } from './src/engine';
 
 const STORAGE_KEY = 'electro.progress.v1';
@@ -40,6 +42,8 @@ function ElectroApp() {
   const [storageError, setStorageError] = useState('');
   const [active, setActive] = useState<Lesson | null>(null);
   const [phase, setPhase] = useState<'brief' | 'quiz' | 'result'>('brief');
+  const [lessonPage, setLessonPage] = useState(0);
+  const [reviewing, setReviewing] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selection, setSelection] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
@@ -90,12 +94,12 @@ function ElectroApp() {
       });
       return;
     }
-    const session: MissionSession = { version: 1, lessonId: active.id, fingerprint: lessonFingerprint(active), phase, questionIndex, selection, checked, score, hintVisible };
+    const session: MissionSession = { version: 1, lessonId: active.id, fingerprint: lessonFingerprint(active), phase, lessonPage, questionIndex, selection, checked, score, hintVisible };
     setSavedSession(session);
     writes.current = writes.current.then(() => AsyncStorage.setItem(SESSION_KEY, JSON.stringify(session))).catch(() => {
       setStorageError('The unfinished mission could not be saved. Keep this session open to continue.');
     });
-  }, [loaded, sessionReady, active, phase, questionIndex, selection, checked, score, hintVisible]);
+  }, [loaded, sessionReady, active, phase, lessonPage, questionIndex, selection, checked, score, hintVisible]);
 
   useEffect(() => {
     const subscription = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -106,12 +110,12 @@ function ElectroApp() {
     return () => subscription.remove();
   }, [active, tab]);
 
-  useEffect(() => { scroll.current?.scrollTo({ y: 0, animated: false }); }, [tab, active, phase, questionIndex]);
+  useEffect(() => { scroll.current?.scrollTo({ y: 0, animated: false }); }, [tab, active, phase, questionIndex, lessonPage, reviewing]);
   useEffect(() => { beta.setScope(active && phase !== 'result' ? `mission:${active.id}` : tab); }, [active, phase, tab, beta.setScope]);
 
   function openLesson(lesson: Lesson) {
     beta.startMission(lesson.id);
-    setActive(lesson); setPhase('brief'); setScore(0); setQuestionIndex(0); setSelection(null); setChecked(false); setEarned(0); setHintVisible(false);
+    setActive(lesson); setLessonPage(0); setReviewing(false); setPhase('brief'); setScore(0); setQuestionIndex(0); setSelection(null); setChecked(false); setEarned(0); setHintVisible(false);
   }
 
   function resumeMission() {
@@ -119,7 +123,7 @@ function ElectroApp() {
     const lesson = lessons.find(item => item.id === savedSession.lessonId);
     if (!lesson) return;
     beta.startMission(lesson.id, true);
-    setActive(lesson); setPhase(savedSession.phase); setQuestionIndex(savedSession.questionIndex);
+    setActive(lesson); setLessonPage(savedSession.lessonPage ?? 0); setReviewing(false); setPhase(savedSession.phase); setQuestionIndex(savedSession.questionIndex);
     setSelection(savedSession.selection); setChecked(savedSession.checked); setScore(savedSession.score);
     setHintVisible(savedSession.hintVisible); setEarned(0);
   }
@@ -159,16 +163,12 @@ function ElectroApp() {
             <Pressable accessibilityRole="button" onPress={() => setActive(null)} style={s.back}><Text style={s.link}>← Back to training</Text></Pressable>
             <Label>{active.category} / MISSION {active.symbol}</Label>
             <Text accessibilityRole="header" style={s.title}>{active.title}</Text>
-            {phase === 'brief' && <>
-              <Text style={s.intro}>{active.brief}</Text>
-              <View style={s.card}><Label>FIELD NOTES</Label>{active.points.map((point, i) => <View key={point} style={s.noteRow}><Text style={s.noteNumber}>{i + 1}</Text><Text style={[s.body, s.flex]}>{point}</Text></View>)}</View>
-              <View style={s.callout}><Text style={s.calloutTitle}>Learn it. Then put it to the test.</Text><Text style={s.body}>Three questions. 25 XP per correct answer. Read the feedback after each choice. Your best score is saved, so you can always try again.</Text></View>
-              <Button title="Start challenge →" onPress={() => setPhase('quiz')} />
-            </>}
-            {phase === 'quiz' && (() => {
+            {(phase === 'brief' || (phase === 'quiz' && reviewing)) && <LessonReader key={`${active.id}:${reviewing ? 'review' : 'learn'}`} lesson={active} page={lessonPage} onPage={setLessonPage} reviewing={reviewing} onQuiz={() => { setReviewing(false); setPhase('quiz'); }} />}
+            {phase === 'quiz' && !reviewing && (() => {
               const question = active.questions[questionIndex];
               return <>
                 <View style={s.split}><Text style={s.body}>Question {questionIndex + 1} of {active.questions.length}</Text><Text style={s.green}>{score} correct</Text></View>
+                <Button title="Review lesson" secondary onPress={() => { setLessonPage(0); setReviewing(true); }} />
                 <Meter value={questionIndex / active.questions.length} />
                 <View style={s.questionCard}><Text accessibilityRole="header" style={s.question}>{question.prompt}</Text>
                   {!!question.referenceCards?.length && <View style={s.card}><Label>FICTIONAL PRACTICE DOCUMENTS</Label><Text style={s.small}>Original lookup samples. These are not standards text or manufacturer instructions.</Text>{question.referenceCards.map(reference => <View key={reference.id} style={{ gap: 8 }}><Text style={s.recordTitle}>{reference.id}: {reference.title}</Text><Text style={s.small}>{reference.context}</Text><Text style={s.body}>{reference.content}</Text></View>)}</View>}
@@ -198,14 +198,14 @@ function ElectroApp() {
               <Button title="Review and retry" secondary onPress={() => openLesson(active)} />
             </View>}
           </> : tab === 'Learn' ? <>
-            {savedSession && <View style={s.callout}><Label>YOUR UNFINISHED MISSION</Label><Text style={s.cardTitle}>{lessons.find(lesson => lesson.id === savedSession.lessonId)?.title}</Text><Text style={s.body}>{savedSession.phase === 'brief' ? 'Field notes ready to continue.' : `Question ${savedSession.questionIndex + 1} of 3 · ${savedSession.score} correct so far.`} Starting another mission replaces this checkpoint.</Text><Button title="Resume mission" onPress={resumeMission} /><Button title="Discard saved mission" secondary onPress={discardMission} /></View>}
+            {savedSession && <View style={s.callout}><Label>YOUR UNFINISHED MISSION</Label><Text style={s.cardTitle}>{lessons.find(lesson => lesson.id === savedSession.lessonId)?.title}</Text><Text style={s.body}>{savedSession.phase === 'brief' ? `Lesson page ${(savedSession.lessonPage ?? 0) + 1} of 4 ready to continue.` : `Question ${savedSession.questionIndex + 1} of 3 · ${savedSession.score} correct so far.`} Starting another mission replaces this checkpoint.</Text><Button title="Resume mission" onPress={resumeMission} /><Button title="Discard saved mission" secondary onPress={discardMission} /></View>}
             <View style={s.split}><Label>YOUR NEXT SHIFT STARTS HERE</Label><Text style={s.small}>VOL. 01 / INDUSTRIAL</Text></View>
             <View style={[s.hero, wide && s.heroWide]}>
               <View style={s.heroCopy}><View style={s.badge}><Text style={s.badgeText}>LEARN BY DOING</Text></View>
                 <Text accessibilityRole="header" style={[s.heroTitle, wide && { fontSize: 52, lineHeight: 58 }]}>Build skills.{"\n"}Make connections.</Text>
-                {wide ? <Text style={s.intro}>Short missions. Better questions. Build industrial electrical understanding one clear idea at a time.</Text> : <View style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}><CoachPortrait size={104} /><View style={{ flex: 1, gap: 5 }}><Label>MEET {brand.coach.toUpperCase()}, YOUR COACH</Label><Text style={s.body}>One clear idea at a time. Let’s connect the hardware to the theory.</Text></View></View>}
+                {wide ? <Text style={s.intro}>Learn with Coach Click. Explore visual examples, practice the idea, then take the quiz.</Text> : <View style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}><CoachPortrait size={104} /><View style={{ flex: 1, gap: 5 }}><Label>MEET {brand.coach.toUpperCase()}, YOUR COACH</Label><Text style={s.body}>Real lessons. Visual examples. Guided practice before every quiz.</Text></View></View>}
                 <Button title={allMastered ? 'Review mastered missions' : `Start mission ${nextLesson.symbol} →`} onPress={() => allMastered ? setTab('Progress') : openLesson(nextLesson)} />
-                <Text style={s.heroFoot}>{allMastered ? 'LEARNING PATH MASTERED' : `${nextLesson.minutes} MIN · ${nextLesson.title.toUpperCase()}`}</Text>
+                <Text style={s.heroFoot}>{allMastered ? 'LEARNING PATH MASTERED' : `${estimatedLessonMinutes(nextLesson)} MIN · ${nextLesson.title.toUpperCase()}`}</Text>
               </View>
               {wide && <View style={s.heroArt}><CoachPortrait size={270} /><Text style={s.artCaption}>MEET {brand.coach.toUpperCase()}, YOUR COACH.</Text></View>}
             </View>
@@ -215,8 +215,8 @@ function ElectroApp() {
             <View style={[s.lessonGrid, wide && { flexDirection: 'row' }]}>{lessons.map(lesson => {
               const best = progress.scores[lesson.id];
               const done = best === lesson.questions.length;
-              return <Pressable key={lesson.id} accessibilityRole="button" accessibilityLabel={`${lesson.title}, ${lesson.minutes} minutes${best !== undefined ? `, best score ${best} of 3` : ''}`} onPress={() => openLesson(lesson)} style={({ pressed }) => [s.lessonCard, wide && { width: '48.8%' }, pressed && s.pressed]}>
-                <View style={s.lessonTop}><View style={[s.numberBox, done && { backgroundColor: colors.lime }]}><Text style={[s.number, done && { color: colors.bg }]}>{done ? '✓' : lesson.symbol}</Text></View><Text style={s.small}>{lesson.minutes} MIN · 75 XP</Text></View>
+              return <Pressable key={lesson.id} accessibilityRole="button" accessibilityLabel={`${lesson.title}, ${estimatedLessonMinutes(lesson)} minutes${best !== undefined ? `, best score ${best} of 3` : ''}`} onPress={() => openLesson(lesson)} style={({ pressed }) => [s.lessonCard, wide && { width: '48.8%' }, pressed && s.pressed]}>
+                <View style={s.lessonTop}><View style={[s.numberBox, done && { backgroundColor: colors.lime }]}><Text style={[s.number, done && { color: colors.bg }]}>{done ? '✓' : lesson.symbol}</Text></View><Text style={[s.small, { flex: 1, textAlign: 'right', paddingLeft: 12 }]}>~{estimatedLessonMinutes(lesson)} MIN · LESSON + QUIZ · 75 XP</Text></View>
                 <Label>{lesson.category}</Label><Text style={s.cardTitle}>{lesson.title}</Text>
                 <View style={s.split}><Text style={s.small}>{best === undefined ? 'Ready when you are' : done ? 'Mastered · play again' : `Best: ${best}/3 · try again`}</Text><Text style={s.arrow}>↗</Text></View>
               </Pressable>;

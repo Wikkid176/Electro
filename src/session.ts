@@ -6,6 +6,7 @@ export type MissionSession = {
   lessonId: string;
   fingerprint: string;
   phase: 'brief' | 'quiz';
+  lessonPage?: number;
   questionIndex: number;
   selection: number | null;
   checked: boolean;
@@ -30,6 +31,7 @@ export function restoreSession(raw: string | null, lessons: Lesson[]): MissionSe
     if (!lesson || value.fingerprint !== lessonFingerprint(lesson)) return null;
     if (value.phase !== 'brief' && value.phase !== 'quiz') return null;
     if (!Number.isInteger(value.questionIndex) || value.questionIndex < 0 || value.questionIndex >= lesson.questions.length) return null;
+    if (value.lessonPage !== undefined && (!Number.isInteger(value.lessonPage) || value.lessonPage < 0 || value.lessonPage > 3)) return null;
     const question = lesson.questions[value.questionIndex];
     if (value.selection !== null && (!Number.isInteger(value.selection) || value.selection < 0 || value.selection >= question.choices.length)) return null;
     if (typeof value.checked !== 'boolean' || typeof value.hintVisible !== 'boolean') return null;
@@ -37,6 +39,6 @@ export function restoreSession(raw: string | null, lessons: Lesson[]): MissionSe
     const currentCorrect = value.checked && value.selection === question.correct ? 1 : 0;
     if (!Number.isInteger(value.score) || value.score < currentCorrect || value.score > value.questionIndex + currentCorrect) return null;
     if (value.phase === 'brief' && (value.questionIndex !== 0 || value.selection !== null || value.checked || value.score !== 0 || value.hintVisible)) return null;
-    return { version: 1, lessonId: lesson.id, fingerprint: value.fingerprint, phase: value.phase, questionIndex: value.questionIndex, selection: value.selection, checked: value.checked, score: value.score, hintVisible: value.hintVisible };
+    return { version: 1, lessonId: lesson.id, fingerprint: value.fingerprint, phase: value.phase, ...(value.lessonPage === undefined ? {} : { lessonPage: value.lessonPage }), questionIndex: value.questionIndex, selection: value.selection, checked: value.checked, score: value.score, hintVisible: value.hintVisible };
   } catch { return null; }
 }
