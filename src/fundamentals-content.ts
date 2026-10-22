@@ -11,9 +11,9 @@ export const fundamentalsLessons: Lesson[] = [
       'DC and AC describe different signal behavior. A voltage function must match the signal and the instrument specification. A DC polarity sign describes the potential difference relative to the reference terminal; it does not alone diagnose a wiring fault.',
     ],
     questions: [
-      { prompt: 'A fictional sensor draws 35 mA. What is that in amperes?', choices: ['35,000 A', '0.035 A', '3.5 A'], correct: 1, explanation: 'One milliampere is 0.001 A. Therefore 35 mA is 35 × 0.001 = 0.035 A.' },
+      { prompt: 'A sensor draws 35 mA. What is that in amperes?', choices: ['35,000 A', '0.035 A', '3.5 A'], correct: 1, explanation: 'One milliampere is 0.001 A. Therefore 35 mA is 35 × 0.001 = 0.035 A.' },
       { prompt: 'Which quantity is measured in watts?', choices: ['Power', 'Resistance', 'Frequency'], correct: 0, explanation: 'Watts measure power, the rate of energy transfer. Resistance is measured in ohms and frequency in hertz.' },
-      { prompt: 'The specified value of a fictional resistor is 2.2 kΩ. Which value is equivalent?', choices: ['0.0022 Ω', '22 Ω', '2,200 Ω'], correct: 2, explanation: 'The prefix kilo means 1,000. Multiplying 2.2 by 1,000 gives 2,200 ohms.' },
+      { prompt: 'The specified value of a resistor is 2.2 kΩ. Which value is equivalent?', choices: ['0.0022 Ω', '22 Ω', '2,200 Ω'], correct: 2, explanation: 'The prefix kilo means 1,000. Multiplying 2.2 by 1,000 gives 2,200 ohms.' },
     ],
   },
   {
@@ -32,14 +32,14 @@ export const fundamentalsLessons: Lesson[] = [
   },
   {
     id: 'electrical-power', title: 'Put power in perspective', category: 'FUNDAMENTALS / POWER', symbol: '10', minutes: 5,
-    brief: 'Calculate power in fictional DC loads, and learn why the same shortcut does not describe every AC machine.',
+    brief: 'Calculate power in DC loads, and learn why the same shortcut does not describe every AC machine.',
     points: [
       'For a steady DC load, electrical input power is P = V × I. For an ideal resistor, the equivalent forms are P = I²R and P = V²/R.',
       'At constant resistance, doubling the current makes resistive power four times as large. Unexpected connection resistance can dissipate heat when load current flows.',
       'In AC systems, apparent power in volt-amperes and real power in watts are distinct. Power factor matters, and a motor’s electrical input is also distinct from its mechanical output. Do not apply an ideal DC resistor model to every load.',
     ],
     questions: [
-      { prompt: 'A fictional steady DC load takes 0.2 A at 18 V. What is its electrical input power?', choices: ['90 W', '3.6 W', '0.011 W'], correct: 1, explanation: 'For this steady DC example, P = V × I = 18 × 0.2 = 3.6 watts.' },
+      { prompt: 'A steady DC load takes 0.2 A at 18 V. What is its electrical input power?', choices: ['90 W', '3.6 W', '0.011 W'], correct: 1, explanation: 'For this steady DC example, P = V × I = 18 × 0.2 = 3.6 watts.' },
       { prompt: 'Current through an unchanged ideal resistor doubles. What happens to its power dissipation?', choices: ['It halves', 'It stays the same', 'It becomes four times as large'], correct: 2, explanation: 'P = I²R. At constant R, replacing I with 2I gives (2I)²R = 4I²R.' },
       { prompt: 'Why is multiplying AC RMS volts by RMS amperes not always the real power in watts?', choices: ['The result is apparent power; power factor must be considered', 'Watts and ohms are the same unit', 'AC equipment never consumes power'], correct: 0, explanation: 'For a single-phase AC load, the product of RMS voltage and RMS current is apparent power in VA. Real input power also depends on power factor; it is not automatically the mechanical output of a motor.' },
     ],
@@ -74,14 +74,14 @@ export const fundamentalsLessons: Lesson[] = [
   },
   {
     id: 'measurement-evidence', title: 'Collect better evidence', category: 'METER USE / TROUBLESHOOTING', symbol: '13', minutes: 5,
-    brief: 'Read fictional measurement records rather than probing real equipment. Compare operating conditions and look for evidence that tests a hypothesis.',
+    brief: 'Read measurement records rather than probing real equipment. Compare operating conditions and look for evidence that tests a hypothesis.',
     points: [
       'A circuit can look normal with little load current, then lose voltage when the load operates. In an ideal resistive model, a voltage drop across a connection grows with current and connection resistance. A recorded drop is evidence to investigate, not permission to bypass a device.',
       'A clamp responds to the combined magnetic effect of the conductors within it. Opposing currents can cancel, so a near-zero combined reading does not prove that each conductor carries no current. AC and DC capability depends on the clamp design.',
       'Min/Max and recording features can reveal changes within their capture limits. True-RMS capability can help with non-sinusoidal signals within instrument specifications; bandwidth and waveform limits still matter. No single feature guarantees a complete diagnosis.',
     ],
     questions: [
-      { prompt: 'A fictional record shows a connector dropping 2 V while carrying 0.4 A. What resistance does the ideal model imply?', choices: ['5 Ω', '0.2 Ω', '0.8 Ω'], correct: 0, explanation: 'For this ideal resistive example, R = V/I = 2/0.4 = 5 Ω. Real interpretation still requires context and authorized investigation.' },
+      { prompt: 'A record shows a connector dropping 2 V while carrying 0.4 A. What resistance does the ideal model imply?', choices: ['5 Ω', '0.2 Ω', '0.8 Ω'], correct: 0, explanation: 'For this ideal resistive example, R = V/I = 2/0.4 = 5 Ω. Real interpretation still requires context and authorized investigation.' },
       { prompt: 'A clamp encloses equal outgoing and returning currents and indicates near zero. What does that establish?', choices: ['Every conductor is current-free', 'The combined magnetic effects can cancel', 'The circuit is safe for resistance testing'], correct: 1, explanation: 'A combined clamp reading can conceal substantial current in individual conductors. It is not an absence-of-voltage or hazardous-energy verification.' },
       { prompt: 'A meter has true-RMS and Min/Max features. Which limitation still matters?', choices: ['Its display color determines accuracy', 'No limitations remain', 'Its specified waveform, bandwidth, and event-capture limits'], correct: 2, explanation: 'Measurement features operate within instrument specifications. A narrow event or unusual waveform may still be outside what that instrument can reliably capture.' },
     ],

@@ -1,8 +1,8 @@
 import type { Lesson, PracticeReference } from './content.ts';
 
 const pathEvidence: PracticeReference[] = [
-  { id: 'CASE-MODEL', title: 'SIM-PATH / Model assumptions', context: 'Invented ideal DC teaching model; records are supplied, not instructions to probe equipment.', content: 'One intended series path contains a source, closed links, and a resistive load with an intact return. There is exactly one open connection, no alternate feeds, and no parallel paths. Source reference is fixed. All recorded values refer to the same operating snapshot.' },
-  { id: 'CASE-RECORD', title: 'SIM-PATH / Supplied evidence', context: 'Fictional observations only; location letters are independent exercise labels.', content: 'Path order: source → A → B → C → load → return. Source, A, and B are recorded at 12 V relative to the defined return; C is recorded at 0 V. The exercise has not identified the physical cause of the open connection.' },
+  { id: 'CASE-MODEL', title: 'SIM-PATH / Model assumptions', context: 'ideal DC teaching model; records are supplied, not instructions to probe equipment.', content: 'One intended series path contains a source, closed links, and a resistive load with an intact return. There is exactly one open connection, no alternate feeds, and no parallel paths. Source reference is fixed. All recorded values refer to the same operating snapshot.' },
+  { id: 'CASE-RECORD', title: 'SIM-PATH / Supplied evidence', context: 'observations only; location letters are independent exercise labels.', content: 'Path order: source → A → B → C → load → return. Source, A, and B are recorded at 12 V relative to the defined return; C is recorded at 0 V. The exercise has not identified the physical cause of the open connection.' },
 ];
 
 export const troubleshootingLessons: Lesson[] = [
@@ -22,7 +22,7 @@ export const troubleshootingLessons: Lesson[] = [
   },
   {
     id: 'fault-boundaries', title: 'Narrow the fault region', category: 'TROUBLESHOOTING / EVIDENCE CASE', symbol: '33', minutes: 5,
-    brief: 'Use supplied fictional records to narrow a region while keeping the model assumptions visible.',
+    brief: 'Use supplied records to narrow a region while keeping the model assumptions visible.',
     points: [
       'Splitting a path can reduce the search region when the path, reference, state, and expected result are known. It does not guarantee a fixed number of checks on branching circuits, multiple faults, pulsed signals, or systems with alternate feeds.',
       'A reading is a difference between defined points under defined conditions. Check the return, source, loading, and actual control state before transferring a simplified series-circuit inference to a real system.',
@@ -52,12 +52,12 @@ export const troubleshootingLessons: Lesson[] = [
     id: 'root-cause-record', title: 'Prove and record the repair', category: 'TROUBLESHOOTING / ROOT CAUSE', symbol: '35', minutes: 5,
     brief: 'Separate symptom relief, the failure mechanism, corrective action, and evidence that the problem was resolved.',
     points: [
-      'Replacing a failed item can restore operation while leaving the damaging condition in place. In a fictional case, repeated cable damage at a documented moving edge requires review of the damage mechanism and the approved routing/support design, not another unexplained replacement.',
+      'Replacing a failed item can restore operation while leaving the damaging condition in place. In a case, repeated cable damage at a documented moving edge requires review of the damage mechanism and the approved routing/support design, not another unexplained replacement.',
       'Verification must match the original failure conditions and any affected functions. An intermittent fault needs an appropriate evidence-based observation plan; a few successful cycles do not prove permanent elimination. Safety-related changes require the responsible validation process.',
       'Record the symptom, context, evidence, limitations, identified cause, approved change, and verification outcome. Update controlled documentation through the approved change process. Keep unresolved questions visible rather than recording certainty the evidence does not support.',
     ],
     questions: [
-      { prompt: 'A fictional cable has repeatedly failed where it rubs a moving edge. Which repair proposal addresses more than the symptom?', choices: ['Replace the cable again with no record', 'Increase the fuse rating', 'Replace damaged parts and resolve the documented routing/support cause through the approved design process'], correct: 2, explanation: 'The damaging condition can cause another failure if it remains. Corrective action needs to address the supported mechanism without making unauthorized design or protection changes.' },
+      { prompt: 'A cable has repeatedly failed where it rubs a moving edge. Which repair proposal addresses more than the symptom?', choices: ['Replace the cable again with no record', 'Increase the fuse rating', 'Replace damaged parts and resolve the documented routing/support cause through the approved design process'], correct: 2, explanation: 'The damaging condition can cause another failure if it remains. Corrective action needs to address the supported mechanism without making unauthorized design or protection changes.' },
       { prompt: 'An intermittent fault previously appeared once per shift. Ten good minutes follow a repair. What can you report?', choices: ['Permanent resolution is proven', 'A limited successful observation; more verification under the relevant conditions is needed', 'All safety functions are automatically validated'], correct: 1, explanation: 'A short observation does not cover the historical failure pattern. Report its actual duration and conditions and follow the appropriate verification and acceptance plan.' },
       { prompt: 'Which report best supports future diagnosis?', choices: ['Symptoms, evidence, confirmed and unresolved causes, approved changes, and verification conditions/results', 'Only “fixed”', 'Only the replacement part price'], correct: 0, explanation: 'A traceable record helps others assess what was found and whether the change addressed it. Findings and uncertainty should be recorded with the supporting evidence.' },
     ],

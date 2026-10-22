@@ -50,6 +50,7 @@ function ElectroApp() {
   const [score, setScore] = useState(0);
   const [earned, setEarned] = useState(0);
   const [hintVisible, setHintVisible] = useState(false);
+  const [hintExpanded, setHintExpanded] = useState(false);
   const [savedSession, setSavedSession] = useState<MissionSession | null>(null);
   const [sessionReady, setSessionReady] = useState(false);
   const scroll = useRef<React.ComponentRef<typeof ScrollView>>(null);
@@ -94,12 +95,12 @@ function ElectroApp() {
       });
       return;
     }
-    const session: MissionSession = { version: 1, lessonId: active.id, fingerprint: lessonFingerprint(active), phase, lessonPage, questionIndex, selection, checked, score, hintVisible };
+    const session: MissionSession = { version: 1, lessonId: active.id, fingerprint: lessonFingerprint(active), phase, lessonPage, questionIndex, selection, checked, score, hintVisible, hintExpanded };
     setSavedSession(session);
     writes.current = writes.current.then(() => AsyncStorage.setItem(SESSION_KEY, JSON.stringify(session))).catch(() => {
       setStorageError('The unfinished mission could not be saved. Keep this session open to continue.');
     });
-  }, [loaded, sessionReady, active, phase, lessonPage, questionIndex, selection, checked, score, hintVisible]);
+  }, [loaded, sessionReady, active, phase, lessonPage, questionIndex, selection, checked, score, hintVisible, hintExpanded]);
 
   useEffect(() => {
     const subscription = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -115,7 +116,7 @@ function ElectroApp() {
 
   function openLesson(lesson: Lesson) {
     beta.startMission(lesson.id);
-    setActive(lesson); setLessonPage(0); setReviewing(false); setPhase('brief'); setScore(0); setQuestionIndex(0); setSelection(null); setChecked(false); setEarned(0); setHintVisible(false);
+    setActive(lesson); setLessonPage(0); setReviewing(false); setPhase('brief'); setScore(0); setQuestionIndex(0); setSelection(null); setChecked(false); setEarned(0); setHintVisible(false); setHintExpanded(false);
   }
 
   function resumeMission() {
@@ -125,7 +126,7 @@ function ElectroApp() {
     beta.startMission(lesson.id, true);
     setActive(lesson); setLessonPage(savedSession.lessonPage ?? 0); setReviewing(false); setPhase(savedSession.phase); setQuestionIndex(savedSession.questionIndex);
     setSelection(savedSession.selection); setChecked(savedSession.checked); setScore(savedSession.score);
-    setHintVisible(savedSession.hintVisible); setEarned(0);
+    setHintVisible(savedSession.hintVisible); setHintExpanded(savedSession.hintExpanded ?? false); setEarned(0);
   }
 
   function discardMission() {
@@ -137,7 +138,7 @@ function ElectroApp() {
 
   function nextQuestion() {
     if (!active || !checked) return;
-    setHintVisible(false);
+    setHintVisible(false); setHintExpanded(false);
     if (questionIndex + 1 === active.questions.length) {
       beta.finish(active.id, score);
       const updated = completeLesson(progress, active.id, score, active.questions.length);
@@ -171,7 +172,7 @@ function ElectroApp() {
                 <Button title="Review lesson" secondary onPress={() => { setLessonPage(0); setReviewing(true); }} />
                 <Meter value={questionIndex / active.questions.length} />
                 <View style={s.questionCard}><Text accessibilityRole="header" style={s.question}>{question.prompt}</Text>
-                  {!!question.referenceCards?.length && <View style={s.card}><Label>FICTIONAL PRACTICE DOCUMENTS</Label><Text style={s.small}>Original lookup samples. These are not standards text or manufacturer instructions.</Text>{question.referenceCards.map(reference => <View key={reference.id} style={{ gap: 8 }}><Text style={s.recordTitle}>{reference.id}: {reference.title}</Text><Text style={s.small}>{reference.context}</Text><Text style={s.body}>{reference.content}</Text></View>)}</View>}
+                  {!!question.referenceCards?.length && <View style={s.card}><Label>REFERENCE CARDS</Label><Text style={s.small}>Compare the model, revision, conditions and finding on each card.</Text>{question.referenceCards.map(reference => <View key={reference.id} style={{ gap: 8 }}><Text style={s.recordTitle}>{reference.id}: {reference.title}</Text><Text style={s.small}>{reference.context}</Text><Text style={s.body}>{reference.content}</Text></View>)}</View>}
                   <View accessibilityRole="radiogroup" accessibilityLabel="Mission answers" style={{ gap: 14 }}>{question.choices.map((choice, i) => <Pressable key={choice} accessibilityRole="radio" aria-checked={selection === i} accessibilityState={{ checked: selection === i, selected: selection === i, disabled: checked }} disabled={checked} onPress={() => setSelection(i)}
                     style={({ pressed }) => [s.choice, selection === i && s.selectedChoice, checked && i === question.correct && s.correctChoice, checked && selection === i && i !== question.correct && s.incorrectChoice, pressed && s.pressed]}>
                     <Text style={[s.choiceLetter, selection === i && { color: colors.lime }]}>{String.fromCharCode(65 + i)}</Text><Text style={[s.body, s.flex, { color: colors.text }]}>{choice}</Text>
@@ -179,7 +180,7 @@ function ElectroApp() {
                   </Pressable>)}</View>
                 </View>
                 {checked && <View accessibilityLiveRegion="polite" style={s.callout}><View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}><CoachPortrait mood={selection === question.correct ? 'encourage' : 'think'} size={74} /><View style={{ flex: 1 }}><Label>{brand.coachLabel.toUpperCase()}</Label><Text style={s.calloutTitle}>{selection === question.correct ? 'Correct. Good thinking.' : 'Keep learning. Here’s why.'}</Text></View></View><Text style={s.body}>{question.explanation}</Text></View>}
-                {!checked && <><Button title={hintVisible ? 'Hide coach hint' : 'Coach hint'} secondary onPress={() => { if (!hintVisible) beta.hint(active.id, questionIndex); setHintVisible(value => !value); }} />{hintVisible && <CoachNote message={coachHint(active.category)} />}</>}
+                {!checked && <><Button title={hintVisible ? 'Hide coach hint' : 'Coach hint'} secondary onPress={() => { if (!hintVisible) beta.hint(active.id, questionIndex); else setHintExpanded(false); setHintVisible(value => !value); }} />{hintVisible && <><CoachNote message={coachHint(active.id, questionIndex)} /><Button title={hintExpanded ? 'Hide extra help' : 'Work through this hint'} secondary onPress={() => setHintExpanded(value => !value)} />{hintExpanded && <CoachNote message={coachHint(active.id, questionIndex, 1)} />}</>}</>}
                 {checked ? <Button title={questionIndex + 1 === active.questions.length ? 'Finish mission →' : 'Next question →'} onPress={nextQuestion} /> : <Button title="Check answer" disabled={selection === null} onPress={() => {
                   if (selection === null || checked) return;
                   beta.answer(active.id, questionIndex, selection, hintVisible);

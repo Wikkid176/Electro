@@ -9,13 +9,23 @@ test('coach teaches before the quiz; guided practice gives feedback without XP',
   await page.getByRole('button', { name: /^Start with safety,/ }).click();
   const teaching = teachingLessons.safety;
   await expect(page.getByText(teaching.coach, { exact: true })).toBeVisible();
-  for (const section of teaching.sections) await expect(page.getByText(section.body, { exact: true })).toBeVisible();
+  for (const section of teaching.sections.slice(0, 2)) await expect(page.getByText(section.body, { exact: true })).toBeVisible();
+  for (const section of teaching.sections.slice(2)) {
+    await expect(page.getByText(section.body, { exact: true })).toHaveCount(0);
+    await page.getByRole('button', { name: `Deep dive: ${section.title}`, exact: true }).click();
+    await expect(page.getByText(section.body, { exact: true })).toBeVisible();
+  }
   await expect(page.getByRole('button', { name: 'Start quiz →', exact: true })).toHaveCount(0);
   await page.screenshot({ path: testInfo.outputPath('coach-lesson.png'), fullPage: true });
   await page.getByRole('button', { name: 'Continue to visual →', exact: true }).click();
   await page.getByRole('button', { name: 'Explore Raised load', exact: true }).click();
   await expect(page.getByText(teaching.visual.nodes[2].detail, { exact: true })).toBeVisible();
+  await page.getByTestId('lesson-graphic').locator('#graphic-node-1').click();
+  await expect(page.getByText(teaching.visual.nodes[1].detail, { exact: true })).toBeVisible();
   await expect(page.getByText(teaching.example.scenario, { exact: true })).toBeVisible();
+  await expect(page.getByText(teaching.example.steps[1], { exact: true })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Reveal next reasoning step', exact: true }).click();
+  await expect(page.getByText(teaching.example.steps[1], { exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('energy-visual.png'), fullPage: true });
   await page.getByRole('button', { name: 'Continue to practice →', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Continue to recap →', exact: true })).toBeDisabled();
@@ -68,6 +78,7 @@ test('all eight visual forms are interactive, responsive and load component artw
     const visual = teachingLessons[id].visual;
     await page.getByRole('button', { name: new RegExp(`^${lesson.title},`) }).click();
     await page.getByRole('button', { name: 'Continue to visual →', exact: true }).click();
+    await expect(page.getByTestId('lesson-graphic').locator('svg')).toBeVisible();
     const node = visual.nodes[visual.nodes.length - 1];
     await page.getByRole('button', { name: `Explore ${node.label}`, exact: true }).click();
     await expect(page.getByText(node.detail, { exact: true })).toBeVisible();

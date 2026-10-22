@@ -16,7 +16,7 @@ test('coach welcomes, offers optional hints, responds supportively, celebrates, 
   }
   async function answerAll(missFirst: boolean) {
     for (const [i, question] of lesson.questions.entries()) {
-      const hint = page.getByText(coachHint(lesson.category), { exact: true });
+      const hint = page.getByText(coachHint(lesson.id, i), { exact: true });
       await expect(hint).toHaveCount(0);
       await page.getByRole('button', { name: 'Coach hint', exact: true }).click();
       await expect(hint).toBeVisible();

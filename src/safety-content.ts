@@ -1,11 +1,11 @@
 import type { Lesson } from './content.ts';
 
-// Original fictional scenarios informed by privately reviewed safety topics.
+// Original scenarios informed by privately reviewed safety topics.
 // No source drawings, device identifiers, procedures, or images are reproduced.
 export const safetyLessons: Lesson[] = [
   {
     id: 'energy-sources', title: 'Find the hidden energy', category: 'SAFETY / ENERGY SOURCES', symbol: '02', minutes: 5,
-    brief: 'A fictional packaging cell has a main electrical feed, battery backup, compressed air, and a raised load. One switch cannot tell the whole story.',
+    brief: 'A packaging cell has a main electrical feed, battery backup, compressed air, and a raised load. One switch cannot tell the whole story.',
     points: [
       'Use current equipment documentation and the approved task-specific procedure to identify every hazardous energy source. Separate supplies and battery-backed circuits may remain energized when the main disconnect is open.',
       'Stored energy can remain in capacitors, pressurized systems, springs, elevated loads, and moving parts. A display going dark or a pressure indicator changing is not, by itself, proof that every hazard is controlled.',
@@ -27,13 +27,13 @@ export const safetyLessons: Lesson[] = [
     ],
     questions: [
       { prompt: 'An operator finds equipment locked out for service. What is the appropriate response?', choices: ['Leave the controls and locks alone and coordinate with the authorized team', 'Try START to see if production can resume', 'Borrow the service technician’s key'], correct: 0, explanation: 'Affected personnel must respect energy-control measures and coordinate through the approved process. They must not try to restart locked-out equipment.' },
-      { prompt: 'A learner masters every ELECTRO mission. What new work authorization does that provide?', choices: ['Permission to remove any lock', 'Qualification for energized electrical testing', 'None; employer training, qualification, and authorization still apply'], correct: 2, explanation: 'This app supports conceptual learning. Task-specific training, demonstrated competency, and employer authorization remain separate requirements.' },
+      { prompt: 'A learner masters every ELL mission. What new work authorization does that provide?', choices: ['Permission to remove any lock', 'Qualification for energized electrical testing', 'None; employer training, qualification, and authorization still apply'], correct: 2, explanation: 'This app supports conceptual learning. Task-specific training, demonstrated competency, and employer authorization remain separate requirements.' },
       { prompt: 'A team presses STOP before servicing a machine. Has STOP physically isolated every energy source?', choices: ['Yes, if it is a red button', 'No; normal controls and energy-isolating devices serve different purposes', 'Yes, if the PLC shows stopped'], correct: 1, explanation: 'A normal control command does not physically isolate hazardous energy. The authorized team must apply the approved equipment-specific energy-control process.' },
     ],
   },
   {
     id: 'verification', title: 'Prove before you trust', category: 'SAFETY / VERIFICATION', symbol: '04', minutes: 5,
-    brief: 'The fictional cell will not start. Is that enough evidence to say every exposed conductor is de-energized?',
+    brief: 'The cell will not start. Is that enough evidence to say every exposed conductor is de-energized?',
     points: [
       'An unsuccessful start attempt can help check a control outcome, but it cannot establish absence of voltage at the intended electrical work location. A failed control circuit could prevent starting while hazardous voltage remains.',
       'Qualified personnel use the approved absence-of-voltage process with suitable test equipment. The familiar live–dead–live concept checks the tester’s operation before and after the circuit assessment so a failed tester is not mistaken for a safe circuit.',
@@ -54,7 +54,7 @@ export const safetyLessons: Lesson[] = [
       'Do not remove someone else’s lock on your own. An absent worker’s lock requires the employer’s documented exceptional-removal process. Temporary testing and return to service also require controlled procedures; energy control must be re-established and verified before servicing resumes.',
     ],
     questions: [
-      { prompt: 'One technician has locked out the fictional cell. A second technician joins the job. What must the second technician establish?', choices: ['That the first technician is in a hurry', 'That sharing a key is convenient', 'Their own required protection under the approved group procedure'], correct: 2, explanation: 'The group process must account for each authorized worker. Another person’s lock or verbal assurance alone does not establish a joining worker’s required protection.' },
+      { prompt: 'One technician has locked out the cell. A second technician joins the job. What must the second technician establish?', choices: ['That the first technician is in a hurry', 'That sharing a key is convenient', 'Their own required protection under the approved group procedure'], correct: 2, explanation: 'The group process must account for each authorized worker. Another person’s lock or verbal assurance alone does not establish a joining worker’s required protection.' },
       { prompt: 'During a shift handover, what outcome must the transfer preserve?', choices: ['Continuous effective energy-control protection', 'A brief unprotected gap to save time', 'Automatic machine restart'], correct: 0, explanation: 'A planned handover maintains effective protection as personnel change. The exact transfer method comes from the employer’s approved procedure.' },
       { prompt: 'A worker has left and their lock remains. Production asks you to remove it. What should you do?', choices: ['Cut it off because the shift ended', 'Leave it in place and escalate through the documented employer process', 'Use a spare key without telling anyone'], correct: 1, explanation: 'Never improvise another worker’s lock removal. A documented employer-controlled exceptional process must address the required safeguards; this app does not authorize removal.' },
     ],

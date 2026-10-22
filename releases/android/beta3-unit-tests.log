@@ -1,0 +1,48 @@
+
+> electrolessonlab@0.4.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+✔ human beta records preserve first attempts separately from improved game scores (1.866763ms)
+✔ partial attempts are identified and never presented as complete first-pass results (0.147219ms)
+✔ malformed human beta logs cannot create misleading scores or cohorts (0.311845ms)
+✔ timing excludes the background, caps delayed heartbeats, and tolerates clock rollback (0.10035ms)
+✔ every coach mood has a distinct in-bounds image frame in the bundled PNG (0.784039ms)
+✔ all 141 questions have distinct case-specific nudges and deeper reasoning (0.950407ms)
+✔ workshop devices and inspection targets resolve to distinct illustrated parts (1.307219ms)
+✔ workshop cannot check an empty/invalid selection or advance before feedback (0.155131ms)
+✔ checking and changing a locked workshop answer cannot award duplicate points (0.96576ms)
+✔ a completed workshop stays complete until restart and starts a clean practice session (0.179207ms)
+✔ generated artwork has distinct in-bounds states and a dedicated image for each inspection finding (0.668417ms)
+✔ replaying a lesson improves the best score without farming XP or erasing progress (0.968354ms)
+✔ invalid scores cannot create rewards (0.797009ms)
+✔ saved progress round-trips and rejects malformed or unknown data (0.441148ms)
+✔ emergency stop and overload block start; recovery never restarts the motor (0.109423ms)
+✔ every lesson has complete, answerable questions and unique identifiers (0.343352ms)
+✔ curriculum expansion preserves every original mission score without awarding new mission XP (0.486535ms)
+✔ interactive DC and network models respect topology, current paths and power (1.253389ms)
+✔ analog experiment includes its offset and never turns invalid current into a valid temperature (0.150414ms)
+✔ on-delay requires an uninterrupted interval and resets on enable removal (0.101251ms)
+✔ the same brief event is missed or captured according to sample spacing (0.175682ms)
+✔ all lessons have five authored sections without repeated fiction labels (1.42222ms)
+✔ wording-only migrations preserve checked answers but reject changed answer structures (0.587496ms)
+✔ the source only permits voltage; current input cannot yield a reading in any function (0.569299ms)
+✔ reference reversal changes DC sign without changing isolated resistance (0.167039ms)
+✔ open, finite resistance, and continuity threshold produce distinct results (0.109914ms)
+✔ a virtual zero voltage result does not claim field safety (0.124085ms)
+✔ unfinished missions round-trip checked feedback, hints and the next ungraded selection (1.096485ms)
+✔ malformed, stale and impossible mission checkpoints are rejected (0.537371ms)
+✔ all 47 missions have substantive teaching, explorable visuals, worked examples and separate practice (4.400942ms)
+✔ reading pages resume safely and legacy reading/quiz checkpoints remain compatible (2.412687ms)
+✔ an earlier beta record remains exportable but is paused to keep course versions separate (0.735116ms)
+✔ wrong nodes and wrong sheets cannot advance a trace (2.062796ms)
+✔ a complete trace follows the lamp, contact, associated coil, command, and return (0.201962ms)
+✔ completed and repeated selections cannot create extra trace progress (0.135572ms)
+✔ fictional reference targets resolve as device associations and every challenge target exists (0.197915ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 272.058972

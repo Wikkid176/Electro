@@ -2,11 +2,13 @@
 
 A mobile training game about industrial electrical systems and practices, built with Expo, React Native, and TypeScript.
 
-The app is **ElectroLessonLab**, abbreviated **ELL**. Beta 0.3.0-beta.2 expands every mission into Learn → Explore → Practice → Recap → Quiz; reading pages resume and quizzes support lesson review without losing answers. See [the Android human-beta guide](HUMAN_BETA.md) for installation, tester codes, feedback/results sharing and the supervised study plan. The beta adds an optional local study record; it has no automatic results-upload service. Existing training storage keys retain their earlier `electro` prefix so saved scores survive the display-name change.
+The app is **ElectroLessonLab**, abbreviated **ELL**. Beta 0.4.0-beta.3 expands every mission into Learn → Explore → Practice → Recap → Quiz; reading pages resume and quizzes support lesson review without losing answers. See [the Android human-beta guide](HUMAN_BETA.md) for installation, tester codes, feedback/results sharing and the supervised study plan. The beta adds an optional local study record; it has no automatic results-upload service. Existing training storage keys retain their earlier `electro` prefix so saved scores survive the display-name change.
 
-[Download the signed Android beta APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.3.0-beta.2.apk) · **0.3.0-beta.2** · 35.5 MiB · Android 7+ on ARM phones. Includes all 47 expanded lessons. Install over the earlier beta to retain course scores. Signature and packaged lessons/assets are verified; organizer phone testing is still required before group distribution.
+[Download the signed Android beta APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.4.0-beta.3.apk) · **0.4.0-beta.3** · 38.3 MiB · Android 7+ on ARM phones. Includes 235 lesson sections, graphical explorations and experiments, and 282 question-specific hints. Install over the earlier beta to retain course scores. Organizer phone testing is still required before group distribution.
 
-To build and download the APK in GitHub Actions, see [GitHub Android builds](docs/GITHUB_ANDROID_BUILD.md). The APK is a workflow artifact rather than a file committed to Git.
+The downloadable APK is on the dedicated `android-beta-download` branch. Main contains source and validation evidence. [GitHub Android builds](docs/GITHUB_ANDROID_BUILD.md) describes the separate Actions workflow; a GitHub-hosted build is not claimed for the workspace-built download.
+
+See [the interactive lesson update](docs/INTERACTIVE_LESSONS.md) for deep dives, question-specific coaching, vector diagrams and seven learning experiments.
 
 ## Starter experience
 
@@ -17,7 +19,7 @@ To build and download the APK in GitHub Actions, see [GitHub Android builds](doc
 - Fictional print-tracing game: follow an indicator path, a relay coil/contact reference, the command switch, and the return across two original teaching sheets.
 - Original component workshop: eight devices with original generated image artwork, 24 tappable part explanations, paired teaching symbols, selectable states, and 12 identification/defect rounds.
 - Open-book reference exercises: compare fictional document models, revisions, applicability, and citations while answering questions.
-- Original relay-character coach with four generated poses, optional reasoning hints, supportive answer feedback, and game-mastery celebrations.
+- Original relay-character coach with four generated poses, two case-specific hint levels per quiz question, supportive answer feedback, and game-mastery celebrations.
 - Device-local best scores and one resumable unfinished mission using AsyncStorage; no account, backend, credentials, analytics, or cross-device sync.
 - Responsive browser version for development and functional testing.
 
@@ -55,7 +57,7 @@ npm run test:e2e
 npm exec -- expo export --platform all --max-workers 2
 ```
 
-`npm test` runs thirty gameplay/content/teaching/checkpoint/study-record tests. `test:e2e` runs fifty-eight browser tests across phone and desktop viewport sizes. Browser tests use their own server on port 8082, separate from development on port 8081; outside CI they may reuse an existing test server. Set `ELECTRO_TEST_PORT` to another free port if needed, for example `ELECTRO_TEST_PORT=8091 npm run test:e2e`. The cloud setup uses 8091. The cloud image provides `/usr/bin/chromium`; elsewhere, run `npx playwright install chromium`, or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to an installed compatible Chromium binary.
+`npm test` runs thirty-six gameplay/content/teaching/experiment/checkpoint/study-record tests. `test:e2e` runs sixty-four browser tests across phone and desktop viewport sizes. Browser tests use their own server on port 8082, separate from development on port 8081; outside CI they may reuse an existing test server. Set `ELECTRO_TEST_PORT` to another free port if needed, for example `ELECTRO_TEST_PORT=8091 npm run test:e2e`. The cloud setup uses 8091. The cloud image provides `/usr/bin/chromium`; elsewhere, run `npx playwright install chromium`, or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to an installed compatible Chromium binary.
 
 The separate `npm run test:beta` command runs twelve seeded synthetic profiles through all 47 missions and four labs. After a successful run, `npm run report:beta` validates the raw scores and generates individual/group CSVs and [the simulated beta report](beta-results/REPORT.md). Study times and answer probabilities are explicit, uncalibrated model inputs in `tests/beta/model.ts`; these are not human beta results. Do not edit app/model sources during a run.
 

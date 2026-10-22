@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-22T02:37:50.011447+00:00",
+  "app": "ElectroLessonLab (ELL)",
+  "release": "0.4.0-beta.3",
+  "typecheck": "passed",
+  "unitTests": {
+    "passed": 36,
+    "failed": 0
+  },
+  "browserTests": {
+    "distinctCasesPassed": 64,
+    "fullSuite": {
+      "passed": 64,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 276.65776
+    },
+    "finalFocusedRevalidation": {
+      "passed": 14,
+      "failed": 0,
+      "reason": "Revalidated diagram interactions, all seven experiments, timer window boundary, wording-only checkpoint migration, question-specific hint persistence and lesson flow after final presentation polish."
+    },
+    "evidence": [
+      "beta3-browser-validation.json",
+      "beta3-final-focused-validation.json"
+    ]
+  },
+  "authoredLessons": 47,
+  "explanatorySections": 235,
+  "optionalDeepDiveSections": 141,
+  "graphicSceneTypes": 8,
+  "experimentTypes": 7,
+  "lessonsWithExperiments": 13,
+  "caseSpecificHints": 282,
+  "scoredQuizQuestions": 141,
+  "maximumXp": 3525,
+  "nativeBuild": "passed",
+  "apkProduced": true,
+  "apk": "ELL-0.4.0-beta.3.apk",
+  "bytes": 40184865,
+  "sha256": "86a754e99154610a3c14d783f1a721406e4b0d9de170a5e6586ea699ee251105",
+  "apkVerification": "beta3/APK-VERIFICATION.json",
+  "sameBetaSigningCertificate": true,
+  "androidVersionCode": 3,
+  "physicalAndroidDeviceTested": false,
+  "githubHostedBuildVerified": false,
+  "historicalSyntheticBetaRerun": false,
+  "note": "Wording-only fingerprint migrations retain compatible older quizzes; unknown changed answers or order remain rejected. Earlier studies stay exportable but paused. No source prints or private signing material included."
+}

@@ -14,5 +14,21 @@
     "reference_images": "None. No uploaded print or existing mascot image supplied.",
     "purpose": "Original anthropomorphic relay coach, four poses; working character label Coach Click.",
     "rights_status": "Illustrative generated output; no exclusive-copyright, non-infringement, or trademark-clearance claim."
+  },
+  {
+    "file": "src/LessonGraphic.tsx",
+    "sha256": "690fd2a396a0fa1a21e10507c9272021c64add46b0b8401c94f4289c6240439a",
+    "method": "Original vector graphics authored in application code using react-native-svg. Geometry and interactive state diagrams were created for the lessons.",
+    "reference_images": "None. No uploaded print, existing circuit image or proprietary layout used.",
+    "purpose": "Illustrated lesson scenes and changeable learning experiments.",
+    "rights_status": "Project-authored diagram code; general teaching symbols and concepts do not establish exclusive rights or legal clearance."
+  },
+  {
+    "file": "src/LessonExperiment.tsx",
+    "sha256": "6a6e23e235809a975e9cd7343ab6e920d71e69f803cdf73ef8e299b42d5cf680",
+    "method": "Original vector graphics authored in application code using react-native-svg. Geometry and interactive state diagrams were created for the lessons.",
+    "reference_images": "None. No uploaded print, existing circuit image or proprietary layout used.",
+    "purpose": "Illustrated lesson scenes and changeable learning experiments.",
+    "rights_status": "Project-authored diagram code; general teaching symbols and concepts do not establish exclusive rights or legal clearance."
   }
 ]

@@ -1,5 +1,12 @@
 # Curriculum review
 
+## Interactive teaching update: 0.4.0-beta.3
+
+Added 141 independently authored deep-dive paragraphs, two contextual hints per scored question, vector diagram scenes and seven closed in-app experiment types. Repetitive fiction/provenance labels were removed at the user's request. Ideal-network, valid-range and timing assumptions remain where they change the answer. The app-level conceptual-training boundary is retained. No source image, print topology or proprietary procedure was imported. Existing generated component graphics are preserved.
+
+The series/parallel experiment uses two 60 Ω resistors at 12 V and distinguishes an open branch from an open shared path. Static contact highlighting does not imply contact operation, and return arrows are distinct from protective-earth symbols. The analog experiment reports invalid data rather than extrapolated temperature at 0 mA. The sampling trace uses an event from 5 to 10 ms with samples every 20 or 2 ms. The on-delay uses a three-second uninterrupted interval in a four-second exploration window. These assumptions are reviewed by the model tests; real-device and qualified educational/content review are still required.
+
+
 ## Expanded lesson beta: 0.3.0-beta.2
 
 Every existing mission now has independently authored teaching sections, an original interactive conceptual visual, a worked example and ungraded practice before its existing quiz. The eight visual forms are energy maps, complete-path/feedback maps, comparisons, virtual instrument displays, fictional document cards, information chains, scaling bars and timelines. Existing original component artwork is reused with labeled part exploration. No source image, private print topology, manufacturer-specific connections, settings, standards text or historical PPE tables were imported.

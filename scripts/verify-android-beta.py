@@ -77,6 +77,16 @@ with zipfile.ZipFile(args.apk) as archive:
             text = section["body"]
             require(text.encode() in bundle or text.encode("utf-16-le") in bundle,
                     "Authored lesson missing from standalone bundle: " + lesson_id)
+    authored_hints = subprocess.check_output([
+        "node", "--input-type=module", "-e",
+        "import { missionCoaching } from './src/coach.ts'; console.log(JSON.stringify(Object.values(missionCoaching).flat(2)));"
+    ], cwd=root, text=True)
+    hints = json.loads(authored_hints)
+    require(len(hints) == 282 and len(set(hints)) == 282, "Expected two distinct hints for each of 141 questions")
+    for hint in hints:
+        require(hint.encode() in bundle or hint.encode("utf-16-le") in bundle,
+                "Question-specific coaching missing from embedded app")
+    require(b"RNSVG" in bundle or "RNSVG".encode("utf-16-le") in bundle, "SVG graphics implementation missing from embedded app")
     for notice in ["LICENSE", "THIRD_PARTY_NOTICES.txt"]:
         require(archive.read("assets/" + notice) == (root / notice).read_bytes(), "Missing or altered software notice: " + notice)
     forbidden = (".pdf", ".doc", ".docx", ".ppt", ".pptx", ".p12", ".jks", ".pfx", ".pem", ".key")
@@ -84,6 +94,10 @@ with zipfile.ZipFile(args.apk) as archive:
             "Private reference/signing file found in APK")
     abis = sorted({name.split("/")[1] for name in names if name.startswith("lib/") and name.endswith(".so")})
     require(abis == ["arm64-v8a", "armeabi-v7a"], "Unexpected Android architectures")
+    for abi in abis:
+        registration = archive.read(f"lib/{abi}/libreact_codegen_rnsvg.so")
+        require(b"RNSVGSvgView" in registration or b"RNSVGRect" in registration,
+                "Native SVG registration missing for " + abi)
 sha256 = hashlib.sha256(args.apk.read_bytes()).hexdigest()
 (args.output_dir / "APK-SHA256.txt").write_text(f"{sha256}  {args.apk.name}\n")
 verification = {
@@ -96,6 +110,10 @@ verification = {
     "permissions": permissions, "embeddedHermes": True, "artworkResourcesPresent": True,
     "expandedLessonInterfaceIncluded": True,
     "authoredLessonsBundled": len(teaching),
+    "authoredSectionsBundled": sum(len(content["sections"]) for content in teaching.values()),
+    "caseSpecificHintsBundled": len(hints),
+    "svgGraphicsIncluded": True,
+    "nativeSvgRegistrationVerified": True,
     "softwareNoticesIncluded": True, "privateReferenceOrSigningFilesIncluded": False,
     "commit": os.environ.get("GITHUB_SHA"), "runId": os.environ.get("GITHUB_RUN_ID"),
     "physicalDeviceTested": False,

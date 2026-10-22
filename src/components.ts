@@ -46,7 +46,7 @@ export const workshopComponents: WorkshopComponent[] = [
   {
     id: 'terminal', name: 'Terminal block', purpose: 'Recognize a modular connection point, its identification marker, and its mounting interface.',
     states: ['Path intact', 'Path open'],
-    stateDescriptions: ['The fictional disconnect-style terminal has its modeled link closed. This does not establish a real connection’s resistance or acceptance.', 'The fictional disconnect-style terminal link is open. Ordinary feed-through terminals may have no disconnect function.'],
+    stateDescriptions: ['The disconnect-style terminal has its modeled link closed. This does not establish a real connection’s resistance or acceptance.', 'The disconnect-style terminal link is open. Ordinary feed-through terminals may have no disconnect function.'],
     symbols: ['—○──○—', '—○/  ○—'], symbolDescription: 'A simplified disconnect-terminal path. Not all terminal blocks have a switchable link; use the actual part and drawing legend.',
     parts: [
       { id: 'clamp', name: 'Conductor clamp area', description: 'The conductor is secured by the specified connection mechanism. This illustration provides no strip length, ferrule requirement, or tightening value.', x: 71, y: 134, target: { x: 103, y: 139 } },
@@ -79,7 +79,7 @@ export const workshopComponents: WorkshopComponent[] = [
   {
     id: 'drive', name: 'Variable-frequency drive', purpose: 'Recognize a drive’s operator interface, cooling openings, and protected connection compartment.',
     states: ['Stopped', 'Run command'],
-    stateDescriptions: ['The model shows a stopped indication. A display state does not establish DC-link discharge or isolation.', 'The fictional display accepts a run command. A run indication is not proof of shaft movement or a safe machine state.'],
+    stateDescriptions: ['The model shows a stopped indication. A display state does not establish DC-link discharge or isolation.', 'The display accepts a run command. A run indication is not proof of shaft movement or a safe machine state.'],
     symbols: ['[ ~ → = → ~ ]', '[ ~ → = → ~ ]'], symbolDescription: 'Functional AC/DC/AC conversion icon for a common architecture, not a standard-specific schematic symbol or connection plan.',
     parts: [
       { id: 'keypad', name: 'Operator display and keys', description: 'Present commands, status, or diagnostics according to the actual model. A displayed command and a motor’s physical response are different evidence.', x: 151, y: 75 },
@@ -90,7 +90,7 @@ export const workshopComponents: WorkshopComponent[] = [
   {
     id: 'sensor', name: 'Proximity sensor', purpose: 'Recognize a stylized cylindrical sensor, sensing face, indication, and cable connection.',
     states: ['No detection', 'Target detected'],
-    stateDescriptions: ['The fictional model reports no detection. Target placement is illustrative and does not define a real sensing distance or a universal indicator meaning.', 'The fictional metal target meets the model’s detection condition and its indicator changes. Actual range and indicator meaning are model-specific.'],
+    stateDescriptions: ['The model reports no detection. Target placement is illustrative and does not define a real sensing distance or a universal indicator meaning.', 'The metal target meets the model’s detection condition and its indicator changes. Actual range and indicator meaning are model-specific.'],
     symbols: ['[◇] ⇢ ○', '[◇] ⇢ ●'], symbolDescription: 'Functional sensing/output icon, not a universal pinout or a standardized sensor-symbol claim.',
     parts: [
       { id: 'face', name: 'Sensing face', description: 'Interacts with the target according to the sensing principle. Material, mounting, geometry, environment, and exact model affect usable detection.', x: 45, y: 180, target: { x: 99, y: 124 } },
@@ -112,10 +112,10 @@ export const componentChallenges: ComponentChallenge[] = [
   defect('terminal', 'marker', 'The exercise requires readable connection identification. Which marked area has a missing identifier?', 'Area 2 has a blank identification marker. Record the missing identification and resolve it against controlled documentation before acceptance; do not infer the connection from appearance.'),
   identify('breaker', ['transformer', 'sensor']),
   identify('relay', ['contactor', 'terminal']),
-  defect('motor', 'cable-entry', 'Which marked area shows visible cable-jacket damage in this illustration?', 'Area 3 shows a fictional jacket split. Record and refer the damage for the approved inspection/corrective process. Its appearance does not establish the condition of internal conductors or authorize handling.'),
+  defect('motor', 'cable-entry', 'Which marked area shows visible cable-jacket damage in this illustration?', 'Area 3 shows a jacket split. Record and refer the damage for the approved inspection/corrective process. Its appearance does not establish the condition of internal conductors or authorize handling.'),
   identify('transformer', ['motor', 'breaker']),
   identify('terminal', ['relay', 'sensor']),
-  defect('drive', 'vents', 'This mock-up requires its cooling openings clear. Which marked area has an obstruction?', 'Area 2 has a fictional obstruction across the cooling openings. Hold acceptance and resolve the conflict with the approved design/instructions. This is not an instruction to remove an obstruction from energized equipment.'),
+  defect('drive', 'vents', 'This mock-up requires its cooling openings clear. Which marked area has an obstruction?', 'Area 2 has an obstruction across the cooling openings. Hold acceptance and resolve the conflict with the approved design/instructions. This is not an instruction to remove an obstruction from energized equipment.'),
   identify('drive', ['terminal', 'motor']),
   identify('motor', ['transformer', 'drive']),
   defect('breaker', 'housing', 'Which marked area shows a crack in the insulating housing?', 'Area 3 shows visible housing damage. Record the finding and obtain the approved qualified assessment. The game does not diagnose internal failure or authorize repair or energization.'),

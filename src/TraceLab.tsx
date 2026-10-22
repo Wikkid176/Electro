@@ -12,8 +12,8 @@ export function TraceLab({ onNavigate }: { onNavigate: () => void }) {
   return <>
     <Text style={s.label}>INTERACTIVE PRACTICE / 03</Text>
     <Text accessibilityRole="header" style={s.title}>Trace the signal</Text>
-    <Text style={s.body}>An original, fictional drawing exercise. Follow an indicator path, investigate its relay reference, and find the return.</Text>
-    <View style={s.notice}><Text style={s.label}>FICTIONAL PACKAGE / TRAIN-LAMP / REV B</Text><Text style={s.body}>These symbol tiles form a teaching map, not an installation drawing or safety design. Highlighting marks your answers, not voltage or operating state. No physical machine is connected.</Text></View>
+    <Text style={s.body}>An original, drawing exercise. Follow an indicator path, investigate its relay reference, and find the return.</Text>
+    <View style={s.notice}><Text style={s.label}>PACKAGE / TRAIN-LAMP / REV B</Text><Text style={s.body}>These symbol tiles form a teaching map, not an installation drawing or safety design. Highlighting marks your answers, not voltage or operating state. No physical machine is connected.</Text></View>
     <View accessibilityLiveRegion="polite" style={s.card}>
       <Text accessibilityLabel={`Trace progress: ${trace.step} of ${traceChallenges.length}`} style={s.label}>{trace.step} / {traceChallenges.length} TARGETS FOUND</Text>
       <Text accessibilityRole="header" style={s.heading}>{complete ? 'Trace complete' : `Challenge ${trace.step + 1}`}</Text>
@@ -23,7 +23,7 @@ export function TraceLab({ onNavigate }: { onNavigate: () => void }) {
     </View>
     <View style={s.card}>
       <Text style={s.label}>SHEET INDEX / EXERCISE CONVENTIONS</Text>
-      <View accessibilityRole="tablist" accessibilityLabel="Fictional drawing sheets" style={s.row}>{traceSheets.map(item => <Pressable key={item.id} accessibilityRole="tab" accessibilityLabel={`${item.id} sheet`} aria-selected={item.id === sheetId} accessibilityState={{ selected: item.id === sheetId }} onPress={() => setSheetId(item.id)} style={[s.sheetTab, item.id === sheetId && s.selected]}><Text style={s.tag}>{item.id}</Text><Text style={s.small}>{item.title}</Text></Pressable>)}</View>
+      <View accessibilityRole="tablist" accessibilityLabel="drawing sheets" style={s.row}>{traceSheets.map(item => <Pressable key={item.id} accessibilityRole="tab" accessibilityLabel={`${item.id} sheet`} aria-selected={item.id === sheetId} accessibilityState={{ selected: item.id === sheetId }} onPress={() => setSheetId(item.id)} style={[s.sheetTab, item.id === sheetId && s.selected]}><Text style={s.tag}>{item.id}</Text><Text style={s.small}>{item.title}</Text></Pressable>)}</View>
       <Text style={s.body}>Tags and A/B locations are defined only for this exercise. The LIGHT sheet contains a switched indicator path. COIL contains a separate relay command path.</Text>
     </View>
     <View style={s.card}>

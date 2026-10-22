@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { coachAtlasSize, coachFrames, coachHint } from '../src/coach.ts';
+import { lessons } from '../src/content.ts';
 
 test('every coach mood has a distinct in-bounds image frame in the bundled PNG', () => {
   const image = readFileSync(new URL('../assets/relay-coach-atlas.png', import.meta.url));
@@ -14,12 +15,18 @@ test('every coach mood has a distinct in-bounds image frame in the bundled PNG',
   }
 });
 
-test('coach hints support reasoning across course topics without selecting an answer or issuing a qualification', () => {
-  const categories = ['FOUNDATIONS', 'METER USE', 'REFERENCE SKILLS', 'SCHEMATICS', 'PANEL BUILD', 'MOTION', 'SENSORS / I/O', 'TROUBLESHOOTING', 'CIRCUIT BASICS'];
-  const hints = categories.map(coachHint);
-  assert.equal(new Set(hints).size, categories.length);
+test('all 141 questions have distinct case-specific nudges and deeper reasoning', () => {
+  const hints = lessons.flatMap(lesson => lesson.questions.flatMap((_, index) => [coachHint(lesson.id, index), coachHint(lesson.id, index, 1)]));
+  assert.equal(hints.length, 282);
+  assert.equal(new Set(hints).size, 282);
   for (const hint of hints) {
     assert.ok(hint.length > 50);
-    assert.doesNotMatch(hint, /correct answer is|choose [abc]\b|certified|you are qualified|remove a guard|bypass|work live/i);
+    assert.doesNotMatch(hint, /correct answer is|you are certified|you are qualified|work live/i);
+    assert.doesNotMatch(hint, /choose [ABC](?:[.)]|$)/);
   }
+  assert.match(coachHint('fundamentals', 0), /I = V\/R/);
+  assert.match(coachHint('energy-sources', 1), /raised/);
+  assert.match(coachHint('analog-scaling', 1, 1), /16 mA/);
+  assert.throws(() => coachHint('missing', 0), RangeError);
+  assert.throws(() => coachHint('safety', 3), RangeError);
 });

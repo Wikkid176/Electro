@@ -7,7 +7,7 @@ export const motionTeaching = {
       { title: 'Read the conditions with the numbers', body: 'Voltage, current, frequency, speed and power markings describe specified motor duties and conditions. Rated current is not a live current measurement, and mechanical rated output is not automatically electrical input. Exact connection and application decisions need the equipment’s own documentation and approved engineering.' },
       { title: 'Understand speed and slip', body: 'For an induction-motor teaching model, synchronous speed is 120 times frequency divided by pole count. Rotor speed under normal motoring load is lower; that difference is slip. Slip depends on operating conditions. A nameplate speed alone does not tell you a current shaft speed or establish that a driven load is safe.' },
     ],
-    visual: { kind: 'compare', component: 'motor', title: 'A fictional four-pole induction model', caption: 'Teaching values only; no physical connections or application selection.', nodes: [
+    visual: { kind: 'compare', component: 'motor', title: 'A four-pole induction model', caption: 'Teaching values only; no physical connections or application selection.', nodes: [
       { label: 'Frequency', value: '50 Hz', detail: 'The model uses a 50-cycle-per-second supply.' },
       { label: 'Synchronous speed', value: '1,500 RPM', detail: '120 × 50/4 = 1,500 RPM for four poles.' },
       { label: 'Rotor example', value: '1,440 RPM', detail: 'Slip is (1,500 − 1,440)/1,500 = 0.04, or 4%, in this supplied operating example.' },

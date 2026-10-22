@@ -110,14 +110,14 @@ export const lessons: Lesson[] = [
   },
   {
     id: 'diagnosis', title: 'Find the missing link', category: 'TROUBLESHOOTING', symbol: '47', minutes: 5,
-    brief: 'Use evidence and a clear hypothesis to reason about faults in a fictional system.',
+    brief: 'Use evidence and a clear hypothesis to reason about faults in a system.',
     points: [
       'Start with the reported symptom, operating context, and current documentation. Avoid assuming that the most recently changed part is always at fault.',
       'Compare expected behavior with observed behavior. Divide the functional path into supply, permissives, commands, and response.',
       'Never defeat a protective function to make a machine run. Stop and escalate when the situation exceeds your training or authorization.',
     ],
     questions: [
-      { prompt: 'A fictional starter will not run and its overload flag is active. What is the best conclusion?', choices: ['Bypass the overload', 'Replace the motor immediately', 'An unmet protective condition is relevant and needs authorized investigation'], correct: 2, explanation: 'The active protective condition is evidence. The cause must be investigated under site procedures; bypassing it is not an acceptable diagnostic shortcut.' },
+      { prompt: 'A starter will not run and its overload flag is active. What is the best conclusion?', choices: ['Bypass the overload', 'Replace the motor immediately', 'An unmet protective condition is relevant and needs authorized investigation'], correct: 2, explanation: 'The active protective condition is evidence. The cause must be investigated under site procedures; bypassing it is not an acceptable diagnostic shortcut.' },
       { prompt: 'What makes a troubleshooting hypothesis useful?', choices: ['It predicts an observable result that can be checked safely', 'It assumes every component has failed', 'It avoids the documentation'], correct: 0, explanation: 'A useful hypothesis explains the evidence and predicts what an appropriate, authorized check should show.' },
       { prompt: 'The next step requires work beyond your authorization. What should you do?', choices: ['Continue because the game was easy', 'Stop and involve qualified, authorized personnel', 'Disable the interlock'], correct: 1, explanation: 'Knowing when to stop and escalate is part of competent troubleshooting. Game progress never grants work authorization.' },
     ],

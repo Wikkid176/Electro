@@ -45,15 +45,15 @@ export const sensorLessons: Lesson[] = [
   },
   {
     id: 'analog-scaling', title: 'Scale the process signal', category: 'SENSORS / ANALOG SIGNALS', symbol: '44', minutes: 5,
-    brief: 'Calculate a fictional linear 4–20 mA scale while keeping signal validity separate from the displayed process value.',
+    brief: 'Calculate a linear 4–20 mA scale while keeping signal validity separate from the displayed process value.',
     points: [
       'For the valid linear exercise range, value = minimum + ((mA − 4) ÷ 16) × span, where span = maximum − minimum. This assumes the stated configuration and valid in-range data; a real channel needs its exact scaling and diagnostics.',
-      'The fictional transmitter spans −20 to 60 °C, an 80 °C span. At 8 mA the calculated temperature is 0 °C; at 16 mA it is 40 °C. Negative lower bounds must be included rather than treating every range as starting at zero.',
+      'The transmitter spans −20 to 60 °C, an 80 °C span. At 8 mA the calculated temperature is 0 °C; at 16 mA it is 40 °C. Negative lower bounds must be included rather than treating every range as starting at zero.',
       'Live zero allows a valid minimum signal to differ from zero current, but a zero or abnormal current does not uniquely identify an open wire. Power, transmitter, configuration, wiring, input, and diagnostics can matter. Failure signaling and saturation limits are device/configuration-specific. This mission supplies no method for opening, injecting, or measuring a physical loop.',
     ],
     questions: [
       { prompt: 'For the valid linear −20 to 60 °C exercise, what does 12 mA represent?', choices: ['40 °C', '20 °C', '60 °C'], correct: 1, explanation: 'The fraction is (12 − 4) ÷ 16 = 0.5. Add half of the 80 °C span to −20 °C: −20 + 40 = 20 °C.' },
-      { prompt: 'What current represents 40 °C in that same valid linear exercise?', choices: ['8 mA', '12 mA', '16 mA'], correct: 2, explanation: 'The fraction is (40 − (−20)) ÷ 80 = 0.75. Current is 4 + 0.75 × 16 = 16 mA. This is a fictional scaling calculation, not a calibration instruction.' },
+      { prompt: 'What current represents 40 °C in that same valid linear exercise?', choices: ['8 mA', '12 mA', '16 mA'], correct: 2, explanation: 'The fraction is (40 − (−20)) ÷ 80 = 0.75. Current is 4 + 0.75 × 16 = 16 mA. This is a scaling calculation, not a calibration instruction.' },
       { prompt: 'The channel reports 0 mA. Is reporting the calculated temperature as a valid process value sufficient?', choices: ['No; establish signal validity and investigate the channel diagnostics and possible causes', 'Yes; every current is a valid temperature', 'Yes; zero current always proves one specific broken wire'], correct: 0, explanation: 'The linear formula is only part of interpretation. A missing or invalid signal must not be presented as a trustworthy process value, and zero current alone does not establish a unique cause.' },
     ],
   },
@@ -67,7 +67,7 @@ export const sensorLessons: Lesson[] = [
     ],
     questions: [
       { prompt: 'An IEPE channel has a bias within its documented expected range. What does that prove?', choices: ['Some useful health evidence, but not complete dynamic accuracy or cable/mounting health', 'That every vibration reading is correct', 'That it can be powered from any voltage source'], correct: 0, explanation: 'Bias is one diagnostic clue under specified conditions. Sensitivity, dynamic response, mounting, cable, and conditioning can still affect the actual measurement.' },
-      { prompt: 'The fictional encoder produces 120 A-channel cycles per revolution at 300 RPM. What is its A-channel frequency?', choices: ['2,400 Hz', '600 Hz', '120 Hz'], correct: 1, explanation: 'There are 300 ÷ 60 = 5 revolutions per second. A-channel frequency is 120 × 5 = 600 Hz. Four-edge quadrature decoding changes count rate, not the A-channel cycle frequency.' },
+      { prompt: 'The encoder produces 120 A-channel cycles per revolution at 300 RPM. What is its A-channel frequency?', choices: ['2,400 Hz', '600 Hz', '120 Hz'], correct: 1, explanation: 'There are 300 ÷ 60 = 5 revolutions per second. A-channel frequency is 120 × 5 = 600 Hz. Four-edge quadrature decoding changes count rate, not the A-channel cycle frequency.' },
       { prompt: 'Can an “absolute encoder” label alone establish all multi-turn retention and replacement/referencing behavior?', choices: ['Yes, every absolute system is identical', 'Yes, no setup checks are needed', 'No; the exact device and controller documentation must establish those behaviors'], correct: 2, explanation: 'Absolute reporting does not by itself specify every retention, multi-turn, referencing, and compatibility condition. Device and system details remain necessary.' },
     ],
   },

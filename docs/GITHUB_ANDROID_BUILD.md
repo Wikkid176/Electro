@@ -23,12 +23,12 @@ If Actions are disabled, enable them in the repository's **Settings → Actions 
 
 1. Open the repository's **Actions** tab and **Build Android beta APK**.
 2. Select a successful run. Under **Artifacts**, download **ELL-Android-beta-APK** while signed in to GitHub.
-3. Unzip the download. Transfer `ELL-0.3.0-beta.2.apk` to an Android 7+ ARM phone and install it. No Expo Go or development server is required.
+3. Unzip the download. Transfer `ELL-0.4.0-beta.3.apk` to an Android 7+ ARM phone and install it. No Expo Go or development server is required.
 
 Artifacts are retained for 14 days. The download also contains the checksum, verification report, software notices and `START-HERE.md`. Signing files are restored only in the runner's private temporary directory, excluded from uploads, and removed in an unconditional cleanup step. A missing secret makes the job fail before installing dependencies or compiling; no substitute signing key is generated.
 
 ## Validation and limits
 
-The job installs pinned Node 24, Java 17/21 and Android components, uses `npm ci`, runs TypeScript and all 30 unit tests, and runs the same native release build used locally. It verifies the dedicated signing certificate, app identity/version, non-debuggable manifest, disabled backups, blocked permissions, embedded Hermes bundle, component/coach resources, exact bundled notices, ZIP integrity and alignment, and ARM architectures. Third-party Actions are pinned to inspected commit hashes. The Gradle distribution checksum remains enforced.
+The job installs pinned Node 24, Java 17/21 and Android components, uses `npm ci`, runs TypeScript and all 36 unit tests, and runs the same native release build used locally. It verifies the dedicated signing certificate, app identity/version, non-debuggable manifest, disabled backups, blocked permissions, embedded Hermes bundle, component/coach resources, exact bundled notices, ZIP integrity and alignment, and ARM architectures. Third-party Actions are pinned to inspected commit hashes. The Gradle distribution checksum remains enforced.
 
 Browser automation has separate saved validation evidence; it is not rerun in the APK job. Neither this workflow nor a successful native build establishes physical-phone behavior. Check launch, graphics, mission completion, interruption/resume and full results sharing on the organizer's phone before group distribution. Increase `android.versionCode` before distributing an updated app, and keep the APK filename/build-label references consistent when changing the release version.

@@ -6,6 +6,8 @@ import { ComponentIllustration } from './ComponentIllustration';
 import { workshopComponents } from './components';
 import { teachingLessons } from './teaching';
 import { lessonPages, type TeachingLesson } from './teaching/types';
+import { LessonGraphic } from './LessonGraphic';
+import { LessonExperiment } from './LessonExperiment';
 
 const colors = { text: '#F3F6FA', muted: '#B4C2D3', line: '#35495F', panel: '#142131', lime: '#D6FA68', blue: '#9BC7FF' };
 
@@ -18,7 +20,7 @@ function Action({ title, onPress, secondary = false, disabled = false }: {
   </Pressable>;
 }
 
-function LessonVisual({ visual }: { visual: TeachingLesson['visual'] }) {
+function LessonVisual({ visual, lessonId }: { visual: TeachingLesson['visual']; lessonId: string }) {
   const [selected, setSelected] = useState(0);
   const [part, setPart] = useState<string | null>(null);
   const current = visual.nodes[selected];
@@ -29,15 +31,11 @@ function LessonVisual({ visual }: { visual: TeachingLesson['visual'] }) {
     <Text style={s.eyebrow}>VISUAL EXPLANATION · TAP TO EXPLORE</Text>
     <Text accessibilityRole="header" style={s.heading}>{visual.title}</Text>
     <Text style={s.body}>{visual.caption}</Text>
+    <LessonGraphic visual={visual} selected={selected} onSelect={setSelected} />
     {component && <View style={s.artCard}>
       <ComponentIllustration id={component.id} showParts selectedPart={part} onSelectPart={setPart} />
-      <Text style={s.caption}>{component.name} · Original teaching illustration. Tap a numbered part.</Text>
+      <Text style={s.caption}>{component.name} · Tap a numbered part to explore it.</Text>
       {partInfo && <View accessibilityLiveRegion="polite" style={s.detail}><Text style={s.subheading}>{partInfo.name}</Text><Text style={s.body}>{partInfo.description}</Text></View>}
-    </View>}
-    {visual.kind === 'meter' && <View accessible accessibilityRole="image" accessibilityLabel={`Virtual display: ${current.value}. ${current.label}.`} style={s.meterCase}>
-      <Text style={s.meterLabel}>VIRTUAL INSTRUMENT</Text><Text style={s.digits}>{current.value}</Text>
-      <View style={s.dial}><View style={s.dialPointer} /></View>
-      <Text style={s.caption}>Conceptual display · No physical connections</Text>
     </View>}
     <View style={[s.nodes, ['energy', 'compare'].includes(visual.kind) && s.grid, visual.kind === 'loop' && s.loop]}>
       {visual.nodes.map((node, index) => <React.Fragment key={node.label}>
@@ -53,6 +51,7 @@ function LessonVisual({ visual }: { visual: TeachingLesson['visual'] }) {
       {visual.kind === 'loop' && <Text style={s.caption}>↶ Follow the complete documented relationship, including its return or feedback.</Text>}
     </View>
     <View accessibilityLiveRegion="polite" style={s.detail}><Text style={s.subheading}>{current.label}</Text><Text style={s.body}>{current.detail}</Text></View>
+    <LessonExperiment lessonId={lessonId} />
   </View>;
 }
 
@@ -62,6 +61,8 @@ export function LessonReader({ lesson, page, onPage, onQuiz, reviewing = false }
   const teaching = teachingLessons[lesson.id];
   const [practiceChoice, setPracticeChoice] = useState<number | null>(null);
   const [practiceChecked, setPracticeChecked] = useState(false);
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [workedSteps, setWorkedSteps] = useState(1);
   const correct = practiceChoice === teaching.practice.correct;
   return <View testID="lesson-reader" style={s.reader}>
     <Text style={s.eyebrow}>{reviewing ? 'LESSON REVIEW' : 'COACH-LED LESSON'} · {page + 1} OF {lessonPages.length}</Text>
@@ -74,15 +75,23 @@ export function LessonReader({ lesson, page, onPage, onQuiz, reviewing = false }
     {page === 0 && <>
       <CoachNote mood="welcome" message={teaching.coach} />
       <Text style={s.intro}>{lesson.brief}</Text>
-      {teaching.sections.map(section => <View key={section.title} style={s.card}>
+      {teaching.sections.slice(0, 2).map(section => <View key={section.title} style={s.card}>
         <Text accessibilityRole="header" style={s.heading}>{section.title}</Text><Text style={s.body}>{section.body}</Text>
+      </View>)}
+      <Text style={s.eyebrow}>GO DEEPER · OPEN WHAT YOU WANT TO EXPLORE</Text>
+      {teaching.sections.slice(2).map(section => <View key={section.title} style={s.card}>
+        <Pressable accessibilityRole="button" accessibilityLabel={`Deep dive: ${section.title}`} accessibilityState={{ expanded: !!expanded[section.title] }} aria-expanded={!!expanded[section.title]} onPress={() => setExpanded(value => ({ ...value, [section.title]: !value[section.title] }))} style={{ minHeight: 48, justifyContent: 'center' }}>
+          <Text style={s.subheading}>{expanded[section.title] ? '−' : '+'} {section.title}</Text>
+        </Pressable>
+        {expanded[section.title] && <Text style={s.body}>{section.body}</Text>}
       </View>)}
       <Action title="Continue to visual →" onPress={() => onPage(1)} />
     </>}
     {page === 1 && <>
-      <LessonVisual key={lesson.id} visual={teaching.visual} />
+      <LessonVisual key={lesson.id} visual={teaching.visual} lessonId={lesson.id} />
       <View style={s.card}><Text style={s.eyebrow}>WORKED EXAMPLE</Text><Text accessibilityRole="header" style={s.heading}>Let’s work through it</Text><Text style={s.body}>{teaching.example.scenario}</Text>
-        {teaching.example.steps.map((step, index) => <View key={step} style={s.exampleStep}><Text style={s.number}>{index + 1}</Text><Text style={[s.body, { flex: 1 }]}>{step}</Text></View>)}
+        {teaching.example.steps.slice(0, workedSteps).map((step, index) => <View key={step} style={s.exampleStep}><Text style={s.number}>{index + 1}</Text><Text style={[s.body, { flex: 1 }]}>{step}</Text></View>)}
+        {workedSteps < teaching.example.steps.length && <Action title="Reveal next reasoning step" secondary onPress={() => setWorkedSteps(count => count + 1)} />}
       </View>
       <CoachNote mood="think" message={teaching.example.takeaway} />
       <Action title="Continue to practice →" onPress={() => onPage(2)} />

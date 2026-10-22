@@ -21,9 +21,9 @@ export const drawingTeaching = {
       { title: 'Function and location are separate', body: 'A schematic organizes relationships so you can reason about how a circuit works. A layout organizes physical positions. A wiring drawing supplies connection details under its own conventions. Choose the document that answers your question rather than expecting one drawing to serve every purpose.' },
       { title: 'Read the reference state', body: 'Normally open and normally closed describe contacts in the specified normal condition. They do not report the live machine state. A contact symbol and a coil can appear far apart yet belong to one device. Tags, legends and cross-references explain the association; apparent proximity on the sheet does not.' },
     ],
-    visual: { kind: 'compare', component: 'relay', title: 'Three views of one fictional device', caption: 'Original teaching labels; no source drawing is reproduced.', nodes: [
+    visual: { kind: 'compare', component: 'relay', title: 'Three views of one device', caption: 'Compare function, location and connection detail.', nodes: [
       { label: 'Schematic', value: 'What it does', detail: 'The relay’s coil and contact functions can be shown in different functional paths.' },
-      { label: 'Layout', value: 'Where it sits', detail: 'A location view identifies the relay’s physical position inside the fictional assembly.' },
+      { label: 'Layout', value: 'Where it sits', detail: 'A location view identifies the relay’s physical position inside the assembly.' },
       { label: 'Wiring record', value: 'Connection detail', detail: 'A controlled wiring record identifies specific connection points and conductors.' },
     ] },
     example: { scenario: 'A learner wants to understand why a lamp follows a relay, then find that relay physically.', steps: ['Use the schematic to understand the coil/contact relationship.', 'Follow the documented tag to the applicable location view.', 'Keep the functional explanation separate from the physical search.'], takeaway: 'Use each document for the question it can actually answer.' },
@@ -35,12 +35,12 @@ export const drawingTeaching = {
       { title: 'Find the controlled set', body: 'Match equipment identity, document number, revision and approval status before interpreting a circuit. A file that looks newer may be a draft. A familiar paper copy may be superseded. The controlled register, not the visual age of a document, establishes the approved exercise source.' },
       { title: 'Use the drawing’s own addresses', body: 'A PDF page is a position in a file; a sheet identifier and grid are part of the drawing system. Cover sheets and indexes can make them differ. Use the index to choose a drawing purpose, then follow the printed sheet and reference conventions rather than assuming viewer page numbers are interchangeable.' },
     ],
-    visual: { kind: 'document', title: 'A fictional document search', caption: 'Invented navigation cards, not machine print fragments.', nodes: [
+    visual: { kind: 'document', title: 'A document search', caption: 'navigation cards, not machine print fragments.', nodes: [
       { label: 'Controlled register', value: 'CELL-Q · Rev B', detail: 'The exercise register identifies the applicable approved set.' },
       { label: 'Index entry', value: 'Indicator logic', detail: 'The index sends the functional question to sheet L-03.' },
       { label: 'Viewer location', value: 'PDF page 8', detail: 'Page 8 happens to contain sheet L-03; those addresses are not the same identifier.' },
     ] },
-    example: { scenario: 'The work request names an indicator, but a folder contains drafts and approved files.', steps: ['Match the fictional equipment and approved revision in the register.', 'Find the indicator topic in the index.', 'Record the printed sheet identifier when opening the viewer page.'], takeaway: 'Correct navigation starts with authority and identity, not search speed.' },
+    example: { scenario: 'The work request names an indicator, but a folder contains drafts and approved files.', steps: ['Match the equipment and approved revision in the register.', 'Find the indicator topic in the index.', 'Record the printed sheet identifier when opening the viewer page.'], takeaway: 'Correct navigation starts with authority and identity, not search speed.' },
     practice: { prompt: 'The viewer says page 12 and the sheet says C-05. Which should a drawing cross-reference use under the set’s stated sheet convention?', choices: ['Always page 12.', 'The printed sheet identifier C-05.'], correct: 1, explanation: 'Use the address system defined by the drawing set. Viewer positions can differ after covers or indexes are added.' },
   },
   'drawing-language': {
@@ -50,7 +50,7 @@ export const drawingTeaching = {
       { title: 'Symbols carry conventions', body: 'Connection dots, crossing lines, normal contact states and off-sheet references must be read using the set’s conventions. Color and size notes support documentation; they cannot prove isolation or safe contact. If a label is missing or inconsistent, keep the ambiguity visible instead of inventing a connection.' },
     ],
     visual: { kind: 'document', component: 'terminal', title: 'Three original label examples', caption: 'Labels explain categories; they are not a physical pinout.', nodes: [
-      { label: 'K-LESSON', value: 'Device tag', detail: 'Identifies the fictional relay device, potentially across multiple symbols.' },
+      { label: 'K-LESSON', value: 'Device tag', detail: 'Identifies the relay device, potentially across multiple symbols.' },
       { label: 'W-LESSON', value: 'Wire ID', detail: 'Identifies a documented conductor or network under the stated convention.' },
       { label: 'X-LESSON:7', value: 'Connection point', detail: 'Identifies a point on a terminal system; its digits do not define a voltage.' },
     ] },
@@ -68,7 +68,7 @@ export const drawingTeaching = {
       { label: 'Coil → associated contact', value: 'Same device', detail: 'The coil operates a contact function. The reference itself does not create an electrical wire.' },
       { label: 'Layout reference', value: 'Location', detail: 'A physical address answers where the item is, rather than how two electrical paths join.' },
     ] },
-    example: { scenario: 'A fictional coil on sheet A references a contact on sheet B.', steps: ['Read the legend to identify the reference as a device association.', 'Match the coil and contact tag.', 'Analyze each electrical path separately instead of drawing a wire along the reference.'], takeaway: 'A functional relationship is not automatically electrical continuity.' },
+    example: { scenario: 'A coil on sheet A references a contact on sheet B.', steps: ['Read the legend to identify the reference as a device association.', 'Match the coil and contact tag.', 'Analyze each electrical path separately instead of drawing a wire along the reference.'], takeaway: 'A functional relationship is not automatically electrical continuity.' },
     practice: { prompt: 'What does a coil-to-contact cross-reference establish by itself?', choices: ['A wire connects the coil and contact terminals.', 'The symbols are associated with the documented device.'], correct: 1, explanation: 'The reference identifies the device relationship. Each circuit still needs its own documented connection path.' },
   },
   'complete-circuit-path': {
@@ -77,7 +77,7 @@ export const drawingTeaching = {
       { title: 'A load is only one part of a path', body: 'In the ideal lamp model, source, protection, switching condition, load and return all matter. Looking only at the lamp misses the rest of the functional story. An intact outward path without the intended return is not the same as a complete loop.' },
       { title: 'Separate command and load paths', body: 'A relay’s operating coil can change the condition of a contact in another path. Trace the lamp loop and the coil command loop as separate circuits connected by a device relationship. A return or neutral is not automatically protective earth, and a drawing is not live evidence of machine state.' },
     ],
-    visual: { kind: 'loop', title: 'Fictional indicator loop', caption: 'Functional path only. Select each block to follow the story.', nodes: [
+    visual: { kind: 'loop', title: 'Indicator loop', caption: 'Functional path only. Select each block to follow the story.', nodes: [
       { label: 'Source and protection', detail: 'The model begins with its stated supply and protective function.' },
       { label: 'Relay contact', detail: 'The permitted path depends on the documented contact condition and its associated coil.' },
       { label: 'Indicator load', detail: 'The lamp is a load within the loop, not the entire circuit.' },
@@ -92,8 +92,8 @@ export const drawingTeaching = {
       { title: 'Three kinds of evidence', body: 'A schematic describes intended function. A component label identifies what appears installed. An operating observation describes a condition at a particular time. Each can be useful and each can be incomplete. A matching tag alone does not establish wiring correctness or replacement suitability.' },
       { title: 'Preserve discrepancies', body: 'If a layout, parts record and installed label do not agree, record the mismatch with its context. Do not quietly rewrite the drawing to match a guess or bypass a function to make a symptom disappear. Authorized engineering and document control resolve approved configuration and any required change.' },
     ],
-    visual: { kind: 'document', title: 'A fictional evidence triangle', caption: 'Select the record to see what it supports and what remains unknown.', nodes: [
-      { label: 'Approved plan', value: 'Relay type A', detail: 'Defines the fictional intended component, subject to the plan’s applicability.' },
+    visual: { kind: 'document', title: 'An evidence triangle', caption: 'Select the record to see what it supports and what remains unknown.', nodes: [
+      { label: 'Approved plan', value: 'Relay type A', detail: 'Defines the intended component, subject to the plan’s applicability.' },
       { label: 'Observed label', value: 'Relay type B', detail: 'Creates a configuration question; appearance alone does not establish approval.' },
       { label: 'Operating report', value: 'Lamp stays dark', detail: 'Describes a symptom, not a unique cause or authority to substitute a part.' },
     ] },
@@ -121,7 +121,7 @@ export const drawingTeaching = {
       { title: 'Publication is not adoption', body: 'A new edition can exist without automatically governing an existing project. Record the document identity, edition, scope and applicable jurisdiction or project basis. A current webpage and an approved project requirement can answer different questions. The responsible authority resolves what applies.' },
       { title: 'Read beyond the heading', body: 'An index is a navigation aid. Definitions, exceptions, conditions and referenced material can change how the controlling text applies. Search summaries and guidebooks help explain concepts but are not interchangeable with primary requirements or exact manufacturer instructions. Conflicts need documented resolution, not a vote for the easiest wording.' },
     ],
-    visual: { kind: 'document', title: 'The applicability filter', caption: 'Invented review cards, not quotations from a standard.', nodes: [
+    visual: { kind: 'document', title: 'The applicability filter', caption: 'review cards, not quotations from a standard.', nodes: [
       { label: 'Identify', value: 'Document + edition', detail: 'Establish exactly which source is being cited.' },
       { label: 'Apply', value: 'Project + scope', detail: 'Check whether it governs this equipment and question.' },
       { label: 'Interpret', value: 'Full conditions', detail: 'Read the controlling text and context, not just its heading.' },
@@ -147,14 +147,14 @@ export const drawingTeaching = {
     coach: 'A useful answer leaves a trail someone else can verify.',
     sections: [
       { title: 'Make a precise lookup question', body: 'State the exact equipment or model, the condition being investigated and the information needed. Match the model, revision and applicability before interpreting a familiar alarm label. The same short label can represent different meanings in different products or revisions.' },
-      { title: 'Record the evidence trail', body: 'A checkable finding identifies the source title or number, revision, section, applicable model and conclusion. Include assumptions or uncertainty. A screenshot without identity or a memory of a search result cannot reliably support later review. The cards used here are invented exercises, not instructions for actual equipment.' },
+      { title: 'Record the evidence trail', body: 'A checkable finding identifies the source title or number, revision, section, applicable model and conclusion. Include assumptions or uncertainty. A screenshot without identity or a memory of a search result cannot reliably support later review. The cards used here are exercises, not instructions for actual equipment.' },
     ],
-    visual: { kind: 'document', title: 'Original lookup example', caption: 'A separate fictional example from the scored quiz.', nodes: [
+    visual: { kind: 'document', title: 'Follow a lookup from question to citation', caption: 'Explore this example, then apply the same reasoning to the quiz.', nodes: [
       { label: 'Question', value: 'SIM-PUMP-P · Alert E2', detail: 'The lookup is for training model P, not every product with an E2 label.' },
       { label: 'Approved record', value: 'Model P · Rev D', detail: 'The exercise register identifies the applicable manual revision.' },
-      { label: 'Citation', value: 'Section 6.1', detail: 'The fictional finding is “enable condition missing.” Record model, revision and section together.' },
+      { label: 'Citation', value: 'Section 6.1', detail: 'The finding is “enable condition missing.” Record model, revision and section together.' },
     ] },
-    example: { scenario: 'A fictional model P alert is also listed in a model R handbook with a different meaning.', steps: ['Match the exact model and controlled revision first.', 'Use the applicable section and read its stated conditions.', 'Record a traceable citation and avoid transferring the other model’s meaning.'], takeaway: 'A matching alarm label is a search lead, not proof that a source applies.' },
+    example: { scenario: 'A model P alert is also listed in a model R handbook with a different meaning.', steps: ['Match the exact model and controlled revision first.', 'Use the applicable section and read its stated conditions.', 'Record a traceable citation and avoid transferring the other model’s meaning.'], takeaway: 'A matching alarm label is a search lead, not proof that a source applies.' },
     practice: { prompt: 'Which note is easier to verify later?', choices: ['“I saw it online.”', '“SIM-PUMP-P manual, revision D, section 6.1; training model P; missing enable.”'], correct: 1, explanation: 'The second note identifies the source, location, applicability and finding so another person can check it.' },
   },
   plc: {
@@ -184,7 +184,7 @@ export const drawingTeaching = {
       { label: 'Compare', detail: 'Use appropriate documented evidence within the approved task boundary.' },
       { label: 'Verify and record', detail: 'An approved correction needs relevant verification and honest limits.' },
     ] },
-    example: { scenario: 'A fictional machine stops only after a new operating recipe is selected.', steps: ['Record the repeatable condition and timing.', 'Treat recipe dependence as a lead, not proof that a particular part failed.', 'Form a testable prediction and compare supplied records before proposing a correction.'], takeaway: 'Better questions reduce unsupported conclusions.' },
+    example: { scenario: 'A machine stops only after a new operating recipe is selected.', steps: ['Record the repeatable condition and timing.', 'Treat recipe dependence as a lead, not proof that a particular part failed.', 'Form a testable prediction and compare supplied records before proposing a correction.'], takeaway: 'Better questions reduce unsupported conclusions.' },
     practice: { prompt: 'An alarm disappears after reset. Is its underlying cause necessarily removed?', choices: ['Yes, clearing an indication proves a repair.', 'No. Symptom relief and cause removal need separate evidence.'], correct: 1, explanation: 'Reset can clear a reported state without resolving the condition that produced it. Relevant verification is still needed.' },
   },
 } satisfies Record<string, TeachingLesson>;
