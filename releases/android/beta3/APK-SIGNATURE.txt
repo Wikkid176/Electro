@@ -1,0 +1,18 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V2 Signer: certificate DN: CN=ELECTRO Private Beta
+V2 Signer: certificate SHA-256 digest: d481be23603fd9db8676cc7121e8e6a67786ff2ae57805a2c8642a824b02d8d9
+V2 Signer: certificate SHA-1 digest: dc8f3177a06d43b274adff511af245e087fdc7bb
+V2 Signer: certificate MD5 digest: 8771d47a4e75f93ced052d9faf87d675
+V2 Signer: key algorithm: RSA
+V2 Signer: key size (bits): 3072
+V2 Signer: public key SHA-256 digest: 0071dc92529b87a5a1b674ae01b622252b768b31f542422969f51933afefe0fc
+V2 Signer: public key SHA-1 digest: 9cd147578d97d8790c58985219211fed157c1bb5
+V2 Signer: public key MD5 digest: 4497829230426937f23206ddd0eb523e

@@ -29,7 +29,7 @@ export function ComponentLab({ onNavigate }: { onNavigate: () => void }) {
     <View accessibilityRole="tablist" accessibilityLabel="Component workshop modes" style={s.row}>
       {(['explore', 'challenge'] as const).map(value => <Pressable key={value} accessibilityRole="tab" accessibilityLabel={value === 'explore' ? 'Explore components' : 'Component challenges'} accessibilityState={{ selected: mode === value }} aria-selected={mode === value} onPress={() => { setMode(value); onNavigate(); }} style={[s.mode, mode === value && s.selected]}><Text style={s.modeText}>{value === 'explore' ? 'Explore' : 'Challenges'}</Text></Pressable>)}
     </View>
-    <View style={s.notice}><Text style={s.small}>Original, stylized teaching models. Colors show the selected simulation state. Real devices vary; these views do not establish identity, wiring, isolation, or equipment acceptance.</Text></View>
+    <View style={s.notice}><Text style={s.small}>Tap a component to explore its parts. Change its state to see what moves and what each part does.</Text></View>
     {mode === 'explore' ? <>
       <View accessibilityLabel="Component collection" style={s.collection}>
         {workshopComponents.map(item => <Pressable key={item.id} accessibilityRole="button" accessibilityLabel={`Explore ${item.name}`} accessibilityState={{ selected: item.id === componentId }} aria-pressed={item.id === componentId} onPress={() => { setComponentId(item.id); setActive(false); setPartId(null); }} style={[s.componentButton, item.id === componentId && s.selected]}><Text style={[s.componentText, item.id === componentId && { color: '#D6FA68' }]}>{item.name}</Text></Pressable>)}

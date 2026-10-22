@@ -1,0 +1,20 @@
+{
+  "packagesAdded": [
+    "node_modules/boolbase",
+    "node_modules/css-select",
+    "node_modules/css-tree",
+    "node_modules/css-tree/node_modules/source-map",
+    "node_modules/css-what",
+    "node_modules/dom-serializer",
+    "node_modules/domelementtype",
+    "node_modules/domhandler",
+    "node_modules/domutils",
+    "node_modules/entities",
+    "node_modules/mdn-data",
+    "node_modules/nth-check",
+    "node_modules/react-native-svg"
+  ],
+  "boolbaseNoticeSource": "https://raw.githubusercontent.com/fb55/boolbase/master/LICENSE",
+  "boolbaseNoticeSha256": "cdf4d87ae0a6c160227263bf4e39a0a10e30e89ae7256e0f7ac7bde0836552c6",
+  "note": "Full available notices for the added SVG dependency tree are bundled. Earlier dependency-review gaps are unchanged."
+}

@@ -27,7 +27,7 @@ export const panelTeaching = {
       { label: 'Connection', detail: 'The specified assembly and tightening method is followed by authorized personnel.' },
       { label: 'Acceptance record', detail: 'Required inspection and traceable evidence establish what was actually verified.' },
     ] },
-    example: { scenario: 'A fictional connection has a paint mark, but no preparation or tightening record.', steps: ['Record the visible mark as an observation.', 'Keep preparation, tool condition and tightening method as unproven.', 'Resolve the missing acceptance evidence under the approved process.'], takeaway: 'A visible mark cannot substitute for the work it is supposed to document.' },
+    example: { scenario: 'A connection has a paint mark, but no preparation or tightening record.', steps: ['Record the visible mark as an observation.', 'Keep preparation, tool condition and tightening method as unproven.', 'Resolve the missing acceptance evidence under the approved process.'], takeaway: 'A visible mark cannot substitute for the work it is supposed to document.' },
     practice: { prompt: 'A twin ferrule fits. Does that alone permit two conductors in a terminal?', choices: ['Yes, every twin ferrule approves the arrangement.', 'No, the complete arrangement must be permitted by the exact instructions.'], correct: 1, explanation: 'Conductor count, ferrule type, terminal acceptance and tooling must all match. Fit alone proves none of those conditions.' },
   },
   'panel-bonding': {
@@ -50,7 +50,7 @@ export const panelTeaching = {
       { title: 'Distribution has branches', body: 'A one-line summarizes incoming and downstream relationships. It can help identify which protective devices serve which paths, but it does not show every physical connection. Branch relationships are useful for understanding the system; they cannot establish isolation or permission to operate equipment.' },
       { title: 'Coordination is a system question', body: 'Continuous current, interrupting duty and withstand describe different conditions. Trip curves and coordination depend on fault information, equipment and settings together. Delaying one protective device can change fault exposure. This teaching map cannot authorize settings changes, repeated resetting, bypassing or breaker handling.' },
     ],
-    visual: { kind: 'chain', component: 'breaker', title: 'Fictional distribution hierarchy', caption: 'Functional hierarchy only; no protection selection or settings.', nodes: [
+    visual: { kind: 'chain', component: 'breaker', title: 'Distribution hierarchy', caption: 'Functional hierarchy only; no protection selection or settings.', nodes: [
       { label: 'Incoming path', detail: 'A source feeds the documented distribution system.' },
       { label: 'Upstream protection', detail: 'Its duty and behavior must be coordinated with the complete system.' },
       { label: 'Branch protection', detail: 'Each documented downstream path has its applicable protection arrangement.' },
@@ -65,12 +65,12 @@ export const panelTeaching = {
       { title: 'An ideal ratio model', body: 'Changing magnetic flux couples transformer windings. In the ideal sinusoidal model, winding voltage ratio follows turns ratio. A lower secondary voltage does not mean free energy: ideal power balance changes the corresponding current relationship, and real devices add losses and limits.' },
       { title: 'A calculation is not a connection plan', body: 'A single-phase apparent-power calculation uses RMS volts multiplied by RMS amperes. Actual suitability also includes duty, inrush, regulation, temperature and protection. Multiple windings and taps need the exact nameplate and approved diagram. Similar appearance cannot establish jumper arrangements or safe downstream conditions.' },
     ],
-    visual: { kind: 'compare', component: 'transformer', title: 'Ideal 3:1 voltage example', caption: 'Invented sinusoidal model; no tap or terminal connections are provided.', nodes: [
+    visual: { kind: 'compare', component: 'transformer', title: 'Ideal 3:1 voltage example', caption: 'sinusoidal model; no tap or terminal connections are provided.', nodes: [
       { label: 'Primary', value: '90 V RMS', detail: 'The model defines this voltage across the primary winding.' },
       { label: 'Turns ratio', value: '3 : 1', detail: 'The primary has three times the modeled secondary turns.' },
       { label: 'Secondary', value: '30 V RMS', detail: '90/3 = 30 V RMS in the ideal no-loss voltage-ratio calculation.' },
     ] },
-    example: { scenario: 'A fictional single-phase load takes 0.5 A RMS at 20 V RMS.', steps: ['Identify the requested quantity as apparent power.', 'Multiply 20 V RMS by 0.5 A RMS.', 'Record 10 VA, without treating that value alone as transformer selection evidence.'], takeaway: 'Ratio and VA explain a model; exact equipment documentation governs actual suitability.' },
+    example: { scenario: 'A single-phase load takes 0.5 A RMS at 20 V RMS.', steps: ['Identify the requested quantity as apparent power.', 'Multiply 20 V RMS by 0.5 A RMS.', 'Record 10 VA, without treating that value alone as transformer selection evidence.'], takeaway: 'Ratio and VA explain a model; exact equipment documentation governs actual suitability.' },
     practice: { prompt: 'An ideal 5:1 primary-to-secondary ratio has 100 V RMS on the primary. What is the secondary model value?', choices: ['20 V RMS', '500 V RMS'], correct: 0, explanation: 'The secondary has one fifth the modeled turns, so voltage is 100/5 = 20 V RMS.' },
   },
   'panel-control-devices': {
@@ -94,7 +94,7 @@ export const panelTeaching = {
       { title: 'Compare expected with observed', body: 'A useful inspection begins with controlled drawings, parts information, equipment instructions and the approved checklist. Record objective discrepancies such as damaged conductors, missing labels, blocked cooling, undocumented entries or incomplete bonding evidence. An inspection finding needs enough context for another person to verify it.' },
       { title: 'Finding is not acceptance', body: 'A fitting that looks sealed may lack enclosure compatibility evidence. A tightening stripe may lack its preparation record. Resolving those findings and completing required verification are different from merely making a visual change. Acceptance, energization and return to service remain decisions under the applicable approved processes.' },
     ],
-    visual: { kind: 'document', component: 'terminal', title: 'Fictional inspection comparison', caption: 'Original observations; no real panel or source print is shown.', nodes: [
+    visual: { kind: 'document', component: 'terminal', title: 'Inspection comparison', caption: 'Compare the required condition with the observed condition.', nodes: [
       { label: 'Expected', value: 'Clear cooling route', detail: 'The controlled plan calls for an unobstructed cooling path.' },
       { label: 'Observed', value: 'New duct in route', detail: 'The recorded obstruction conflicts with the stated plan.' },
       { label: 'Finding', value: 'Unresolved conflict', detail: 'Record identity and context and obtain approved resolution; the observation does not authorize energization.' },

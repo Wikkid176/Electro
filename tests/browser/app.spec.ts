@@ -163,7 +163,7 @@ test('open-book lookup shows applicable and misleading sources and explains a wr
   await page.goto('/');
   await page.getByRole('button', { name: /^Find it and cite it,/ }).click();
   await startQuiz(page);
-  await expect(page.getByText('FICTIONAL PRACTICE DOCUMENTS', { exact: true })).toBeVisible();
+  await expect(page.getByText('REFERENCE CARDS', { exact: true })).toBeVisible();
   await expect(page.getByText('CARD-A: TRAIN-CTRL-A / Manual revision C', { exact: true })).toBeVisible();
   await expect(page.getByText('CARD-B: TRAIN-CTRL-B / Manual revision C', { exact: true })).toBeVisible();
   await expect(page.getByText('CARD-C: TRAIN-CTRL-A / Manual revision A', { exact: true })).toBeVisible();
@@ -171,7 +171,7 @@ test('open-book lookup shows applicable and misleading sources and explains a wr
   await page.getByRole('button', { name: 'Check answer' }).click();
   await expect(page.getByText('Keep learning. Here’s why.', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Next question' }).click();
-  await expect(page.getByText('FICTIONAL PRACTICE DOCUMENTS', { exact: true })).toBeVisible();
+  await expect(page.getByText('REFERENCE CARDS', { exact: true })).toBeVisible();
   await page.getByRole('radio').nth(0).click();
   await page.getByRole('button', { name: 'Check answer' }).click();
   await page.getByRole('button', { name: 'Next question' }).click();

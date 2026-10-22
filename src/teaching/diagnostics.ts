@@ -8,7 +8,7 @@ export const diagnosticTeaching = {
       { title: 'Make a prediction', body: 'A hypothesis should say what evidence would support it and what would weaken it. Select informative checks within the approved authorization and hazardous-energy controls. Never defeat a safety function, force an output or increase protection to make a theory easier to test. Preserve the relevant records and change only controlled variables when permitted.' },
     ],
     visual: { kind: 'chain', title: 'From symptom to testable question', caption: 'Planning with records, not physical diagnostic instructions.', nodes: [
-      { label: 'Symptom', detail: 'The fictional actuator stops only in recipe Q.' },
+      { label: 'Symptom', detail: 'The actuator stops only in recipe Q.' },
       { label: 'Hypothesis', detail: 'A required command condition may differ in that recipe.' },
       { label: 'Prediction', detail: 'The supplied command-state record should differ at the relevant time if the theory is supported.' },
       { label: 'Alternative result', detail: 'Matching records weaken that theory and require a different explanation.' },
@@ -51,7 +51,7 @@ export const diagnosticTeaching = {
       { title: 'Symptom, mechanism and correction', body: 'Replacing a failed cable can restore operation while leaving an abrasive route unchanged. The failed item is the symptom location; rubbing at a moving edge may be the supported damage mechanism. An approved correction needs to address the mechanism as well as the damaged part.' },
       { title: 'Verification covers relevant conditions', body: 'A few successful cycles cannot prove the permanent elimination of a once-per-shift fault. Record the observation duration, operating conditions, affected functions and remaining limits. Safety-related changes need the responsible validation process. Controlled documentation should reflect approved changes, without recording certainty unsupported by the evidence.' },
     ],
-    visual: { kind: 'chain', title: 'A traceable correction record', caption: 'Fictional maintenance reasoning, not authorization to modify equipment.', nodes: [
+    visual: { kind: 'chain', title: 'A traceable correction record', caption: 'maintenance reasoning, not authorization to modify equipment.', nodes: [
       { label: 'Symptom', detail: 'A cable channel repeatedly loses continuity during movement.' },
       { label: 'Supported mechanism', detail: 'The documented moving-edge contact aligns with the repeated damage location.' },
       { label: 'Approved correction', detail: 'Resolve the damaged item and the reviewed routing/support cause.' },

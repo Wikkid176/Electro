@@ -50,7 +50,7 @@ export const sensorTeaching = {
       { title: 'Find the fraction of span', body: 'For this valid linear 4–20 mA example, subtract 4 mA and divide by the 16 mA signal span. Multiply that fraction by the engineering span, then add the engineering minimum. A negative lower bound must stay in the calculation; the midpoint is not automatically half the maximum.' },
       { title: 'Validity comes before display', body: 'A live zero separates a valid minimum from zero current, but abnormal current does not uniquely identify an open wire. Power, configuration, transmitter and input diagnostics can all matter. The formula alone must not turn invalid data into a trustworthy process value. Failure signaling is equipment-specific.' },
     ],
-    visual: { kind: 'scale', title: 'Valid linear scale: −10 to 50 °C', caption: 'A separate fictional example from the quiz. Tap a signal point to see its fraction.', nodes: [
+    visual: { kind: 'scale', title: 'Valid linear scale: −10 to 50 °C', caption: 'A separate example from the quiz. Tap a signal point to see its fraction.', nodes: [
       { label: '4 mA', value: '−10 °C', level: 0, detail: 'Fraction (4−4)/16 = 0. Add zero span to the −10 °C minimum.' },
       { label: '12 mA', value: '20 °C', level: 0.5, detail: 'Fraction is 0.5. −10 + 0.5 × 60 = 20 °C.' },
       { label: '20 mA', value: '50 °C', level: 1, detail: 'Fraction is 1. −10 + 1 × 60 = 50 °C.' },
@@ -64,7 +64,7 @@ export const sensorTeaching = {
       { title: 'Sensor health is more than a plausible bias', body: 'An IEPE vibration sensor uses compatible constant-current excitation and provides a dynamic signal on a DC bias. A plausible bias can support a limited health assessment, but mounting, cable behavior, sensitivity and bandwidth can still affect the measurement. Exact acceptable values come from the actual equipment.' },
       { title: 'Define cycles and counts', body: 'Quadrature encoder A/B channels provide phase information for direction. A-channel cycles per revolution differ from counts obtained by decoding all A/B edges. Define the convention before calculating frequency. An absolute encoder also needs exact format, referencing and retention information; its label alone does not establish every power-loss behavior.' },
     ],
-    visual: { kind: 'compare', title: 'Separate encoder quantities', caption: 'Fictional 100 A-cycle/revolution model at 120 RPM.', nodes: [
+    visual: { kind: 'compare', title: 'Separate encoder quantities', caption: '100 A-cycle/revolution model at 120 RPM.', nodes: [
       { label: 'Mechanical speed', value: '2 rev/s', detail: '120 RPM divided by 60 gives two revolutions per second.' },
       { label: 'A-channel frequency', value: '200 Hz', detail: '100 A cycles per revolution × 2 revolutions per second = 200 cycles per second.' },
       { label: 'Four-edge decoding', value: '800 counts/s', detail: 'Four counts per A cycle gives 400 counts per revolution, or 800 counts per second here.' },

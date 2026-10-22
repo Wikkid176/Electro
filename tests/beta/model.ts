@@ -60,7 +60,7 @@ export function planProfile(profile: Profile) {
     const distractorDraw = random();
     const answer = draw < probability ? question.correct : wrong[Math.floor(distractorDraw * wrong.length)];
     const hint = random() < profile.hintRate;
-    return { lessonId: lesson.id, topic: topic(lesson), index, answer, correct: answer === question.correct, probability, draw, hint, hintWords: hint ? words(coachHint(lesson.category)) : 0, rereadWords: answer === question.correct ? 0 : words(question.explanation) };
+    return { lessonId: lesson.id, topic: topic(lesson), index, answer, correct: answer === question.correct, probability, draw, hint, hintWords: hint ? words(coachHint(lesson.id, index)) : 0, rereadWords: answer === question.correct ? 0 : words(question.explanation) };
   }));
   const components = componentChallenges.map(challenge => {
     const probability = (profile.professional ? .92 : challenge.kind === 'identify' ? .70 : .62) + profile.probabilityOffset;

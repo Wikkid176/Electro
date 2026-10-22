@@ -1,16 +1,16 @@
 # ElectroLessonLab (ELL) status report
 
-Updated October 20, 2026 · Illustrated-lesson beta 0.3.0-beta.2
+Updated October 22, 2026 · Interactive teaching beta 0.4.0-beta.3
 
 ## Status
 
 The user selected ElectroLessonLab (ELL) as the app name and Android as the first human-beta target. The beta includes an opt-in local study record, first-attempt scoring separate from replayed best scores, approximate foreground timing, feedback notes and manual results sharing. Legacy course/checkpoint storage keys remain unchanged. See [HUMAN_BETA.md](HUMAN_BETA.md) and release validation in `releases/android/` for the current build status; previous synthetic results below are historical and are not human outcomes.
 
-Current update: all 47 missions have authored four-page teaching before their quizzes: 94 explanatory sections, 47 interactive visual aids, 47 worked examples and 47 ungraded practice questions. Reading checkpoints and in-quiz lesson review preserve progress and checked answers. Existing quiz identities, 141 quiz questions and 3,525 available XP remain unchanged. Android versionName is 0.3.0 and versionCode is 2, using the existing package and signing key. The earlier study record remains exportable but paused to prevent mixing old and expanded-course results. See [the lesson upgrade](docs/LESSON_UPGRADE.md) and `releases/android/beta2-validation.json` for verified release evidence.
+Current update: all 47 lessons now contain five authored sections (235 total), including three optional deep dives. Visual pages include real vector illustrations, selectable diagram elements, existing component artwork and seven changeable experiment types in 13 lessons. Worked examples reveal their reasoning step by step. All 141 quiz questions have two distinct authored hint levels (282 total), replacing repeated category hints. Repetitive fictional-example labels were removed from learner-facing text. Wording-only migrations preserve compatible unfinished quizzes, while course scores and 3,525 maximum XP remain intact.
 
-Current checks: TypeScript, all 30 unit tests and all 58 phone/desktop browser cases passed. The browser suite completes every expanded lesson and quiz in both layouts, with coverage for all eight interactive visual forms, reading resume, quiz review, practice feedback and earlier-study export.
+Current checks: TypeScript and all 36 unit tests passed. The full 64-case phone/desktop browser suite passed, followed by 14 focused revalidation cases after final presentation and timer-window polish. The APK signature, all 235 lesson sections, all 282 hints, native SVG registration for both ARM architectures, release manifest, notices and archive alignment passed verification.
 
-The signed [0.3.0-beta.2 Android APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.3.0-beta.2.apk) passed verification of its existing beta signing certificate, versionCode 2, release settings, all 47 bundled authored lessons, graphics resources, exact notices, archive integrity and alignment. Physical-phone installation and behavior still need organizer testing. This APK was built in the prepared workspace; a GitHub-hosted Actions run is not claimed.
+Android versionName is 0.4.0 and versionCode is 3, using the existing package and signing certificate. Earlier known study records stay exportable but paused so metrics do not mix course versions. See [the interactive lesson update](docs/INTERACTIVE_LESSONS.md) and `releases/android/beta3-validation.json` for validation evidence. Physical-phone behavior and qualified content review remain outstanding; a GitHub-hosted build is not claimed.
 
 The base game is implemented as an Expo/React Native app with an Android beta and a tested browser version. It contains 47 original missions, 141 mission questions, four interactive practice labs, fictional document/evidence exercises, and device-local progress. Android and iOS JavaScript exports succeeded. It has not yet been validated on real phones or packaged and published for app-store distribution.
 

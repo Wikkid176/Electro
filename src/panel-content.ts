@@ -1,9 +1,9 @@
 import type { Lesson, PracticeReference } from './content.ts';
 
-// Invented evidence records, not excerpts from a drawing or manufacturer manual.
+// evidence records, not excerpts from a drawing or manufacturer manual.
 const inspectionCards: PracticeReference[] = [
-  { id: 'BUILD-PLAN', title: 'TRAIN-BOX / Approved plan revision D', context: 'Fictional inspection exercise; no installation dimensions or field settings.', content: 'The plan retains a clear cooling path above the virtual power supply. Cable entries require documented compatibility with the enclosure and intended environment. Connection acceptance requires a traceable preparation and tightening record, not just a paint mark.' },
-  { id: 'BUILD-LOG', title: 'TRAIN-BOX / Observation record', context: 'Fictional unpowered mock-up; observations do not authorize energization.', content: 'A newly added duct blocks the planned cooling path. An entry fitting has no compatibility documentation. Terminals carry paint stripes, but their preparation and tightening records are missing. These are unresolved inspection findings.' },
+  { id: 'BUILD-PLAN', title: 'TRAIN-BOX / Approved plan revision D', context: 'inspection exercise; no installation dimensions or field settings.', content: 'The plan retains a clear cooling path above the virtual power supply. Cable entries require documented compatibility with the enclosure and intended environment. Connection acceptance requires a traceable preparation and tightening record, not just a paint mark.' },
+  { id: 'BUILD-LOG', title: 'TRAIN-BOX / Observation record', context: 'unpowered mock-up; observations do not authorize energization.', content: 'A newly added duct blocks the planned cooling path. An entry fitting has no compatibility documentation. Terminals carry paint stripes, but their preparation and tightening records are missing. These are unresolved inspection findings.' },
 ];
 
 export const panelLessons: Lesson[] = [
@@ -72,8 +72,8 @@ export const panelLessons: Lesson[] = [
       'Terminal letters, multiple windings, taps, and jumper arrangements must be interpreted using the exact nameplate and approved connection diagram. This mission provides no wiring or tap-change procedure. A transformer does not by itself make downstream conductors safe to touch.',
     ],
     questions: [
-      { prompt: 'An ideal transformer has a 4:1 primary-to-secondary turns ratio and 80 V RMS across its primary. What is the modeled secondary voltage?', choices: ['320 V RMS', '20 V RMS', '4 V RMS'], correct: 1, explanation: 'In this ideal model, secondary voltage is 80 ÷ 4 = 20 V RMS. These invented values are calculation practice, not a connection design.' },
-      { prompt: 'A fictional single-phase load draws 2 A RMS at 30 V RMS. What is its apparent power?', choices: ['60 VA', '15 VA', '60 W under every waveform and power factor'], correct: 0, explanation: 'Apparent power is 30 × 2 = 60 VA. Real power and actual transformer suitability require additional information; VA is not universally interchangeable with watts.' },
+      { prompt: 'An ideal transformer has a 4:1 primary-to-secondary turns ratio and 80 V RMS across its primary. What is the modeled secondary voltage?', choices: ['320 V RMS', '20 V RMS', '4 V RMS'], correct: 1, explanation: 'In this ideal model, secondary voltage is 80 ÷ 4 = 20 V RMS. These values are calculation practice, not a connection design.' },
+      { prompt: 'A single-phase load draws 2 A RMS at 30 V RMS. What is its apparent power?', choices: ['60 VA', '15 VA', '60 W under every waveform and power factor'], correct: 0, explanation: 'Apparent power is 30 × 2 = 60 VA. Real power and actual transformer suitability require additional information; VA is not universally interchangeable with watts.' },
       { prompt: 'A transformer looks like a familiar model, but its tap diagram is unreadable. What is the appropriate decision?', choices: ['Copy the jumpers from memory', 'Assume the case size identifies the taps', 'Hold the connection decision until exact applicable documentation is obtained'], correct: 2, explanation: 'Similar appearance does not establish winding or tap connections. Resolve identity and documentation through the approved process before any connection decision.' },
     ],
   },
@@ -93,16 +93,16 @@ export const panelLessons: Lesson[] = [
   },
   {
     id: 'panel-inspection', title: 'Catch the build defects', category: 'PANEL BUILD / INSPECTION CHALLENGE', symbol: '31', minutes: 5,
-    brief: 'Compare invented plan and observation cards. Find unresolved defects and distinguish an inspection finding from permission to energize.',
+    brief: 'Compare plan and observation cards. Find unresolved defects and distinguish an inspection finding from permission to energize.',
     points: [
       'Inspect against controlled drawings, parts records, equipment instructions, and the approved checklist. Record objective findings such as incorrect identity, missing labels, damaged conductors, routing conflicts, incomplete bonding evidence, debris, or undocumented entries.',
       'Preserving an enclosure rating requires the applicable entry components, installation method, and environmental compatibility. Similar-looking fittings, an unused opening, or a simple IP-to-enclosure-type assumption do not establish an acceptable completed assembly.',
       'Separate construction inspection, required verification tests, and authorized commissioning. Resolve findings and obtain the required acceptance before energization. Insulation testing, live testing, phase/rotation checks, and energization sequences require qualified personnel and equipment-specific approved procedures; they are not gameplay steps.',
     ],
     questions: [
-      { prompt: 'Compare the TRAIN-BOX plan and observation cards. Which recorded layout condition is unresolved?', choices: ['The power supply has a fictional training name', 'The new duct blocks the planned cooling path', 'The plan has a revision letter'], correct: 1, explanation: 'The observation conflicts with the approved cooling path. Record and resolve that conflict through the responsible process before acceptance.', referenceCards: inspectionCards },
+      { prompt: 'Compare the TRAIN-BOX plan and observation cards. Which recorded layout condition is unresolved?', choices: ['The power supply has a training name', 'The new duct blocks the planned cooling path', 'The plan has a revision letter'], correct: 1, explanation: 'The observation conflicts with the approved cooling path. Record and resolve that conflict through the responsible process before acceptance.', referenceCards: inspectionCards },
       { prompt: 'The entry fitting has no compatibility documentation. Which inspection decision follows from the cards?', choices: ['Accept it if the hole looks neat', 'Assume any IP marking establishes the required enclosure type', 'Hold acceptance until the fitting and installation compatibility are established'], correct: 2, explanation: 'Entry components and their installed condition affect enclosure protection. Appearance or a presumed rating conversion does not resolve missing compatibility evidence.', referenceCards: inspectionCards },
-      { prompt: 'All terminals carry stripes, but preparation and tightening records are missing. Can the fictional inspection release the assembly for power-up?', choices: ['No; resolve the evidence gaps and follow the separate approved acceptance and commissioning process', 'Yes; paint stripes replace verification', 'Yes; this quiz score authorizes energization'], correct: 0, explanation: 'Markings do not replace connection acceptance evidence. Completing this exercise provides learning credit only, not equipment acceptance or authorization to energize.', referenceCards: inspectionCards },
+      { prompt: 'All terminals carry stripes, but preparation and tightening records are missing. Can the inspection release the assembly for power-up?', choices: ['No; resolve the evidence gaps and follow the separate approved acceptance and commissioning process', 'Yes; paint stripes replace verification', 'Yes; this quiz score authorizes energization'], correct: 0, explanation: 'Markings do not replace connection acceptance evidence. Completing this exercise provides learning credit only, not equipment acceptance or authorization to energize.', referenceCards: inspectionCards },
     ],
   },
 ];

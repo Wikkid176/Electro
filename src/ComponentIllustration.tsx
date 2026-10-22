@@ -19,7 +19,7 @@ export function ComponentIllustration({ id, active = false, defect = false, show
   const artHeight = frame.height * fit;
   return <View testID={`illustration-${id}`} onLayout={event => setWidth(event.nativeEvent.layout.width)} style={{ width: '100%', height, overflow: 'hidden' }}>
     <View style={{ position: 'absolute', width: 300, height: 270, top: (height - 270) / 2, left: (width - 300) / 2, transform: [{ scale }] }}>
-      <View accessible accessibilityRole="image" accessibilityLabel={hideIdentity ? 'Original component illustration for identification' : `${component.name}, ${component.states[Number(active)]}${defect ? ', fictional inspection finding shown' : ''}`} style={StyleSheet.absoluteFill}>
+      <View accessible accessibilityRole="image" accessibilityLabel={hideIdentity ? 'Original component illustration for identification' : `${component.name}, ${component.states[Number(active)]}${defect ? ', inspection finding shown' : ''}`} style={StyleSheet.absoluteFill}>
         <View testID="generated-component-art" style={{ position: 'absolute', left: (300 - artWidth) / 2, top: (270 - artHeight) / 2, width: artWidth, height: artHeight, overflow: 'hidden' }}>
           <Image testID="component-art-image" source={artwork} accessible={false} resizeMode="stretch" style={{ position: 'absolute', width: componentAtlasSize.width * fit, height: componentAtlasSize.height * fit, left: -frame.x * fit, top: -frame.y * fit }} />
         </View>

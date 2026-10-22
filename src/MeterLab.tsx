@@ -29,7 +29,7 @@ export function MeterLab() {
   return <>
     <Text style={s.label}>INTERACTIVE PRACTICE / 02</Text>
     <Text accessibilityRole="header" style={s.title}>The meter bench</Text>
-    <Text style={s.intro}>Choose a fictional fixture and a meter function. Predict the display, then explain what it tells you.</Text>
+    <Text style={s.intro}>Choose a fixture and a meter function. Predict the display, then explain what it tells you.</Text>
     <View style={s.notice}><Text style={s.orange}>SIMULATION ONLY</Text><Text style={s.body}>No physical equipment is connected. This model does not perform isolation, prove electrical safety, or authorize field testing.</Text></View>
     <View style={s.card}>
       <Text style={s.label}>1 / CHOOSE THE VIRTUAL FIXTURE</Text>

@@ -1,0 +1,67 @@
+export const deeperDrawings: Record<string, [string, string, string]> = {
+  motor: [
+    'A coil creates a magnetic operating force when its input conditions are met. In the ideal spring-return contactor model, removing coil energy lets the mechanism return. Main contacts switch the load path; an auxiliary contact can represent an associated control function. These separate contact duties explain why a coil rating does not define every switched load.',
+    'The holding path is a form of control memory. START is momentary, but the auxiliary path can remain established after the button action ends. A series STOP or protective contact can remove the coil path and erase that memory. Holding does not mean that every protective condition has been ignored.',
+    'Try the sequence START, trip, reset, START in the experiment. Compare the state after reset with the state after the new start action. Permission and command are separate: clearing a condition can allow operation without requesting it. That distinction is central to understanding unintended restart behavior in this model.',
+  ],
+  schematics: [
+    'A symbol is a compressed statement of function. A coil symbol represents an operating element, while a contact symbol represents a switching relationship under a defined reference state. Their positions on the sheet help explain logic. Tags and cross-references provide identity when related functions are placed on separate pages.',
+    'Normally open does not mean open during every normal production cycle. It describes the specified reference or unactuated condition. A relay can be operated during ordinary production and have its normally open contact closed. Keep the naming convention separate from whatever the machine is doing at the moment.',
+    'Use a two-question habit: “What relationship does this view show?” and “Which document would establish the physical detail?” The first may be answered by the schematic. Locating the relay or finding a specific connection point may need a layout or wiring record with its own approved identifiers.',
+  ],
+  'drawing-navigation': [
+    'Document navigation has several layers: equipment identity, controlled set, drawing purpose, sheet address and local grid or line. Each layer narrows the search. Skipping the first layers can produce an impressively fast answer about the wrong equipment, while carefully identifying the set makes later cross-references much more reliable.',
+    'File order is not engineering identity. Adding a cover or inspection sheet can change every following PDF page number without changing the circuit sheet names. That is why a printed reference such as L-03 should be followed under the drawing convention rather than translated into whichever viewer page currently seems plausible.',
+    'When starting from a symptom, choose the document purpose deliberately. “Why does it operate?” points toward function. “Where is it mounted?” points toward layout. “Which approved component?” points toward parts information. A good search can involve all three, but they answer separate parts of the investigation.',
+  ],
+  'drawing-language': [
+    'A device tag, conductor identifier and pin address belong to different naming systems. A relay may have one device tag but several contact symbols and many physical terminals. A conductor can pass through connectors while keeping a documented network identity. Reading each label by category prevents accidental connections based only on similar numbers.',
+    'A crossing on a schematic is not automatically a connection. Some drawing sets use a dot to indicate a joined node and other visual conventions for a crossover. The exact legend governs the interpretation. A symbol remembered from another drawing is a useful lead, but it is not stronger evidence than the applicable legend.',
+    'Treat a drawing label as a question you can answer: what item, what path or what connection point? Then ask what it does not tell you. A 0 V designation identifies a reference function but does not certify safe contact; a wire-size note describes the intended conductor but not the installed condition.',
+  ],
+  'drawing-references': [
+    'Off-sheet references let a functional path continue without forcing an entire system onto one page. Their destination address and matching identifier provide a checkable link. A device cross-reference serves a different purpose: it locates another function of the same item, such as a relay contact associated with an operating coil.',
+    'The coil/contact association is usually not a conductor between those terminals. Magnetic or mechanical operation changes the contact condition while the switched circuit can remain electrically separate from the coil circuit. Confusing the association line with a wire creates a circuit the drawing never specified.',
+    'Use a reference in both directions when the drawing convention permits it: locate the destination and check its identity against the originating function. If the target is absent or inconsistent, record that exact failure of the evidence trail. Do not repair the story by silently inventing an address.',
+  ],
+  'complete-circuit-path': [
+    'A functional loop contains more than a source and the device you want to operate. Protection, switching conditions, connection points, load and return together determine the intended path. A trace that ends at the load leaves part of that dependency unexplained, even when the source side looks straightforward.',
+    'A switched load path and the circuit operating its relay are linked by function, not automatically by electrical continuity. Trace each one under its own supply and return assumptions. This also explains why the presence of a coil command does not prove that a load contact actually changed or that the load operated.',
+    'While tracing, label each relationship in your own words: “conducts to,” “operates,” or “is located at.” Those verbs distinguish a wire, a device association and a physical location. The distinction is useful when a single investigation moves between a schematic, a cross-reference and a panel layout.',
+  ],
+  'drawing-evidence': [
+    'A controlled drawing states an intended configuration. An observed label states what appears installed. A status report states what a particular indication showed at a particular time. Comparing them is useful precisely because they are different kinds of evidence, with different possible errors and different limits.',
+    'A mismatch is not automatically a proven cause. The label might be wrong, the drawing might not apply, the part might be an approved alternative, or the installation might be incorrect. Record the specific discrepancy and obtain its approved resolution instead of selecting whichever story is most convenient.',
+    'After an authorized change, future decisions depend on traceable records. The approved configuration, reason for change and verification outcome should agree across the relevant documents. Quietly editing a sketch to match an unverified installation would hide uncertainty, while controlled revision makes the actual supported configuration clear.',
+  ],
+  'standards-scope': [
+    'A scope defines which subjects and conditions a document addresses. Electrical installation, industrial machinery construction, control-panel construction and workplace safe practices overlap but are not identical. Naming the question clearly is therefore part of the technical work, rather than a clerical step before searching for a familiar number.',
+    'A standard title alone does not settle applicability. The project basis, adopted edition, jurisdiction, equipment and manufacturer instructions all contribute. A provision relevant to a component cannot automatically establish complete machine or workplace compliance. Likewise, a guidance article can explain a concept without becoming the governing requirement.',
+    'Build a lookup sentence before opening a source: “For this equipment and project context, I need the requirement about this specific subject.” Then verify the source’s scope and governing edition. A precise question reduces the chance of applying an accurate statement to the wrong part of the system.',
+  ],
+  'edition-evidence': [
+    'Publication says a document version exists; adoption and project applicability say whether it governs a particular question. Existing equipment can have a defined project basis that needs review rather than automatic replacement by the newest search result. Establish that basis through the responsible authority before comparing detailed requirements.',
+    'Requirements often depend on definitions, conditions, exceptions and referenced material. An index points toward the topic but does not contain that full context. Search snippets can be accurate excerpts and still omit the decisive condition. Reading the controlling material is how you determine whether the familiar phrase actually applies.',
+    'When sources conflict, write down their exact identities and the apparent disagreement. Distinguish primary requirements, manufacturer instructions, project guidance and explanatory material. Then request an approved resolution of applicability and technical meaning. Choosing the newest, strictest-sounding or easiest source by instinct does not establish which governs.',
+  ],
+  'ratings-context': [
+    'A rating is attached to an object, a duty and specified conditions. Carrying normal current, interrupting a fault and withstanding a fault event describe different duties. Two markings can both involve amperes while answering fundamentally different questions. Always name the duty before comparing the numerical values.',
+    'An assembly can depend on the permitted combination of its parts, not simply the highest marking visible inside it. Replacing one component does not automatically upgrade the assembly rating. Voltage, protective combinations and construction conditions can matter, so the complete approved configuration must remain attached to the claimed capability.',
+    'Separate system demand from equipment capability. Available fault current is a condition of the supplying system; the applicable equipment rating describes a capability under its conditions. A normal load-current value cannot substitute for that comparison. A mismatch requires responsible engineering resolution rather than a change in terminology.',
+  ],
+  'reference-hunt': [
+    'A good lookup begins with identity: exact model, relevant configuration, approved revision and the question being asked. Reused alarm labels are a common trap. The same short code can appear in several products while describing different conditions, so an attractive search hit must first pass the applicability check.',
+    'A citation should let another person reconstruct the finding. Include document identity, revision, section or location, applicable equipment and the conclusion supported by the source. Also record important conditions or unresolved details. A remembered sentence without an address cannot provide that same checkable evidence trail.',
+    'Use the practice cards as a small document-control exercise. Match both model and revision before interpreting the alarm. Then ask whether the cited section actually supports the conclusion. This two-stage method separates finding a plausible source from finding a source that answers the specific question.',
+  ],
+  plc: [
+    'A PLC works with representations of field conditions. In a simplified cyclic scan it acquires input data, evaluates program logic and updates output commands. Actual systems can use multiple tasks, asynchronous I/O and communications, so the simplified sequence explains the idea without defining every real controller’s timing.',
+    'A bit is not the field device itself. Input filtering, mapping, communications, program processing or simulation can affect the value seen by logic. An output bit is similarly a request, not proof that power reached the load. Feedback provides another observation, but its identity and timing still need interpretation.',
+    'Follow one process event through layers: target changes, sensor responds, module recognizes a signal, data reaches the program, logic requests an output and the process responds. If two neighboring observations disagree, that narrows the next questions without immediately naming a failed component. Safety functions require their own validated system context.',
+  ],
+  diagnosis: [
+    'A symptom describes a difference between expected and observed behavior under named conditions. Include operating mode, timing and relevant recent changes. An alarm is another observation in that record, not necessarily the name of the failed part. Several possible causes may generate the same reported symptom.',
+    'A hypothesis becomes useful when it predicts evidence. “If the enable is missing, the synchronized record should show it false” can be supported or weakened. “Something electrical failed” is too broad to guide the comparison. Keep alternate explanations visible until observations actually distinguish them.',
+    'Restoring operation and proving a cause are different achievements. A reset or replacement may remove a symptom while leaving its mechanism unresolved. An approved correction needs verification under relevant conditions and a traceable record. The limits of your authorization remain part of the plan, regardless of how persuasive a theory sounds.',
+  ],
+};

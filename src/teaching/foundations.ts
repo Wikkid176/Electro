@@ -13,7 +13,7 @@ export const foundationTeaching = {
       { label: 'Raised load', value: 'Gravity', detail: 'A suspended or elevated load can move without a motor command.' },
       { label: 'Compressed air', value: 'Pressure', detail: 'Pressure may remain in parts of a system after the machine stops.' },
     ] },
-    example: { scenario: 'A fictional conveyor stops and its screen goes dark. A learner says the cabinet must now be safe.', steps: ['List what is actually observed: no motion and no display.', 'Notice what is missing: source identification, task-specific energy control and verification.', 'Keep the cabinet-work decision with qualified, authorized personnel using the approved process.'], takeaway: 'An observation about machine behavior cannot establish that hazardous energy is controlled.' },
+    example: { scenario: 'A conveyor stops and its screen goes dark. A learner says the cabinet must now be safe.', steps: ['List what is actually observed: no motion and no display.', 'Notice what is missing: source identification, task-specific energy control and verification.', 'Keep the cabinet-work decision with qualified, authorized personnel using the approved process.'], takeaway: 'An observation about machine behavior cannot establish that hazardous energy is controlled.' },
     practice: { prompt: 'A different machine is silent after STOP is pressed. Which statement uses only the available evidence?', choices: ['It is stopped; its energy-control status is not established.', 'Every conductor and moving part is now safe.'], correct: 0, explanation: 'Silence is an operating observation. It does not establish electrical isolation, discharge or restraint of stored mechanical energy.' },
   },
   'energy-sources': {
@@ -22,7 +22,7 @@ export const foundationTeaching = {
       { title: 'Incoming energy and stored energy', body: 'A main electrical feed supplies energy from outside a machine. A backup battery is another supply. A capacitor, spring or raised load stores energy already inside the system. These categories help organize questions, but the actual machine documentation and task-specific procedure determine which hazards exist.' },
       { title: 'Hazards can return', body: 'Energy control must remain effective during the work. A separate feed, accumulating pressure or external movement can change conditions after an initial shutdown. If the documented sources and the equipment disagree, that discrepancy needs resolution; it is not a reason to improvise a missing step.' },
     ],
-    visual: { kind: 'energy', title: 'Fictional packaging cell energy map', caption: 'Each card is a separate question for the approved process.', nodes: [
+    visual: { kind: 'energy', title: 'Packaging cell energy map', caption: 'Each card is a separate question for the approved process.', nodes: [
       { label: 'Main feed', value: 'Incoming', detail: 'The main feed is one documented supply, not automatically the whole system.' },
       { label: 'Backup unit', value: 'Separate', detail: 'A battery-backed circuit may not follow the main disconnect state.' },
       { label: 'Air reservoir', value: 'Stored', detail: 'A reservoir can retain pressure after its upstream source is stopped.' },
@@ -93,7 +93,7 @@ export const foundationTeaching = {
       { title: 'Three quantities, one relationship', body: 'Voltage is a potential difference between two points. Current is the rate of charge flow along a path. Resistance describes how an element opposes current. In an ideal resistor at steady DC, V = I × R relates the voltage across that resistor to the current through it.' },
       { title: 'Read the path before calculating', body: 'A complete intended path includes a source, a load and a return. An open path interrupts steady current in this model. That does not make every point voltage-free. A short changes the path and may allow dangerous current in real systems; it is never an experiment to perform on actual equipment.' },
     ],
-    visual: { kind: 'loop', title: 'An ideal DC resistor loop', caption: 'Fictional calculation model: tap the source, load and return. Not a connection drawing.', nodes: [
+    visual: { kind: 'loop', title: 'An ideal DC resistor loop', caption: 'calculation model: tap the source, load and return. Not a connection drawing.', nodes: [
       { label: 'Source', value: '24 V', detail: 'The defined source potential difference is 24 volts across the complete load path.' },
       { label: 'Resistor', value: '120 Ω', detail: 'The ideal resistance is 120 ohms. Current is 24 ÷ 120 = 0.2 amperes.' },
       { label: 'Return', value: '0.2 A', detail: 'The same 0.2 A returns along this single path. Current is not used up inside the resistor.' },
@@ -177,7 +177,7 @@ export const foundationTeaching = {
       { title: 'A load can reveal a weak path', body: 'For an ideal resistance, voltage drop grows with current. A connection can appear unremarkable with almost no load, then lose voltage as current rises. Comparing supplied records at different loads can test a hypothesis. It does not authorize probing, bypassing or modifying a real circuit.' },
       { title: 'Every capture has limits', body: 'A clamp responds to the combined magnetic effect of enclosed conductors; equal opposite currents can cancel. Logging, Min/Max and true-RMS features also have bandwidth, waveform and timing limits. An apparently normal record only covers what the instrument was capable of observing under those conditions.' },
     ],
-    visual: { kind: 'scale', title: 'Fictional connection: 4 Ω unchanged', caption: 'Supplied ideal DC records, not measurement instructions.', nodes: [
+    visual: { kind: 'scale', title: 'Connection: 4 Ω unchanged', caption: 'Supplied ideal DC records, not measurement instructions.', nodes: [
       { label: '0.1 A load', value: '0.4 V drop', level: 0.2, detail: 'V = IR = 0.1 × 4. A small current produces a smaller drop.' },
       { label: '0.3 A load', value: '1.2 V drop', level: 0.6, detail: 'The same resistance now drops three times as much voltage.' },
       { label: '0.5 A load', value: '2.0 V drop', level: 1, detail: 'Changing the load changes the evidence even though modeled resistance is unchanged.' },
