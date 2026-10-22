@@ -12,7 +12,7 @@ export function TraceLab({ onNavigate }: { onNavigate: () => void }) {
   return <>
     <Text style={s.label}>INTERACTIVE PRACTICE / 03</Text>
     <Text accessibilityRole="header" style={s.title}>Trace the signal</Text>
-    <Text style={s.body}>An original, drawing exercise. Follow an indicator path, investigate its relay reference, and find the return.</Text>
+    <Text style={s.body}>An original drawing exercise. Follow an indicator path, investigate its relay reference, and find the return.</Text>
     <View style={s.notice}><Text style={s.label}>PACKAGE / TRAIN-LAMP / REV B</Text><Text style={s.body}>These symbol tiles form a teaching map, not an installation drawing or safety design. Highlighting marks your answers, not voltage or operating state. No physical machine is connected.</Text></View>
     <View accessibilityLiveRegion="polite" style={s.card}>
       <Text accessibilityLabel={`Trace progress: ${trace.step} of ${traceChallenges.length}`} style={s.label}>{trace.step} / {traceChallenges.length} TARGETS FOUND</Text>

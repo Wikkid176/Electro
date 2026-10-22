@@ -1,0 +1,38 @@
+{
+  "verifiedAt": "2026-10-22T18:03:09.805325+00:00",
+  "file": "ELL-0.5.0-beta.4.apk",
+  "bytes": 40231977,
+  "sha256": "ca31f569078f36701e8809a91f5492106bf7b9572662d6fb0c0f31e62db6f353",
+  "package": "com.wikkid176.electrolessonlab.beta",
+  "versionName": "0.5.0",
+  "versionCode": 4,
+  "architectures": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "signatureVerified": true,
+  "signerCertificateSha256": "d481be23603fd9db8676cc7121e8e6a67786ff2ae57805a2c8642a824b02d8d9",
+  "zipAlignment16KiBVerified": true,
+  "debuggable": false,
+  "allowBackup": false,
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE",
+    "com.wikkid176.electrolessonlab.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "embeddedHermes": true,
+  "artworkResourcesPresent": true,
+  "expandedLessonInterfaceIncluded": true,
+  "authoredLessonsBundled": 47,
+  "authoredSectionsBundled": 235,
+  "caseSpecificHintsBundled": 282,
+  "svgGraphicsIncluded": true,
+  "virtualWiringBuildsBundled": 3,
+  "virtualProbeInterfaceIncluded": true,
+  "nativeSvgRegistrationVerified": true,
+  "softwareNoticesIncluded": true,
+  "privateReferenceOrSigningFilesIncluded": false,
+  "commit": null,
+  "runId": null,
+  "physicalDeviceTested": false
+}

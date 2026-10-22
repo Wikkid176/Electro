@@ -1,25 +1,27 @@
 # ElectroLessonLab (ELL) status report
 
-Updated October 22, 2026 · Interactive teaching beta 0.4.0-beta.3
+Updated October 22, 2026 · Virtual wiring beta 0.5.0-beta.4
 
 ## Status
 
 The user selected ElectroLessonLab (ELL) as the app name and Android as the first human-beta target. The beta includes an opt-in local study record, first-attempt scoring separate from replayed best scores, approximate foreground timing, feedback notes and manual results sharing. Legacy course/checkpoint storage keys remain unchanged. See [HUMAN_BETA.md](HUMAN_BETA.md) and release validation in `releases/android/` for the current build status; previous synthetic results below are historical and are not human outcomes.
 
-Current update: all 47 lessons now contain five authored sections (235 total), including three optional deep dives. Visual pages include real vector illustrations, selectable diagram elements, existing component artwork and seven changeable experiment types in 13 lessons. Worked examples reveal their reasoning step by step. All 141 quiz questions have two distinct authored hint levels (282 total), replacing repeated category hints. Repetitive fictional-example labels were removed from learner-facing text. Wording-only migrations preserve compatible unfinished quizzes, while course scores and 3,525 maximum XP remain intact.
+Current update: a fifth practice lab lets learners fit virtual wires on three original shaded equipment panels: a switched lamp, a relay-controlled lamp and a start/stop holding circuit. Actual wire/contact connectivity drives the load and relay states. Click identifies incorrect terminal pairs, missing paths, control bypasses and shorts. A short cuts virtual bench power; editing is locked while powered. Connection plans and functional test sequences support guided or independent practice. Wires and earned build badges save separately, always restoring with power off. The meter now has graphical probe placement; the motor lab has a contactor/overload/motor equipment view.
 
-Current checks: TypeScript and all 36 unit tests passed. The full 64-case phone/desktop browser suite passed, followed by 14 focused revalidation cases after final presentation and timer-window polish. The APK signature, all 235 lesson sections, all 282 hints, native SVG registration for both ARM architectures, release manifest, notices and archive alignment passed verification.
+The existing course retains 47 lessons, 235 explanatory sections, 47 guided-practice questions, 141 quiz questions, 282 question-specific hints and 3,525 maximum XP. This update preserves course scores and unfinished lesson fingerprints. Earlier known study records, including beta3, remain paused/exportable. The optional study counts five lab visits; detailed wiring actions/badges are local practice data and are not exported as study outcomes.
 
-Android versionName is 0.4.0 and versionCode is 3, using the existing package and signing certificate. Earlier known study records stay exportable but paused so metrics do not mix course versions. See [the interactive lesson update](docs/INTERACTIVE_LESSONS.md) and `releases/android/beta3-validation.json` for validation evidence. Physical-phone behavior and qualified content review remain outstanding; a GitHub-hosted build is not claimed.
+Current checks: TypeScript and all 50 unit tests passed. All 76 phone/desktop browser cases passed; the final label-readability adjustment was checked with the 12 focused lab cases. Native release compilation and dedicated-certificate verification passed, including all lesson sections/hints, three wiring builds, probe interface, SVG native registration in both ARM architectures, manifest, notices and archive alignment. See `releases/android/beta4-validation.json`.
 
-The base game is implemented as an Expo/React Native app with an Android beta and a tested browser version. It contains 47 original missions, 141 mission questions, four interactive practice labs, fictional document/evidence exercises, and device-local progress. Android and iOS JavaScript exports succeeded. It has not yet been validated on real phones or packaged and published for app-store distribution.
+Android versionName is 0.5.0 and versionCode is 4, with the existing package and signing certificate. See [the wiring update](docs/VIRTUAL_WIRING_LABS.md) and [Android tester guide](HUMAN_BETA.md). The downloadable APK is built in this workspace; a GitHub-hosted build is not claimed. Physical-phone behavior and qualified content review remain outstanding.
+
+The base game is implemented as an Expo/React Native app with an Android beta and a tested browser version. It contains 47 original missions, 141 mission questions, five interactive practice labs, fictional document/evidence exercises, and device-local progress. Android and iOS JavaScript exports succeeded. It has not yet been validated on real phones or packaged and published for app-store distribution.
 
 ## What learners do
 
 The app has four tabs and a friendly generated relay coach, Click, whose name remains provisional:
 
 - **Learn:** Choose a mission, read the teaching sections, explore the visual and worked example, check the ungraded practice, and read the recap before answering three quiz questions. Select an answer and check it to see immediate feedback and an explanation. Optional coach hints support reasoning without changing XP; thoughtful and encouraging expressions accompany feedback. Some questions include invented reference documents, inspection records, or fault evidence to compare.
-- **Lab:** Practice simplified motor-control behavior, interpret a virtual meter, follow an original fictional drawing path, or explore illustrated components and identification/defect challenges. These practice sessions do not award course XP and do not represent real equipment or field procedures.
+- **Lab:** Build and prove three editable virtual circuits, practice motor-control behavior, position virtual meter probes, follow an original fictional drawing path, or explore illustrated components and identification/defect challenges. These practice sessions do not award course XP and do not represent real equipment or field procedures.
 - **Progress:** See total XP, a learning rank, mastered/completed missions, and each mission's saved best score. Open a mission again to improve it.
 
 - **Beta:** Optionally record first attempts, estimated foreground time and feedback locally, then manually share the results with the organizer.
@@ -45,8 +47,9 @@ Progress saves automatically on the same device/browser. A separate checkpoint l
 
 ## Practice labs
 
-- **Motor controls:** Start/stop and holding logic, simulated emergency stop and overload. A trip blocks starting; releasing/resetting the condition does not automatically restart the simulated motor.
-- **Meter bench:** Ideal DC polarity, isolated resistance and continuity, open paths, wrong-input warnings, and blocked powered-resistance combinations. It does not simulate physical current measurement or prove that equipment is safe.
+- **Virtual wiring:** Three panel builds with tappable screw terminals, wire tools, contextual hints, graph-based operation, short detection, functional tests and local build badges. Power and held controls never restore from storage.
+- **Motor controls:** Shaded contactor/overload/motor equipment views, start/stop and holding logic, simulated emergency stop and overload. A trip blocks starting; releasing/resetting the condition does not automatically restart the simulated motor.
+- **Meter bench:** Shaded digital instrument with movable red/black probes, same-point/lifted-lead distinctions, ideal DC polarity, isolated resistance and continuity, open paths, wrong-input warnings, and blocked powered-resistance combinations. It does not simulate physical current measurement or prove that equipment is safe.
 - **Trace prints:** Five targets across two independent fictional teaching sheets, including a coil/contact relationship and return path. Wrong targets do not advance the exercise. Highlighting records selections, not actual energized state.
 - **Component workshop:** Eight devices with original generated image artwork, 24 tappable part explanations, paired teaching symbols, two selectable image states per component, four dedicated defect images, and 12 identification/visible-defect rounds. Workshop practice leaves mission XP unchanged.
 

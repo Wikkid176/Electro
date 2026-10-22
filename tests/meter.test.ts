@@ -34,3 +34,15 @@ test('a virtual zero voltage result does not claim field safety', () => {
   assert.match(result.explanation, /one zero reading does not establish isolation/);
   assert.equal(initialMeter.fixture, 'dc-source');
 });
+
+test('probe placement distinguishes lifted leads, a shared reference point and reversed polarity', async () => {
+  const { readMeterAtProbes } = await import('../src/meter.ts');
+  assert.equal(readMeterAtProbes(initialMeter, 'A', 'B').display, '18.0 V');
+  assert.equal(readMeterAtProbes(initialMeter, 'B', 'A').display, '−18.0 V');
+  assert.equal(readMeterAtProbes(initialMeter, 'A', 'A').display, '0.0 V');
+  assert.equal(readMeterAtProbes(initialMeter, null, 'B').display, 'LEADS');
+  assert.equal(readMeterAtProbes({ ...initialMeter, mode: 'resistance' }, 'A', 'A').kind, 'blocked');
+  assert.equal(readMeterAtProbes({ ...initialMeter, input: 'current' }, null, null).kind, 'blocked');
+  assert.equal(readMeterAtProbes({ ...initialMeter, fixture: 'open', mode: 'resistance' }, 'A', 'A').display, '0.0 Ω');
+  assert.equal(readMeterAtProbes({ ...initialMeter, fixture: 'open', mode: 'resistance' }, 'A', 'B').display, 'OL');
+});

@@ -1,12 +1,12 @@
 # ElectroLessonLab (ELL): Android human beta
 
-Version 0.4.0-beta.3 · 47 illustrated lessons, 47 guided-practice questions, 141 quiz questions, four practice labs
+Version 0.5.0-beta.4 · 47 illustrated lessons, 47 guided-practice questions, 141 quiz questions, five practice labs
 
-**Build status:** The [signed Android APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.4.0-beta.3.apk) is available (38.3 MiB; Android 7 or newer on ARM phones). Its signature, dedicated beta key, app identity/version, release manifest, bundled lessons/graphics/notices and archive alignment passed verification. See `releases/android/beta3/APK-VERIFICATION.json`. Install it on the organizer's own phone and check launch, mission completion, resume and results sharing before inviting the full group. No physical-phone test has been performed in this workspace.
+**Build status:** The [signed Android APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.5.0-beta.4.apk) is available (38.4 MiB; Android 7 or newer on ARM phones). Its signature, dedicated beta key, app identity/version, release manifest, bundled lessons/graphics/notices and archive alignment passed verification. See `releases/android/beta4/APK-VERIFICATION.json`. Install it on the organizer's own phone and check launch, mission completion, resume and results sharing before inviting the full group. No physical-phone test has been performed in this workspace.
 
 ## What to send testers
 
-Send the signed APK `ELL-0.4.0-beta.3.apk`, the tester instructions below, their assigned code/group, and your preferred contact for returning results. Keep the APK and study within your invited test group. No Play Store listing or Expo account is needed to install this standalone APK. Testers do not need a computer or development server. They should install only the file you provide.
+Send the signed APK `ELL-0.5.0-beta.4.apk`, the tester instructions below, their assigned code/group, and your preferred contact for returning results. Keep the APK and study within your invited test group. No Play Store listing or Expo account is needed to install this standalone APK. Testers do not need a computer or development server. They should install only the file you provide.
 
 The package is `com.wikkid176.electrolessonlab.beta`. It is separate from any future production package. The private signing key is kept outside this repository; preserve it securely so later beta updates can install over this build without uninstalling or losing data. Never send signing files to testers.
 
@@ -35,12 +35,13 @@ Begin with a 30–45 minute usability session. This is a session allowance, not 
 | Complete the first three missions | First-attempt answers, points of confusion, hint use, readability |
 | Leave a quiz after checking an answer; close and reopen | Can the tester locate Resume and recover the expected answer/feedback? |
 | Motor controls | Can the tester explain why an overload reset does not restart the model? |
-| Meter bench | Can the tester distinguish blocked powered resistance, an isolated resistor and an open path? |
+| Meter bench | Can the tester place/reverse/lift probes and distinguish same-point zero, blocked powered resistance, finite resistance and an open path? |
+| Virtual wiring | Can the tester build the three circuits, repair a bad wire using Click’s specific hint, follow each test sequence and explain holding/no-restart behavior? |
 | Trace prints | Can the tester follow the five targets and distinguish a device association from a conductor connection? |
 | Component workshop | Can the tester inspect parts, change illustrated states and complete the 12-round challenge? |
 | Leave feedback and share the record | Can the tester find their feedback and return a usable export? |
 
-For full-course timing, have each tester attempt all 47 missions once across as many sessions as needed, and try all four labs. Use the same device and tester code. Keep the first pass separate from retries. Ask about any earlier electrical learning, interruptions, outside help, abandoned attempts and completed work done while recording was paused. Do not require teens to demonstrate anything on real equipment.
+For full-course timing, have each tester attempt all 47 missions once across as many sessions as needed, and try all five labs. Use the same device and tester code. Keep the first pass separate from retries. Ask about any earlier electrical learning, interruptions, outside help, abandoned attempts and completed work done while recording was paused. Do not require teens to demonstrate anything on real equipment.
 
 ## Cohorts
 
@@ -55,7 +56,7 @@ The teen beginner label is an explicit study assumption; confirm their prior exp
 
 ## Updating from the earlier beta
 
-This update uses the same package and private signing certificate with Android versionCode 3. Install it over beta 0.2.0-beta.1 or 0.3.0-beta.2 to retain course scores; do not uninstall or clear storage first. An earlier study record remains readable/exportable and is automatically paused. Export it, then delete only the beta record before starting a fresh study for the expanded course. This prevents mixing timing and answers from different lesson versions. Existing course scores are retained as a baseline. Unknown schemas/builds remain preserved without being overwritten.
+This update uses the same package and private signing certificate with Android versionCode 4. Install it over beta 0.2.0-beta.1, 0.3.0-beta.2 or 0.4.0-beta.3 to retain course scores; do not uninstall or clear storage first. An earlier study record remains readable/exportable and is automatically paused. Export it, then delete only the beta record before starting a fresh study for the expanded course. This prevents mixing timing and answers from different lesson versions. Existing course scores are retained as a baseline. Unknown schemas/builds remain preserved without being overwritten.
 
 The displayed mission times are estimated reading/exploration/quiz allowances, not measured completion times. Historical synthetic beta timings describe the earlier course and must not be presented as outcomes for this expanded version.
 
@@ -65,7 +66,7 @@ Only after opting in: tester code and chosen group, baseline course scores, indi
 
 Records stay in local app storage. The app has no account, analytics service or automatic results-upload endpoint. Android app backup is disabled for this beta. Sharing happens through the user's chosen external app, which has its own privacy behavior. Deleting the beta record requires confirmation and preserves course scores. Uninstalling/clearing app data removes both. Beta records from a different schema/build are preserved with a warning rather than silently overwritten.
 
-The timing is an estimate from foreground heartbeats every five seconds. It includes visible idle time and replay attempts; it excludes the Beta tab and background time. Delayed intervals are capped at 15 seconds, and abrupt termination can lose the last few seconds. Per-mission recorded time and first-pass completion are available in the JSON. Lab visits establish navigation, not conceptual competence; motor/meter/trace understanding requires observation. The workshop's first run can be partial. An existing progress baseline, outside study, unrecorded attempts, paused recording and missing exports must be identified in the report.
+The timing is an estimate from foreground heartbeats every five seconds. It includes visible idle time and replay attempts; it excludes the Beta tab and background time. Delayed intervals are capped at 15 seconds, and abrupt termination can lose the last few seconds. Per-mission recorded time and first-pass completion are available in the JSON. The new wiring lab saves wires and earned build badges locally under `ell.wiring.v1`; detailed wiring actions and badges are not part of the study export. Lab visits establish navigation, not conceptual competence; motor/meter/trace understanding requires observation. The workshop's first run can be partial. An existing progress baseline, outside study, unrecorded attempts, paused recording and missing exports must be identified in the report.
 
 ## How to report real results
 

@@ -30,5 +30,29 @@
     "reference_images": "None. No uploaded print, existing circuit image or proprietary layout used.",
     "purpose": "Illustrated lesson scenes and changeable learning experiments.",
     "rights_status": "Project-authored diagram code; general teaching symbols and concepts do not establish exclusive rights or legal clearance."
+  },
+  {
+    "file": "src/LabHardware.tsx",
+    "sha256": "f9e8fc560cb8a4108e003315d30b1d2a53eff108f6ac8b22eab584da50865504",
+    "method": "Original vector geometry and interactive hardware illustrations authored in application code using react-native-svg.",
+    "reference_images": "None. No uploaded print, manufacturer product photograph or proprietary layout used.",
+    "purpose": "Shaded generic lab equipment, screw terminals, attached wire/probe paths and component states.",
+    "rights_status": "Project-authored illustration code; general electrical concepts do not establish exclusive rights or legal clearance."
+  },
+  {
+    "file": "src/MeterEquipment.tsx",
+    "sha256": "4d31d2f0efa64fe2731a86b7b9ada7d2a3d7296c5dacea98f5fa43365897f8f3",
+    "method": "Original vector geometry and interactive hardware illustrations authored in application code using react-native-svg.",
+    "reference_images": "None. No uploaded print, manufacturer product photograph or proprietary layout used.",
+    "purpose": "Shaded generic lab equipment, screw terminals, attached wire/probe paths and component states.",
+    "rights_status": "Project-authored illustration code; general electrical concepts do not establish exclusive rights or legal clearance."
+  },
+  {
+    "file": "src/WiringLab.tsx",
+    "sha256": "c1509ea72f4fa49eeb161e0b4257042737ee7876f997968648bbeea7451ed0f6",
+    "method": "Original vector geometry and interactive hardware illustrations authored in application code using react-native-svg.",
+    "reference_images": "None. No uploaded print, manufacturer product photograph or proprietary layout used.",
+    "purpose": "Shaded generic lab equipment, screw terminals, attached wire/probe paths and component states.",
+    "rights_status": "Project-authored illustration code; general electrical concepts do not establish exclusive rights or legal clearance."
   }
 ]
