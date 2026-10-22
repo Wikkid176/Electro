@@ -17,8 +17,8 @@ Teens should participate with the organizer's appropriate parent/guardian arrang
 
 Requires Android 7 or newer on an ARM phone. The APK includes the lessons and graphics and does not require Expo Go or a development server.
 
-Beta 0.5.0-beta.4 (Android update version 4). Report installation, readability, navigation, content or sharing problems to your organizer. The organizer should test the APK on their own phone before distributing it to the group.
+Beta 0.5.1-beta.5 (Android update version 5). Report installation, readability, navigation, content or sharing problems to your organizer. The organizer should test the APK on their own phone before distributing it to the group.
 
-If you recorded a study in an earlier beta, its record is preserved and paused. Export it before deleting the beta record and starting a fresh study for the expanded lessons. Course scores remain separate. Install this update over the earlier APK to retain local course scores; do not uninstall first.
+Studies from 0.5.0-beta.4 continue through this logo-only update. Records from earlier course versions are preserved and paused. Export it before deleting the beta record and starting a fresh study for the expanded lessons. Course scores remain separate. Install this update over the earlier APK to retain local course scores; do not uninstall first.
 
 During a quiz, Coach hint gives a nudge for that exact question. Work through this hint reveals more detailed reasoning. Extra help is saved with the unfinished quiz.

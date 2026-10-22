@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Platform, Pressable, Share, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useBeta } from './BetaProvider';
 import { cohorts, studyExport, studySummary, type Cohort } from './beta';
-import { release } from './build';
+import { release, isCompatibleStudyBuild } from './build';
 
 function Action({ label, onPress, disabled = false }: { label: string; onPress: () => void; disabled?: boolean }) { return <Pressable accessibilityRole="button" accessibilityState={{ disabled }} disabled={disabled} onPress={onPress} style={[s.button, disabled && { opacity: .4 }]}><Text style={s.buttonText}>{label}</Text></Pressable>; }
 export function BetaHub({ scores }: { scores: Record<string, number> }) {
@@ -46,7 +46,7 @@ export function BetaHub({ scores }: { scores: Record<string, number> }) {
       <View style={s.card}><Text style={s.heading}>Your test record</Text><Text style={s.body}>{study.data.participant.code} · {study.data.participant.cohort}{"\n"}Recording {study.data.recording ? 'on' : 'paused'} · {study.data.build}</Text><Text style={s.body}>{summary!.completedFirstAttempts} / 47 complete first attempts{"\n"}{summary!.firstPassCorrect} / {summary!.firstPassQuestions} recorded first-pass answers correct{"\n"}{summary!.foregroundTrainingMinutes} estimated foreground minutes{"\n"}{summary!.visitedLabs} / 5 labs visited · {study.data.feedback.length} feedback notes</Text>
         {summary!.baselineHasProgress && <Text style={s.warning}>This device already had course progress when recording began. Tell your organizer; these results are not a fresh learning baseline.</Text>}
         <Text style={s.body}>Time includes idle time while training is visible and repeat attempts. Background time and this Beta tab are excluded. Closing abruptly can lose the last few seconds. Paused or unfinished answers remain partial records.</Text>
-        <Action label={study.data.recording ? 'Pause beta recording' : 'Resume beta recording'} disabled={study.data.build !== release.label} onPress={study.toggleRecording} />
+        <Action label={study.data.recording ? 'Pause beta recording' : 'Resume beta recording'} disabled={!isCompatibleStudyBuild(study.data.build)} onPress={study.toggleRecording} />
       </View>
       <View style={s.card}><Text accessibilityRole="header" style={s.heading}>Leave feedback</Text><Text style={s.body}>Describe what happened and what you expected. Include the mission or lab name. Avoid names, employer information, and real equipment documents.</Text>
         <View accessibilityRole="radiogroup" accessibilityLabel="Feedback category" style={{ gap: 8 }}>{['Bug / something broke', 'Confusing explanation', 'Electrical content concern', 'Suggestion'].map(item => <Pressable key={item} accessibilityRole="radio" aria-checked={category === item} accessibilityState={{ checked: category === item }} onPress={() => setCategory(item)} style={[s.option, category === item && s.selected]}><Text style={s.body}>{item}</Text></Pressable>)}</View>

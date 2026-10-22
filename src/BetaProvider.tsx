@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { BETA_KEY, heartbeatSeconds, newStudy, restoreStudy, type Cohort, type StudyData } from './beta';
 import { lessons } from './content';
 import { componentChallenges } from './components';
-import { release } from './build';
+import { isCompatibleStudyBuild } from './build';
 
 function useStudy() {
   const [data, setData] = useState<StudyData | null>(null);
@@ -29,7 +29,7 @@ function useStudy() {
         return;
       }
       current.current = saved; setData(saved); writable.current = true;
-      if (saved && saved.build !== release.label) setError('Your earlier beta record is preserved and paused. Export it, then delete the beta record before starting a new study for these expanded lessons. Course scores remain.');
+      if (saved && !isCompatibleStudyBuild(saved.build)) setError('Your earlier beta record is preserved and paused. Export it, then delete the beta record before starting a new study for these expanded lessons. Course scores remain.');
     }).catch(() => { if (mounted) setError('Beta storage is unavailable. You can still use the training app.'); })
       .finally(() => { if (mounted) setReady(true); });
     return () => { mounted = false; };
@@ -62,7 +62,7 @@ function useStudy() {
     save(newStudy(code, cohort, scores)); lastTick.current = Date.now();
   }, [save]);
   const toggleRecording = useCallback(() => {
-    if (current.current && current.current.build !== release.label) return;
+    if (current.current && !isCompatibleStudyBuild(current.current.build)) return;
     flush(); mutate(value => ({ ...value, recording: !value.recording }));
   }, [flush, mutate]);
   const startMission = useCallback((lessonId: string, resume = false) => {
@@ -112,7 +112,7 @@ function useStudy() {
   }, [mutate]);
   const feedback = useCallback((category: string, location: string, note: string) => {
     if (!current.current) throw new Error('Start a beta record before adding feedback.');
-    if (current.current.build !== release.label) throw new Error('Export the earlier record and start a new study before adding feedback for this version.');
+    if (!isCompatibleStudyBuild(current.current.build)) throw new Error('Export the earlier record and start a new study before adding feedback for this version.');
     if (current.current.feedback.length >= 100) throw new Error('The feedback log is full. Export it before adding more.');
     mutate(value => ({ ...value, feedback: [...value.feedback, { at: new Date().toISOString(), category, location, note: note.trim().slice(0, 2000) }] }));
   }, [mutate]);

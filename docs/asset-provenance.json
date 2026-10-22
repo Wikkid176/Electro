@@ -54,5 +54,29 @@
     "reference_images": "None. No uploaded print, manufacturer product photograph or proprietary layout used.",
     "purpose": "Shaded generic lab equipment, screw terminals, attached wire/probe paths and component states.",
     "rights_status": "Project-authored illustration code; general electrical concepts do not establish exclusive rights or legal clearance."
+  },
+  {
+    "file": "assets/icon.png",
+    "sha256": "3aa0b7ae8b06c0d5cc6208a05b443a830407c318cf3453d7418a71ecd1e52530",
+    "method": "Generated with image_gen using the project-owned Click atlas and previous lightning icon as references; output PNG copied unchanged. Adaptive foreground generated as a separate transparent cutout. Android inset is applied by drawable configuration, not pixel editing.",
+    "reference_images": "assets/relay-coach-atlas.png and the preceding project icon; foreground references the newly generated Click logo. No uploaded source print or external mascot reference.",
+    "purpose": "Click and ELL app logo, in-app header, browser favicon and Android launcher artwork.",
+    "rights_status": "Generated project artwork; no exclusive-rights or trademark-clearance claim.",
+    "prior_icon_reference": {
+      "sourceCommit": "7086d0769d6e9e9278e8858f39a253d888d481e5",
+      "sha256": "b096a14b55780d8e4091decd1f6d27ad5ac8163eadf08826c6947e76b144554d"
+    }
+  },
+  {
+    "file": "assets/android-icon-foreground.png",
+    "sha256": "528e66f7b99f4369bf2de283f9295036ce945e4614e4823bdfe74a62d201dccd",
+    "method": "Generated with image_gen using the project-owned Click atlas and previous lightning icon as references; output PNG copied unchanged. Adaptive foreground generated as a separate transparent cutout. Android inset is applied by drawable configuration, not pixel editing.",
+    "reference_images": "assets/relay-coach-atlas.png and the preceding project icon; foreground references the newly generated Click logo. No uploaded source print or external mascot reference.",
+    "purpose": "Click and ELL app logo, in-app header, browser favicon and Android launcher artwork.",
+    "rights_status": "Generated project artwork; no exclusive-rights or trademark-clearance claim.",
+    "prior_icon_reference": {
+      "sourceCommit": "7086d0769d6e9e9278e8858f39a253d888d481e5",
+      "sha256": "b096a14b55780d8e4091decd1f6d27ad5ac8163eadf08826c6947e76b144554d"
+    }
   }
 ]

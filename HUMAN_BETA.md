@@ -1,12 +1,12 @@
 # ElectroLessonLab (ELL): Android human beta
 
-Version 0.5.0-beta.4 · 47 illustrated lessons, 47 guided-practice questions, 141 quiz questions, five practice labs
+Version 0.5.1-beta.5 · 47 illustrated lessons, 47 guided-practice questions, 141 quiz questions, five practice labs
 
-**Build status:** The [signed Android APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.5.0-beta.4.apk) is available (38.4 MiB; Android 7 or newer on ARM phones). Its signature, dedicated beta key, app identity/version, release manifest, bundled lessons/graphics/notices and archive alignment passed verification. See `releases/android/beta4/APK-VERIFICATION.json`. Install it on the organizer's own phone and check launch, mission completion, resume and results sharing before inviting the full group. No physical-phone test has been performed in this workspace.
+**Build status:** The [signed Android APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.5.1-beta.5.apk) is available (40.2 MiB; Android 7 or newer on ARM phones). Its signature, dedicated beta key, app identity/version, release manifest, bundled lessons/graphics/notices and archive alignment passed verification. See `releases/android/beta5/APK-VERIFICATION.json`. Install it on the organizer's own phone and check launch, mission completion, resume and results sharing before inviting the full group. No physical-phone test has been performed in this workspace.
 
 ## What to send testers
 
-Send the signed APK `ELL-0.5.0-beta.4.apk`, the tester instructions below, their assigned code/group, and your preferred contact for returning results. Keep the APK and study within your invited test group. No Play Store listing or Expo account is needed to install this standalone APK. Testers do not need a computer or development server. They should install only the file you provide.
+Send the signed APK `ELL-0.5.1-beta.5.apk`, the tester instructions below, their assigned code/group, and your preferred contact for returning results. Keep the APK and study within your invited test group. No Play Store listing or Expo account is needed to install this standalone APK. Testers do not need a computer or development server. They should install only the file you provide.
 
 The package is `com.wikkid176.electrolessonlab.beta`. It is separate from any future production package. The private signing key is kept outside this repository; preserve it securely so later beta updates can install over this build without uninstalling or losing data. Never send signing files to testers.
 
@@ -56,7 +56,7 @@ The teen beginner label is an explicit study assumption; confirm their prior exp
 
 ## Updating from the earlier beta
 
-This update uses the same package and private signing certificate with Android versionCode 4. Install it over beta 0.2.0-beta.1, 0.3.0-beta.2 or 0.4.0-beta.3 to retain course scores; do not uninstall or clear storage first. An earlier study record remains readable/exportable and is automatically paused. Export it, then delete only the beta record before starting a fresh study for the expanded course. This prevents mixing timing and answers from different lesson versions. Existing course scores are retained as a baseline. Unknown schemas/builds remain preserved without being overwritten.
+This update uses the same package and private signing certificate with Android versionCode 5. Install over your earlier beta to retain course scores; do not uninstall or clear storage first. This is a cosmetic update: 0.5.0-beta.4 study records retain their active/paused status and can continue recording and feedback with their original build label. Earlier 0.2/0.3/0.4 records remain exportable and paused because those course versions differed. Export those earlier records before starting a fresh study; course scores remain separate. Unknown schemas/builds are preserved without being overwritten.
 
 The displayed mission times are estimated reading/exploration/quiz allowances, not measured completion times. Historical synthetic beta timings describe the earlier course and must not be presented as outcomes for this expanded version.
 

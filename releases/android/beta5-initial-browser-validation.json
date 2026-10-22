@@ -1,0 +1,820 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/Electro/node_modules/.bin/playwright",
+      "test",
+      "tests/browser/logo.spec.ts",
+      "tests/browser/coach.spec.ts",
+      "tests/browser/human-beta.spec.ts",
+      "tests/browser/app.spec.ts",
+      "--grep",
+      "Click logo|existing beta4|coach welcomes|human feedback|beta recording is optional|layout fits|lab blocks|meter bench distinguishes",
+      "--reporter=line,json"
+    ],
+    "configFile": "/workspace/Electro/playwright.config.ts",
+    "rootDir": "/workspace/Electro/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/Electro/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "phone",
+        "name": "phone",
+        "testDir": "/workspace/Electro/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/workspace/Electro/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/Electro/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/Electro/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "phone",
+        "testDir": "/workspace/Electro/tests/browser",
+        "snapshotDir": "/workspace/Electro/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://localhost:8091",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--no-sandbox"
+            ]
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "phone"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/Electro/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "/workspace/Electro/tests/browser",
+        "snapshotDir": "/workspace/Electro/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://localhost:8091",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--no-sandbox"
+            ]
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run web -- --localhost --port 8091 --max-workers 2",
+      "url": "http://localhost:8091",
+      "reuseExistingServer": false,
+      "timeout": 120000,
+      "env": {
+        "EXPO_NO_TELEMETRY": "1"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "app.spec.ts",
+      "file": "app.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "meter bench distinguishes readings, polarity, unsafe setup, and an open path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5018,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:19.669Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-472518093b1d38b38221",
+          "file": "app.spec.ts",
+          "line": 77,
+          "column": 1
+        },
+        {
+          "title": "lab blocks unsafe simulated starts and never restarts on reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1515,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:24.908Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-90d5e3b714fdbf9ce55a",
+          "file": "app.spec.ts",
+          "line": 262,
+          "column": 1
+        },
+        {
+          "title": "layout fits the viewport and app contains no source branding",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 943,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:26.439Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-8f11ac0d13eaba5042fa",
+          "file": "app.spec.ts",
+          "line": 285,
+          "column": 1
+        },
+        {
+          "title": "meter bench distinguishes readings, polarity, unsafe setup, and an open path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4301,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:48.788Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-4930f9eb590af7f7a5c2",
+          "file": "app.spec.ts",
+          "line": 77,
+          "column": 1
+        },
+        {
+          "title": "lab blocks unsafe simulated starts and never restarts on reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:53.675Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-cfafcfdaac54d5ac5cb6",
+          "file": "app.spec.ts",
+          "line": 262,
+          "column": 1
+        },
+        {
+          "title": "layout fits the viewport and app contains no source branding",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 930,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:55.958Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-fec872b4a08882d0c359",
+          "file": "app.spec.ts",
+          "line": 285,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "coach.spec.ts",
+      "file": "coach.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "coach welcomes, offers optional hints, responds supportively, celebrates, and preserves best XP",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3907,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:27.404Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b1333a7f42ad69c80a4-ac106bd8db70555823a5",
+          "file": "coach.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "coach welcomes, offers optional hints, responds supportively, celebrates, and preserves best XP",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2965,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:56.905Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b1333a7f42ad69c80a4-a7bdee3ba26de83492a8",
+          "file": "coach.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "human-beta.spec.ts",
+      "file": "human-beta.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "beta recording is optional and a first attempt survives reload and replay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4614,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:31.326Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ae5e09629908340d3b54-238920ac5f5b11a583c2",
+          "file": "human-beta.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "human feedback exports only on request and deleting it preserves course scores",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4425,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:35.947Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ae5e09629908340d3b54-7cfce218f85df9d99c1b",
+          "file": "human-beta.spec.ts",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "beta recording is optional and a first attempt survives reload and replay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:59.881Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ae5e09629908340d3b54-ce5a820fe7af4bfcfc0c",
+          "file": "human-beta.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "human feedback exports only on request and deleting it preserves course scores",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8174,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:12:08.526Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ae5e09629908340d3b54-7a7318c34aafdc171ad8",
+          "file": "human-beta.spec.ts",
+          "line": 58,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "logo.spec.ts",
+      "file": "logo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Click logo loads in the header and fits a phone layout",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2110,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\nExpected: visible\nError: strict mode violation: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) resolved to 2 elements:\n    1) <div role=\"img\" aria-label=\"Click, the ELL relay coach logo\" class=\"css-view-g5y9jx r-flexBasis-1mlwlqe r-overflow-1udh08x r-zIndex-417010 r-borderRadius-1q9bdsx r-height-1mwlp6a r-width-18tzken\">…</div> aka getByLabel('Click, the ELL relay coach')\n    2) <img draggable=\"false\" alt=\"Click, the ELL relay coach logo\" class=\"css-accessibilityImage-9pa8cd\" src=\"/assets/?unstable_path=.%2Fassets/icon.png\"/> aka getByAltText('Click, the ELL relay coach')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\nExpected: visible\nError: strict mode violation: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) resolved to 2 elements:\n    1) <div role=\"img\" aria-label=\"Click, the ELL relay coach logo\" class=\"css-view-g5y9jx r-flexBasis-1mlwlqe r-overflow-1udh08x r-zIndex-417010 r-borderRadius-1q9bdsx r-height-1mwlp6a r-width-18tzken\">…</div> aka getByLabel('Click, the ELL relay coach')\n    2) <img draggable=\"false\" alt=\"Click, the ELL relay coach logo\" class=\"css-accessibilityImage-9pa8cd\" src=\"/assets/?unstable_path=.%2Fassets/icon.png\"/> aka getByAltText('Click, the ELL relay coach')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\u001b[22m\n\n    at /workspace/Electro/tests/browser/logo.spec.ts:7:22",
+                    "location": {
+                      "file": "/workspace/Electro/tests/browser/logo.spec.ts",
+                      "column": 22,
+                      "line": 7
+                    },
+                    "snippet": "   5 |   await page.goto('/');\n   6 |   const logo = page.getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true });\n>  7 |   await expect(logo).toBeVisible();\n     |                      ^\n   8 |   await expect.poll(() => logo.locator('img').evaluateAll(images => images.length > 0 && images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);\n   9 |   await logo.screenshot({ path: testInfo.outputPath('click-header-logo.png') });\n  10 |   await expect(page.getByText(/ElectroLessonLab/i).first()).toBeVisible();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/Electro/tests/browser/logo.spec.ts",
+                        "column": 22,
+                        "line": 7
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\nExpected: visible\nError: strict mode violation: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) resolved to 2 elements:\n    1) <div role=\"img\" aria-label=\"Click, the ELL relay coach logo\" class=\"css-view-g5y9jx r-flexBasis-1mlwlqe r-overflow-1udh08x r-zIndex-417010 r-borderRadius-1q9bdsx r-height-1mwlp6a r-width-18tzken\">…</div> aka getByLabel('Click, the ELL relay coach')\n    2) <img draggable=\"false\" alt=\"Click, the ELL relay coach logo\" class=\"css-accessibilityImage-9pa8cd\" src=\"/assets/?unstable_path=.%2Fassets/icon.png\"/> aka getByAltText('Click, the ELL relay coach')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\u001b[22m\n\n\n   5 |   await page.goto('/');\n   6 |   const logo = page.getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true });\n>  7 |   await expect(logo).toBeVisible();\n     |                      ^\n   8 |   await expect.poll(() => logo.locator('img').evaluateAll(images => images.length > 0 && images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);\n   9 |   await logo.screenshot({ path: testInfo.outputPath('click-header-logo.png') });\n  10 |   await expect(page.getByText(/ElectroLessonLab/i).first()).toBeVisible();\n    at /workspace/Electro/tests/browser/logo.spec.ts:7:22"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:40.417Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/Electro/test-results/logo-Click-logo-loads-in-the-header-and-fits-a-phone-layout-phone/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/Electro/test-results/logo-Click-logo-loads-in-the-header-and-fits-a-phone-layout-phone/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/Electro/tests/browser/logo.spec.ts",
+                    "column": 22,
+                    "line": 7
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99106ad3eacf4bb6ed3f-c2c70a61ddbb41a7d3e5",
+          "file": "logo.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "an existing beta4 study stays active and can save feedback through the icon update",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "phone",
+              "projectName": "phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3364,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:11:43.818Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99106ad3eacf4bb6ed3f-443cdef4136e3cbd23b0",
+          "file": "logo.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "Click logo loads in the header and fits a phone layout",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1248,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\nExpected: visible\nError: strict mode violation: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) resolved to 2 elements:\n    1) <div role=\"img\" aria-label=\"Click, the ELL relay coach logo\" class=\"css-view-g5y9jx r-flexBasis-1mlwlqe r-overflow-1udh08x r-zIndex-417010 r-borderRadius-1q9bdsx r-height-1mwlp6a r-width-18tzken\">…</div> aka getByLabel('Click, the ELL relay coach')\n    2) <img draggable=\"false\" alt=\"Click, the ELL relay coach logo\" class=\"css-accessibilityImage-9pa8cd\" src=\"/assets/?unstable_path=.%2Fassets/icon.png\"/> aka getByAltText('Click, the ELL relay coach')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\nExpected: visible\nError: strict mode violation: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) resolved to 2 elements:\n    1) <div role=\"img\" aria-label=\"Click, the ELL relay coach logo\" class=\"css-view-g5y9jx r-flexBasis-1mlwlqe r-overflow-1udh08x r-zIndex-417010 r-borderRadius-1q9bdsx r-height-1mwlp6a r-width-18tzken\">…</div> aka getByLabel('Click, the ELL relay coach')\n    2) <img draggable=\"false\" alt=\"Click, the ELL relay coach logo\" class=\"css-accessibilityImage-9pa8cd\" src=\"/assets/?unstable_path=.%2Fassets/icon.png\"/> aka getByAltText('Click, the ELL relay coach')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\u001b[22m\n\n    at /workspace/Electro/tests/browser/logo.spec.ts:7:22",
+                    "location": {
+                      "file": "/workspace/Electro/tests/browser/logo.spec.ts",
+                      "column": 22,
+                      "line": 7
+                    },
+                    "snippet": "   5 |   await page.goto('/');\n   6 |   const logo = page.getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true });\n>  7 |   await expect(logo).toBeVisible();\n     |                      ^\n   8 |   await expect.poll(() => logo.locator('img').evaluateAll(images => images.length > 0 && images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);\n   9 |   await logo.screenshot({ path: testInfo.outputPath('click-header-logo.png') });\n  10 |   await expect(page.getByText(/ElectroLessonLab/i).first()).toBeVisible();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/Electro/tests/browser/logo.spec.ts",
+                        "column": 22,
+                        "line": 7
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\nExpected: visible\nError: strict mode violation: getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) resolved to 2 elements:\n    1) <div role=\"img\" aria-label=\"Click, the ELL relay coach logo\" class=\"css-view-g5y9jx r-flexBasis-1mlwlqe r-overflow-1udh08x r-zIndex-417010 r-borderRadius-1q9bdsx r-height-1mwlp6a r-width-18tzken\">…</div> aka getByLabel('Click, the ELL relay coach')\n    2) <img draggable=\"false\" alt=\"Click, the ELL relay coach logo\" class=\"css-accessibilityImage-9pa8cd\" src=\"/assets/?unstable_path=.%2Fassets/icon.png\"/> aka getByAltText('Click, the ELL relay coach')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true })\u001b[22m\n\n\n   5 |   await page.goto('/');\n   6 |   const logo = page.getByRole('img', { name: 'Click, the ELL relay coach logo', exact: true });\n>  7 |   await expect(logo).toBeVisible();\n     |                      ^\n   8 |   await expect.poll(() => logo.locator('img').evaluateAll(images => images.length > 0 && images.every(image => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);\n   9 |   await logo.screenshot({ path: testInfo.outputPath('click-header-logo.png') });\n  10 |   await expect(page.getByText(/ElectroLessonLab/i).first()).toBeVisible();\n    at /workspace/Electro/tests/browser/logo.spec.ts:7:22"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:12:16.728Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/Electro/test-results/logo-Click-logo-loads-in-the-header-and-fits-a-phone-layout-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/Electro/test-results/logo-Click-logo-loads-in-the-header-and-fits-a-phone-layout-desktop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/Electro/tests/browser/logo.spec.ts",
+                    "column": 22,
+                    "line": 7
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99106ad3eacf4bb6ed3f-c15c914dbf353d7d3f92",
+          "file": "logo.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "an existing beta4 study stays active and can save feedback through the icon update",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1100,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T18:12:18.494Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99106ad3eacf4bb6ed3f-1c9750f9fdc2e7d15ed5",
+          "file": "logo.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T18:11:18.349Z",
+    "duration": 61557.475999999995,
+    "expected": 14,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
