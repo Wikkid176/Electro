@@ -37,3 +37,13 @@ test('timing excludes the background, caps delayed heartbeats, and tolerates clo
   assert.equal(heartbeatSeconds(1000, 86_400_000, true), 15);
   assert.equal(heartbeatSeconds(6000, 1000, true), 0);
 });
+
+test('the fifth lab is recorded and previous beta3 records remain exportable but paused', () => {
+  const data = newStudy('A01', 'Adults 30–45 / beginner', {});
+  data.labsVisited = ['motor', 'meter', 'trace', 'components', 'wiring'];
+  const current = restoreStudy(JSON.stringify(data));
+  assert.ok(current); assert.equal(studySummary(current).visitedLabs, 5);
+  const earlier = restoreStudy(JSON.stringify({ ...data, build: '0.4.0-beta.3', labsVisited: ['motor', 'meter', 'trace', 'components'] }));
+  assert.ok(earlier); assert.equal(earlier.build, '0.4.0-beta.3'); assert.equal(earlier.recording, false);
+  assert.equal(restoreStudy(JSON.stringify({ ...data, labsVisited: ['unrecognized'] })), null);
+});

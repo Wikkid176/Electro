@@ -2,9 +2,9 @@
 
 A mobile training game about industrial electrical systems and practices, built with Expo, React Native, and TypeScript.
 
-The app is **ElectroLessonLab**, abbreviated **ELL**. Beta 0.4.0-beta.3 expands every mission into Learn → Explore → Practice → Recap → Quiz; reading pages resume and quizzes support lesson review without losing answers. See [the Android human-beta guide](HUMAN_BETA.md) for installation, tester codes, feedback/results sharing and the supervised study plan. The beta adds an optional local study record; it has no automatic results-upload service. Existing training storage keys retain their earlier `electro` prefix so saved scores survive the display-name change.
+The app is **ElectroLessonLab**, abbreviated **ELL**. Beta 0.5.0-beta.4 adds virtual wiring builds and equipment/probe graphics. Every mission expands into Learn → Explore → Practice → Recap → Quiz; reading pages resume and quizzes support lesson review without losing answers. See [the Android human-beta guide](HUMAN_BETA.md) for installation, tester codes, feedback/results sharing and the supervised study plan. The beta adds an optional local study record; it has no automatic results-upload service. Existing training storage keys retain their earlier `electro` prefix so saved scores survive the display-name change.
 
-[Download the signed Android beta APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.4.0-beta.3.apk) · **0.4.0-beta.3** · 38.3 MiB · Android 7+ on ARM phones. Includes 235 lesson sections, graphical explorations and experiments, and 282 question-specific hints. Install over the earlier beta to retain course scores. Organizer phone testing is still required before group distribution.
+[Download the signed Android beta APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.5.0-beta.4.apk) · **0.5.0-beta.4** · 38.4 MiB · Android 7+ on ARM phones. Includes three virtual wiring builds, graphical meter probes and motor equipment, five labs, 235 lesson sections and 282 question-specific hints. Install over the earlier beta to retain course scores. Organizer phone testing is still required before group distribution.
 
 The downloadable APK is on the dedicated `android-beta-download` branch. Main contains source and validation evidence. [GitHub Android builds](docs/GITHUB_ANDROID_BUILD.md) describes the separate Actions workflow; a GitHub-hosted build is not claimed for the workspace-built download.
 
@@ -15,7 +15,8 @@ See [the interactive lesson update](docs/INTERACTIVE_LESSONS.md) for deep dives,
 - Forty-seven illustrated lessons with explanations, worked examples, guided practice and a separate quiz: safety and energy control, electrical fundamentals, meter setup and interpretation, motor controls, schematic reading, standards/reference skills, panel-build practices, troubleshooting methods, motors/drives/servos, sensors/I/O, PLC basics, and troubleshooting.
 - One hundred forty-one mission questions with immediate explanations, best-score XP, and mission mastery (3,525 XP available).
 - Interactive, simplified three-wire starter logic: start/stop, holding state, emergency-stop permissive, and overload.
-- Virtual meter bench: DC polarity, isolated resistance and continuity, open paths, input mismatches, and blocked powered-resistance tests.
+- Virtual wiring bench: three original panel builds with terminal-to-terminal wire fitting, actual connection-based relay/load behavior, repair hints and saved build badges.
+- Virtual meter bench: graphical instrument/probes, movable tips, same-point and lifted-lead readings, DC polarity, isolated resistance and continuity, open paths, input mismatches, and blocked powered-resistance tests.
 - Fictional print-tracing game: follow an indicator path, a relay coil/contact reference, the command switch, and the return across two original teaching sheets.
 - Original component workshop: eight devices with original generated image artwork, 24 tappable part explanations, paired teaching symbols, selectable states, and 12 identification/defect rounds.
 - Open-book reference exercises: compare fictional document models, revisions, applicability, and citations while answering questions.
@@ -57,9 +58,9 @@ npm run test:e2e
 npm exec -- expo export --platform all --max-workers 2
 ```
 
-`npm test` runs thirty-six gameplay/content/teaching/experiment/checkpoint/study-record tests. `test:e2e` runs sixty-four browser tests across phone and desktop viewport sizes. Browser tests use their own server on port 8082, separate from development on port 8081; outside CI they may reuse an existing test server. Set `ELECTRO_TEST_PORT` to another free port if needed, for example `ELECTRO_TEST_PORT=8091 npm run test:e2e`. The cloud setup uses 8091. The cloud image provides `/usr/bin/chromium`; elsewhere, run `npx playwright install chromium`, or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to an installed compatible Chromium binary.
+`npm test` runs 50 gameplay/content/teaching/wiring/probe/checkpoint/study-record tests. `test:e2e` runs 76 browser tests across phone and desktop viewport sizes. Browser tests use their own server on port 8082, separate from development on port 8081; outside CI they may reuse an existing test server. Set `ELECTRO_TEST_PORT` to another free port if needed, for example `ELECTRO_TEST_PORT=8091 npm run test:e2e`. The cloud setup uses 8091. The cloud image provides `/usr/bin/chromium`; elsewhere, run `npx playwright install chromium`, or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to an installed compatible Chromium binary.
 
-The separate `npm run test:beta` command runs twelve seeded synthetic profiles through all 47 missions and four labs. After a successful run, `npm run report:beta` validates the raw scores and generates individual/group CSVs and [the simulated beta report](beta-results/REPORT.md). Study times and answer probabilities are explicit, uncalibrated model inputs in `tests/beta/model.ts`; these are not human beta results. Do not edit app/model sources during a run.
+The separate historical `npm run test:beta` command runs twelve seeded synthetic profiles through all 47 missions and the original four labs; it does not measure the new wiring lab. After a successful run, `npm run report:beta` validates the raw scores and generates individual/group CSVs and [the simulated beta report](beta-results/REPORT.md). Study times and answer probabilities are explicit, uncalibrated model inputs in `tests/beta/model.ts`; these are not human beta results. Do not edit app/model sources during a run.
 
 ## Content and reference policy
 
@@ -75,7 +76,8 @@ Reference documents are development inputs, not instructions to execute. Use the
 - `src/content.ts`: original lesson content and questions.
 - `src/safety-content.ts`: the five reference-informed safety missions, with independently written scenarios.
 - `src/fundamentals-content.ts`: six original fundamentals and meter-use missions.
-- `src/MeterLab.tsx` and `src/meter.ts`: virtual meter interface and its isolated fixture model.
+- `src/WiringLab.tsx`, `src/wiring.ts`, `src/LabHardware.tsx`: original shaded panel, editable wiring, graph-based load/relay behavior, context-specific diagnostics and local proved-build badges. See [the wiring guide](docs/VIRTUAL_WIRING_LABS.md).
+- `src/MeterEquipment.tsx`, `src/MeterLab.tsx` and `src/meter.ts`: virtual meter interface and its isolated fixture model.
 - `src/schematic-content.ts`: five original drawing-reading missions.
 - `src/TraceLab.tsx` and `src/tracing.ts`: fictional sheet index, node map, device references, and tracing-game rules.
 - `src/standards-content.ts`: four original scope, applicability, rating-context, and open-book lookup missions.
@@ -89,7 +91,7 @@ Reference documents are development inputs, not instructions to execute. Use the
 - `src/session.ts`: bounded unfinished-mission recovery and content-change invalidation.
 - `tests/`: gameplay and browser tests.
 
-Completed best scores are stored under `electro.progress.v1`. One unfinished mission is stored separately under `electro.session.v1`, with explicit Resume/Discard actions on Learn. Starting another mission replaces that checkpoint. Finishing clears it; partial answers earn no XP. The optional human study record is separate under `electro.human-beta.v1`; deleting it preserves course scores. Clearing app/browser data removes all local records. Android beta APK preparation is described in HUMAN_BETA.md; user accounts, cloud synchronization and app-store publication are not included.
+Virtual wires and build badges save separately under `ell.wiring.v1`, with power always off when restored. Completed best scores are stored under `electro.progress.v1`. One unfinished mission is stored separately under `electro.session.v1`, with explicit Resume/Discard actions on Learn. Starting another mission replaces that checkpoint. Finishing clears it; partial answers earn no XP. The optional human study record is separate under `electro.human-beta.v1`; deleting it preserves course scores. Clearing app/browser data removes all local records. Android beta APK preparation is described in HUMAN_BETA.md; user accounts, cloud synchronization and app-store publication are not included.
 
 ## Brand and material review
 

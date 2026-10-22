@@ -1,3 +1,5 @@
+import { WiringLab } from './src/WiringLab';
+import { MotorEquipment } from './src/LabHardware';
 import React, { useEffect, useReducer, useRef, useState } from 'react';
 import { ActivityIndicator, BackHandler, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
@@ -240,14 +242,14 @@ function ElectroApp() {
 
 function PracticeLab({ onNavigate }: { onNavigate: () => void }) {
   const beta = useBeta();
-  const [lab, setLab] = useState<'motor' | 'meter' | 'trace' | 'components'>('motor');
+  const [lab, setLab] = useState<'motor' | 'meter' | 'trace' | 'components' | 'wiring'>('motor');
   useEffect(() => { beta.visitLab(lab); }, [lab, beta.visitLab]);
-  const labs = [{ id: 'motor', name: 'Motor controls' }, { id: 'meter', name: 'Meter bench' }, { id: 'trace', name: 'Trace prints' }, { id: 'components', name: 'Components' }] as const;
+  const labs = [{ id: 'motor', name: 'Motor controls' }, { id: 'meter', name: 'Meter bench' }, { id: 'trace', name: 'Trace prints' }, { id: 'components', name: 'Components' }, { id: 'wiring', name: 'Virtual wiring' }] as const;
   return <>
     <View accessibilityRole="tablist" accessibilityLabel="Practice labs" style={[s.controlRow, { flexWrap: 'wrap' }]}>
       {labs.map(item => <Pressable key={item.id} accessibilityRole="tab" accessibilityLabel={item.name} accessibilityState={{ selected: lab === item.id }} aria-selected={lab === item.id} onPress={() => { setLab(item.id); onNavigate(); }} style={[s.secondaryButton, { flexGrow: 1, flexBasis: 125, padding: 15, borderRadius: 10, minHeight: 48, justifyContent: 'center' }, lab === item.id && { borderColor: colors.lime }]}><Text style={[s.buttonText, { color: lab === item.id ? colors.lime : colors.muted }]}>{item.name}</Text></Pressable>)}
     </View>
-    {lab === 'motor' ? <MotorLab /> : lab === 'meter' ? <MeterLab /> : lab === 'trace' ? <TraceLab onNavigate={onNavigate} /> : <ComponentLab onNavigate={onNavigate} />}
+    {lab === 'motor' ? <MotorLab /> : lab === 'meter' ? <MeterLab /> : lab === 'trace' ? <TraceLab onNavigate={onNavigate} /> : lab === 'wiring' ? <WiringLab /> : <ComponentLab onNavigate={onNavigate} />}
   </>;
 }
 
@@ -271,6 +273,7 @@ function MotorLab() {
     <View style={s.labNotice}><Text style={s.orange}>SIMULATION ONLY</Text><Text style={s.body}>A simplified logic model, not a wiring diagram or validated safety design. All controls below affect this simulation only.</Text></View>
     <View style={s.card}>
       <View style={s.split}><Label>THREE-WIRE STARTER MODEL</Label><View style={[s.status, motor.running && { borderColor: colors.lime }]}><Text style={motor.running ? s.green : s.body}>{motor.running ? '● RUNNING' : '○ STOPPED'}</Text></View></View>
+      <MotorEquipment motor={motor} />
       <View style={s.flow}>{[
         { name: 'E-STOP', closed: !motor.emergency }, { name: 'OVERLOAD', closed: !motor.overload }, { name: 'COIL', closed: motor.running },
       ].map((node, i) => <React.Fragment key={node.name}>{i > 0 && <View style={[s.wire, motor.running && { backgroundColor: colors.lime }]} />}<View style={s.node}><View style={[s.contact, node.closed && s.closedContact]}><Text style={[s.contactText, node.closed && { color: colors.lime }]}>{node.closed ? '—' : '/'}</Text></View><Text style={s.nodeName}>{node.name}</Text><Text style={s.small}>{i === 2 ? motor.running ? 'ON' : 'OFF' : node.closed ? 'CLOSED' : 'OPEN'}</Text></View></React.Fragment> )}</View>

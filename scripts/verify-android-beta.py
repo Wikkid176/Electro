@@ -86,6 +86,18 @@ with zipfile.ZipFile(args.apk) as archive:
     for hint in hints:
         require(hint.encode() in bundle or hint.encode("utf-16-le") in bundle,
                 "Question-specific coaching missing from embedded app")
+    wiring = json.loads(subprocess.check_output([
+        "node", "--input-type=module", "-e",
+        "import { wiringBenches } from './src/wiring.ts'; console.log(JSON.stringify(wiringBenches));"
+    ], cwd=root, text=True))
+    require(len(wiring) == 3, "Expected three interactive wiring builds")
+    lab_text = ["The wiring bench", "Turn bench power ON", "Check wiring", "Show connection plan", "LEADS"]
+    for bench in wiring:
+        lab_text.extend([bench["title"], bench["brief"], bench["learn"]])
+        lab_text.extend(step["label"] for step in bench["steps"])
+    for text in lab_text:
+        require(text.encode() in bundle or text.encode("utf-16-le") in bundle,
+                "Wiring/probe lab content missing from standalone app: " + text)
     require(b"RNSVG" in bundle or "RNSVG".encode("utf-16-le") in bundle, "SVG graphics implementation missing from embedded app")
     for notice in ["LICENSE", "THIRD_PARTY_NOTICES.txt"]:
         require(archive.read("assets/" + notice) == (root / notice).read_bytes(), "Missing or altered software notice: " + notice)
@@ -113,6 +125,8 @@ verification = {
     "authoredSectionsBundled": sum(len(content["sections"]) for content in teaching.values()),
     "caseSpecificHintsBundled": len(hints),
     "svgGraphicsIncluded": True,
+    "virtualWiringBuildsBundled": len(wiring),
+    "virtualProbeInterfaceIncluded": True,
     "nativeSvgRegistrationVerified": True,
     "softwareNoticesIncluded": True, "privateReferenceOrSigningFilesIncluded": False,
     "commit": os.environ.get("GITHUB_SHA"), "runId": os.environ.get("GITHUB_RUN_ID"),

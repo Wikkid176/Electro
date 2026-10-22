@@ -31,3 +31,15 @@ export function readMeter(state: MeterState): MeterReading {
   }
   return { kind: 'reading', display: `${resistance} Ω`, explanation: `The isolated virtual ${state.fixture === 'resistor' ? 'resistor is 220 Ω' : 'link is 0.2 Ω'}. There are no parallel paths in this model. Real in-circuit paths can change the measured result.` };
 }
+
+export type ProbePoint = 'A' | 'B' | null;
+export function readMeterAtProbes(state: MeterState, red: ProbePoint, black: ProbePoint): MeterReading {
+  const setup = readMeter(state);
+  if (setup.kind === 'blocked') return setup;
+  if (red === null || black === null) return { kind: 'reading', display: 'LEADS', explanation: 'Place both virtual probe tips to measure between two points. A lifted lead is not a zero-voltage result.' };
+  if (red === black) return {
+    kind: 'reading', display: state.mode === 'dc-volts' ? '0.0 V' : state.mode === 'continuity' ? '0.0 Ω · TONE' : '0.0 Ω',
+    explanation: 'Both ideal probe tips touch the same terminal, so there is no difference between their reference points. This result does not describe the path between A and B or establish a safe condition.',
+  };
+  return readMeter({ ...state, reversed: red === 'B' });
+}

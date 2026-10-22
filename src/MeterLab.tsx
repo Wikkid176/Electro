@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { initialMeter, readMeter, type MeterFixture, type MeterMode, type MeterState } from './meter';
+import { initialMeter, readMeterAtProbes, type ProbePoint, type MeterFixture, type MeterMode, type MeterState } from './meter';
+import { MeterEquipment } from './MeterEquipment';
 
 const modes: { value: MeterMode; label: string }[] = [
   { value: 'dc-volts', label: 'DC voltage' },
@@ -23,7 +24,13 @@ function Choice({ title, selected, onPress }: { title: string; selected: boolean
 
 export function MeterLab() {
   const [meter, setMeter] = useState<MeterState>(initialMeter);
-  const reading = readMeter(meter);
+  const [red, setRed] = useState<ProbePoint>('A');
+  const [black, setBlack] = useState<ProbePoint>('B');
+  const reading = readMeterAtProbes(meter, red, black);
+  function place(lead: 'red' | 'black', point: ProbePoint) {
+    if (lead === 'red') setRed(point); else setBlack(point);
+    update({ reversed: (lead === 'red' ? point : red) === 'B' && (lead === 'black' ? point : black) === 'A' });
+  }
   const fixture = fixtures.find(item => item.value === meter.fixture)!;
   function update(patch: Partial<MeterState>) { setMeter(state => ({ ...state, ...patch })); }
   return <>
@@ -46,8 +53,9 @@ export function MeterLab() {
         <Choice title="A input" selected={meter.input === 'current'} onPress={() => update({ input: 'current' })} />
       </View>
       <Text style={s.body}>COM is fixed as the reference. The A option demonstrates an input mismatch; current measurement is not included in this bench.</Text>
-      <Choice title={meter.reversed ? 'Reference: reversed' : 'Reference: normal'} selected={meter.reversed} onPress={() => update({ reversed: !meter.reversed })} />
+      <Choice title={meter.reversed ? 'Reference: reversed' : 'Reference: normal'} selected={meter.reversed} onPress={() => { setRed(meter.reversed ? 'A' : 'B'); setBlack(meter.reversed ? 'B' : 'A'); update({ reversed: !meter.reversed }); }} />
     </View>
+    <View style={s.card}><Text style={s.label}>4 / PLACE THE PROBES</Text><MeterEquipment meter={meter} display={reading.display} red={red} black={black} place={place} /></View>
     <View accessibilityLiveRegion="polite" style={[s.displayCard, reading.kind === 'blocked' && { borderColor: '#FFBA73' }]}>
       <Text style={s.displayLabel}>{reading.kind === 'blocked' ? 'READING BLOCKED' : 'SIMULATED DISPLAY'}</Text>
       <Text accessibilityLabel={`Simulated display: ${reading.display}`} style={[s.reading, reading.kind === 'blocked' && { color: '#FFBA73' }]}>{reading.display}</Text>

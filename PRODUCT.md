@@ -23,3 +23,5 @@ Review learning objectives and electrical content with qualified subject-matter 
 ## Detailed interactive lessons
 
 Beta 0.4.0-beta.3 adds three expandable deep dives per lesson, step-by-step reasoning reveals, eight vector-graphic scene types and seven experiment types embedded in 13 lessons. Repetitive fictional-example labels have been removed from the learner flow. The core route remains Learn → Explore → Practice → Recap → Quiz, with 282 distinct question-specific hints across 141 quiz questions. See docs/INTERACTIVE_LESSONS.md for behavior and model boundaries.
+
+Beta 0.5.0-beta.4 adds a fifth lab: three editable virtual wiring builds, graph-based relay/load behavior, specific wiring hints, functional test sequences and local proved-build badges. The meter gains movable graphical probes; the motor lab gains equipment-state graphics. See docs/VIRTUAL_WIRING_LABS.md for model assumptions and persistence.

@@ -1,0 +1,67 @@
+
+> electrolessonlab@0.5.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+✔ human beta records preserve first attempts separately from improved game scores (1.658404ms)
+✔ partial attempts are identified and never presented as complete first-pass results (0.148371ms)
+✔ malformed human beta logs cannot create misleading scores or cohorts (0.279236ms)
+✔ timing excludes the background, caps delayed heartbeats, and tolerates clock rollback (0.0804ms)
+✔ the fifth lab is recorded and previous beta3 records remain exportable but paused (0.16714ms)
+✔ every coach mood has a distinct in-bounds image frame in the bundled PNG (0.803839ms)
+✔ all 141 questions have distinct case-specific nudges and deeper reasoning (5.285676ms)
+✔ workshop devices and inspection targets resolve to distinct illustrated parts (1.275613ms)
+✔ workshop cannot check an empty/invalid selection or advance before feedback (0.136494ms)
+✔ checking and changing a locked workshop answer cannot award duplicate points (0.090365ms)
+✔ a completed workshop stays complete until restart and starts a clean practice session (0.104146ms)
+✔ generated artwork has distinct in-bounds states and a dedicated image for each inspection finding (1.437465ms)
+✔ replaying a lesson improves the best score without farming XP or erasing progress (0.822767ms)
+✔ invalid scores cannot create rewards (0.181661ms)
+✔ saved progress round-trips and rejects malformed or unknown data (0.322441ms)
+✔ emergency stop and overload block start; recovery never restarts the motor (0.096044ms)
+✔ every lesson has complete, answerable questions and unique identifiers (0.279738ms)
+✔ curriculum expansion preserves every original mission score without awarding new mission XP (0.447828ms)
+✔ interactive DC and network models respect topology, current paths and power (1.137247ms)
+✔ analog experiment includes its offset and never turns invalid current into a valid temperature (0.10001ms)
+✔ on-delay requires an uninterrupted interval and resets on enable removal (0.090295ms)
+✔ the same brief event is missed or captured according to sample spacing (0.164886ms)
+✔ all lessons have five authored sections without repeated fiction labels (1.38708ms)
+✔ wording-only migrations preserve checked answers but reject changed answer structures (0.566345ms)
+✔ the source only permits voltage; current input cannot yield a reading in any function (0.546846ms)
+✔ reference reversal changes DC sign without changing isolated resistance (0.162623ms)
+✔ open, finite resistance, and continuity threshold produce distinct results (0.091527ms)
+✔ a virtual zero voltage result does not claim field safety (0.119067ms)
+✔ probe placement distinguishes lifted leads, a shared reference point and reversed polarity (0.211025ms)
+✔ unfinished missions round-trip checked feedback, hints and the next ungraded selection (1.140702ms)
+✔ malformed, stale and impossible mission checkpoints are rejected (0.425525ms)
+✔ all 47 missions have substantive teaching, explorable visuals, worked examples and separate practice (3.966227ms)
+✔ reading pages resume safely and legacy reading/quiz checkpoints remain compatible (0.551633ms)
+✔ an earlier beta record remains exportable but is paused to keep course versions separate (0.696539ms)
+✔ wrong nodes and wrong sheets cannot advance a trace (0.779473ms)
+✔ a complete trace follows the lamp, contact, associated coil, command, and return (0.168171ms)
+✔ completed and repeated selections cannot create extra trace progress (0.101492ms)
+✔ fictional reference targets resolve as device associations and every challenge target exists (0.260259ms)
+✔ all three builds pass only after their complete functional sequence (3.429147ms)
+✔ a missing return prevents load operation and names the open connection (0.289091ms)
+✔ supply shorts trip immediately, including shorts made by a closing contact (0.165427ms)
+✔ relay coil and contacts are electrically separate; lamp is not fed by a coil reference (0.190214ms)
+✔ a powered lamp with a bypassed switch cannot pass the connection or behavior checks (0.280349ms)
+✔ holding branch remembers START but drops on STOP and power loss (0.318455ms)
+✔ an actual STOP bypass can keep the coil on, but coach identifies it and build never passes (0.342631ms)
+✔ equivalent branching is accepted, floating nodes stay distinct and colors have no electrical effect (0.211015ms)
+✔ wire tools reject duplicate/self/unknown terminals and lock edits while powered (0.401679ms)
+✔ test steps require actual state transitions, not repeated clicks or incomplete wiring (0.20773ms)
+✔ saved builds preserve wires and badges, never restore power, held buttons or test position (0.944289ms)
+✔ corrupt saved builds fail closed without importing arbitrary terminals or unbounded leads (0.202392ms)
+ℹ tests 50
+ℹ suites 0
+ℹ pass 50
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 326.397527
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

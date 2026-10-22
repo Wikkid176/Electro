@@ -1,19 +1,19 @@
-# Try ElectroLessonLab (ELL) Beta
+# ElectroLessonLab Android beta download
 
-[Download the current Android APK: 0.4.0-beta.3](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.4.0-beta.3.apk) · 38.3 MiB · Android 7+ on ARM phones.
+[Download ELL 0.5.0-beta.4 APK](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.5.0-beta.4.apk) · 38.4 MiB · Android 7+ on ARM phones.
 
-This update adds two authored hints for every quiz question (282 in total), five teaching sections per lesson (235 in total), illustrated vector diagrams, seven experiment types and step-by-step reasoning reveals. Repetitive fiction labels are removed from the learner flow.
+On your Android phone, open the download in Chrome or your browser, then open the APK and choose Install / Update. This is the standalone app; Expo Go and a computer are not needed. Install over the existing beta to retain course scores. Do not uninstall or clear app storage first. Keep Android device protections enabled.
 
-Open the link in Chrome on your Android phone, download the APK, open it and choose Install or Update. Install over the existing beta to retain course scores; do not uninstall first. No Expo Go, development server or GitHub build setup is required. Keep device protections enabled.
+Open **Lab → Virtual wiring** for three builds: a switched lamp, a relay-controlled lamp and a start/stop holding circuit. Tap pairs of screw terminals to fit wires, turn virtual power on, use the controls and follow the test checklist. Click gives connection-specific hints. Wires and proved-build badges save locally, reopening with virtual power off. The meter now has movable probe tips and the motor lab has equipment graphics.
 
-Use Coach hint for a nudge specific to the current question, then Work through this hint for more reasoning. In lessons, open the three deep dives, tap diagram elements, change experiment controls and reveal the worked example one step at a time.
+[See the actual app-rendered previews and lab guide](https://github.com/Wikkid176/Electro/blob/main/docs/VIRTUAL_WIRING_LABS.md).
 
-This update uses versionName 0.4.0, versionCode 3 and the existing verified beta signing certificate. Compatible earlier unfinished quizzes are migrated after wording edits. Earlier beta study records stay exportable but paused; export and start a new study to keep course-version metrics separate.
+The existing 47 lessons, 235 explanatory sections, 141 quiz questions and 282 question-specific hints remain. Earlier known beta study records remain paused/exportable; course scores are preserved. Read START-HERE.md for tester instructions.
 
-[Tester kit ZIP](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-Android-Beta-Kit-0.4.0-beta.3.zip) · [APK checksum](ELL-0.4.0-beta.3.apk.sha256) · [Verification](beta3-verification.json)
+APK SHA-256: `ca31f569078f36701e8809a91f5492106bf7b9572662d6fb0c0f31e62db6f353`. Public checksum: `ELL-0.5.0-beta.4.apk.sha256`. Verification: `beta4-verification.json`; checks: `beta4-validation.json`. The existing beta signing certificate and package are retained; Android update version is 4.
 
-TypeScript, all 36 unit tests and all 64 distinct phone/desktop browser cases passed, with 14 focused revalidation cases after final polish. APK checks verified all 47 lessons, 235 sections, 282 hints, native SVG registration for both ARM architectures, manifest settings, notices and alignment. Physical-phone behavior still needs organizer testing. This standalone APK was built in the prepared workspace; a GitHub Actions build is not claimed.
+Optional organizer kit: `ELL-Android-Beta-Kit-0.5.0-beta.4.zip` includes the APK, instructions, blank observer/roster templates, notices and verification. It contains no private signing keys or reference documents.
 
-Source commit: d4e761b95d7f9612ad41e140ea36cc47dfd84408. Private keys, source prints and proprietary references are excluded.
+Built and signed in the development workspace from source commit `7086d0769d6e9e9278e8858f39a253d888d481e5`. TypeScript, 50 unit tests, 76 full browser cases and 12 final focused lab cases passed. Signature, manifest, native SVG registration, bundled lessons/lab content and ZIP alignment verified. No physical-phone test or new human learning outcomes are claimed. A GitHub Actions build is not claimed for this download.
 
-Earlier installers remain available: [0.3.0-beta.2](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.3.0-beta.2.apk) and [0.2.0-beta.1](https://github.com/Wikkid176/Electro/raw/refs/heads/android-beta-download/downloads/ELL-0.2.0-beta.1.apk).
+Earlier APK links remain available: `ELL-0.4.0-beta.3.apk`, `ELL-0.3.0-beta.2.apk`, `ELL-0.2.0-beta.1.apk`. This branch holds binary downloads separately from main.

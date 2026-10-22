@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-22T18:03:54.690744+00:00",
+  "app": "ElectroLessonLab (ELL)",
+  "release": "0.5.0-beta.4",
+  "typecheck": "passed",
+  "unitTests": {
+    "passed": 50,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browserTests": {
+    "distinctCasesPassed": 76,
+    "fullSuite": {
+      "passed": 76,
+      "failed": 0,
+      "skipped": 0,
+      "durationSeconds": 301.947783
+    },
+    "finalFocusedRevalidation": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0,
+      "reason": "All wiring, probe and motor equipment cases rerun after final label-readability adjustment."
+    },
+    "evidence": [
+      "beta4-browser-validation.json",
+      "beta4-final-focused-validation.json"
+    ]
+  },
+  "authoredLessons": 47,
+  "explanatorySections": 235,
+  "caseSpecificQuizHints": 282,
+  "maximumXp": 3525,
+  "practiceLabs": 5,
+  "virtualWiringBuilds": 3,
+  "wiringFunctionalTestStates": 15,
+  "graphDrivenWiringBehavior": true,
+  "virtualMeterProbes": true,
+  "dedicatedLocalWiringStorage": "ell.wiring.v1",
+  "nativeBuild": "passed",
+  "apkProduced": true,
+  "apk": "ELL-0.5.0-beta.4.apk",
+  "bytes": 40231977,
+  "sha256": "ca31f569078f36701e8809a91f5492106bf7b9572662d6fb0c0f31e62db6f353",
+  "apkVerification": "beta4/APK-VERIFICATION.json",
+  "sameBetaSigningCertificate": true,
+  "androidVersionCode": 4,
+  "physicalAndroidDeviceTested": false,
+  "githubHostedBuildVerified": false,
+  "historicalSyntheticBetaRerun": false,
+  "note": "All course scores and quiz fingerprints preserved. Previous known studies, including beta3, remain exportable and paused. Wiring actions/badges stay local and are not exported as beta-study outcomes. No source prints or private signing material bundled."
+}
