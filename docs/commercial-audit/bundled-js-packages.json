@@ -1,0 +1,180 @@
+{
+  "method": "Owning package.json for node_modules sources in release Metro source map; native libraries audited separately. Map existence does not alone prove every branch is live.",
+  "packages": [
+    {
+      "name": "@expo/log-box-utils",
+      "version": "58.0.2",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 4
+    },
+    {
+      "name": "@expo/metro",
+      "version": "58.0.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "@react-native-async-storage/async-storage",
+      "version": "2.2.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 6
+    },
+    {
+      "name": "@react-native/asset-utils",
+      "version": "0.88.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 2
+    },
+    {
+      "name": "@react-native/js-polyfills",
+      "version": "0.88.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 2
+    },
+    {
+      "name": "@react-native/normalize-colors",
+      "version": "0.88.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "@react-native/virtualized-lists",
+      "version": "0.88.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 15
+    },
+    {
+      "name": "@ungap/structured-clone",
+      "version": "1.4.0",
+      "declaredLicense": "ISC",
+      "sourceModuleCount": 4
+    },
+    {
+      "name": "base64-js",
+      "version": "1.5.1",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "expo",
+      "version": "58.0.14",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 59
+    },
+    {
+      "name": "expo-modules-core",
+      "version": "58.0.22",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 34
+    },
+    {
+      "name": "expo-status-bar",
+      "version": "58.0.3",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 2
+    },
+    {
+      "name": "flow-enums-runtime",
+      "version": "0.0.6",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "invariant",
+      "version": "2.2.4",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "memoize-one",
+      "version": "5.2.1",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "metro-runtime",
+      "version": "0.87.1",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 2
+    },
+    {
+      "name": "nullthrows",
+      "version": "1.1.1",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "pretty-format",
+      "version": "29.7.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 11
+    },
+    {
+      "name": "promise",
+      "version": "8.3.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 3
+    },
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 4
+    },
+    {
+      "name": "react-is",
+      "version": "18.3.1",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 2
+    },
+    {
+      "name": "react-native",
+      "version": "0.88.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 461
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "version": "5.10.1",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 9
+    },
+    {
+      "name": "react-native-svg",
+      "version": "15.16.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 113
+    },
+    {
+      "name": "regenerator-runtime",
+      "version": "0.13.11",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "scheduler",
+      "version": "0.28.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 2
+    },
+    {
+      "name": "stacktrace-parser",
+      "version": "0.1.11",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "whatwg-fetch",
+      "version": "3.6.20",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    },
+    {
+      "name": "whatwg-url-minimum",
+      "version": "0.2.0",
+      "declaredLicense": "MIT",
+      "sourceModuleCount": 1
+    }
+  ],
+  "unmappedSourceCount": 0
+}

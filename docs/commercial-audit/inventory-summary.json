@@ -1,0 +1,38 @@
+{
+  "lockfilePackageLocations": 518,
+  "installedPackageLocations": 501,
+  "declaredLicenseCounts": {
+    "MIT": 434,
+    "ISC": 29,
+    "Apache-2.0": 9,
+    "BSD-3-Clause": 8,
+    "(MIT OR CC0-1.0)": 2,
+    "Python-2.0": 1,
+    "Unlicense": 2,
+    "CC-BY-4.0": 1,
+    "BSD-2-Clause": 10,
+    "(MIT OR Apache-2.0)": 1,
+    "BlueOak-1.0.0": 6,
+    "0BSD": 1,
+    "MPL-2.0": 12,
+    "CC0-1.0": 1,
+    "(BSD-3-Clause OR GPL-2.0)": 1
+  },
+  "installedNoTopLevelNotice": 43,
+  "previousInventoryMissingNameVersions": [],
+  "bundledJsPackageCount": 29,
+  "bundledJsLicenseCounts": {
+    "MIT": 28,
+    "ISC": 1
+  },
+  "androidRuntimeCoordinates": 133,
+  "nativePomNoExplicitLicense": 11,
+  "artifact": {
+    "file": "ELL-0.5.1-beta.5.apk",
+    "sha256": "a544637b90e84d9e1a5f4ccca877e2a8231145fca533d27095453275b668ea1f",
+    "sourceReferenceOrSigningFiles": [],
+    "bundledNoticesExact": true,
+    "bundledRootLicenseExact": true,
+    "fontFiles": []
+  }
+}

@@ -1,5 +1,7 @@
 # Material and software rights review — preliminary
 
+**Superseded for current commercial-release scope by [the October 22 US audit](COMMERCIAL_RELEASE_REVIEW.md).** This older review remains historical, including its inventory counts and unverified network checks.
+
 October 19, 2026. Scope: the current local prototype, its source and bundled artwork, the 26 available extracted reference texts, and dependency metadata. This is a documented screening exercise, not a legal clearance or a guarantee that no third-party right applies. Intended launch jurisdictions and final distribution terms remain unspecified.
 
 ## Findings and actions

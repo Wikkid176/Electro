@@ -1,0 +1,40 @@
+{
+  "auditDateUTC": "2026-10-22T20:32:27.030612+00:00",
+  "sourceCommit": "7c052b30d9c7a9b1ce479d58cdff2b7532d57171",
+  "appVersion": "0.5.1-beta.5",
+  "jurisdiction": "United States",
+  "audience": [
+    "individual learners",
+    "employers"
+  ],
+  "scope": [
+    "npm lockfile and installed notices",
+    "release Metro source map",
+    "offline-resolved Android release runtime graph and cached POM declarations",
+    "signed APK archive and embedded notices",
+    "current asset provenance",
+    "fresh exact-text screen of 26 separately supplied documents",
+    "reachable Git history filenames for reference/signing formats"
+  ],
+  "notIncluded": [
+    "formal legal opinion or rights-holder permission",
+    "live trademark or image-similarity clearance",
+    "OCR/substantial-similarity review",
+    "contents of the two initial ZIP uploads",
+    "current verified competitor pricing or Google Play rules",
+    "full native C/C++ source and NOTICE closure",
+    "physical-device or qualified educational validation"
+  ],
+  "artifactSha256": "a544637b90e84d9e1a5f4ccca877e2a8231145fca533d27095453275b668ea1f",
+  "inputs": {
+    "package-lock.json": "bdf7ec7f8726c7fba614cd59e053f0390d2a2108017d4f61a19aafc16b65bec0",
+    "LICENSE": "fb3ca4a837f5779e83cef89b78253a8949cfb9429c340309f62d0465ec6610b4",
+    "THIRD_PARTY_NOTICES.txt": "fdb206df7ba9af3bf2c198069e6c76aa20b883c525ef7e2ed6eb8d7ee1a3de75",
+    "docs/asset-provenance.json": "19912af7779df767b2d06826cb4e43d47d7606e1d08c4810071197cf2dec4e4f",
+    "android/app/build/intermediates/sourcemaps/react/release/index.android.bundle.packager.map": "61bcc7258859d3d272f7b4b456667cb1b4332f441a717e21a55e67ff72a32a46"
+  },
+  "noForbiddenExtensionsInReachableGitHistory": true,
+  "applicationCodeChangedByAudit": false,
+  "officialAndMarketNetworkChecks": "14 attempted HTTPS pages blocked by proxy CONNECT 403; see research-access.json",
+  "legalLicenseFilesChanged": false
+}

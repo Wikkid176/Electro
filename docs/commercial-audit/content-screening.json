@@ -1,0 +1,169 @@
+{
+  "referenceCount": 26,
+  "referenceMetadata": [
+    {
+      "id": "reference-01",
+      "extension": ".pdf",
+      "sha256": "37978a994ecff4507839e01b74b9d964837cfdf6d1692216830a65edf1fd6ec8",
+      "extractedWords": 4121
+    },
+    {
+      "id": "reference-02",
+      "extension": ".docx",
+      "sha256": "ab45ffd2beebb6d70ab8b4a63aad7dfd68ae9df130886212ffe381bcddcbe766",
+      "extractedWords": 2021
+    },
+    {
+      "id": "reference-03",
+      "extension": ".docx",
+      "sha256": "44571ca5741e45f08fffdf32a1bc5eff041ed76c1054135756ad185de8fb5704",
+      "extractedWords": 2444
+    },
+    {
+      "id": "reference-04",
+      "extension": ".pdf",
+      "sha256": "86e04a848e3620e61693927cb97648920ee1d648eb06c6812696990129e1b90a",
+      "extractedWords": 6284
+    },
+    {
+      "id": "reference-05",
+      "extension": ".pdf",
+      "sha256": "59695c1cc1241fb4bf3738bb4b374e22d78230c543c575c970bf388ee2103e7a",
+      "extractedWords": 8638
+    },
+    {
+      "id": "reference-06",
+      "extension": ".docx",
+      "sha256": "9a38531afdff79d0cecf0e4ae654ea7a6ee02f5c38ca08c41b8071a39e6171c6",
+      "extractedWords": 2604
+    },
+    {
+      "id": "reference-07",
+      "extension": ".pdf",
+      "sha256": "28f593e99aafd9be5a2bedf2a37b69e90bc95e3aed100155722379b2348257e5",
+      "extractedWords": 5689
+    },
+    {
+      "id": "reference-08",
+      "extension": ".pdf",
+      "sha256": "24d7dd692595ae3899cacb5c40f38ada2515a634291910f450414f4a113d0d11",
+      "extractedWords": 7871
+    },
+    {
+      "id": "reference-09",
+      "extension": ".doc",
+      "sha256": "e873c17c68612c5855906717271b0fdfd649bb6285826765268b8fcd657826c5",
+      "extractedWords": 2267
+    },
+    {
+      "id": "reference-10",
+      "extension": ".pdf",
+      "sha256": "f5da3232c8948c67288d38c37e1649e2045b7fc5d3eb418e2b61cd8de3d2b73c",
+      "extractedWords": 6204
+    },
+    {
+      "id": "reference-11",
+      "extension": ".pdf",
+      "sha256": "cddc5ddbc805a3e03f47b2b879c3b61b23cf42d5ce256bc1b0f479c2e72ed602",
+      "extractedWords": 2154
+    },
+    {
+      "id": "reference-12",
+      "extension": ".pdf",
+      "sha256": "142c5d3f0c94fe7c91c2a91c2c0028540ad6dfdaec337931202b793685f89e25",
+      "extractedWords": 6779
+    },
+    {
+      "id": "reference-13",
+      "extension": ".docx",
+      "sha256": "fdcd075e0576a5b30955dce95cfe38745ece8adaea2642b782e5a81e79b5c859",
+      "extractedWords": 2140
+    },
+    {
+      "id": "reference-14",
+      "extension": ".pdf",
+      "sha256": "f4ba76fa6604ae50244e7d45bf11cb4f31fd03fbba8a7a62f4cfa647840089e9",
+      "extractedWords": 7577
+    },
+    {
+      "id": "reference-15",
+      "extension": ".docx",
+      "sha256": "3b26a2bf4040b7a99a8988cae8c67755b56d0301e73838240c6829dd3a26c7d0",
+      "extractedWords": 2081
+    },
+    {
+      "id": "reference-16",
+      "extension": ".pdf",
+      "sha256": "4fa1db8dffcf228a74304e9d1f6ed08e323c96670acf9c570383755fdabed305",
+      "extractedWords": 12925
+    },
+    {
+      "id": "reference-17",
+      "extension": ".pdf",
+      "sha256": "16c2ac708836ad3ada465da90bafad0ab6d2e6ef3e6d9fb7c77dcbf61ff62faa",
+      "extractedWords": 6866
+    },
+    {
+      "id": "reference-18",
+      "extension": ".pdf",
+      "sha256": "a933f3f2901621eca924f831e5db17ba55884b0ba321ca04ad595c8f97f5f741",
+      "extractedWords": 12604
+    },
+    {
+      "id": "reference-19",
+      "extension": ".pdf",
+      "sha256": "860d6fd91b5a9597dc4c4cef589bc5b3de2087930f2ca814e1b0545b1f915a86",
+      "extractedWords": 52421
+    },
+    {
+      "id": "reference-20",
+      "extension": ".docx",
+      "sha256": "3e6fb7e4398a0f60d0a0470b11045c297515e746de961bc34bcb8fb133b96db2",
+      "extractedWords": 2100
+    },
+    {
+      "id": "reference-21",
+      "extension": ".pdf",
+      "sha256": "99fd55159ed2437b1c4c2d1f7101f5481c742eea0b3fea438c982a82dda47b00",
+      "extractedWords": 5016
+    },
+    {
+      "id": "reference-22",
+      "extension": ".pdf",
+      "sha256": "308529b793657bfb313302f4ff97af83b56312f3c74f2b26ee81ffd19d7508ab",
+      "extractedWords": 1418
+    },
+    {
+      "id": "reference-23",
+      "extension": ".docx",
+      "sha256": "df076539542593b4d5ca68d3f3af738eb2724c558266293e84058f7efd11c3b2",
+      "extractedWords": 2908
+    },
+    {
+      "id": "reference-24",
+      "extension": ".pdf",
+      "sha256": "79e19e9a21e8b5bc491fc28cd4def186d98fe5856842da7af8abf45faa482ba5",
+      "extractedWords": 11510
+    },
+    {
+      "id": "reference-25",
+      "extension": ".ppt",
+      "sha256": "6ddf4fdfd1ed046deb8475fc8001712460d800670fbd512f2d52dd7e3e204eed",
+      "extractedWords": 723
+    },
+    {
+      "id": "reference-26",
+      "extension": ".docx",
+      "sha256": "0bdefea758246d10dc42ba454838c3d93ab78b3c1732f4f3c9df7a5f623c03c6",
+      "extractedWords": 3199
+    }
+  ],
+  "appSourceFilesScanned": 49,
+  "normalizedExactWindowWords": 14,
+  "matchingAppFiles": [],
+  "scope": "Fresh extraction of 26 separately supplied documents: PDF text plus DOC/DOCX body text and PPT text atoms. No OCR or embedded-image similarity analysis. The initial ZIP uploads are not included in this set.",
+  "limitations": [
+    "Exact-text overlap screening is not a substantial-similarity, trade-secret, contract or legal-clearance determination.",
+    "Source text is kept outside the repository; no excerpts are written to this report."
+  ]
+}

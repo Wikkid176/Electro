@@ -1,0 +1,6621 @@
+[
+  {
+    "path": "node_modules/@babel/code-frame",
+    "name": "@babel/code-frame",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/compat-data",
+    "name": "@babel/compat-data",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/core",
+    "name": "@babel/core",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/core/node_modules/semver",
+    "name": "semver",
+    "version": "6.3.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/generator",
+    "name": "@babel/generator",
+    "version": "7.29.8",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-annotate-as-pure",
+    "name": "@babel/helper-annotate-as-pure",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-compilation-targets",
+    "name": "@babel/helper-compilation-targets",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-compilation-targets/node_modules/semver",
+    "name": "semver",
+    "version": "6.3.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-create-class-features-plugin",
+    "name": "@babel/helper-create-class-features-plugin",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-create-class-features-plugin/node_modules/semver",
+    "name": "semver",
+    "version": "6.3.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-create-regexp-features-plugin",
+    "name": "@babel/helper-create-regexp-features-plugin",
+    "version": "7.29.10",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-create-regexp-features-plugin/node_modules/semver",
+    "name": "semver",
+    "version": "6.3.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-define-polyfill-provider",
+    "name": "@babel/helper-define-polyfill-provider",
+    "version": "0.6.8",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-globals",
+    "name": "@babel/helper-globals",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-member-expression-to-functions",
+    "name": "@babel/helper-member-expression-to-functions",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-module-imports",
+    "name": "@babel/helper-module-imports",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-module-transforms",
+    "name": "@babel/helper-module-transforms",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-optimise-call-expression",
+    "name": "@babel/helper-optimise-call-expression",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-plugin-utils",
+    "name": "@babel/helper-plugin-utils",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-remap-async-to-generator",
+    "name": "@babel/helper-remap-async-to-generator",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-replace-supers",
+    "name": "@babel/helper-replace-supers",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-skip-transparent-expression-wrappers",
+    "name": "@babel/helper-skip-transparent-expression-wrappers",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-string-parser",
+    "name": "@babel/helper-string-parser",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-validator-identifier",
+    "name": "@babel/helper-validator-identifier",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-validator-option",
+    "name": "@babel/helper-validator-option",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helper-wrap-function",
+    "name": "@babel/helper-wrap-function",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/helpers",
+    "name": "@babel/helpers",
+    "version": "7.29.10",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/parser",
+    "name": "@babel/parser",
+    "version": "7.29.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-proposal-decorators",
+    "name": "@babel/plugin-proposal-decorators",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-proposal-export-default-from",
+    "name": "@babel/plugin-proposal-export-default-from",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-syntax-decorators",
+    "name": "@babel/plugin-syntax-decorators",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-syntax-dynamic-import",
+    "name": "@babel/plugin-syntax-dynamic-import",
+    "version": "7.8.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-syntax-export-default-from",
+    "name": "@babel/plugin-syntax-export-default-from",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-syntax-flow",
+    "name": "@babel/plugin-syntax-flow",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-syntax-jsx",
+    "name": "@babel/plugin-syntax-jsx",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-syntax-nullish-coalescing-operator",
+    "name": "@babel/plugin-syntax-nullish-coalescing-operator",
+    "version": "7.8.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-syntax-optional-chaining",
+    "name": "@babel/plugin-syntax-optional-chaining",
+    "version": "7.8.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-syntax-typescript",
+    "name": "@babel/plugin-syntax-typescript",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-async-generator-functions",
+    "name": "@babel/plugin-transform-async-generator-functions",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-async-to-generator",
+    "name": "@babel/plugin-transform-async-to-generator",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-block-scoping",
+    "name": "@babel/plugin-transform-block-scoping",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-class-properties",
+    "name": "@babel/plugin-transform-class-properties",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-class-static-block",
+    "name": "@babel/plugin-transform-class-static-block",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-classes",
+    "name": "@babel/plugin-transform-classes",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-destructuring",
+    "name": "@babel/plugin-transform-destructuring",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-export-namespace-from",
+    "name": "@babel/plugin-transform-export-namespace-from",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-flow-strip-types",
+    "name": "@babel/plugin-transform-flow-strip-types",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-for-of",
+    "name": "@babel/plugin-transform-for-of",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-logical-assignment-operators",
+    "name": "@babel/plugin-transform-logical-assignment-operators",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-modules-commonjs",
+    "name": "@babel/plugin-transform-modules-commonjs",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-named-capturing-groups-regex",
+    "name": "@babel/plugin-transform-named-capturing-groups-regex",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-nullish-coalescing-operator",
+    "name": "@babel/plugin-transform-nullish-coalescing-operator",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-object-rest-spread",
+    "name": "@babel/plugin-transform-object-rest-spread",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-optional-catch-binding",
+    "name": "@babel/plugin-transform-optional-catch-binding",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-optional-chaining",
+    "name": "@babel/plugin-transform-optional-chaining",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-parameters",
+    "name": "@babel/plugin-transform-parameters",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-private-methods",
+    "name": "@babel/plugin-transform-private-methods",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-private-property-in-object",
+    "name": "@babel/plugin-transform-private-property-in-object",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-react-display-name",
+    "name": "@babel/plugin-transform-react-display-name",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-react-jsx",
+    "name": "@babel/plugin-transform-react-jsx",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-react-jsx-development",
+    "name": "@babel/plugin-transform-react-jsx-development",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-react-pure-annotations",
+    "name": "@babel/plugin-transform-react-pure-annotations",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-runtime",
+    "name": "@babel/plugin-transform-runtime",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-runtime/node_modules/semver",
+    "name": "semver",
+    "version": "6.3.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-typescript",
+    "name": "@babel/plugin-transform-typescript",
+    "version": "7.29.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/plugin-transform-unicode-regex",
+    "name": "@babel/plugin-transform-unicode-regex",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/preset-typescript",
+    "name": "@babel/preset-typescript",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/runtime",
+    "name": "@babel/runtime",
+    "version": "7.29.10",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/template",
+    "name": "@babel/template",
+    "version": "7.29.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/traverse",
+    "name": "@babel/traverse",
+    "version": "7.29.10",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@babel/types",
+    "name": "@babel/types",
+    "version": "7.29.8",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/code-signing-certificates",
+    "name": "@expo/code-signing-certificates",
+    "version": "0.0.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/config",
+    "name": "@expo/config",
+    "version": "58.0.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/config-plugins",
+    "name": "@expo/config-plugins",
+    "version": "58.0.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/config-types",
+    "name": "@expo/config-types",
+    "version": "58.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/devcert",
+    "name": "@expo/devcert",
+    "version": "1.2.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/devcert/node_modules/debug",
+    "name": "debug",
+    "version": "3.2.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/env",
+    "name": "@expo/env",
+    "version": "2.5.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/fingerprint",
+    "name": "@expo/fingerprint",
+    "version": "0.21.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/image-utils",
+    "name": "@expo/image-utils",
+    "version": "0.12.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/inline-modules",
+    "name": "@expo/inline-modules",
+    "version": "0.2.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/json-file",
+    "name": "@expo/json-file",
+    "version": "11.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/local-build-cache-provider",
+    "name": "@expo/local-build-cache-provider",
+    "version": "58.0.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/log-box-utils",
+    "name": "@expo/log-box-utils",
+    "version": "58.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/metro",
+    "name": "@expo/metro",
+    "version": "58.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/metro-file-map",
+    "name": "@expo/metro-file-map",
+    "version": "58.0.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/modules-macros-win32-arm64",
+    "name": "@expo/modules-macros-win32-arm64",
+    "version": "0.20.0",
+    "declaredLicense": "MIT",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/modules-macros-win32-x64",
+    "name": "@expo/modules-macros-win32-x64",
+    "version": "0.20.0",
+    "declaredLicense": "MIT",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/osascript",
+    "name": "@expo/osascript",
+    "version": "2.8.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/package-manager",
+    "name": "@expo/package-manager",
+    "version": "1.14.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/platforms",
+    "name": "@expo/platforms",
+    "version": "58.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/plist",
+    "name": "@expo/plist",
+    "version": "0.10.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/prebuild-config",
+    "name": "@expo/prebuild-config",
+    "version": "58.0.14",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/require-utils",
+    "name": "@expo/require-utils",
+    "version": "58.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/schema-utils",
+    "name": "@expo/schema-utils",
+    "version": "58.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/sdk-runtime-versions",
+    "name": "@expo/sdk-runtime-versions",
+    "version": "1.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/spawn-async",
+    "name": "@expo/spawn-async",
+    "version": "1.8.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/sudo-prompt",
+    "name": "@expo/sudo-prompt",
+    "version": "9.3.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@expo/xcpretty",
+    "name": "@expo/xcpretty",
+    "version": "4.4.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@isaacs/ttlcache",
+    "name": "@isaacs/ttlcache",
+    "version": "1.4.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@jest/schemas",
+    "name": "@jest/schemas",
+    "version": "29.6.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@jest/types",
+    "name": "@jest/types",
+    "version": "29.6.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@jridgewell/gen-mapping",
+    "name": "@jridgewell/gen-mapping",
+    "version": "0.3.13",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@jridgewell/remapping",
+    "name": "@jridgewell/remapping",
+    "version": "2.3.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@jridgewell/resolve-uri",
+    "name": "@jridgewell/resolve-uri",
+    "version": "3.1.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@jridgewell/source-map",
+    "name": "@jridgewell/source-map",
+    "version": "0.3.11",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@jridgewell/sourcemap-codec",
+    "name": "@jridgewell/sourcemap-codec",
+    "version": "1.6.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@jridgewell/trace-mapping",
+    "name": "@jridgewell/trace-mapping",
+    "version": "0.3.31",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@noxcturnal/noxcturnal-darwin-arm64",
+    "name": "@noxcturnal/noxcturnal-darwin-arm64",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@noxcturnal/noxcturnal-darwin-x64",
+    "name": "@noxcturnal/noxcturnal-darwin-x64",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@noxcturnal/noxcturnal-linux-arm64-gnu",
+    "name": "@noxcturnal/noxcturnal-linux-arm64-gnu",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@noxcturnal/noxcturnal-linux-arm64-musl",
+    "name": "@noxcturnal/noxcturnal-linux-arm64-musl",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@noxcturnal/noxcturnal-linux-x64-gnu",
+    "name": "@noxcturnal/noxcturnal-linux-x64-gnu",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@noxcturnal/noxcturnal-linux-x64-musl",
+    "name": "@noxcturnal/noxcturnal-linux-x64-musl",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@noxcturnal/noxcturnal-win32-arm64-msvc",
+    "name": "@noxcturnal/noxcturnal-win32-arm64-msvc",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@noxcturnal/noxcturnal-win32-x64-msvc",
+    "name": "@noxcturnal/noxcturnal-win32-x64-msvc",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@oxc-project/types",
+    "name": "@oxc-project/types",
+    "version": "0.154.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@playwright/test",
+    "name": "@playwright/test",
+    "version": "1.64.1",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": true,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE",
+      "NOTICE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native-async-storage/async-storage",
+    "name": "@react-native-async-storage/async-storage",
+    "version": "2.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/asset-utils",
+    "name": "@react-native/asset-utils",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/babel-plugin-codegen",
+    "name": "@react-native/babel-plugin-codegen",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/codegen",
+    "name": "@react-native/codegen",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/codegen/node_modules/flow-estree",
+    "name": "flow-estree",
+    "version": "0.327.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/codegen/node_modules/flow-parser",
+    "name": "flow-parser",
+    "version": "0.327.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/community-cli-plugin",
+    "name": "@react-native/community-cli-plugin",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/community-cli-plugin/node_modules/commander",
+    "name": "commander",
+    "version": "12.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/debugger-frontend",
+    "name": "@react-native/debugger-frontend",
+    "version": "0.88.0",
+    "declaredLicense": "BSD-3-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/debugger-shell",
+    "name": "@react-native/debugger-shell",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/dev-middleware",
+    "name": "@react-native/dev-middleware",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/gradle-plugin",
+    "name": "@react-native/gradle-plugin",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/js-polyfills",
+    "name": "@react-native/js-polyfills",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/normalize-colors",
+    "name": "@react-native/normalize-colors",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@react-native/virtualized-lists",
+    "name": "@react-native/virtualized-lists",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@sinclair/typebox",
+    "name": "@sinclair/typebox",
+    "version": "0.27.12",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@types/istanbul-lib-coverage",
+    "name": "@types/istanbul-lib-coverage",
+    "version": "2.0.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@types/istanbul-lib-report",
+    "name": "@types/istanbul-lib-report",
+    "version": "3.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@types/istanbul-reports",
+    "name": "@types/istanbul-reports",
+    "version": "3.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@types/node",
+    "name": "@types/node",
+    "version": "24.19.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@types/react",
+    "name": "@types/react",
+    "version": "19.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@types/yargs",
+    "name": "@types/yargs",
+    "version": "17.0.35",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@types/yargs-parser",
+    "name": "@types/yargs-parser",
+    "version": "21.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@ungap/structured-clone",
+    "name": "@ungap/structured-clone",
+    "version": "1.4.0",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/@xmldom/xmldom",
+    "name": "@xmldom/xmldom",
+    "version": "0.8.15",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/2g",
+    "name": "2g",
+    "version": "1.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/accepts",
+    "name": "accepts",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/acorn",
+    "name": "acorn",
+    "version": "8.19.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/agent-base",
+    "name": "agent-base",
+    "version": "7.1.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/agent-cli-detector",
+    "name": "agent-cli-detector",
+    "version": "0.1.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/anser",
+    "name": "anser",
+    "version": "1.4.10",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ansi-escapes",
+    "name": "ansi-escapes",
+    "version": "4.3.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ansi-escapes/node_modules/type-fest",
+    "name": "type-fest",
+    "version": "0.21.3",
+    "declaredLicense": "(MIT OR CC0-1.0)",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ansi-regex",
+    "name": "ansi-regex",
+    "version": "5.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ansi-styles",
+    "name": "ansi-styles",
+    "version": "4.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/arg",
+    "name": "arg",
+    "version": "5.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/argparse",
+    "name": "argparse",
+    "version": "2.0.1",
+    "declaredLicense": "Python-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/asap",
+    "name": "asap",
+    "version": "2.0.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/babel-plugin-polyfill-corejs2",
+    "name": "babel-plugin-polyfill-corejs2",
+    "version": "0.4.17",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/babel-plugin-polyfill-corejs2/node_modules/semver",
+    "name": "semver",
+    "version": "6.3.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/babel-plugin-polyfill-corejs3",
+    "name": "babel-plugin-polyfill-corejs3",
+    "version": "0.13.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/babel-plugin-polyfill-regenerator",
+    "name": "babel-plugin-polyfill-regenerator",
+    "version": "0.6.8",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/babel-plugin-react-compiler",
+    "name": "babel-plugin-react-compiler",
+    "version": "1.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/babel-plugin-react-native-web",
+    "name": "babel-plugin-react-native-web",
+    "version": "0.21.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/babel-plugin-syntax-hermes-parser",
+    "name": "babel-plugin-syntax-hermes-parser",
+    "version": "0.36.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/babel-plugin-transform-flow-enums",
+    "name": "babel-plugin-transform-flow-enums",
+    "version": "0.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/balanced-match",
+    "name": "balanced-match",
+    "version": "4.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/base64-js",
+    "name": "base64-js",
+    "version": "1.5.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/baseline-browser-mapping",
+    "name": "baseline-browser-mapping",
+    "version": "2.11.29",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/big-integer",
+    "name": "big-integer",
+    "version": "1.6.52",
+    "declaredLicense": "Unlicense",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/boolbase",
+    "name": "boolbase",
+    "version": "1.0.0",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/bplist-creator",
+    "name": "bplist-creator",
+    "version": "0.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/bplist-parser",
+    "name": "bplist-parser",
+    "version": "0.3.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/brace-expansion",
+    "name": "brace-expansion",
+    "version": "5.0.12",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/braces",
+    "name": "braces",
+    "version": "3.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/browserslist",
+    "name": "browserslist",
+    "version": "4.29.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/bser",
+    "name": "bser",
+    "version": "2.1.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/buffer-from",
+    "name": "buffer-from",
+    "version": "1.1.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/bytes",
+    "name": "bytes",
+    "version": "3.1.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/camelcase",
+    "name": "camelcase",
+    "version": "6.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/caniuse-lite",
+    "name": "caniuse-lite",
+    "version": "1.0.30001816",
+    "declaredLicense": "CC-BY-4.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/chalk",
+    "name": "chalk",
+    "version": "4.1.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ci-info",
+    "name": "ci-info",
+    "version": "3.9.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/cli-cursor",
+    "name": "cli-cursor",
+    "version": "2.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/cli-spinners",
+    "name": "cli-spinners",
+    "version": "2.9.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/cliui",
+    "name": "cliui",
+    "version": "8.0.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/clone",
+    "name": "clone",
+    "version": "1.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/color-convert",
+    "name": "color-convert",
+    "version": "2.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/color-name",
+    "name": "color-name",
+    "version": "1.1.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/commander",
+    "name": "commander",
+    "version": "7.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/compressible",
+    "name": "compressible",
+    "version": "2.0.18",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/compression",
+    "name": "compression",
+    "version": "1.8.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/compression/node_modules/debug",
+    "name": "debug",
+    "version": "2.6.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/compression/node_modules/ms",
+    "name": "ms",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/compression/node_modules/negotiator",
+    "name": "negotiator",
+    "version": "0.6.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/connect",
+    "name": "connect",
+    "version": "3.7.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/connect/node_modules/debug",
+    "name": "debug",
+    "version": "2.6.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/connect/node_modules/ms",
+    "name": "ms",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/content-type",
+    "name": "content-type",
+    "version": "2.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/convert-source-map",
+    "name": "convert-source-map",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/core-js-compat",
+    "name": "core-js-compat",
+    "version": "3.50.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/cross-fetch",
+    "name": "cross-fetch",
+    "version": "3.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/cross-spawn",
+    "name": "cross-spawn",
+    "version": "7.0.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/css-in-js-utils",
+    "name": "css-in-js-utils",
+    "version": "3.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/css-select",
+    "name": "css-select",
+    "version": "5.2.2",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/css-tree",
+    "name": "css-tree",
+    "version": "1.1.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/css-tree/node_modules/source-map",
+    "name": "source-map",
+    "version": "0.6.1",
+    "declaredLicense": "BSD-3-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/css-what",
+    "name": "css-what",
+    "version": "6.2.2",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/csstype",
+    "name": "csstype",
+    "version": "3.2.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/debug",
+    "name": "debug",
+    "version": "4.4.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/deepmerge",
+    "name": "deepmerge",
+    "version": "4.3.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/defaults",
+    "name": "defaults",
+    "version": "1.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/define-lazy-prop",
+    "name": "define-lazy-prop",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/depd",
+    "name": "depd",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/destroy",
+    "name": "destroy",
+    "version": "1.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/detect-libc",
+    "name": "detect-libc",
+    "version": "2.1.2",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/dnssd-advertise",
+    "name": "dnssd-advertise",
+    "version": "1.1.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/dom-serializer",
+    "name": "dom-serializer",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/domelementtype",
+    "name": "domelementtype",
+    "version": "2.3.0",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/domhandler",
+    "name": "domhandler",
+    "version": "5.0.3",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/domutils",
+    "name": "domutils",
+    "version": "3.2.2",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ee-first",
+    "name": "ee-first",
+    "version": "1.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/electron-to-chromium",
+    "name": "electron-to-chromium",
+    "version": "1.5.459",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/emoji-regex",
+    "name": "emoji-regex",
+    "version": "8.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/encodeurl",
+    "name": "encodeurl",
+    "version": "1.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/entities",
+    "name": "entities",
+    "version": "4.5.0",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/error-stack-parser",
+    "name": "error-stack-parser",
+    "version": "2.1.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/es-errors",
+    "name": "es-errors",
+    "version": "1.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/escalade",
+    "name": "escalade",
+    "version": "3.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/escape-html",
+    "name": "escape-html",
+    "version": "1.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/escape-string-regexp",
+    "name": "escape-string-regexp",
+    "version": "1.0.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/etag",
+    "name": "etag",
+    "version": "1.8.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo",
+    "name": "expo",
+    "version": "58.0.14",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo-modules-autolinking",
+    "name": "expo-modules-autolinking",
+    "version": "58.0.13",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo-modules-core",
+    "name": "expo-modules-core",
+    "version": "58.0.22",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo-modules-jsi",
+    "name": "expo-modules-jsi",
+    "version": "58.0.15",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo-modules-macros",
+    "name": "expo-modules-macros",
+    "version": "0.20.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo-server",
+    "name": "expo-server",
+    "version": "58.0.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo-status-bar",
+    "name": "expo-status-bar",
+    "version": "58.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/@expo/cli",
+    "name": "@expo/cli",
+    "version": "58.1.11",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE",
+      "LICENSE-third-party"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/@expo/cli/node_modules/@expo/router-server",
+    "name": "@expo/router-server",
+    "version": "58.0.14",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/@expo/devtools",
+    "name": "@expo/devtools",
+    "version": "58.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/@expo/dom-webview",
+    "name": "@expo/dom-webview",
+    "version": "58.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/@expo/log-box",
+    "name": "@expo/log-box",
+    "version": "58.0.12",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/@expo/metro-config",
+    "name": "@expo/metro-config",
+    "version": "58.0.14",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/@expo/ws-tunnel",
+    "name": "@expo/ws-tunnel",
+    "version": "2.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/accepts",
+    "name": "accepts",
+    "version": "1.3.8",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/babel-preset-expo",
+    "name": "babel-preset-expo",
+    "version": "58.0.17",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/expo-asset",
+    "name": "expo-asset",
+    "version": "58.0.16",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/expo-constants",
+    "name": "expo-constants",
+    "version": "58.0.12",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/expo-file-system",
+    "name": "expo-file-system",
+    "version": "58.0.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/expo-font",
+    "name": "expo-font",
+    "version": "58.0.8",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/expo-keep-awake",
+    "name": "expo-keep-awake",
+    "version": "58.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/mime-db",
+    "name": "mime-db",
+    "version": "1.52.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/mime-types",
+    "name": "mime-types",
+    "version": "2.1.35",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/negotiator",
+    "name": "negotiator",
+    "version": "0.6.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/picomatch",
+    "name": "picomatch",
+    "version": "4.0.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/expo/node_modules/ws",
+    "name": "ws",
+    "version": "8.22.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/exponential-backoff",
+    "name": "exponential-backoff",
+    "version": "3.1.3",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/fb-dotslash",
+    "name": "fb-dotslash",
+    "version": "0.5.8",
+    "declaredLicense": "(MIT OR Apache-2.0)",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/fb-watchman",
+    "name": "fb-watchman",
+    "version": "2.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/fbjs",
+    "name": "fbjs",
+    "version": "3.0.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/fbjs-css-vars",
+    "name": "fbjs-css-vars",
+    "version": "1.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/fbjs/node_modules/promise",
+    "name": "promise",
+    "version": "7.3.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/fetch-nodeshim",
+    "name": "fetch-nodeshim",
+    "version": "0.4.10",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/fill-range",
+    "name": "fill-range",
+    "version": "7.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/finalhandler",
+    "name": "finalhandler",
+    "version": "1.1.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/finalhandler/node_modules/debug",
+    "name": "debug",
+    "version": "2.6.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/finalhandler/node_modules/ms",
+    "name": "ms",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/flow-enums-runtime",
+    "name": "flow-enums-runtime",
+    "version": "0.0.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/flow-estree",
+    "name": "flow-estree",
+    "version": "0.331.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/flow-parser",
+    "name": "flow-parser",
+    "version": "0.331.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/fresh",
+    "name": "fresh",
+    "version": "0.5.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/function-bind",
+    "name": "function-bind",
+    "version": "1.1.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/gensync",
+    "name": "gensync",
+    "version": "1.0.0-beta.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/get-caller-file",
+    "name": "get-caller-file",
+    "version": "2.0.5",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/getenv",
+    "name": "getenv",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/glob",
+    "name": "glob",
+    "version": "13.0.6",
+    "declaredLicense": "BlueOak-1.0.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/graceful-fs",
+    "name": "graceful-fs",
+    "version": "4.2.11",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/has-flag",
+    "name": "has-flag",
+    "version": "4.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/hasown",
+    "name": "hasown",
+    "version": "2.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/hermes-compiler",
+    "name": "hermes-compiler",
+    "version": "260318099.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/hermes-estree",
+    "name": "hermes-estree",
+    "version": "0.36.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/hermes-parser",
+    "name": "hermes-parser",
+    "version": "0.36.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/hosted-git-info",
+    "name": "hosted-git-info",
+    "version": "7.0.2",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/hosted-git-info/node_modules/lru-cache",
+    "name": "lru-cache",
+    "version": "10.4.3",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/http-errors",
+    "name": "http-errors",
+    "version": "2.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/http-errors/node_modules/statuses",
+    "name": "statuses",
+    "version": "2.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/https-proxy-agent",
+    "name": "https-proxy-agent",
+    "version": "7.0.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/hyphenate-style-name",
+    "name": "hyphenate-style-name",
+    "version": "1.1.0",
+    "declaredLicense": "BSD-3-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ignore",
+    "name": "ignore",
+    "version": "5.3.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/inherits",
+    "name": "inherits",
+    "version": "2.0.4",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/inline-style-prefixer",
+    "name": "inline-style-prefixer",
+    "version": "7.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/invariant",
+    "name": "invariant",
+    "version": "2.2.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/is-core-module",
+    "name": "is-core-module",
+    "version": "2.17.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/is-docker",
+    "name": "is-docker",
+    "version": "2.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/is-fullwidth-code-point",
+    "name": "is-fullwidth-code-point",
+    "version": "3.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/is-number",
+    "name": "is-number",
+    "version": "7.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/is-plain-obj",
+    "name": "is-plain-obj",
+    "version": "2.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/is-wsl",
+    "name": "is-wsl",
+    "version": "2.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/isexe",
+    "name": "isexe",
+    "version": "2.0.0",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/jest-get-type",
+    "name": "jest-get-type",
+    "version": "29.6.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/jest-util",
+    "name": "jest-util",
+    "version": "29.7.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/jest-validate",
+    "name": "jest-validate",
+    "version": "29.7.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/jest-worker",
+    "name": "jest-worker",
+    "version": "29.7.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/jest-worker/node_modules/supports-color",
+    "name": "supports-color",
+    "version": "8.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/jimp-compact",
+    "name": "jimp-compact",
+    "version": "0.16.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/js-tokens",
+    "name": "js-tokens",
+    "version": "4.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/js-yaml",
+    "name": "js-yaml",
+    "version": "4.3.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/jsc-safe-url",
+    "name": "jsc-safe-url",
+    "version": "0.2.4",
+    "declaredLicense": "0BSD",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/jsesc",
+    "name": "jsesc",
+    "version": "3.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/json5",
+    "name": "json5",
+    "version": "2.2.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/kleur",
+    "name": "kleur",
+    "version": "3.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lan-network",
+    "name": "lan-network",
+    "version": "0.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/leven",
+    "name": "leven",
+    "version": "3.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss",
+    "name": "lightningcss",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-android-arm64",
+    "name": "lightningcss-android-arm64",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-darwin-arm64",
+    "name": "lightningcss-darwin-arm64",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-darwin-x64",
+    "name": "lightningcss-darwin-x64",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-freebsd-x64",
+    "name": "lightningcss-freebsd-x64",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-linux-arm-gnueabihf",
+    "name": "lightningcss-linux-arm-gnueabihf",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-linux-arm64-gnu",
+    "name": "lightningcss-linux-arm64-gnu",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-linux-arm64-musl",
+    "name": "lightningcss-linux-arm64-musl",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-linux-x64-gnu",
+    "name": "lightningcss-linux-x64-gnu",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-linux-x64-musl",
+    "name": "lightningcss-linux-x64-musl",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-win32-arm64-msvc",
+    "name": "lightningcss-win32-arm64-msvc",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lightningcss-win32-x64-msvc",
+    "name": "lightningcss-win32-x64-msvc",
+    "version": "1.33.0",
+    "declaredLicense": "MPL-2.0",
+    "installed": false,
+    "devOnlyFlag": false,
+    "optional": true,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lodash.debounce",
+    "name": "lodash.debounce",
+    "version": "4.0.8",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lodash.throttle",
+    "name": "lodash.throttle",
+    "version": "4.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/log-symbols",
+    "name": "log-symbols",
+    "version": "2.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/log-symbols/node_modules/ansi-styles",
+    "name": "ansi-styles",
+    "version": "3.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/log-symbols/node_modules/chalk",
+    "name": "chalk",
+    "version": "2.4.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/log-symbols/node_modules/color-convert",
+    "name": "color-convert",
+    "version": "1.9.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/log-symbols/node_modules/color-name",
+    "name": "color-name",
+    "version": "1.1.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/log-symbols/node_modules/has-flag",
+    "name": "has-flag",
+    "version": "3.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/log-symbols/node_modules/supports-color",
+    "name": "supports-color",
+    "version": "5.5.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/loose-envify",
+    "name": "loose-envify",
+    "version": "1.4.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/lru-cache",
+    "name": "lru-cache",
+    "version": "5.1.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/makeerror",
+    "name": "makeerror",
+    "version": "1.0.12",
+    "declaredLicense": "BSD-3-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/mdn-data",
+    "name": "mdn-data",
+    "version": "2.0.14",
+    "declaredLicense": "CC0-1.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/memoize-one",
+    "name": "memoize-one",
+    "version": "5.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/merge-options",
+    "name": "merge-options",
+    "version": "3.0.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/merge-stream",
+    "name": "merge-stream",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro",
+    "name": "metro",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-babel-transformer",
+    "name": "metro-babel-transformer",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-cache",
+    "name": "metro-cache",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-cache-key",
+    "name": "metro-cache-key",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-config",
+    "name": "metro-config",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-core",
+    "name": "metro-core",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-file-map",
+    "name": "metro-file-map",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-minify-terser",
+    "name": "metro-minify-terser",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-resolver",
+    "name": "metro-resolver",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-runtime",
+    "name": "metro-runtime",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-source-map",
+    "name": "metro-source-map",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-symbolicate",
+    "name": "metro-symbolicate",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-transform-plugins",
+    "name": "metro-transform-plugins",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/metro-transform-worker",
+    "name": "metro-transform-worker",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/micromatch",
+    "name": "micromatch",
+    "version": "4.0.8",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/mime",
+    "name": "mime",
+    "version": "1.6.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/mime-db",
+    "name": "mime-db",
+    "version": "1.54.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/mime-types",
+    "name": "mime-types",
+    "version": "3.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/mimic-fn",
+    "name": "mimic-fn",
+    "version": "1.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/minimatch",
+    "name": "minimatch",
+    "version": "10.2.6",
+    "declaredLicense": "BlueOak-1.0.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/minipass",
+    "name": "minipass",
+    "version": "7.1.3",
+    "declaredLicense": "BlueOak-1.0.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ms",
+    "name": "ms",
+    "version": "2.1.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/multitars",
+    "name": "multitars",
+    "version": "1.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/nanoid",
+    "name": "nanoid",
+    "version": "3.3.20",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/negotiator",
+    "name": "negotiator",
+    "version": "1.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/node-fetch",
+    "name": "node-fetch",
+    "version": "2.7.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/node-forge",
+    "name": "node-forge",
+    "version": "1.4.0",
+    "declaredLicense": "(BSD-3-Clause OR GPL-2.0)",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/node-int64",
+    "name": "node-int64",
+    "version": "0.4.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/node-releases",
+    "name": "node-releases",
+    "version": "2.0.59",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/noxcturnal",
+    "name": "noxcturnal",
+    "version": "0.1.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/npm-package-arg",
+    "name": "npm-package-arg",
+    "version": "11.0.3",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/nth-check",
+    "name": "nth-check",
+    "version": "2.1.1",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/nullthrows",
+    "name": "nullthrows",
+    "version": "1.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ob1",
+    "name": "ob1",
+    "version": "0.87.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/object-assign",
+    "name": "object-assign",
+    "version": "4.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/on-finished",
+    "name": "on-finished",
+    "version": "2.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/on-headers",
+    "name": "on-headers",
+    "version": "1.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/onetime",
+    "name": "onetime",
+    "version": "2.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/open",
+    "name": "open",
+    "version": "8.4.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora",
+    "name": "ora",
+    "version": "3.4.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora/node_modules/ansi-regex",
+    "name": "ansi-regex",
+    "version": "4.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora/node_modules/ansi-styles",
+    "name": "ansi-styles",
+    "version": "3.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora/node_modules/chalk",
+    "name": "chalk",
+    "version": "2.4.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora/node_modules/color-convert",
+    "name": "color-convert",
+    "version": "1.9.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora/node_modules/color-name",
+    "name": "color-name",
+    "version": "1.1.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora/node_modules/has-flag",
+    "name": "has-flag",
+    "version": "3.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora/node_modules/strip-ansi",
+    "name": "strip-ansi",
+    "version": "5.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ora/node_modules/supports-color",
+    "name": "supports-color",
+    "version": "5.5.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/parse-png",
+    "name": "parse-png",
+    "version": "2.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/parseurl",
+    "name": "parseurl",
+    "version": "1.3.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/path-key",
+    "name": "path-key",
+    "version": "3.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/path-parse",
+    "name": "path-parse",
+    "version": "1.0.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/path-scurry",
+    "name": "path-scurry",
+    "version": "2.0.2",
+    "declaredLicense": "BlueOak-1.0.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/path-scurry/node_modules/lru-cache",
+    "name": "lru-cache",
+    "version": "11.5.3",
+    "declaredLicense": "BlueOak-1.0.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/picocolors",
+    "name": "picocolors",
+    "version": "1.1.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/picomatch",
+    "name": "picomatch",
+    "version": "2.3.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/playwright",
+    "name": "playwright",
+    "version": "1.64.1",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": true,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE",
+      "NOTICE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/playwright-core",
+    "name": "playwright-core",
+    "version": "1.64.1",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": true,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE",
+      "NOTICE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/plist",
+    "name": "plist",
+    "version": "3.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/plist/node_modules/@xmldom/xmldom",
+    "name": "@xmldom/xmldom",
+    "version": "0.9.12",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/pngjs",
+    "name": "pngjs",
+    "version": "3.4.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/postcss",
+    "name": "postcss",
+    "version": "8.5.31",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/postcss-value-parser",
+    "name": "postcss-value-parser",
+    "version": "4.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/pretty-format",
+    "name": "pretty-format",
+    "version": "29.7.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/pretty-format/node_modules/ansi-styles",
+    "name": "ansi-styles",
+    "version": "5.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/proc-log",
+    "name": "proc-log",
+    "version": "4.2.0",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/progress",
+    "name": "progress",
+    "version": "2.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/promise",
+    "name": "promise",
+    "version": "8.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/prompts",
+    "name": "prompts",
+    "version": "2.4.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/range-parser",
+    "name": "range-parser",
+    "version": "1.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react",
+    "name": "react",
+    "version": "19.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-devtools-core",
+    "name": "react-devtools-core",
+    "version": "6.1.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-dom",
+    "name": "react-dom",
+    "version": "19.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-is",
+    "name": "react-is",
+    "version": "18.3.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-native",
+    "name": "react-native",
+    "version": "0.88.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-native-safe-area-context",
+    "name": "react-native-safe-area-context",
+    "version": "5.10.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-native-svg",
+    "name": "react-native-svg",
+    "version": "15.16.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-native-web",
+    "name": "react-native-web",
+    "version": "0.21.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-native-web/node_modules/@react-native/normalize-colors",
+    "name": "@react-native/normalize-colors",
+    "version": "0.74.89",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-native-web/node_modules/memoize-one",
+    "name": "memoize-one",
+    "version": "6.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-native/node_modules/flow-estree",
+    "name": "flow-estree",
+    "version": "0.327.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-native/node_modules/flow-parser",
+    "name": "flow-parser",
+    "version": "0.327.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/react-refresh",
+    "name": "react-refresh",
+    "version": "0.14.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/regenerate",
+    "name": "regenerate",
+    "version": "1.5.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/regenerate-unicode-properties",
+    "name": "regenerate-unicode-properties",
+    "version": "10.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/regenerator-runtime",
+    "name": "regenerator-runtime",
+    "version": "0.13.11",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/regexpu-core",
+    "name": "regexpu-core",
+    "version": "6.5.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/regjsgen",
+    "name": "regjsgen",
+    "version": "0.8.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/regjsparser",
+    "name": "regjsparser",
+    "version": "0.13.4",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.BSD"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/require-directory",
+    "name": "require-directory",
+    "version": "2.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/resolve",
+    "name": "resolve",
+    "version": "1.22.13",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/resolve-from",
+    "name": "resolve-from",
+    "version": "5.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/resolve-workspace-root",
+    "name": "resolve-workspace-root",
+    "version": "2.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/restore-cursor",
+    "name": "restore-cursor",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/safe-buffer",
+    "name": "safe-buffer",
+    "version": "5.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/sandbox-cli-detector",
+    "name": "sandbox-cli-detector",
+    "version": "0.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/sax",
+    "name": "sax",
+    "version": "1.6.1",
+    "declaredLicense": "BlueOak-1.0.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/scheduler",
+    "name": "scheduler",
+    "version": "0.28.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/semver",
+    "name": "semver",
+    "version": "7.8.5",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/send",
+    "name": "send",
+    "version": "0.19.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/send/node_modules/debug",
+    "name": "debug",
+    "version": "2.6.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/send/node_modules/debug/node_modules/ms",
+    "name": "ms",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/send/node_modules/encodeurl",
+    "name": "encodeurl",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/send/node_modules/on-finished",
+    "name": "on-finished",
+    "version": "2.4.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/send/node_modules/statuses",
+    "name": "statuses",
+    "version": "2.0.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/serialize-error",
+    "name": "serialize-error",
+    "version": "2.1.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/serve-static",
+    "name": "serve-static",
+    "version": "1.16.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/serve-static/node_modules/encodeurl",
+    "name": "encodeurl",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/setimmediate",
+    "name": "setimmediate",
+    "version": "1.0.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/setprototypeof",
+    "name": "setprototypeof",
+    "version": "1.2.0",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/shebang-command",
+    "name": "shebang-command",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/shebang-regex",
+    "name": "shebang-regex",
+    "version": "3.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/shell-quote",
+    "name": "shell-quote",
+    "version": "1.12.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/signal-exit",
+    "name": "signal-exit",
+    "version": "3.0.7",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/simple-plist",
+    "name": "simple-plist",
+    "version": "1.3.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/sisteransi",
+    "name": "sisteransi",
+    "version": "1.0.5",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/slugify",
+    "name": "slugify",
+    "version": "1.6.9",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/source-map",
+    "name": "source-map",
+    "version": "0.5.7",
+    "declaredLicense": "BSD-3-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/source-map-js",
+    "name": "source-map-js",
+    "version": "1.2.2",
+    "declaredLicense": "BSD-3-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/source-map-support",
+    "name": "source-map-support",
+    "version": "0.5.21",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/source-map-support/node_modules/source-map",
+    "name": "source-map",
+    "version": "0.6.1",
+    "declaredLicense": "BSD-3-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/stackframe",
+    "name": "stackframe",
+    "version": "1.3.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/stacktrace-parser",
+    "name": "stacktrace-parser",
+    "version": "0.1.11",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/statuses",
+    "name": "statuses",
+    "version": "1.5.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/stream-buffers",
+    "name": "stream-buffers",
+    "version": "2.2.0",
+    "declaredLicense": "Unlicense",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/string-width",
+    "name": "string-width",
+    "version": "4.2.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/strip-ansi",
+    "name": "strip-ansi",
+    "version": "6.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/structured-headers",
+    "name": "structured-headers",
+    "version": "0.4.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/styleq",
+    "name": "styleq",
+    "version": "0.1.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/supports-color",
+    "name": "supports-color",
+    "version": "7.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/supports-hyperlinks",
+    "name": "supports-hyperlinks",
+    "version": "2.3.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/supports-preserve-symlinks-flag",
+    "name": "supports-preserve-symlinks-flag",
+    "version": "1.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/terminal-link",
+    "name": "terminal-link",
+    "version": "2.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/terser",
+    "name": "terser",
+    "version": "5.51.2",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/terser/node_modules/commander",
+    "name": "commander",
+    "version": "2.20.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/throat",
+    "name": "throat",
+    "version": "5.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/tinyglobby",
+    "name": "tinyglobby",
+    "version": "0.2.17",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/tinyglobby/node_modules/fdir",
+    "name": "fdir",
+    "version": "6.5.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/tinyglobby/node_modules/picomatch",
+    "name": "picomatch",
+    "version": "4.0.7",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/tmpl",
+    "name": "tmpl",
+    "version": "1.0.5",
+    "declaredLicense": "BSD-3-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/to-regex-range",
+    "name": "to-regex-range",
+    "version": "5.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/toidentifier",
+    "name": "toidentifier",
+    "version": "1.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/toqr",
+    "name": "toqr",
+    "version": "0.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/tr46",
+    "name": "tr46",
+    "version": "0.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/type-fest",
+    "name": "type-fest",
+    "version": "0.7.1",
+    "declaredLicense": "(MIT OR CC0-1.0)",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/typescript",
+    "name": "typescript",
+    "version": "6.0.3",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ua-parser-js",
+    "name": "ua-parser-js",
+    "version": "1.0.41",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/undici-types",
+    "name": "undici-types",
+    "version": "7.24.6",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/unicode-canonical-property-names-ecmascript",
+    "name": "unicode-canonical-property-names-ecmascript",
+    "version": "2.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/unicode-match-property-ecmascript",
+    "name": "unicode-match-property-ecmascript",
+    "version": "2.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/unicode-match-property-value-ecmascript",
+    "name": "unicode-match-property-value-ecmascript",
+    "version": "2.2.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/unicode-property-aliases-ecmascript",
+    "name": "unicode-property-aliases-ecmascript",
+    "version": "2.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE-MIT.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/unpipe",
+    "name": "unpipe",
+    "version": "1.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/update-browserslist-db",
+    "name": "update-browserslist-db",
+    "version": "1.3.4",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/utils-merge",
+    "name": "utils-merge",
+    "version": "1.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/uuid",
+    "name": "uuid",
+    "version": "7.0.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/validate-npm-package-name",
+    "name": "validate-npm-package-name",
+    "version": "5.0.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/vary",
+    "name": "vary",
+    "version": "1.1.2",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/vlq",
+    "name": "vlq",
+    "version": "1.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/walker",
+    "name": "walker",
+    "version": "1.0.8",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/wcwidth",
+    "name": "wcwidth",
+    "version": "1.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/webidl-conversions",
+    "name": "webidl-conversions",
+    "version": "3.0.1",
+    "declaredLicense": "BSD-2-Clause",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/whatwg-fetch",
+    "name": "whatwg-fetch",
+    "version": "3.6.20",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/whatwg-url",
+    "name": "whatwg-url",
+    "version": "5.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/whatwg-url-minimum",
+    "name": "whatwg-url-minimum",
+    "version": "0.2.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.md"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/which",
+    "name": "which",
+    "version": "2.0.2",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/wrap-ansi",
+    "name": "wrap-ansi",
+    "version": "7.0.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "license"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/ws",
+    "name": "ws",
+    "version": "7.5.13",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/xcode",
+    "name": "xcode",
+    "version": "3.0.1",
+    "declaredLicense": "Apache-2.0",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE",
+      "NOTICE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/xml2js",
+    "name": "xml2js",
+    "version": "0.6.0",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/xml2js/node_modules/xmlbuilder",
+    "name": "xmlbuilder",
+    "version": "11.0.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/xmlbuilder",
+    "name": "xmlbuilder",
+    "version": "15.1.1",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/y18n",
+    "name": "y18n",
+    "version": "5.0.8",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/yallist",
+    "name": "yallist",
+    "version": "3.1.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/yargs",
+    "name": "yargs",
+    "version": "17.7.3",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/yargs-parser",
+    "name": "yargs-parser",
+    "version": "21.1.1",
+    "declaredLicense": "ISC",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE.txt"
+    ],
+    "presentInPreviousInventory": true
+  },
+  {
+    "path": "node_modules/zod",
+    "name": "zod",
+    "version": "3.25.76",
+    "declaredLicense": "MIT",
+    "installed": true,
+    "devOnlyFlag": false,
+    "optional": false,
+    "topLevelNoticeFiles": [
+      "LICENSE"
+    ],
+    "presentInPreviousInventory": true
+  }
+]

@@ -96,3 +96,5 @@ Virtual wires and build badges save separately under `ell.wiring.v1`, with power
 ## Brand and material review
 
 The user selected ElectroLessonLab (ELL) as the app name. Coach Click remains the working mascot label. The earlier review evaluated other names; it does not establish clearance of ElectroLessonLab or ELL. See BRAND_AND_MARKET_REVIEW.md and RIGHTS_REVIEW.md for the historical comparison, local source-copy screen, generated-artwork limits and software-license follow-up items. Existing Expo license text is preserved in LICENSE. Dependency metadata and captured notices are in docs/dependency-licenses.json and THIRD_PARTY_NOTICES.txt; release-specific obligations still require review.
+
+For US monetization and independent publishing, see [the commercial rights audit](COMMERCIAL_RELEASE_REVIEW.md) and [launch/pricing plan](docs/PRICING_AND_LAUNCH.md). These document open commercial-release requirements; they do not change project licensing or establish legal clearance.

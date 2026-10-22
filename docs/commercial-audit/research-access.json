@@ -1,0 +1,72 @@
+[
+  {
+    "id": "play_signup",
+    "url": "https://support.google.com/googleplay/android-developer/answer/6112435?hl=en",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "play_testing",
+    "url": "https://support.google.com/googleplay/android-developer/answer/14151465?hl=en",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "play_fees",
+    "url": "https://support.google.com/googleplay/android-developer/answer/112622?hl=en",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "play_free_paid",
+    "url": "https://support.google.com/googleplay/android-developer/answer/6334373?hl=en",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "play_privacy",
+    "url": "https://support.google.com/googleplay/android-developer/answer/10144311?hl=en",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "play_billing",
+    "url": "https://support.google.com/googleplay/android-developer/answer/9858738?hl=en",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "openai_terms",
+    "url": "https://openai.com/policies/terms-of-use/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "copyright_ai",
+    "url": "https://www.copyright.gov/ai/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "copyright_basics",
+    "url": "https://www.copyright.gov/help/faq/faq-general.html",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "copyright_employee",
+    "url": "https://www.copyright.gov/circs/circ30.pdf",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "uspto_search",
+    "url": "https://www.uspto.gov/trademarks/search",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "competitor_game",
+    "url": "https://store.steampowered.com/app/1080020/Electrician_Simulator/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "competitor_everycircuit",
+    "url": "https://everycircuit.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "competitor_interplay",
+    "url": "https://www.interplaylearning.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]
