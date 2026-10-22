@@ -1,7 +1,7 @@
 import { WiringLab } from './src/WiringLab';
 import { MotorEquipment } from './src/LabHardware';
 import React, { useEffect, useReducer, useRef, useState } from 'react';
-import { ActivityIndicator, BackHandler, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { ActivityIndicator, BackHandler, Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -153,7 +153,7 @@ function ElectroApp() {
   return <SafeAreaView style={s.safe} edges={['top', 'left', 'right', 'bottom']}>
     <StatusBar style="light" />
     <View style={s.header}>
-      <View style={s.brand}><View style={s.logo}><Text style={s.bolt}>ϟ</Text></View><View><Text style={s.wordmark}>{brand.shortName}</Text><Text style={s.brandSub}>{brand.name}</Text></View></View>
+      <View style={s.brand}><Image accessibilityLabel="Click, the ELL relay coach logo" accessibilityRole="image" source={require('./assets/icon.png')} style={s.logo} /><View><Text style={s.wordmark}>{brand.shortName}</Text><Text style={s.brandSub}>{brand.name}</Text></View></View>
       <View style={s.xpPill}><Text style={s.xpText}>ϟ {xp} XP</Text></View>
     </View>
     {!loaded || !beta.ready ? <View style={s.loading}><ActivityIndicator color={colors.lime} /><Text style={s.body}>Loading your training…</Text></View> : <>
@@ -292,7 +292,7 @@ export default function App() { return <SafeAreaProvider><BetaProvider><ElectroA
 const s = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.bg }, flex: { flex: 1 }, center: { textAlign: 'center' },
   header: { paddingHorizontal: 22, paddingVertical: 17, borderBottomWidth: 1, borderColor: colors.line, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
-  brand: { flexDirection: 'row', alignItems: 'center', gap: 10 }, logo: { width: 38, height: 42, backgroundColor: colors.lime, borderRadius: 10, alignItems: 'center', justifyContent: 'center' }, bolt: { fontSize: 38, fontWeight: '900', color: colors.bg, marginTop: -3 },
+  brand: { flexDirection: 'row', alignItems: 'center', gap: 10 }, logo: { width: 56, height: 56, borderRadius: 12 }, bolt: { fontSize: 38, fontWeight: '900', color: colors.bg, marginTop: -3 },
   wordmark: { fontSize: 21, fontWeight: '900', letterSpacing: 3, color: colors.text }, brandSub: { color: colors.muted, fontSize: 8, letterSpacing: 1.4, marginTop: 3 }, xpPill: { borderColor: colors.line, borderWidth: 1, borderRadius: 30, paddingHorizontal: 13, paddingVertical: 9 }, xpText: { color: colors.lime, fontWeight: '800', fontSize: 14 },
   scroll: { padding: 22, paddingBottom: 12 }, content: { width: '100%', maxWidth: 1000, alignSelf: 'center', gap: 20 }, loading: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 20 },
   label: { color: colors.lime, fontSize: 10, letterSpacing: 1.7, fontWeight: '800', lineHeight: 17 }, small: { color: colors.muted, fontSize: 10, letterSpacing: 0.6, lineHeight: 16 }, body: { color: colors.muted, fontSize: 15, lineHeight: 24 }, intro: { color: colors.muted, fontSize: 16, lineHeight: 26, maxWidth: 620 },

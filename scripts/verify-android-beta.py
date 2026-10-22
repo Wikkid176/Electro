@@ -57,6 +57,28 @@ require(not set(app["android"]["blockedPermissions"]) & set(permissions), "Block
 resources = run([tools / "aapt", "dump", "resources", args.apk], "APK-RESOURCES.txt")
 for resource in ["drawable/assets_componentartatlas", "drawable/assets_relaycoachatlas"]:
     require(resource in resources, "Missing component/coach artwork: " + resource)
+for resource in ["drawable/assets_icon", "drawable/ell_click_foreground", "mipmap/ic_launcher_foreground"]:
+    require(resource in resources, "Missing Click logo resource: " + resource)
+# Release resource optimization renames archive paths. Resolve them from the
+# resource table instead of assuming source filenames survive packaging.
+resource_values = run([tools / "aapt", "dump", "--values", "resources", args.apk], "APK-RESOURCE-VALUES.txt")
+def resource_xml(name):
+    match = re.search(re.escape(":" + name + ":") + r"[^\n]*\n\s+\(string(?:8|16)\) \"(res/[^\"]+\.xml)\"", resource_values)
+    require(match is not None, "Missing packaged XML for " + name)
+    return match.group(1)
+icon_config = run([tools / "aapt", "dump", "xmltree", args.apk, resource_xml("drawable/ell_click_foreground")], "APK-ICON-CONFIG.txt")
+fraction = re.search(r"android:inset[^\n]*=\(type 0x6\)0x([0-9a-f]+)", icon_config)
+require(fraction is not None, "Missing adaptive Click icon safe-area inset")
+complex_value = int(fraction.group(1), 16)
+mantissa = complex_value & 0xffffff00
+if mantissa & 0x80000000:
+    mantissa -= 1 << 32
+inset_fraction = mantissa * [2**-8, 2**-15, 2**-23, 2**-31][(complex_value >> 4) & 3]
+require(complex_value & 15 == 0 and abs(inset_fraction - 0.14) < 0.000001, "Adaptive icon inset must be 14%")
+inset_id = re.search(r"spec resource (0x[0-9a-f]+) [^\n]*:drawable/ell_click_foreground:", resources).group(1)
+launcher_config = run([tools / "aapt", "dump", "xmltree", args.apk, resource_xml("mipmap/ic_launcher")], "APK-LAUNCHER-CONFIG.txt")
+require("E: foreground" in launcher_config and "=@" + inset_id in launcher_config,
+        "Launcher does not reference the Click inset drawable")
 with zipfile.ZipFile(args.apk) as archive:
     require(archive.testzip() is None, "APK ZIP integrity check failed")
     names = archive.namelist()
@@ -125,6 +147,8 @@ verification = {
     "authoredSectionsBundled": sum(len(content["sections"]) for content in teaching.values()),
     "caseSpecificHintsBundled": len(hints),
     "svgGraphicsIncluded": True,
+    "clickLogoResourcesIncluded": True,
+    "adaptiveIconInsetIncluded": True,
     "virtualWiringBuildsBundled": len(wiring),
     "virtualProbeInterfaceIncluded": True,
     "nativeSvgRegistrationVerified": True,

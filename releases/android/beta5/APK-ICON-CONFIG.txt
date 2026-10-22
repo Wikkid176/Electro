@@ -1,0 +1,4 @@
+N: android=http://schemas.android.com/apk/res/android
+  E: inset (line=2)
+    A: android:drawable(0x01010199)=@0x7f0d0001
+    A: android:inset(0x010104b5)=(type 0x6)0x11eb8530

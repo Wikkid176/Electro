@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-22T18:16:21.165067+00:00",
+  "app": "ElectroLessonLab (ELL)",
+  "release": "0.5.1-beta.5",
+  "change": "Click mascot logo in header, launcher and favicon; beta4 study compatibility retained",
+  "typecheck": "passed",
+  "unitTests": {
+    "passed": 51,
+    "failed": 0
+  },
+  "targetedBrowserTests": {
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "durationSeconds": 62.998086,
+    "coverage": "Loaded logo pixels, phone/desktop layout, coach, motor/meter, first attempts, feedback export and beta4 continuing recording/feedback"
+  },
+  "initialBrowserRun": {
+    "passed": 14,
+    "failed": 2,
+    "diagnosis": "New test locator matched both React Native Web image wrapper and child img. Scoped the locator to the accessible wrapper, retained loaded-pixel assertions; final selected suite passed all 16."
+  },
+  "fullBrowserSuiteForThisRelease": "not rerun; prior beta4 76-case suite remains historical evidence",
+  "nativeBuild": "passed",
+  "apk": "ELL-0.5.1-beta.5.apk",
+  "bytes": 42204223,
+  "sha256": "a544637b90e84d9e1a5f4ccca877e2a8231145fca533d27095453275b668ea1f",
+  "apkVerification": "beta5/APK-VERIFICATION.json",
+  "sameBetaSigningCertificate": true,
+  "androidVersionCode": 5,
+  "clickHeaderAndLauncherResourcesVerified": true,
+  "adaptiveInsetFractionVerified": 0.14,
+  "foregroundOpaqueRadiusAfterInset": 0.279,
+  "beta4StudyContinues": true,
+  "courseAndWiringModelsChanged": false,
+  "physicalAndroidDeviceTested": false,
+  "githubHostedBuildVerified": false
+}

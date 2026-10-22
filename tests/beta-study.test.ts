@@ -47,3 +47,11 @@ test('the fifth lab is recorded and previous beta3 records remain exportable but
   assert.ok(earlier); assert.equal(earlier.build, '0.4.0-beta.3'); assert.equal(earlier.recording, false);
   assert.equal(restoreStudy(JSON.stringify({ ...data, labsVisited: ['unrecognized'] })), null);
 });
+
+test('the Click logo update retains active beta4 records because training and metrics are unchanged', () => {
+  const original = { ...newStudy('A01', 'Adults 30–45 / beginner', {}), build: '0.5.0-beta.4' };
+  const restored = restoreStudy(JSON.stringify(original));
+  assert.ok(restored); assert.equal(restored.recording, true); assert.equal(restored.build, original.build);
+  original.recording = false;
+  assert.equal(restoreStudy(JSON.stringify(original))?.recording, false);
+});

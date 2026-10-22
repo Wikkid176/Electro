@@ -1,6 +1,6 @@
 import { lessons } from './content.ts';
 import { componentChallenges } from './components.ts';
-import { release } from './build.ts';
+import { release, isCompatibleStudyBuild } from './build.ts';
 
 export const BETA_KEY = 'electro.human-beta.v1';
 export const cohorts = ['Adults 30–45 / beginner', 'Teens / beginner', 'Adults 18–30 / beginner', 'Electrical professionals', 'Other / prefer not to say'] as const;
@@ -27,7 +27,7 @@ export function restoreStudy(raw: string | null): StudyData | null {
   try {
     if (raw.length > 2_000_000) return null;
     const value = JSON.parse(raw) as StudyData;
-    if (!value || value.version !== 1 || ![release.label, '0.4.0-beta.3', '0.3.0-beta.2', '0.2.0-beta.1'].includes(value.build) || !value.participant || !validTesterCode(value.participant.code) || !cohorts.includes(value.participant.cohort) || typeof value.recording !== 'boolean' || !timestamp(value.startedAt) || !finiteSeconds(value.trainingSeconds)) return null;
+    if (!value || value.version !== 1 || ![release.label, '0.5.0-beta.4', '0.4.0-beta.3', '0.3.0-beta.2', '0.2.0-beta.1'].includes(value.build) || !value.participant || !validTesterCode(value.participant.code) || !cohorts.includes(value.participant.cohort) || typeof value.recording !== 'boolean' || !timestamp(value.startedAt) || !finiteSeconds(value.trainingSeconds)) return null;
     if (!value.baselineScores || typeof value.baselineScores !== 'object' || Array.isArray(value.baselineScores)) return null;
     for (const [id, score] of Object.entries(value.baselineScores)) if (!lessons.some(lesson => lesson.id === id && Number.isInteger(score) && score >= 0 && score <= lesson.questions.length)) return null;
     if (!Array.isArray(value.attempts) || value.attempts.length > 150 || new Set(value.attempts.map(attempt => attempt.id)).size !== value.attempts.length) return null;
@@ -55,7 +55,7 @@ export function restoreStudy(raw: string | null): StudyData | null {
     if (!Array.isArray(value.feedback) || value.feedback.length > 100 || !value.feedback.every(item => timestamp(item.at) && boundedText(item.category, 40) && boundedText(item.location, 120) && boundedText(item.note, 2000))) return null;
     // Keep the earlier study exportable, without mixing its timing or answers
     // with the expanded course. Course scores and reading checkpoints are separate.
-    return value.build === release.label ? value : { ...value, recording: false };
+    return isCompatibleStudyBuild(value.build) ? value : { ...value, recording: false };
   } catch { return null; }
 }
 
