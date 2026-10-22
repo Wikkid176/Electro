@@ -4,6 +4,10 @@ Audit: October 22, 2026. App: 0.5.1-beta.5. Audited source: `7c052b30d9c7a9b1ce4
 
 **Decision: monetization is feasible in principle, but this audit does not clear the current beta for paid public release.** I found no blanket commercial-use prohibition in the declared licenses of the JavaScript actually bundled. Ownership of reference-informed material, the project's public license scope, native dependency obligations, brand clearance and commercial release policies remain open. This is a technical rights screen and business plan, not a legal opinion or permission from a rights holder. No license, account, billing flow or store listing was changed.
 
+## Ownership follow-up
+
+The [item 1 ownership/licensing packet](docs/ownership/README.md) is now prepared, including license-history evidence, an itemized register, a source-use/app-ownership request and counsel-ready draft materials. It does not resolve owner authority, confer source permissions or apply new licensing terms.
+
 ## Findings by priority
 
 | Priority | Finding | Evidence and action |

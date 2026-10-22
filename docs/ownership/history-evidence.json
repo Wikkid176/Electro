@@ -1,0 +1,19 @@
+{
+  "preparedAtUTC": "2026-10-22T20:51:14.401160+00:00",
+  "basisCommit": "1aae27a5ef88b329a228b9d9ec83b8ec11275558",
+  "rootLicenseFirstCommit": "f060705a676bd5489a795f369a0c74d9bd6dcd2d",
+  "rootLicenseHistoryEntries": [
+    "f060705a676bd5489a795f369a0c74d9bd6dcd2d"
+  ],
+  "rootLicenseUnchangedSinceFirstTrackedVersion": true,
+  "rootLicenseSha256": "fb3ca4a837f5779e83cef89b78253a8949cfb9429c340309f62d0465ec6610b4",
+  "thirdPartyNoticesSha256": "fdb206df7ba9af3bf2c198069e6c76aa20b883c525ef7e2ed6eb8d7ee1a3de75",
+  "rootNoticeHolder": "650 Industries, Inc. (aka Expo)",
+  "npmPrivateFlag": true,
+  "packageLicenseField": null,
+  "legalOwnerEstablished": false,
+  "employerPermissionReceived": false,
+  "projectLicensePreferenceConfirmed": false,
+  "signedAssignmentsFoundInRepository": false,
+  "note": "No agreements found in this repository is not proof no agreements exist. Git names and the npm private flag do not establish legal ownership. No new license terms applied."
+}

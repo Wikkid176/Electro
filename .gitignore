@@ -56,3 +56,7 @@ releases/android/*.apk
 *.p12
 *.pfx
 *signing.properties
+
+# Completed ownership agreements and legal correspondence are private.
+/private-legal/
+/docs/ownership/private/
